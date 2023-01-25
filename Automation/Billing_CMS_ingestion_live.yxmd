@@ -1,0 +1,641 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2022.1">
+  <Nodes>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="54" y="56" width="393" height="195" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>cms.view_bi_issuers</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="1">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="79" y="105" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <CachedCosmeticName>CMS LIVE</CachedCosmeticName>
+              <File RecordLimit="" FileFormat="23">aka:5f15b46e0b05360e6c4ed315|||select cms.view_bi_issuers.* 
+from cms.view_bi_issuers</File>
+              <FormatSpecificOptions>
+                <PreSQL />
+                <PreSQLOnConfig>True</PreSQLOnConfig>
+                <NoProgress>True</NoProgress>
+                <SessionReadOnly>True</SessionReadOnly>
+                <CacheData>False</CacheData>
+                <TableStyle>Quoted</TableStyle>
+                <ReadUncommitted>False</ReadUncommitted>
+                <PostSQL />
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>aka:CMS LIVE
+Query=select cms.view_bi_issuers.*...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="client_name" size="255" source="File: aka:5f15b46e0b05360e6c4ed315|||select cms.view_bi_issuers.* &#xA;from cms.view_bi_issuers" type="V_WString" />
+                <Field name="source_code" size="255" source="File: aka:5f15b46e0b05360e6c4ed315|||select cms.view_bi_issuers.* &#xA;from cms.view_bi_issuers" type="V_WString" />
+                <Field name="prefix" size="25" source="File: aka:5f15b46e0b05360e6c4ed315|||select cms.view_bi_issuers.* &#xA;from cms.view_bi_issuers" type="V_WString" />
+                <Field name="ica" size="12" source="File: aka:5f15b46e0b05360e6c4ed315|||select cms.view_bi_issuers.* &#xA;from cms.view_bi_issuers" type="V_WString" />
+                <Field name="reporting_ica" size="45" source="File: aka:5f15b46e0b05360e6c4ed315|||select cms.view_bi_issuers.* &#xA;from cms.view_bi_issuers" type="V_WString" />
+                <Field name="bin" size="255" source="File: aka:5f15b46e0b05360e6c4ed315|||select cms.view_bi_issuers.* &#xA;from cms.view_bi_issuers" type="V_WString" />
+                <Field name="group_code" size="255" source="File: aka:5f15b46e0b05360e6c4ed315|||select cms.view_bi_issuers.* &#xA;from cms.view_bi_issuers" type="V_WString" />
+                <Field name="issuer_name" size="255" source="File: aka:5f15b46e0b05360e6c4ed315|||select cms.view_bi_issuers.* &#xA;from cms.view_bi_issuers" type="V_WString" />
+                <Field name="clean_issuer_name" size="255" source="File: aka:5f15b46e0b05360e6c4ed315|||select cms.view_bi_issuers.* &#xA;from cms.view_bi_issuers" type="V_WString" />
+                <Field name="country_of_issue_iso" size="45" source="File: aka:5f15b46e0b05360e6c4ed315|||select cms.view_bi_issuers.* &#xA;from cms.view_bi_issuers" type="V_WString" />
+                <Field name="country_of_issue" size="255" source="File: aka:5f15b46e0b05360e6c4ed315|||select cms.view_bi_issuers.* &#xA;from cms.view_bi_issuers" type="V_WString" />
+                <Field name="cg_region_of_issue" size="45" source="File: aka:5f15b46e0b05360e6c4ed315|||select cms.view_bi_issuers.* &#xA;from cms.view_bi_issuers" type="V_WString" />
+                <Field name="client_region_of_issue" size="45" source="File: aka:5f15b46e0b05360e6c4ed315|||select cms.view_bi_issuers.* &#xA;from cms.view_bi_issuers" type="V_WString" />
+                <Field name="client_sub_region_of_issue" size="45" source="File: aka:5f15b46e0b05360e6c4ed315|||select cms.view_bi_issuers.* &#xA;from cms.view_bi_issuers" type="V_WString" />
+                <Field name="lounge_programme" size="45" source="File: aka:5f15b46e0b05360e6c4ed315|||select cms.view_bi_issuers.* &#xA;from cms.view_bi_issuers" type="V_WString" />
+                <Field name="model" size="45" source="File: aka:5f15b46e0b05360e6c4ed315|||select cms.view_bi_issuers.* &#xA;from cms.view_bi_issuers" type="V_WString" />
+                <Field name="deal_type" size="45" source="File: aka:5f15b46e0b05360e6c4ed315|||select cms.view_bi_issuers.* &#xA;from cms.view_bi_issuers" type="V_WString" />
+                <Field name="deal_status" size="45" source="File: aka:5f15b46e0b05360e6c4ed315|||select cms.view_bi_issuers.* &#xA;from cms.view_bi_issuers" type="V_WString" />
+                <Field name="deal_start_date" source="File: aka:5f15b46e0b05360e6c4ed315|||select cms.view_bi_issuers.* &#xA;from cms.view_bi_issuers" type="DateTime" />
+                <Field name="deal_cancellation_date" source="File: aka:5f15b46e0b05360e6c4ed315|||select cms.view_bi_issuers.* &#xA;from cms.view_bi_issuers" type="DateTime" />
+                <Field name="client_service_centre" size="255" source="File: aka:5f15b46e0b05360e6c4ed315|||select cms.view_bi_issuers.* &#xA;from cms.view_bi_issuers" type="V_WString" />
+                <Field name="contract_type" size="45" source="File: aka:5f15b46e0b05360e6c4ed315|||select cms.view_bi_issuers.* &#xA;from cms.view_bi_issuers" type="V_WString" />
+                <Field name="card_type" size="45" source="File: aka:5f15b46e0b05360e6c4ed315|||select cms.view_bi_issuers.* &#xA;from cms.view_bi_issuers" type="V_WString" />
+                <Field name="membership_fee_currency" size="45" source="File: aka:5f15b46e0b05360e6c4ed315|||select cms.view_bi_issuers.* &#xA;from cms.view_bi_issuers" type="V_WString" />
+                <Field name="membership_fee" scale="2" size="12" source="File: aka:5f15b46e0b05360e6c4ed315|||select cms.view_bi_issuers.* &#xA;from cms.view_bi_issuers" type="FixedDecimal" />
+                <Field name="selected_non_selected" source="File: aka:5f15b46e0b05360e6c4ed315|||select cms.view_bi_issuers.* &#xA;from cms.view_bi_issuers" type="Int16" />
+                <Field name="po_charge_type" size="45" source="File: aka:5f15b46e0b05360e6c4ed315|||select cms.view_bi_issuers.* &#xA;from cms.view_bi_issuers" type="V_WString" />
+                <Field name="billing_inclusion_lounge_visits" source="File: aka:5f15b46e0b05360e6c4ed315|||select cms.view_bi_issuers.* &#xA;from cms.view_bi_issuers" type="Int16" />
+                <Field name="billing_inclusion_memberships" source="File: aka:5f15b46e0b05360e6c4ed315|||select cms.view_bi_issuers.* &#xA;from cms.view_bi_issuers" type="Int16" />
+                <Field name="decline" source="File: aka:5f15b46e0b05360e6c4ed315|||select cms.view_bi_issuers.* &#xA;from cms.view_bi_issuers" type="Int16" />
+                <Field name="bid" size="45" source="File: aka:5f15b46e0b05360e6c4ed315|||select cms.view_bi_issuers.* &#xA;from cms.view_bi_issuers" type="V_WString" />
+                <Field name="lounge_set_selected" size="45" source="File: aka:5f15b46e0b05360e6c4ed315|||select cms.view_bi_issuers.* &#xA;from cms.view_bi_issuers" type="V_WString" />
+                <Field name="lv_report_credit_card_type" size="45" source="File: aka:5f15b46e0b05360e6c4ed315|||select cms.view_bi_issuers.* &#xA;from cms.view_bi_issuers" type="V_WString" />
+                <Field name="consolidated_report" source="File: aka:5f15b46e0b05360e6c4ed315|||select cms.view_bi_issuers.* &#xA;from cms.view_bi_issuers" type="Int16" />
+                <Field name="currency" size="45" source="File: aka:5f15b46e0b05360e6c4ed315|||select cms.view_bi_issuers.* &#xA;from cms.view_bi_issuers" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="3">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="319" y="106" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File MaxRecords="" FileFormat="23">aka:5f15b4860b05360e6c4ed32e|||CMS.dbo.tbl_bi_issuers</File>
+              <Passwords />
+              <CachedCosmeticName>DI_Billing</CachedCosmeticName>
+              <FormatSpecificOptions>
+                <TransactionMessages>False</TransactionMessages>
+                <Geometry>True</Geometry>
+                <Projection />
+                <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+                <SpatialObjSize>8000</SpatialObjSize>
+                <OutputOption>Append</OutputOption>
+                <PostSQL />
+                <TransactionSize>0</TransactionSize>
+                <TableStyle>Quoted</TableStyle>
+                <PreSQL>TRUNCATE TABLE CMS.dbo.tbl_bi_issuers</PreSQL>
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>aka:DI_Billing
+Query=CMS.dbo.tbl_bi_issuers</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+        <Node ToolID="4">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="211" y="106" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="DateTimeNow()" field="created_dt" size="19" type="DateTime" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText><![CDATA[created_dt = DateTimeNow()
+]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="54" y="260" width="393" height="195" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>cms.view_bi_deals</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="6">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="79" y="309" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <CachedCosmeticName>CMS LIVE</CachedCosmeticName>
+              <File RecordLimit="" FileFormat="23">aka:5f15b46e0b05360e6c4ed315|||select * 
+from cms.view_bi_deals</File>
+              <FormatSpecificOptions>
+                <PreSQL />
+                <PreSQLOnConfig>True</PreSQLOnConfig>
+                <NoProgress>True</NoProgress>
+                <SessionReadOnly>True</SessionReadOnly>
+                <CacheData>False</CacheData>
+                <TableStyle>Quoted</TableStyle>
+                <ReadUncommitted>False</ReadUncommitted>
+                <PostSQL />
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>aka:CMS LIVE
+Query=select * 
+from cms.view_bi_d...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Issuer Status" size="8" source="File: aka:5f15b46e0b05360e6c4ed315|||select * &#xA;from cms.view_bi_deals" type="V_WString" />
+                <Field name="Issuer" size="255" source="File: aka:5f15b46e0b05360e6c4ed315|||select * &#xA;from cms.view_bi_deals" type="V_WString" />
+                <Field name="Issuer Clean Name" size="255" source="File: aka:5f15b46e0b05360e6c4ed315|||select * &#xA;from cms.view_bi_deals" type="V_WString" />
+                <Field name="Country of Residence" size="255" source="File: aka:5f15b46e0b05360e6c4ed315|||select * &#xA;from cms.view_bi_deals" type="V_WString" />
+                <Field name="Country ISO Code" size="45" source="File: aka:5f15b46e0b05360e6c4ed315|||select * &#xA;from cms.view_bi_deals" type="V_WString" />
+                <Field name="BID" size="45" source="File: aka:5f15b46e0b05360e6c4ed315|||select * &#xA;from cms.view_bi_deals" type="V_WString" />
+                <Field name="Client Name" size="255" source="File: aka:5f15b46e0b05360e6c4ed315|||select * &#xA;from cms.view_bi_deals" type="V_WString" />
+                <Field name="Network" size="45" source="File: aka:5f15b46e0b05360e6c4ed315|||select * &#xA;from cms.view_bi_deals" type="V_WString" />
+                <Field name="Region" size="255" source="File: aka:5f15b46e0b05360e6c4ed315|||select * &#xA;from cms.view_bi_deals" type="V_WString" />
+                <Field name="AOPC" size="3" source="File: aka:5f15b46e0b05360e6c4ed315|||select * &#xA;from cms.view_bi_deals" type="V_WString" />
+                <Field name="BIN/Prefix" size="25" source="File: aka:5f15b46e0b05360e6c4ed315|||select * &#xA;from cms.view_bi_deals" type="V_WString" />
+                <Field name="Business Sector" size="255" source="File: aka:5f15b46e0b05360e6c4ed315|||select * &#xA;from cms.view_bi_deals" type="V_WString" />
+                <Field name="Card Base Description" size="45" source="File: aka:5f15b46e0b05360e6c4ed315|||select * &#xA;from cms.view_bi_deals" type="V_WString" />
+                <Field name="Card Length" source="File: aka:5f15b46e0b05360e6c4ed315|||select * &#xA;from cms.view_bi_deals" type="Int32" />
+                <Field name="Card Segment" size="45" source="File: aka:5f15b46e0b05360e6c4ed315|||select * &#xA;from cms.view_bi_deals" type="V_WString" />
+                <Field name="Card Type" size="255" source="File: aka:5f15b46e0b05360e6c4ed315|||select * &#xA;from cms.view_bi_deals" type="V_WString" />
+                <Field name="Client ID/SourceCode" size="255" source="File: aka:5f15b46e0b05360e6c4ed315|||select * &#xA;from cms.view_bi_deals" type="V_WString" />
+                <Field name="Co-Branded LK" size="3" source="File: aka:5f15b46e0b05360e6c4ed315|||select * &#xA;from cms.view_bi_deals" type="V_WString" />
+                <Field name="Co-Branded Logo" size="45" source="File: aka:5f15b46e0b05360e6c4ed315|||select * &#xA;from cms.view_bi_deals" type="V_WString" />
+                <Field name="Co-Branded Partner" size="155" source="File: aka:5f15b46e0b05360e6c4ed315|||select * &#xA;from cms.view_bi_deals" type="V_WString" />
+                <Field name="Core/Optional" size="45" source="File: aka:5f15b46e0b05360e6c4ed315|||select * &#xA;from cms.view_bi_deals" type="V_WString" />
+                <Field name="DMC Included" size="3" source="File: aka:5f15b46e0b05360e6c4ed315|||select * &#xA;from cms.view_bi_deals" type="V_WString" />
+                <Field name="Enrollment Method" size="45" source="File: aka:5f15b46e0b05360e6c4ed315|||select * &#xA;from cms.view_bi_deals" type="V_WString" />
+                <Field name="Entitlement" size="255" source="File: aka:5f15b46e0b05360e6c4ed315|||select * &#xA;from cms.view_bi_deals" type="V_WString" />
+                <Field name="ImplementationType" size="45" source="File: aka:5f15b46e0b05360e6c4ed315|||select * &#xA;from cms.view_bi_deals" type="V_WString" />
+                <Field name="Lounge Set" size="45" source="File: aka:5f15b46e0b05360e6c4ed315|||select * &#xA;from cms.view_bi_deals" type="V_WString" />
+                <Field name="Migrating from existing program" size="3" source="File: aka:5f15b46e0b05360e6c4ed315|||select * &#xA;from cms.view_bi_deals" type="V_WString" />
+                <Field name="New Priority Pass Program" size="3" source="File: aka:5f15b46e0b05360e6c4ed315|||select * &#xA;from cms.view_bi_deals" type="V_WString" />
+                <Field name="Onboarding Checklist" size="45" source="File: aka:5f15b46e0b05360e6c4ed315|||select * &#xA;from cms.view_bi_deals" type="V_WString" />
+                <Field name="PP Plastic Cards" size="3" source="File: aka:5f15b46e0b05360e6c4ed315|||select * &#xA;from cms.view_bi_deals" type="V_WString" />
+                <Field name="Pre-Auth" size="45" source="File: aka:5f15b46e0b05360e6c4ed315|||select * &#xA;from cms.view_bi_deals" type="V_WString" />
+                <Field name="Program" size="45" source="File: aka:5f15b46e0b05360e6c4ed315|||select * &#xA;from cms.view_bi_deals" type="V_WString" />
+                <Field name="Program Type" size="45" source="File: aka:5f15b46e0b05360e6c4ed315|||select * &#xA;from cms.view_bi_deals" type="V_WString" />
+                <Field name="CGRegion" size="45" source="File: aka:5f15b46e0b05360e6c4ed315|||select * &#xA;from cms.view_bi_deals" type="V_WString" />
+                <Field name="Region/SubRegion" size="65535" source="File: aka:5f15b46e0b05360e6c4ed315|||select * &#xA;from cms.view_bi_deals" type="V_WString" />
+                <Field name="Visa LAC SubRegion" size="45" source="File: aka:5f15b46e0b05360e6c4ed315|||select * &#xA;from cms.view_bi_deals" type="V_WString" />
+                <Field name="Start Date" size="40" source="File: aka:5f15b46e0b05360e6c4ed315|||select * &#xA;from cms.view_bi_deals" type="V_WString" />
+                <Field name="Status" size="45" source="File: aka:5f15b46e0b05360e6c4ed315|||select * &#xA;from cms.view_bi_deals" type="V_WString" />
+                <Field name="Cancellation Date" size="40" source="File: aka:5f15b46e0b05360e6c4ed315|||select * &#xA;from cms.view_bi_deals" type="V_WString" />
+                <Field name="Cancellation Reason" size="100" source="File: aka:5f15b46e0b05360e6c4ed315|||select * &#xA;from cms.view_bi_deals" type="V_WString" />
+                <Field name="SubSegment/ICA" size="12" source="File: aka:5f15b46e0b05360e6c4ed315|||select * &#xA;from cms.view_bi_deals" type="V_WString" />
+                <Field name="URL" size="255" source="File: aka:5f15b46e0b05360e6c4ed315|||select * &#xA;from cms.view_bi_deals" type="V_WString" />
+                <Field name="Billing Method" size="45" source="File: aka:5f15b46e0b05360e6c4ed315|||select * &#xA;from cms.view_bi_deals" type="V_WString" />
+                <Field name="Billing Periods" size="45" source="File: aka:5f15b46e0b05360e6c4ed315|||select * &#xA;from cms.view_bi_deals" type="V_WString" />
+                <Field name="Billing/Reporting ICA" size="45" source="File: aka:5f15b46e0b05360e6c4ed315|||select * &#xA;from cms.view_bi_deals" type="V_WString" />
+                <Field name="Data Exchange" size="255" source="File: aka:5f15b46e0b05360e6c4ed315|||select * &#xA;from cms.view_bi_deals" type="V_WString" />
+                <Field name="Discounted LV Pricing" source="File: aka:5f15b46e0b05360e6c4ed315|||select * &#xA;from cms.view_bi_deals" type="Int16" />
+                <Field name="Finance Account Number" size="45" source="File: aka:5f15b46e0b05360e6c4ed315|||select * &#xA;from cms.view_bi_deals" type="V_WString" />
+                <Field name="Glac Code" source="File: aka:5f15b46e0b05360e6c4ed315|||select * &#xA;from cms.view_bi_deals" type="Int32" />
+                <Field name="Include in Monthly Report - Memberships" size="3" source="File: aka:5f15b46e0b05360e6c4ed315|||select * &#xA;from cms.view_bi_deals" type="V_WString" />
+                <Field name="Include in Monthly Report - Visits" size="3" source="File: aka:5f15b46e0b05360e6c4ed315|||select * &#xA;from cms.view_bi_deals" type="V_WString" />
+                <Field name="LKP Issue Method" size="45" source="File: aka:5f15b46e0b05360e6c4ed315|||select * &#xA;from cms.view_bi_deals" type="V_WString" />
+                <Field name="LKP Lounge Validity" size="91" source="File: aka:5f15b46e0b05360e6c4ed315|||select * &#xA;from cms.view_bi_deals" type="V_WString" />
+                <Field name="Lounge Visits Currency" size="45" source="File: aka:5f15b46e0b05360e6c4ed315|||select * &#xA;from cms.view_bi_deals" type="V_WString" />
+                <Field name="Lounge Visits Fee" size="45" source="File: aka:5f15b46e0b05360e6c4ed315|||select * &#xA;from cms.view_bi_deals" type="V_WString" />
+                <Field name="Membership Currency" size="45" source="File: aka:5f15b46e0b05360e6c4ed315|||select * &#xA;from cms.view_bi_deals" type="V_WString" />
+                <Field name="Payment Method" size="45" source="File: aka:5f15b46e0b05360e6c4ed315|||select * &#xA;from cms.view_bi_deals" type="V_WString" />
+                <Field name="PP Card Validity Period (years)" size="45" source="File: aka:5f15b46e0b05360e6c4ed315|||select * &#xA;from cms.view_bi_deals" type="V_WString" />
+                <Field name="Reporting Declines" source="File: aka:5f15b46e0b05360e6c4ed315|||select * &#xA;from cms.view_bi_deals" type="Int16" />
+                <Field name="VAT #" size="45" source="File: aka:5f15b46e0b05360e6c4ed315|||select * &#xA;from cms.view_bi_deals" type="V_WString" />
+                <Field name="VCES VUID" size="45" source="File: aka:5f15b46e0b05360e6c4ed315|||select * &#xA;from cms.view_bi_deals" type="V_WString" />
+                <Field name="VISAEntityBilled" size="45" source="File: aka:5f15b46e0b05360e6c4ed315|||select * &#xA;from cms.view_bi_deals" type="V_WString" />
+                <Field name="Contract Type" size="45" source="File: aka:5f15b46e0b05360e6c4ed315|||select * &#xA;from cms.view_bi_deals" type="V_WString" />
+                <Field name="Contract Start Date" size="40" source="File: aka:5f15b46e0b05360e6c4ed315|||select * &#xA;from cms.view_bi_deals" type="V_WString" />
+                <Field name="Contract Term" size="45" source="File: aka:5f15b46e0b05360e6c4ed315|||select * &#xA;from cms.view_bi_deals" type="V_WString" />
+                <Field name="Legal Entity" size="225" source="File: aka:5f15b46e0b05360e6c4ed315|||select * &#xA;from cms.view_bi_deals" type="V_WString" />
+                <Field name="Renewal Letter Code" size="45" source="File: aka:5f15b46e0b05360e6c4ed315|||select * &#xA;from cms.view_bi_deals" type="V_WString" />
+                <Field name="Renewal Option" size="45" source="File: aka:5f15b46e0b05360e6c4ed315|||select * &#xA;from cms.view_bi_deals" type="V_WString" />
+                <Field name="Renewal Source Code" size="45" source="File: aka:5f15b46e0b05360e6c4ed315|||select * &#xA;from cms.view_bi_deals" type="V_WString" />
+                <Field name="Account Number" size="45" source="File: aka:5f15b46e0b05360e6c4ed315|||select * &#xA;from cms.view_bi_deals" type="V_WString" />
+                <Field name="Membership Level" size="45" source="File: aka:5f15b46e0b05360e6c4ed315|||select * &#xA;from cms.view_bi_deals" type="V_WString" />
+                <Field name="AOPC Enabled" size="3" source="File: aka:5f15b46e0b05360e6c4ed315|||select * &#xA;from cms.view_bi_deals" type="V_WString" />
+                <Field name="ReportingCategory" size="25" source="File: aka:5f15b46e0b05360e6c4ed315|||select * &#xA;from cms.view_bi_deals" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="7">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="319" y="310" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File MaxRecords="" FileFormat="23">aka:5f15b4860b05360e6c4ed32e|||CMS.dbo.tbl_bi_deals</File>
+              <Passwords />
+              <CachedCosmeticName>DI_Billing</CachedCosmeticName>
+              <FormatSpecificOptions>
+                <TransactionMessages>False</TransactionMessages>
+                <Geometry>True</Geometry>
+                <Projection />
+                <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+                <SpatialObjSize>8000</SpatialObjSize>
+                <OutputOption>Overwrite</OutputOption>
+                <PostSQL />
+                <TransactionSize>0</TransactionSize>
+                <TableStyle>Quoted</TableStyle>
+                <PreSQL>TRUNCATE TABLE CMS.dbo.tbl_bi_deals</PreSQL>
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>aka:DI_Billing
+Query=CMS.dbo.tbl_bi_deals</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+        <Node ToolID="8">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="211" y="310" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="DateTimeNow()" field="created_dt" size="19" type="DateTime" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText><![CDATA[created_dt = DateTimeNow()
+]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="473" y="54" width="395" height="196" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>cms.view_bi_memberships</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="10">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="498" y="103" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <CachedCosmeticName>CMS LIVE</CachedCosmeticName>
+              <File RecordLimit="" FileFormat="23">aka:5f15b46e0b05360e6c4ed315|||select * 
+from cms.view_bi_memberships</File>
+              <FormatSpecificOptions>
+                <PreSQL />
+                <PreSQLOnConfig>True</PreSQLOnConfig>
+                <NoProgress>True</NoProgress>
+                <SessionReadOnly>True</SessionReadOnly>
+                <CacheData>False</CacheData>
+                <TableStyle>Quoted</TableStyle>
+                <ReadUncommitted>False</ReadUncommitted>
+                <PostSQL />
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>aka:CMS LIVE
+Query=select * 
+from cms.view_bi_m...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Region" size="255" source="File: aka:5f15b46e0b05360e6c4ed315|||select * &#xA;from cms.view_bi_memberships" type="V_WString" />
+                <Field name="Network" size="45" source="File: aka:5f15b46e0b05360e6c4ed315|||select * &#xA;from cms.view_bi_memberships" type="V_WString" />
+                <Field name="Client Name" size="255" source="File: aka:5f15b46e0b05360e6c4ed315|||select * &#xA;from cms.view_bi_memberships" type="V_WString" />
+                <Field name="Issuer" size="255" source="File: aka:5f15b46e0b05360e6c4ed315|||select * &#xA;from cms.view_bi_memberships" type="V_WString" />
+                <Field name="Issuer Clean Name" size="255" source="File: aka:5f15b46e0b05360e6c4ed315|||select * &#xA;from cms.view_bi_memberships" type="V_WString" />
+                <Field name="Country of Residence" size="255" source="File: aka:5f15b46e0b05360e6c4ed315|||select * &#xA;from cms.view_bi_memberships" type="V_WString" />
+                <Field name="Country ISO Code" size="45" source="File: aka:5f15b46e0b05360e6c4ed315|||select * &#xA;from cms.view_bi_memberships" type="V_WString" />
+                <Field name="Region/SubRegion" size="65532" source="File: aka:5f15b46e0b05360e6c4ed315|||select * &#xA;from cms.view_bi_memberships" type="V_WString" />
+                <Field name="Client ID/SourceCode" size="255" source="File: aka:5f15b46e0b05360e6c4ed315|||select * &#xA;from cms.view_bi_memberships" type="V_WString" />
+                <Field name="BIN/Prefix" size="25" source="File: aka:5f15b46e0b05360e6c4ed315|||select * &#xA;from cms.view_bi_memberships" type="V_WString" />
+                <Field name="SubSegment/ICA" size="12" source="File: aka:5f15b46e0b05360e6c4ed315|||select * &#xA;from cms.view_bi_memberships" type="V_WString" />
+                <Field name="Program" size="45" source="File: aka:5f15b46e0b05360e6c4ed315|||select * &#xA;from cms.view_bi_memberships" type="V_WString" />
+                <Field name="Program Type" size="45" source="File: aka:5f15b46e0b05360e6c4ed315|||select * &#xA;from cms.view_bi_memberships" type="V_WString" />
+                <Field name="Card Type" size="255" source="File: aka:5f15b46e0b05360e6c4ed315|||select * &#xA;from cms.view_bi_memberships" type="V_WString" />
+                <Field name="Core/Optional" size="45" source="File: aka:5f15b46e0b05360e6c4ed315|||select * &#xA;from cms.view_bi_memberships" type="V_WString" />
+                <Field name="Contract Type" size="45" source="File: aka:5f15b46e0b05360e6c4ed315|||select * &#xA;from cms.view_bi_memberships" type="V_WString" />
+                <Field name="CIF Month" source="File: aka:5f15b46e0b05360e6c4ed315|||select * &#xA;from cms.view_bi_memberships" type="DateTime" />
+                <Field name="CIF Quantity" scale="0" size="34" source="File: aka:5f15b46e0b05360e6c4ed315|||select * &#xA;from cms.view_bi_memberships" type="FixedDecimal" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="11">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="738" y="104" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File MaxRecords="" FileFormat="23">aka:5f15b4860b05360e6c4ed32e|||CMS.dbo.tbl_bi_memberships</File>
+              <Passwords />
+              <CachedCosmeticName>DI_Billing</CachedCosmeticName>
+              <FormatSpecificOptions>
+                <TransactionMessages>False</TransactionMessages>
+                <Geometry>True</Geometry>
+                <Projection />
+                <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+                <SpatialObjSize>8000</SpatialObjSize>
+                <OutputOption>Append</OutputOption>
+                <PostSQL />
+                <TransactionSize>0</TransactionSize>
+                <TableStyle>Quoted</TableStyle>
+                <PreSQL>TRUNCATE TABLE CMS.dbo.tbl_bi_memberships</PreSQL>
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>aka:DI_Billing
+Query=CMS.dbo.tbl_bi_memberships</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+        <Node ToolID="12">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="630" y="104" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="DateTimeNow()" field="created_dt" size="19" type="DateTime" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText><![CDATA[created_dt = DateTimeNow()
+]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="473" y="257" width="393" height="195" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>cms.view_bi_memberships</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="14">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="498" y="306" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <CachedCosmeticName>CMS LIVE</CachedCosmeticName>
+              <File RecordLimit="" FileFormat="23">aka:5f15b46e0b05360e6c4ed315|||select * 
+from cms.view_bi_associates_cif</File>
+              <FormatSpecificOptions>
+                <PreSQL />
+                <PreSQLOnConfig>True</PreSQLOnConfig>
+                <NoProgress>True</NoProgress>
+                <SessionReadOnly>True</SessionReadOnly>
+                <CacheData>False</CacheData>
+                <TableStyle>Quoted</TableStyle>
+                <ReadUncommitted>False</ReadUncommitted>
+                <PostSQL />
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>aka:CMS LIVE
+Query=select * 
+from cms.view_bi_a...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="BIN" size="255" source="File: aka:5f15b46e0b05360e6c4ed315|||select * &#xA;from cms.view_bi_associates_cif" type="V_WString" />
+                <Field name="Seb-Segment" size="12" source="File: aka:5f15b46e0b05360e6c4ed315|||select * &#xA;from cms.view_bi_associates_cif" type="V_WString" />
+                <Field name="Start Date" size="10" source="File: aka:5f15b46e0b05360e6c4ed315|||select * &#xA;from cms.view_bi_associates_cif" type="V_WString" />
+                <Field name="Expiration Date" size="10" source="File: aka:5f15b46e0b05360e6c4ed315|||select * &#xA;from cms.view_bi_associates_cif" type="V_WString" />
+                <Field name="Validity" source="File: aka:5f15b46e0b05360e6c4ed315|||select * &#xA;from cms.view_bi_associates_cif" type="Int32" />
+                <Field name="Quantity" source="File: aka:5f15b46e0b05360e6c4ed315|||select * &#xA;from cms.view_bi_associates_cif" type="Int32" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="15">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="738" y="306" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File MaxRecords="" FileFormat="23">aka:5f15b4860b05360e6c4ed32e|||CMS.dbo.tbl_bi_associates_cif</File>
+              <Passwords />
+              <CachedCosmeticName>DI_Billing</CachedCosmeticName>
+              <FormatSpecificOptions>
+                <TransactionMessages>False</TransactionMessages>
+                <Geometry>True</Geometry>
+                <Projection />
+                <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+                <SpatialObjSize>8000</SpatialObjSize>
+                <OutputOption>Append</OutputOption>
+                <PostSQL />
+                <TransactionSize>0</TransactionSize>
+                <TableStyle>Quoted</TableStyle>
+                <PreSQL>TRUNCATE TABLE CMS.dbo.tbl_bi_associates_cif</PreSQL>
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>aka:DI_Billing
+Query=CMS.dbo.tbl_bi_associates_ci...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+        <Node ToolID="16">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="630" y="306" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="DateTimeNow()" field="created_dt" size="19" type="DateTime" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText><![CDATA[created_dt = DateTimeNow()
+]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Output" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="16" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="Output" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="False" />
+      <Name>Billing_CMS_ingestion_live</Name>
+      <Description>This Is to update the CMS database located in ODS environment with updated data with every run</Description>
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author>Abdul.Abbas</Author>
+      <Company>TE Data and Insights</Company>
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="58024066-965f-4ffd-8d55-5645cc94a961" />
+      <Telemetry>
+        <PreviousWorkflowId value="1d9d38fc-3a1a-4378-aafc-dec035536460" />
+        <OriginWorkflowId value="1d9d38fc-3a1a-4378-aafc-dec035536460" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
