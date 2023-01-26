@@ -1,0 +1,2695 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2021.1">
+  <Nodes>
+    <Node ToolID="120">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="1458" y="234" width="108" height="492" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Fill in consumers where missing from card gateway</Text>
+          <Font name="Segoe UI Light" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor r="221" g="187" b="255" />
+          <Shape shape="0" />
+          <Justification Justification="7" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="117">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="1218" y="234" width="228" height="492" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Create a unique list of consumers.</Text>
+          <Font name="Segoe UI Light" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor r="94" g="174" b="255" />
+          <Shape shape="0" />
+          <Justification Justification="7" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="107">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="2046" y="54" width="468" height="168" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Output [Billing_Automation].[staging].[tbl_ppbo_members_with_bin]</Text>
+          <Font name="Segoe UI Light" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor r="193" g="255" b="193" />
+          <Shape shape="0" />
+          <Justification Justification="7" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="95">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="1578" y="234" width="936" height="312" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Output to file, split over 2 sheets, because records exceed max records of a sheet.</Text>
+          <Font name="Segoe UI Light" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor r="193" g="255" b="193" />
+          <Shape shape="0" />
+          <Justification Justification="7" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="68">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="870" y="498" width="228" height="228" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Filter out not needed columns and remove duplicates</Text>
+          <Font name="Segoe UI Light" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor r="94" g="174" b="255" />
+          <Shape shape="0" />
+          <Justification Justification="7" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="67">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="870" y="234" width="228" height="252" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Filter out not needed columns</Text>
+          <Font name="Segoe UI Light" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor r="94" g="174" b="255" />
+          <Shape shape="0" />
+          <Justification Justification="7" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="66">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="522" y="498" width="336" height="228" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Join Bins and Card Gateway</Text>
+          <Font name="Segoe UI Light" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor r="221" g="187" b="255" />
+          <Shape shape="0" />
+          <Justification Justification="7" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="64">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="522" y="234" width="336" height="252" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text><![CDATA[Join Bin list and PPBO
+]]></Text>
+          <Font name="Segoe UI Light" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor r="221" g="187" b="255" />
+          <Shape shape="0" />
+          <Justification Justification="7" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="65">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="282" y="498" width="228" height="228" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text><![CDATA[Split used and stored cards, ]]></Text>
+          <Font name="Segoe UI Light" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor r="94" g="174" b="255" />
+          <Shape shape="0" />
+          <Justification Justification="7" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="63">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="282" y="234" width="228" height="252" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text><![CDATA[Split out non Visa cards
+]]></Text>
+          <Font name="Segoe UI Light" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor r="94" g="174" b="255" />
+          <Shape shape="0" />
+          <Justification Justification="7" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="30">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="54" y="234" width="216" height="492" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Gather inputs using the config.</Text>
+          <Font name="Segoe UI Light" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor r="193" g="255" b="193" />
+          <Shape shape="0" />
+          <Justification Justification="7" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="31">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="54" y="90" width="599" height="40" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Active Members Report Builder</Text>
+          <Font name="Segoe UI Light" size="20" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="0" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="32">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="54" y="138" width="599" height="72" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Using the Active Member data and the Card Gateway data create an output for use by Ops in VCES Billing</Text>
+          <Font name="Segoe UI Light" size="12" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="0" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="33">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1014" y="294" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="current_report_month1" selected="False" />
+            <SelectField field="base_report_folder" selected="False" />
+            <SelectField field="Source_report_month" selected="False" />
+            <SelectField field="timestamp" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="34">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="546" y="378" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="Bin(9)" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="bin_9" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="True" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_Bin(6)" selected="False" input="Left_" />
+                <SelectField field="Left_Bin(9)" selected="False" input="Left_" />
+                <SelectField field="Left_Bin_Lower_Range" selected="False" input="Left_" />
+                <SelectField field="Left_Bin_Upper_Range" selected="False" input="Left_" />
+                <SelectField field="Left_Bid" selected="False" input="Left_" />
+                <SelectField field="Left_Funding_Source" selected="False" input="Left_" />
+                <SelectField field="Left_Sub_Type" selected="False" input="Left_" />
+                <SelectField field="Left_report_month" selected="False" input="Left_" />
+                <SelectField field="Left_created_datetime" selected="False" input="Left_" />
+                <SelectField field="Right_consumer_no" selected="True" input="Right_" />
+                <SelectField field="Right_card_no" selected="True" input="Right_" />
+                <SelectField field="Right_first_dig" selected="True" input="Right_" />
+                <SelectField field="Right_bin_6" selected="True" input="Right_" />
+                <SelectField field="Right_bin_9" selected="True" input="Right_" />
+                <SelectField field="Right_source_code" selected="True" input="Right_" />
+                <SelectField field="Right_forename" selected="True" input="Right_" />
+                <SelectField field="Right_surname" selected="True" input="Right_" />
+                <SelectField field="Right_date_of_registration" selected="True" input="Right_" />
+                <SelectField field="Right_expiry_date" selected="True" input="Right_" />
+                <SelectField field="Right_isMembershipActive" selected="True" input="Right_" />
+                <SelectField field="Right_report_month" selected="True" rename="Right_report_month" input="Right_" />
+                <SelectField field="Left_Issuer_Name" selected="True" input="Left_" />
+                <SelectField field="Left_Country_Of_Issue" selected="True" input="Left_" />
+                <SelectField field="Left_Deal_Type" selected="True" input="Left_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="36">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="942" y="294" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="DateTimeNow()" field="timestamp" size="19" type="DateTime" />
+            <FormulaField expression="[base_report_folder] + &quot;Active Members\&quot;+DateTimeFormat([report_month],&quot;%Y&quot;)+&quot;\&quot;+DateTimeFormat([report_month],&quot;%m&quot;)+&quot;\&quot;+'Non_Visa_Active_Members_' + &#xA;ToString(DateTimeFormat([report_month],&quot;%b %Y&quot;)) +'.xlsx|||Sheet1'" field="filename" size="3000" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>timestamp = DateTimeNow()
+filename = [base_report_folder] + "Active Members\"+Da...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="37">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AppendFields.AppendFields">
+        <Position x="546" y="294" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <CartesianMode>Allow</CartesianMode>
+          <SelectConfiguration>
+            <Configuration outputConnection="Output">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Source_report_month" selected="True" rename="Source_report_month" input="Source_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAppendFields" />
+    </Node>
+    <Node ToolID="38">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="366" y="378" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>tonumber(left([card_no],1))!=4</Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>tonumber(left([card_no],1))!=4</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="39">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DynamicInput.DynamicInput">
+        <Position x="198" y="378" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <InputConfiguration>
+            <Configuration>
+              <Passwords />
+              <CachedCosmeticName>DI_Billing</CachedCosmeticName>
+              <File RecordLimit="" FileFormat="23">aka:5f15b4860b05360e6c4ed32e|||select Billing_Automation.staging.tbl_ppbo_members.consumer_no,
+	Billing_Automation.staging.tbl_ppbo_members.pan as card_no,
+	Cast(Left(Billing_Automation.staging.tbl_ppbo_members.pan, 1) as int) as first_dig,
+	Cast(Left(Billing_Automation.staging.tbl_ppbo_members.pan, 6) as int) as bin_6,
+	Cast(Left(Billing_Automation.staging.tbl_ppbo_members.pan, 9) as int) as bin_9,
+	Billing_Automation.staging.tbl_ppbo_members.source_code,
+	Billing_Automation.staging.tbl_ppbo_members.forename,
+	Billing_Automation.staging.tbl_ppbo_members.surname,
+	Billing_Automation.staging.tbl_ppbo_members.date_of_registration,
+	Billing_Automation.staging.tbl_ppbo_members.expiry_date,
+	Billing_Automation.staging.tbl_ppbo_members.isMembershipActive,
+	Billing_Automation.staging.tbl_ppbo_members.report_month 
+from Billing_Automation.staging.tbl_ppbo_members 
+where Billing_Automation.staging.tbl_ppbo_members.report_month = '2019-07-01'</File>
+              <FormatSpecificOptions>
+                <PreSQL />
+                <PreSQLOnConfig>True</PreSQLOnConfig>
+                <NoProgress>True</NoProgress>
+                <CacheData>False</CacheData>
+                <TableStyle>Quoted</TableStyle>
+                <ReadUncommitted>False</ReadUncommitted>
+                <PostSQL />
+              </FormatSpecificOptions>
+            </Configuration>
+          </InputConfiguration>
+          <Mode>ModifySQL</Mode>
+          <Modifications>
+            <Modify Action="ReplaceString" Annotation="2019-07-01">
+              <Field>report_month</Field>
+              <ReplaceText>2019-07-01</ReplaceText>
+            </Modify>
+          </Modifications>
+        </Configuration>
+        <Annotation DisplayMode="1">
+          <Name />
+          <AnnotationText>tbl_ppbo_members</AnnotationText>
+          <DefaultAnnotationText>tbl_ppbo_members</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDynamicInput" />
+    </Node>
+    <Node ToolID="40">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DynamicInput.DynamicInput">
+        <Position x="198" y="294" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <InputConfiguration>
+            <Configuration>
+              <Passwords />
+              <CachedCosmeticName>DI_Billing</CachedCosmeticName>
+              <File RecordLimit="" FileFormat="23">aka:5f15b4860b05360e6c4ed32e|||Select Billing_Automation.staging.tbl_bin_List.* From Billing_Automation.staging.tbl_bin_List where report_month = '2019-07-01'</File>
+              <FormatSpecificOptions>
+                <PreSQL />
+                <PreSQLOnConfig>True</PreSQLOnConfig>
+                <NoProgress>True</NoProgress>
+                <CacheData>False</CacheData>
+                <TableStyle>Quoted</TableStyle>
+                <ReadUncommitted>False</ReadUncommitted>
+                <PostSQL />
+              </FormatSpecificOptions>
+            </Configuration>
+          </InputConfiguration>
+          <Mode>ModifySQL</Mode>
+          <Modifications>
+            <Modify Action="ReplaceString" Annotation="2019-07-01">
+              <Field>report_month</Field>
+              <ReplaceText>2019-07-01</ReplaceText>
+            </Modify>
+          </Modifications>
+        </Configuration>
+        <Annotation DisplayMode="1">
+          <Name />
+          <AnnotationText>tbl_bin_List</AnnotationText>
+          <DefaultAnnotationText>tbl_bin_List</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDynamicInput" />
+    </Node>
+    <Node ToolID="41">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="78" y="378" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <CachedCosmeticName>DI_Billing</CachedCosmeticName>
+          <File RecordLimit="" FileFormat="23">aka:5f15b4860b05360e6c4ed32e|||Select Billing_Automation.config.config.report_month As current_report_month1, Billing_Automation.config.config.report_month, Billing_Automation.config.config.base_report_folder From Billing_Automation.config.config</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="1">
+          <Name />
+          <AnnotationText>Import settings from BA_Config.config</AnnotationText>
+          <DefaultAnnotationText>aka:DI_Billing
+Query=Select Billing_Automation.co...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="current_report_month1" source="File: aka:5f15b4860b05360e6c4ed32e|||Select Billing_Automation.config.config.report_month As current_report_month1, Billing_Automation.config.config.report_month, Billing_Automation.config.config.base_report_folder From Billing_Automation.config.config" type="Date" />
+            <Field name="report_month" source="File: aka:5f15b4860b05360e6c4ed32e|||Select Billing_Automation.config.config.report_month As current_report_month1, Billing_Automation.config.config.report_month, Billing_Automation.config.config.base_report_folder From Billing_Automation.config.config" type="Date" />
+            <Field name="base_report_folder" size="500" source="File: aka:5f15b4860b05360e6c4ed32e|||Select Billing_Automation.config.config.report_month As current_report_month1, Billing_Automation.config.config.report_month, Billing_Automation.config.config.base_report_folder From Billing_Automation.config.config" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="42">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="654" y="378" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="44">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1014" y="378" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="True" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="consumer_no" selected="True" />
+            <SelectField field="card_no" selected="True" rename="Card_Number" />
+            <SelectField field="bin_6" selected="True" />
+            <SelectField field="Issuer_Name" selected="True" />
+            <SelectField field="Country_Of_Issue" selected="True" />
+            <SelectField field="source_code" selected="True" />
+            <SelectField field="forename" selected="True" />
+            <SelectField field="surname" selected="True" />
+            <SelectField field="date_of_registration" selected="True" />
+            <SelectField field="expiry_date" selected="True" rename="Card_Expiry_Date" />
+            <SelectField field="isMembershipActive" selected="True" />
+            <SelectField field="report_month" selected="False" />
+            <SelectField field="bin_9" selected="False" />
+            <SelectField field="Deal_Type" selected="False" />
+            <SelectField field="Right_report_month" selected="False" />
+            <SelectField field="first_dig" selected="False" />
+            <SelectField field="Flag" selected="True" />
+            <SelectField field="Code" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="45">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="126" y="606" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <CachedCosmeticName>DI_Billing</CachedCosmeticName>
+          <File RecordLimit="" FileFormat="23"><![CDATA[aka:5f15b4860b05360e6c4ed32e|||select distinct Billing_Automation.staging.tbl_ppbo_duel_cc_members.consumer_no,
+	Billing_Automation.staging.tbl_ppbo_duel_cc_members.card_number,
+	Billing_Automation.staging.tbl_ppbo_duel_cc_members.trans_ccard_number,
+	Billing_Automation.staging.tbl_ppbo_duel_cc_members.card_used_expiry,
+	Billing_Automation.staging.tbl_ppbo_duel_cc_members.current_SC as source_code,
+	Billing_Automation.staging.tbl_ppbo_duel_cc_members.report_month 
+from Billing_Automation.staging.tbl_ppbo_duel_cc_members ]]></File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="1">
+          <Name />
+          <AnnotationText>tbl_ppbo_duel_cc_members</AnnotationText>
+          <DefaultAnnotationText>aka:DI_Billing
+Query=select distinct Billing_Auto...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="consumer_no" size="255" source="File: aka:5f15b4860b05360e6c4ed32e|||select distinct Billing_Automation.staging.tbl_ppbo_duel_cc_members.consumer_no,&#xA;	Billing_Automation.staging.tbl_ppbo_duel_cc_members.card_number,&#xA;	Billing_Automation.staging.tbl_ppbo_duel_cc_members.trans_ccard_number,&#xA;	Billing_Automation.staging.tbl_ppbo_duel_cc_members.card_used_expiry,&#xA;	Billing_Automation.staging.tbl_ppbo_duel_cc_members.current_SC as source_code,&#xA;	Billing_Automation.staging.tbl_ppbo_duel_cc_members.report_month &#xA;from Billing_Automation.staging.tbl_ppbo_duel_cc_members " type="V_String" />
+            <Field name="card_number" size="255" source="File: aka:5f15b4860b05360e6c4ed32e|||select distinct Billing_Automation.staging.tbl_ppbo_duel_cc_members.consumer_no,&#xA;	Billing_Automation.staging.tbl_ppbo_duel_cc_members.card_number,&#xA;	Billing_Automation.staging.tbl_ppbo_duel_cc_members.trans_ccard_number,&#xA;	Billing_Automation.staging.tbl_ppbo_duel_cc_members.card_used_expiry,&#xA;	Billing_Automation.staging.tbl_ppbo_duel_cc_members.current_SC as source_code,&#xA;	Billing_Automation.staging.tbl_ppbo_duel_cc_members.report_month &#xA;from Billing_Automation.staging.tbl_ppbo_duel_cc_members " type="V_String" />
+            <Field name="trans_ccard_number" size="255" source="File: aka:5f15b4860b05360e6c4ed32e|||select distinct Billing_Automation.staging.tbl_ppbo_duel_cc_members.consumer_no,&#xA;	Billing_Automation.staging.tbl_ppbo_duel_cc_members.card_number,&#xA;	Billing_Automation.staging.tbl_ppbo_duel_cc_members.trans_ccard_number,&#xA;	Billing_Automation.staging.tbl_ppbo_duel_cc_members.card_used_expiry,&#xA;	Billing_Automation.staging.tbl_ppbo_duel_cc_members.current_SC as source_code,&#xA;	Billing_Automation.staging.tbl_ppbo_duel_cc_members.report_month &#xA;from Billing_Automation.staging.tbl_ppbo_duel_cc_members " type="V_String" />
+            <Field name="card_used_expiry" size="255" source="File: aka:5f15b4860b05360e6c4ed32e|||select distinct Billing_Automation.staging.tbl_ppbo_duel_cc_members.consumer_no,&#xA;	Billing_Automation.staging.tbl_ppbo_duel_cc_members.card_number,&#xA;	Billing_Automation.staging.tbl_ppbo_duel_cc_members.trans_ccard_number,&#xA;	Billing_Automation.staging.tbl_ppbo_duel_cc_members.card_used_expiry,&#xA;	Billing_Automation.staging.tbl_ppbo_duel_cc_members.current_SC as source_code,&#xA;	Billing_Automation.staging.tbl_ppbo_duel_cc_members.report_month &#xA;from Billing_Automation.staging.tbl_ppbo_duel_cc_members " type="V_String" />
+            <Field name="source_code" size="255" source="File: aka:5f15b4860b05360e6c4ed32e|||select distinct Billing_Automation.staging.tbl_ppbo_duel_cc_members.consumer_no,&#xA;	Billing_Automation.staging.tbl_ppbo_duel_cc_members.card_number,&#xA;	Billing_Automation.staging.tbl_ppbo_duel_cc_members.trans_ccard_number,&#xA;	Billing_Automation.staging.tbl_ppbo_duel_cc_members.card_used_expiry,&#xA;	Billing_Automation.staging.tbl_ppbo_duel_cc_members.current_SC as source_code,&#xA;	Billing_Automation.staging.tbl_ppbo_duel_cc_members.report_month &#xA;from Billing_Automation.staging.tbl_ppbo_duel_cc_members " type="V_String" />
+            <Field name="report_month" source="File: aka:5f15b4860b05360e6c4ed32e|||select distinct Billing_Automation.staging.tbl_ppbo_duel_cc_members.consumer_no,&#xA;	Billing_Automation.staging.tbl_ppbo_duel_cc_members.card_number,&#xA;	Billing_Automation.staging.tbl_ppbo_duel_cc_members.trans_ccard_number,&#xA;	Billing_Automation.staging.tbl_ppbo_duel_cc_members.card_used_expiry,&#xA;	Billing_Automation.staging.tbl_ppbo_duel_cc_members.current_SC as source_code,&#xA;	Billing_Automation.staging.tbl_ppbo_duel_cc_members.report_month &#xA;from Billing_Automation.staging.tbl_ppbo_duel_cc_members " type="Date" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="46">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="294" y="606" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="card_number" selected="True" rename="card_used" />
+            <SelectField field="trans_ccard_number" selected="True" rename="card_PP" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="47">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AutoField.AutoField">
+        <Position x="354" y="606" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Fields>
+            <Field field="consumer_no" selected="True" />
+            <Field field="card_used" selected="True" />
+            <Field field="card_PP" selected="True" />
+            <Field field="card_used_expiry" selected="True" />
+            <Field field="source_code" selected="True" />
+            <Field field="*Unknown" selected="True" />
+          </Fields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="consumer_no" size="255" source="File: aka:5f15b4860b05360e6c4ed32e|||select distinct Billing_Automation.staging.tbl_ppbo_duel_cc_members.consumer_no,&#xA; Billing_Automation.staging.tbl_ppbo_duel_cc_members.card_number,&#xA; Billing_Automation.staging.tbl_ppbo_duel_cc_members.trans_ccard_number,&#xA; Billing_Automation.staging.tbl_ppbo_duel_cc_members.card_used_expiry,&#xA; Billing_Automation.staging.tbl_ppbo_duel_cc_members.current_SC as source_code,&#xA; Billing_Automation.staging.tbl_ppbo_duel_cc_members.report_month &#xA;from Billing_Automation.staging.tbl_ppbo_duel_cc_members " type="V_String" />
+            <Field name="card_used" size="255" source="File: aka:5f15b4860b05360e6c4ed32e|||select distinct Billing_Automation.staging.tbl_ppbo_duel_cc_members.consumer_no,&#xA; Billing_Automation.staging.tbl_ppbo_duel_cc_members.card_number,&#xA; Billing_Automation.staging.tbl_ppbo_duel_cc_members.trans_ccard_number,&#xA; Billing_Automation.staging.tbl_ppbo_duel_cc_members.card_used_expiry,&#xA; Billing_Automation.staging.tbl_ppbo_duel_cc_members.current_SC as source_code,&#xA; Billing_Automation.staging.tbl_ppbo_duel_cc_members.report_month &#xA;from Billing_Automation.staging.tbl_ppbo_duel_cc_members " type="V_String" />
+            <Field name="card_PP" size="255" source="File: aka:5f15b4860b05360e6c4ed32e|||select distinct Billing_Automation.staging.tbl_ppbo_duel_cc_members.consumer_no,&#xA; Billing_Automation.staging.tbl_ppbo_duel_cc_members.card_number,&#xA; Billing_Automation.staging.tbl_ppbo_duel_cc_members.trans_ccard_number,&#xA; Billing_Automation.staging.tbl_ppbo_duel_cc_members.card_used_expiry,&#xA; Billing_Automation.staging.tbl_ppbo_duel_cc_members.current_SC as source_code,&#xA; Billing_Automation.staging.tbl_ppbo_duel_cc_members.report_month &#xA;from Billing_Automation.staging.tbl_ppbo_duel_cc_members " type="V_String" />
+            <Field name="card_used_expiry" size="255" source="File: aka:5f15b4860b05360e6c4ed32e|||select distinct Billing_Automation.staging.tbl_ppbo_duel_cc_members.consumer_no,&#xA; Billing_Automation.staging.tbl_ppbo_duel_cc_members.card_number,&#xA; Billing_Automation.staging.tbl_ppbo_duel_cc_members.trans_ccard_number,&#xA; Billing_Automation.staging.tbl_ppbo_duel_cc_members.card_used_expiry,&#xA; Billing_Automation.staging.tbl_ppbo_duel_cc_members.current_SC as source_code,&#xA; Billing_Automation.staging.tbl_ppbo_duel_cc_members.report_month &#xA;from Billing_Automation.staging.tbl_ppbo_duel_cc_members " type="V_String" />
+            <Field name="source_code" size="255" source="File: aka:5f15b4860b05360e6c4ed32e|||select distinct Billing_Automation.staging.tbl_ppbo_duel_cc_members.consumer_no,&#xA; Billing_Automation.staging.tbl_ppbo_duel_cc_members.card_number,&#xA; Billing_Automation.staging.tbl_ppbo_duel_cc_members.trans_ccard_number,&#xA; Billing_Automation.staging.tbl_ppbo_duel_cc_members.card_used_expiry,&#xA; Billing_Automation.staging.tbl_ppbo_duel_cc_members.current_SC as source_code,&#xA; Billing_Automation.staging.tbl_ppbo_duel_cc_members.report_month &#xA;from Billing_Automation.staging.tbl_ppbo_duel_cc_members " type="V_String" />
+            <Field name="report_month" source="File: aka:5f15b4860b05360e6c4ed32e|||select distinct Billing_Automation.staging.tbl_ppbo_duel_cc_members.consumer_no,&#xA; Billing_Automation.staging.tbl_ppbo_duel_cc_members.card_number,&#xA; Billing_Automation.staging.tbl_ppbo_duel_cc_members.trans_ccard_number,&#xA; Billing_Automation.staging.tbl_ppbo_duel_cc_members.card_used_expiry,&#xA; Billing_Automation.staging.tbl_ppbo_duel_cc_members.current_SC as source_code,&#xA; Billing_Automation.staging.tbl_ppbo_duel_cc_members.report_month &#xA;from Billing_Automation.staging.tbl_ppbo_duel_cc_members " type="Date" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAutoField" />
+    </Node>
+    <Node ToolID="48">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="438" y="582" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Card_Used" selected="True" rename="CCard_No" />
+            <SelectField field="Card_PP" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="49">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="438" y="630" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Card_Used" selected="False" />
+            <SelectField field="Card_PP" selected="True" rename="CCard_No" />
+            <SelectField field="card_used_expiry" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="50">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="546" y="606" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="51">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+        <Position x="942" y="534" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UniqueFields>
+            <Field field="consumer_no" />
+            <Field field="CCard_No" />
+          </UniqueFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+    </Node>
+    <Node ToolID="69">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="630" y="534" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="Bin(9)" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="Bin(9)" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="True" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_current_SC" selected="True" input="Right_" />
+                <SelectField field="Right_consumer_no" selected="True" input="Right_" />
+                <SelectField field="Right_card_used_expiry" selected="True" rename="C_Expiry_Date" input="Right_" />
+                <SelectField field="Right_CCard_No" selected="True" input="Right_" />
+                <SelectField field="Right_report_month" selected="True" input="Right_" />
+                <SelectField field="Right_Bin(9)" selected="True" input="Right_" />
+                <SelectField field="Right_Bin(6)" selected="True" input="Right_" />
+                <SelectField field="Left_Bin(6)" selected="False" input="Left_" />
+                <SelectField field="Left_Bin(9)" selected="False" input="Left_" />
+                <SelectField field="Left_Bin_Lower_Range" selected="True" input="Left_" />
+                <SelectField field="Left_Bin_Upper_Range" selected="True" input="Left_" />
+                <SelectField field="Left_Bid" selected="True" input="Left_" />
+                <SelectField field="Left_Issuer_Name" selected="True" input="Left_" />
+                <SelectField field="Left_Country_Of_Issue" selected="True" input="Left_" />
+                <SelectField field="Left_Deal_Type" selected="True" input="Left_" />
+                <SelectField field="Left_Funding_Source" selected="True" input="Left_" />
+                <SelectField field="Left_Sub_Type" selected="True" input="Left_" />
+                <SelectField field="Left_report_month" selected="False" input="Left_" />
+                <SelectField field="Left_created_datetime" selected="True" input="Left_" />
+                <SelectField field="Right_sourec_code" selected="True" input="Right_" />
+                <SelectField field="Right_source_code" selected="True" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="70">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="606" y="606" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="tonumber(Left(tostring([CCard_No],0), 9))" field="Bin(9)" size="4" type="Int32" />
+            <FormulaField expression="tonumber(Left(tostring([CCard_No],0), 6))" field="Bin(6)" size="4" type="Int32" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Bin(9) = tonumber(Left(tostring([CCard_No],0), 9))
+Bin(6) = tonumber(Left(tostri...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="71">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1014" y="522" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="True" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="consumer_no" selected="True" />
+            <SelectField field="CCard_No" selected="True" rename="Card_Number" />
+            <SelectField field="Bin(6)" selected="True" rename="bin_6" />
+            <SelectField field="Issuer_Name" selected="True" />
+            <SelectField field="Country_Of_Issue" selected="True" />
+            <SelectField field="source_code" selected="True" />
+            <SelectField field="C_Expiry_Date" selected="True" rename="Card_Expiry_Date" />
+            <SelectField field="Bin(9)" selected="False" />
+            <SelectField field="Bin_Lower_Range" selected="False" />
+            <SelectField field="Bin_Upper_Range" selected="False" />
+            <SelectField field="Bid" selected="False" />
+            <SelectField field="Deal_Type" selected="False" />
+            <SelectField field="Funding_Source" selected="False" />
+            <SelectField field="Sub_Type" selected="False" />
+            <SelectField field="created_datetime" selected="False" />
+            <SelectField field="card_used_expiry" selected="False" />
+            <SelectField field="Flag" selected="True" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="72">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="1110" y="234" width="96" height="492" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Join PPBO and Card Gateway</Text>
+          <Font name="Segoe UI Light" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor r="221" g="187" b="255" />
+          <Shape shape="0" />
+          <Justification Justification="7" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="73">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="1134" y="450" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="75">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1698" y="378" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="True" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="consumer_no" selected="True" />
+            <SelectField field="Issuer_Name" selected="True" />
+            <SelectField field="Country_Of_Issue" selected="True" />
+            <SelectField field="forename" selected="True" />
+            <SelectField field="surname" selected="True" />
+            <SelectField field="date_of_registration" selected="True" />
+            <SelectField field="isMembershipActive" selected="True" />
+            <SelectField field="Card_Number" selected="True" />
+            <SelectField field="source_code" selected="True" />
+            <SelectField field="Card_Expiry_Date" selected="True" />
+            <SelectField field="bin_6" selected="True" />
+            <SelectField field="Flag" selected="True" />
+            <SelectField field="Right_Flag" selected="True" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="76">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+        <Position x="1686" y="462" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UniqueFields>
+            <Field field="consumer_no" />
+            <Field field="Card_Number" />
+          </UniqueFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+    </Node>
+    <Node ToolID="77">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="2358" y="342" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="True" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="report_month" selected="False" />
+            <SelectField field="consumer_no" selected="True" />
+            <SelectField field="Card_Number" selected="True" />
+            <SelectField field="Issuer_Name" selected="True" />
+            <SelectField field="Country_Of_Issue" selected="True" />
+            <SelectField field="source_code" selected="True" />
+            <SelectField field="forename" selected="True" />
+            <SelectField field="surname" selected="True" />
+            <SelectField field="date_of_registration" selected="True" />
+            <SelectField field="Card_Expiry_Date" selected="True" />
+            <SelectField field="isMembershipActive" selected="True" />
+            <SelectField field="filename" selected="True" />
+            <SelectField field="base_report_folder" selected="False" />
+            <SelectField field="Tile_Num" selected="False" />
+            <SelectField field="Tile_SequenceNum" selected="False" />
+            <SelectField field="bin_6" selected="False" />
+            <SelectField field="Right_forename" selected="False" />
+            <SelectField field="Right_surname" selected="False" />
+            <SelectField field="Right_date_of_registration" selected="False" />
+            <SelectField field="Right_isMembershipActive" selected="False" />
+            <SelectField field="Flag" selected="False" />
+            <SelectField field="Right_Flag" selected="False" />
+            <SelectField field="Filter" selected="False" />
+            <SelectField field="Tile_Num2" selected="False" />
+            <SelectField field="Tile_SequenceNum2" selected="False" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="78">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="2442" y="342" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="25">%temp%\test.xlsx|||sheet1</File>
+          <Passwords />
+          <FormatSpecificOptions>
+            <PreserveFormat>False</PreserveFormat>
+            <SkipFieldNames>False</SkipFieldNames>
+            <OutputOption>RemoveFile</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="True" />
+          <MultiFileType>Path</MultiFileType>
+          <MultiFileField>filename</MultiFileField>
+          <KeepField value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>test.xlsx
+Query=sheet1</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit>
+            <Dependency Path="%temp%\test.xlsx" Package="False" IsMacro="False" IsOutput="True" IsAlias="False" />
+          </Implicit>
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="79">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="2298" y="270" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="getfolder" action="GroupBy" rename="getfolder" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Summarize</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="80">
+      <GuiSettings>
+        <Position x="2418" y="270" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="Input.Folder Path"><![CDATA[folderpath=getfolder
+]]></Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="..\4.Macros\folder exists\folderexist.yxmc" />
+    </Node>
+    <Node ToolID="81">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="2178" y="270" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="FileGetDir([filename])" field="getfolder" size="500" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[getfolder = FileGetDir([filename])
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="82">
+      <GuiSettings>
+        <Position x="2178" y="450" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="Input.FilePath"><![CDATA[FilePath=filename
+]]></Value>
+          <Value name="Check Box (28)">True</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit>
+            <Dependency Path="%temp%\mng_bak_files.bat" Package="False" IsMacro="False" IsOutput="True" IsAlias="False" />
+            <Dependency Path="%temp%\mng_bak_files.bat" Package="False" IsMacro="False" IsOutput="False" IsAlias="False" />
+          </Implicit>
+        </Dependencies>
+      </Properties>
+      <EngineSettings Macro="..\4.Macros\Manage BAK Files\clear_bak_files.yxmc" />
+    </Node>
+    <Node ToolID="83">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BlockUntilDone.BlockUntilDone">
+        <Position x="2082" y="378" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBlockUntilDone" />
+    </Node>
+    <Node ToolID="84">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="1986" y="378" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="[base_report_folder] + &quot;Active Members\&quot;+DateTimeFormat([report_month],&quot;%Y&quot;)+&quot;\&quot;+DateTimeFormat([report_month],&quot;%m&quot;)+&quot;\&quot;+'Visa_Active_Membership_' + &#xA;ToString(DateTimeFormat([report_month],&quot;%b %Y&quot;)) +'.xlsx|||Sheet' + tostring([Tile_Num])" field="filename" size="255" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>filename = [base_report_folder] + "Active Members\"+DateTimeFormat([report_month...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="85">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AppendFields.AppendFields">
+        <Position x="1794" y="378" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <CartesianMode>Error</CartesianMode>
+          <SelectConfiguration>
+            <Configuration outputConnection="Output">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Source_current_report_month1" selected="False" input="Source_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAppendFields" />
+    </Node>
+    <Node ToolID="87">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Tile.Tile">
+        <Position x="1890" y="378" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Method>EqualRecords</Method>
+          <EqualRecords>
+            <NumTiles value="2" />
+            <EqualRecordsGroupField>bin_6</EqualRecordsGroupField>
+            <EqualRecordsSortField>bin_6</EqualRecordsSortField>
+          </EqualRecords>
+          <GroupFields orderChanged="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTile" />
+    </Node>
+    <Node ToolID="88">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="2358" y="402" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="True" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="report_month" selected="False" />
+            <SelectField field="consumer_no" selected="True" />
+            <SelectField field="Card_Number" selected="True" />
+            <SelectField field="Issuer_Name" selected="True" />
+            <SelectField field="Country_Of_Issue" selected="True" />
+            <SelectField field="source_code" selected="True" />
+            <SelectField field="forename" selected="True" />
+            <SelectField field="surname" selected="True" />
+            <SelectField field="date_of_registration" selected="True" />
+            <SelectField field="Card_Expiry_Date" selected="True" />
+            <SelectField field="isMembershipActive" selected="True" />
+            <SelectField field="filename" selected="True" />
+            <SelectField field="base_report_folder" selected="False" />
+            <SelectField field="Tile_Num" selected="False" />
+            <SelectField field="Tile_SequenceNum" selected="False" />
+            <SelectField field="bin_6" selected="False" />
+            <SelectField field="Right_forename" selected="False" />
+            <SelectField field="Right_surname" selected="False" />
+            <SelectField field="Right_date_of_registration" selected="False" />
+            <SelectField field="Right_isMembershipActive" selected="False" />
+            <SelectField field="Flag" selected="False" />
+            <SelectField field="Right_Flag" selected="False" />
+            <SelectField field="Filter" selected="False" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="89">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="2442" y="402" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="25">%temp%\test.xlsx|||sheet1</File>
+          <Passwords />
+          <FormatSpecificOptions>
+            <PreserveFormat>False</PreserveFormat>
+            <SkipFieldNames>False</SkipFieldNames>
+            <OutputOption>Create</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="True" />
+          <MultiFileType>Path</MultiFileType>
+          <MultiFileField>filename</MultiFileField>
+          <KeepField value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>test.xlsx
+Query=sheet1</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit>
+            <Dependency Path="%temp%\test.xlsx" Package="False" IsMacro="False" IsOutput="True" IsAlias="False" />
+          </Implicit>
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="90">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BlockUntilDone.BlockUntilDone">
+        <Position x="2178" y="378" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBlockUntilDone" />
+    </Node>
+    <Node ToolID="91">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="2274" y="354" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>Tile_Num</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2021-08-05 15:00:49</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>1</Operand>
+              <StartDate>2021-08-05 15:00:49</StartDate>
+              <EndDate>2021-08-05 15:00:49</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Tile_Num] = 1</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="92">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="2274" y="414" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>Tile_Num</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2020-11-25 15:58:37</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>2</Operand>
+              <StartDate>2020-11-25 15:58:37</StartDate>
+              <EndDate>2020-11-25 15:58:37</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Tile_Num] = 2</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="93">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="1818" y="294" width="204" height="76" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Split the file into 2 sheets as per DI-115 and DI-835</Text>
+          <Font name="Segoe UI Light" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="96">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="1578" y="558" width="936" height="168" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Output records split by issuers</Text>
+          <Font name="Segoe UI Light" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor r="193" g="255" b="193" />
+          <Shape shape="0" />
+          <Justification Justification="7" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="97">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AppendFields.AppendFields">
+        <Position x="1962" y="630" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <CartesianMode>Error</CartesianMode>
+          <SelectConfiguration>
+            <Configuration outputConnection="Output">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Source_current_report_month1" selected="False" input="Source_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAppendFields" />
+    </Node>
+    <Node ToolID="98">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="2058" y="630" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="[base_report_folder] + &quot;Issuer By Active Members\&quot;+DateTimeFormat([report_month],&quot;%Y&quot;)+&quot;\&quot;+DateTimeFormat([report_month],&quot;%m&quot;)+&quot;\&quot;+ Uppercase([Issuer_Name]) + ' - ' + uppercase([Country_Of_Issue]) + ' - Visa Membership_' + ToString(DateTimeFormat([report_month],&quot;%b %Y&quot;)) +'.xlsx|||Sheet1'" field="filename" size="255" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>filename = [base_report_folder] + "Issuer By Active Members\"+DateTimeFormat([re...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="99">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BlockUntilDone.BlockUntilDone">
+        <Position x="2154" y="630" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBlockUntilDone" />
+    </Node>
+    <Node ToolID="100">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="2250" y="570" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="FileGetDir([filename])" field="getfolder" size="500" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[getfolder = FileGetDir([filename])
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="101">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="2250" y="630" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="True" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="report_month" selected="False" />
+            <SelectField field="consumer_no" selected="True" />
+            <SelectField field="Bin(6)" selected="False" />
+            <SelectField field="pan" selected="False" />
+            <SelectField field="Card_Number" selected="True" />
+            <SelectField field="Issuer_Name" selected="True" />
+            <SelectField field="Country_Of_Issue" selected="True" />
+            <SelectField field="source_code" selected="True" />
+            <SelectField field="forename" selected="True" />
+            <SelectField field="surname" selected="True" />
+            <SelectField field="date_of_registration" selected="True" />
+            <SelectField field="Card_Expiry_Date" selected="True" />
+            <SelectField field="expiry_date" selected="False" />
+            <SelectField field="isMembershipActive" selected="True" />
+            <SelectField field="Bin(9)" selected="False" />
+            <SelectField field="issuer" selected="False" />
+            <SelectField field="country" selected="False" />
+            <SelectField field="Bin_Lower_Range" selected="False" />
+            <SelectField field="Bin_Upper_Range" selected="False" />
+            <SelectField field="Bid" selected="False" />
+            <SelectField field="Deal_Type" selected="False" />
+            <SelectField field="Funding_Source" selected="False" />
+            <SelectField field="Sub_Type" selected="False" />
+            <SelectField field="filename" selected="True" />
+            <SelectField field="created_datetime" selected="False" />
+            <SelectField field="base_report_folder" selected="False" />
+            <SelectField field="current_SC" selected="False" />
+            <SelectField field="card_used_expiry" selected="False" />
+            <SelectField field="CCard_No" selected="False" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="102">
+      <GuiSettings>
+        <Position x="2382" y="666" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="Input.FilePath"><![CDATA[FilePath=filename
+]]></Value>
+          <Value name="Check Box (28)">True</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit>
+            <Dependency Path="%temp%\mng_bak_files.bat" Package="False" IsMacro="False" IsOutput="True" IsAlias="False" />
+            <Dependency Path="%temp%\mng_bak_files.bat" Package="False" IsMacro="False" IsOutput="False" IsAlias="False" />
+          </Implicit>
+        </Dependencies>
+      </Properties>
+      <EngineSettings Macro="..\4.Macros\Manage BAK Files\clear_bak_files.yxmc" />
+    </Node>
+    <Node ToolID="104">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="2346" y="570" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="getfolder" action="GroupBy" rename="getfolder" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Summarize</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="105">
+      <GuiSettings>
+        <Position x="2442" y="570" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="Input.Folder Path"><![CDATA[folderpath=getfolder
+]]></Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="..\4.Macros\folder exists\folderexist.yxmc" />
+    </Node>
+    <Node ToolID="108">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="1578" y="54" width="456" height="168" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Output non Visa</Text>
+          <Font name="Segoe UI Light" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor r="193" g="255" b="193" />
+          <Shape shape="0" />
+          <Justification Justification="7" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="112">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="714" y="534" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="115">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="1230" y="450" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>IsNotNull</Operator>
+            <Field>date_of_registration</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2020-12-18 08:44:52</PeriodDate>
+              <PeriodType>days</PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>2020-12-18</Operand>
+              <StartDate>2020-12-18 08:44:52</StartDate>
+              <EndDate>2020-12-18 08:44:52</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>!IsNull([date_of_registration])</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="116">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1302" y="438" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="consumer_no" selected="True" />
+            <SelectField field="Flag" selected="True" />
+            <SelectField field="Code" selected="True" />
+            <SelectField field="forename" selected="True" />
+            <SelectField field="surname" selected="True" />
+            <SelectField field="date_of_registration" selected="True" />
+            <SelectField field="isMembershipActive" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="118">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+        <Position x="1374" y="438" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UniqueFields>
+            <Field field="consumer_no" />
+          </UniqueFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+    </Node>
+    <Node ToolID="119">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="1482" y="330" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="consumer_no" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="consumer_no" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_consumer_no" selected="True" input="Left_" />
+                <SelectField field="Left_Card_Number" selected="True" input="Left_" />
+                <SelectField field="Left_bin_6" selected="True" input="Left_" />
+                <SelectField field="Left_Issuer_Name" selected="True" input="Left_" />
+                <SelectField field="Left_Country_Of_Issue" selected="True" input="Left_" />
+                <SelectField field="Left_source_code" selected="True" input="Left_" />
+                <SelectField field="Left_Card_Expiry_Date" selected="True" input="Left_" />
+                <SelectField field="Left_Flag" selected="True" input="Left_" />
+                <SelectField field="Left_Code" selected="True" input="Left_" />
+                <SelectField field="Right_Flag" selected="True" rename="Right_Flag" input="Right_" />
+                <SelectField field="Right_Code" selected="True" rename="Right_Code" input="Right_" />
+                <SelectField field="Right_forename" selected="True" input="Right_" />
+                <SelectField field="Right_surname" selected="True" input="Right_" />
+                <SelectField field="Right_date_of_registration" selected="True" input="Right_" />
+                <SelectField field="Right_isMembershipActive" selected="True" input="Right_" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="121">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+        <Position x="882" y="534" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SortInfo locale="0">
+            <Field field="report_month" order="Descending" />
+            <Field field="C_Expiry_Date" order="Descending" />
+          </SortInfo>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>report_month - Descending
+C_Expiry_Date - Descending</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+    </Node>
+    <Node ToolID="122">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="870" y="738" width="228" height="48" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Sorted the list of cards from gateway by expiry date so any duplication shows the latest date.</Text>
+          <Font name="Segoe UI Light" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="123">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BlockUntilDone.BlockUntilDone">
+        <Position x="1662" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBlockUntilDone" />
+    </Node>
+    <Node ToolID="124">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="1734" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="FileGetDir([filename])" field="getfolder" size="500" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[getfolder = FileGetDir([filename])
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="125">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="1818" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="getfolder" action="GroupBy" rename="getfolder" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Summarize</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="126">
+      <GuiSettings>
+        <Position x="1890" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="Input.Folder Path"><![CDATA[folderpath=getfolder
+]]></Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="\\clbnas01\OpsDataTeam\20. Alteryx\3. Development\Billing Automation\Dev\VCES v2\alteryx\4.Macros\folder exists\folderexist.yxmc" />
+    </Node>
+    <Node ToolID="127">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="882" y="378" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="&quot;PPBO&quot;" field="Flag" size="1073741823" type="V_WString" />
+            <FormulaField expression="&quot;2&quot;" field="Code" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Flag = "PPBO"
+Code = "2"
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="128">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="798" y="534" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="&quot;Gateway&quot;" field="Flag" size="1073741823" type="V_WString" />
+            <FormulaField expression="&quot;1&quot;" field="Code" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Flag = "Gateway"
+Code = "1"
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="103">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="2346" y="618" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="25">%temp%\test.xlsx|||sheet1</File>
+          <Passwords />
+          <FormatSpecificOptions>
+            <PreserveFormat>False</PreserveFormat>
+            <SkipFieldNames>False</SkipFieldNames>
+            <OutputOption>Overwrite</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="True" />
+          <MultiFileType>Path</MultiFileType>
+          <MultiFileField>filename</MultiFileField>
+          <KeepField value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>test.xlsx
+Query=sheet1</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit>
+            <Dependency Path="%temp%\test.xlsx" Package="False" IsMacro="False" IsOutput="True" IsAlias="False" />
+          </Implicit>
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="134">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+        <Position x="1590" y="462" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SortInfo locale="0">
+            <Field field="consumer_no" order="Ascending" />
+            <Field field="Card_Expiry_Date" order="Descending" />
+          </SortInfo>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>consumer_no - Ascending
+Card_Expiry_Date - Descending</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+    </Node>
+    <Node ToolID="111">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="2262" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="23">aka:5f15b4860b05360e6c4ed32e|||[Billing_Automation].[staging].[tbl_ppbo_members_with_bin]</File>
+          <Passwords />
+          <CachedCosmeticName>DI_Billing</CachedCosmeticName>
+          <FormatSpecificOptions>
+            <TransactionSize>10000</TransactionSize>
+            <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+            <PostSQL />
+            <TableStyle>Quoted</TableStyle>
+            <PreSQL />
+            <TransactionMessages>False</TransactionMessages>
+            <OutputOption>Overwrite</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:DI_Billing
+Query=[Billing_Automation].[stagin...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="137">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+        <Position x="1482" y="390" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SortInfo locale="0">
+            <Field field="Code" order="Ascending" />
+          </SortInfo>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Code - Ascending</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+    </Node>
+    <Node ToolID="138">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sample.Sample">
+        <Position x="1494" y="486" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>First</Mode>
+          <N>1</N>
+          <GroupFields orderChanged="False">
+            <Field name="consumer_no" />
+            <Field name="bin_6" />
+            <Field name="Card_Number" />
+          </GroupFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>First 1</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSample" />
+    </Node>
+    <Node ToolID="136">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="1446" y="462" width="158" height="24" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Container 136</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="True" />
+          <Folded value="True" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="133">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="1470" y="510" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="if [Flag]=[Right_Flag] then &quot;Gateway&quot; elseif [Flag]=&quot;Gateway&quot; then &quot;Gateway&quot; else &quot;PPBO&quot; endif" field="Filter" size="1073741823" type="V_WString" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Filter = if [Flag]=[Right_Flag] then "Gateway" elseif [Flag]="Gateway" then "Gat...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="135">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Tile.Tile">
+            <Position x="1470" y="558" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Method>EqualRecords</Method>
+              <EqualRecords>
+                <NumTiles value="2" />
+                <EqualRecordsGroupField>consumer_no</EqualRecordsGroupField>
+                <EqualRecordsSortField>Flag</EqualRecordsSortField>
+              </EqualRecords>
+              <GroupFields orderChanged="False">
+                <Field name="consumer_no" />
+              </GroupFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTile" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="130">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="1854" y="138" width="158" height="24" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Container 130</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="True" />
+          <Folded value="True" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="110">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="1878" y="186" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File MaxRecords="" FileFormat="25">%temp%\test.xlsx|||sheet1</File>
+              <Passwords />
+              <FormatSpecificOptions>
+                <PreserveFormat>False</PreserveFormat>
+                <SkipFieldNames>False</SkipFieldNames>
+                <OutputOption>RemoveFile</OutputOption>
+              </FormatSpecificOptions>
+              <MultiFile value="True" />
+              <MultiFileType>Path</MultiFileType>
+              <MultiFileField>filename</MultiFileField>
+              <KeepField value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>test.xlsx
+Query=sheet1</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit>
+                <Dependency Path="%temp%\test.xlsx" Package="False" IsMacro="False" IsOutput="True" IsAlias="False" />
+              </Implicit>
+            </Dependencies>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="53">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="665" y="127" width="179" height="24" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Workflow Update</Caption>
+          <Style TextColor="#314c4a" FillColor="#ffffff" BorderColor="#314c4a" Transparency="1" Margin="25" />
+          <Disabled value="True" />
+          <Folded value="True" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="52">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="690" y="174" width="324" height="144" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>WORK LOG
+=======
+Paul Found - 2020-12-16 - New dev first build
+Paul Found - 2020-12-17 - Added a join on the Card Gateway data so that items without a bin would be included.
+Paul Found - 2020-12-18 - Created a unique list of consumers and filled them in against the card gateway data.
+Paul Found - 2021-03-03 - Sorted the list of cards from gateway by expiry date so any duplication shows the latest date.</Text>
+              <Font name="Segoe UI Light" size="8.25" style="0" />
+              <TextColor name="Black" />
+              <FillColor name="White" />
+              <Shape shape="0" />
+              <Justification Justification="3" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="62">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="665" y="91" width="198" height="24" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Documentaion Guide</Caption>
+          <Style TextColor="#314c4a" FillColor="#ffffff" BorderColor="#314c4a" Transparency="1" Margin="25" />
+          <Disabled value="True" />
+          <Folded value="True" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="54">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="714" y="138" width="120" height="48" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>Green for inputs and outputs</Text>
+              <Font name="Segoe UI Light" size="8.25" style="0" />
+              <TextColor name="Black" />
+              <FillColor r="193" g="255" b="193" />
+              <Shape shape="0" />
+              <Justification Justification="7" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="55">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="714" y="186" width="120" height="48" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>Blue ti highlight general prep data</Text>
+              <Font name="Segoe UI Light" size="8.25" style="0" />
+              <TextColor name="Black" />
+              <FillColor r="94" g="174" b="255" />
+              <Shape shape="0" />
+              <Justification Justification="7" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="56">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="714" y="234" width="120" height="48" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>Purple for joins and unions</Text>
+              <Font name="Segoe UI Light" size="8.25" style="0" />
+              <TextColor name="Black" />
+              <FillColor r="221" g="187" b="255" />
+              <Shape shape="0" />
+              <Justification Justification="7" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="57">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="714" y="282" width="120" height="48" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>Grey for the interface tools</Text>
+              <Font name="Segoe UI Light" size="8.25" style="0" />
+              <TextColor name="Black" />
+              <FillColor r="202" g="202" b="202" />
+              <Shape shape="0" />
+              <Justification Justification="7" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="58">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="714" y="330" width="120" height="48" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>Orange for test tool segments</Text>
+              <Font name="Segoe UI Light" size="8.25" style="0" />
+              <TextColor name="Black" />
+              <FillColor r="255" g="190" b="125" />
+              <Shape shape="0" />
+              <Justification Justification="7" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="59">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="714" y="378" width="120" height="48" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>Red for To-Do lists on unifinished workflows</Text>
+              <Font name="Segoe UI Light" size="8.25" style="0" />
+              <TextColor name="Black" />
+              <FillColor r="255" g="125" b="125" />
+              <Shape shape="0" />
+              <Justification Justification="7" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="60">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="714" y="426" width="120" height="48" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>Yellow sticky notes for handovers and WIP</Text>
+              <Font name="Segoe UI Light" size="8.25" style="0" />
+              <TextColor name="Black" />
+              <FillColor r="255" g="255" b="170" />
+              <Shape shape="0" />
+              <Justification Justification="7" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="61">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="690" y="486" width="168" height="48" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>https://www.theinformationlab.co.uk/2019/02/14/documentation-best-practices-with-alteryx/</Text>
+              <Font name="Segoe UI Light" size="8.25" style="0" />
+              <TextColor name="Black" />
+              <FillColor name="White" />
+              <Shape shape="0" />
+              <Justification Justification="4" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="33" Connection="Output" />
+      <Destination ToolID="123" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="34" Connection="Join" />
+      <Destination ToolID="42" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="34" Connection="Right" />
+      <Destination ToolID="42" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="36" Connection="Output" />
+      <Destination ToolID="33" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="37" Connection="Output" />
+      <Destination ToolID="36" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="38" Connection="True" />
+      <Destination ToolID="37" Connection="Source" />
+    </Connection>
+    <Connection Wireless="True">
+      <Origin ToolID="41" Connection="Output" />
+      <Destination ToolID="37" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="38" Connection="False" />
+      <Destination ToolID="34" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="40" Connection="Output" />
+      <Destination ToolID="34" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="39" Connection="Output" />
+      <Destination ToolID="38" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="40" Connection="Output" />
+      <Destination ToolID="69" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="70" Connection="Output" />
+      <Destination ToolID="69" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="41" Connection="Output" />
+      <Destination ToolID="40" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="41" Connection="Output" />
+      <Destination ToolID="39" Connection="Input" />
+    </Connection>
+    <Connection Wireless="True">
+      <Origin ToolID="41" Connection="Output" />
+      <Destination ToolID="85" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="75" Connection="Output" />
+      <Destination ToolID="85" Connection="Targets" />
+    </Connection>
+    <Connection Wireless="True">
+      <Origin ToolID="41" Connection="Output" />
+      <Destination ToolID="97" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="75" Connection="Output" />
+      <Destination ToolID="97" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="42" Connection="Output" />
+      <Destination ToolID="127" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="44" Connection="Output" />
+      <Destination ToolID="73" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="71" Connection="Output" />
+      <Destination ToolID="73" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="45" Connection="Output" />
+      <Destination ToolID="46" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="46" Connection="Output" />
+      <Destination ToolID="47" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="47" Connection="Output" />
+      <Destination ToolID="49" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="47" Connection="Output" />
+      <Destination ToolID="48" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="48" Connection="Output" />
+      <Destination ToolID="50" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="49" Connection="Output" />
+      <Destination ToolID="50" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="50" Connection="Output" />
+      <Destination ToolID="70" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="51" Connection="Unique" />
+      <Destination ToolID="71" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="69" Connection="Join" />
+      <Destination ToolID="112" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="69" Connection="Right" />
+      <Destination ToolID="112" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="73" Connection="Output" />
+      <Destination ToolID="115" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="73" Connection="Output" />
+      <Destination ToolID="119" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="118" Connection="Unique" />
+      <Destination ToolID="119" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="75" Connection="Output" />
+      <Destination ToolID="111" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="76" Connection="Unique" />
+      <Destination ToolID="75" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="77" Connection="Output" />
+      <Destination ToolID="78" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="79" Connection="Output" />
+      <Destination ToolID="80" Connection="Folder Path" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="81" Connection="Output" />
+      <Destination ToolID="79" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="83" Connection="Output" />
+      <Destination ToolID="81" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="83" Connection="Output3" />
+      <Destination ToolID="82" Connection="FilePath" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="83" Connection="Output2" />
+      <Destination ToolID="90" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="84" Connection="Output" />
+      <Destination ToolID="83" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="85" Connection="Output" />
+      <Destination ToolID="87" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="87" Connection="Output" />
+      <Destination ToolID="84" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="88" Connection="Output" />
+      <Destination ToolID="89" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="90" Connection="Output" />
+      <Destination ToolID="91" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="90" Connection="Output3" />
+      <Destination ToolID="92" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="91" Connection="True" />
+      <Destination ToolID="77" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="92" Connection="True" />
+      <Destination ToolID="88" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="97" Connection="Output" />
+      <Destination ToolID="98" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="98" Connection="Output" />
+      <Destination ToolID="99" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="99" Connection="Output3" />
+      <Destination ToolID="102" Connection="FilePath" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="99" Connection="Output" />
+      <Destination ToolID="100" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="99" Connection="Output2" />
+      <Destination ToolID="101" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="100" Connection="Output" />
+      <Destination ToolID="104" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="101" Connection="Output" />
+      <Destination ToolID="103" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="104" Connection="Output" />
+      <Destination ToolID="105" Connection="Folder Path" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="112" Connection="Output" />
+      <Destination ToolID="128" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="115" Connection="True" />
+      <Destination ToolID="116" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="116" Connection="Output" />
+      <Destination ToolID="118" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="119" Connection="Join" />
+      <Destination ToolID="137" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="121" Connection="Output" />
+      <Destination ToolID="51" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="123" Connection="Output2" />
+      <Destination ToolID="110" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="123" Connection="Output" />
+      <Destination ToolID="124" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="124" Connection="Output" />
+      <Destination ToolID="125" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="125" Connection="Output" />
+      <Destination ToolID="126" Connection="Folder Path" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="127" Connection="Output" />
+      <Destination ToolID="44" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="128" Connection="Output" />
+      <Destination ToolID="121" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="134" Connection="Output" />
+      <Destination ToolID="76" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="137" Connection="Output" />
+      <Destination ToolID="138" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="138" Connection="Output" />
+      <Destination ToolID="134" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="133" Connection="Output" />
+      <Destination ToolID="135" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="False" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="-4" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>4_Active_Members_Report_Build</Name>
+      <Description>Using the Active Member data and the Card Gateway data create an output for use by Ops in VCES Billing</Description>
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author>Paul Found</Author>
+      <Company>Collinson, Travel Experiance, Data &amp; Insight</Company>
+      <Copyright />
+      <DescriptionLink actual="https://te-collinsongroup.atlassian.net/browse/DI-868" displayed="DI-868" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
