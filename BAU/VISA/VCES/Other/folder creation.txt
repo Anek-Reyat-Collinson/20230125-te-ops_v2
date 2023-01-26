@@ -1,0 +1,9 @@
+mkdir "\\clbnas01\PriorityPass\8F. OPS LOUNGEKEY\!!VISA LOUNGEKEY\!!Deal Types\!Visa CEMEA LoungeKey (Platform)\!Reporting\!Lounge Visit Reporting\2022\11. Nov\D&I\Active Members"
+mkdir "\\clbnas01\PriorityPass\8F. OPS LOUNGEKEY\!!VISA LOUNGEKEY\!!Deal Types\!Visa CEMEA LoungeKey (Platform)\!Reporting\!Lounge Visit Reporting\2022\11. Nov\D&I\Declines Transactional Level"
+mkdir "\\clbnas01\PriorityPass\8F. OPS LOUNGEKEY\!!VISA LOUNGEKEY\!!Deal Types\!Visa CEMEA LoungeKey (Platform)\!Reporting\!Lounge Visit Reporting\2022\11. Nov\D&I\Incorrect_CH_Amount_LV_Declines"
+mkdir "\\clbnas01\PriorityPass\8F. OPS LOUNGEKEY\!!VISA LOUNGEKEY\!!Deal Types\!Visa CEMEA LoungeKey (Platform)\!Reporting\!Lounge Visit Reporting\2022\11. Nov\D&I\Issuer By Active Members"
+mkdir "\\clbnas01\PriorityPass\8F. OPS LOUNGEKEY\!!VISA LOUNGEKEY\!!Deal Types\!Visa CEMEA LoungeKey (Platform)\!Reporting\!Lounge Visit Reporting\2022\11. Nov\D&I\Issuer By LV and Declines"
+mkdir "\\clbnas01\PriorityPass\8F. OPS LOUNGEKEY\!!VISA LOUNGEKEY\!!Deal Types\!Visa CEMEA LoungeKey (Platform)\!Reporting\!Lounge Visit Reporting\2022\11. Nov\D&I\LV Bid Country Summary Level"
+mkdir "\\clbnas01\PriorityPass\8F. OPS LOUNGEKEY\!!VISA LOUNGEKEY\!!Deal Types\!Visa CEMEA LoungeKey (Platform)\!Reporting\!Lounge Visit Reporting\2022\11. Nov\D&I\LV Transactional Level"
+mkdir "\\clbnas01\PriorityPass\8F. OPS LOUNGEKEY\!!VISA LOUNGEKEY\!!Deal Types\!Visa CEMEA LoungeKey (Platform)\!Reporting\!Lounge Visit Reporting\2022\11. Nov\D&I\LV-Declines Excluded"
+
