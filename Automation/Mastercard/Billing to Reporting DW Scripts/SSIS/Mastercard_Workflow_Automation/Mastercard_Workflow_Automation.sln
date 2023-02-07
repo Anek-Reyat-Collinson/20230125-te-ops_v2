@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1831
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "Mastercard_Workflow_Automation", "Mastercard_Workflow_Automation\Mastercard_Workflow_Automation.dtproj", "{8CAF45D4-9DAC-425A-AA66-CF2ABBDC6CDE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8CAF45D4-9DAC-425A-AA66-CF2ABBDC6CDE}.Development|Default.ActiveCfg = Development
+		{8CAF45D4-9DAC-425A-AA66-CF2ABBDC6CDE}.Development|Default.Build.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {76E96AD7-5239-4BDD-9E4B-14AB4E0F0C3B}
+	EndGlobalSection
+EndGlobal

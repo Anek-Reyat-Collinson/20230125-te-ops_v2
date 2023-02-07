@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="MC_Cube_check"
+  DTS:DTSID="{C653B4DF-BF0D-4A69-AFC9-E0DFEE87BEC4}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectRetryCount="1"
+      DTS:ConnectRetryInterval="5"
+      DTS:ConnectionString="Data Source=PTGACCESS2SQL\OpsDWDev;Initial Catalog=MCAnalysisFB;Provider=MSOLAP.5;Persist Security Info=False;Integrated Security=SSPI;Extended Properties=Format=Tabular;" />
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

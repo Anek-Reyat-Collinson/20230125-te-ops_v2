@@ -1,0 +1,2696 @@
+<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="9/4/2017 12:09:08 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="TCG02603"
+  DTS:CreatorName="TCG\Abdul.Abbas"
+  DTS:DTSID="{E73D2AE1-DA94-4021-AC93-F1628828CF3B}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="15.0.2000.170"
+  DTS:LocaleID="2057"
+  DTS:ObjectName="05_scr2dst_tblCIF"
+  DTS:PackageType="5"
+  DTS:VersionBuild="104"
+  DTS:VersionGUID="{01377191-EF99-494F-934B-91D5B79C9BEA}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:PackageParameters>
+    <DTS:PackageParameter
+      DTS:CreationName=""
+      DTS:DataType="3"
+      DTS:DTSID="{119E7CA8-4EC0-431D-B714-5180E228F588}"
+      DTS:ObjectName="int_DataloadWorkFlowID">
+      <DTS:Property
+        DTS:DataType="3"
+        DTS:Name="ParameterValue">0</DTS:Property>
+    </DTS:PackageParameter>
+  </DTS:PackageParameters>
+  <DTS:Variables>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{063372D8-6150-43EF-B93D-FDB8D41C86F0}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="dtEndDate">
+      <DTS:VariableValue
+        DTS:DataType="7">9/4/2017 4:59:00 PM</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{8B55526C-C351-4103-A29F-85E60AD7FB44}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="dtReportMonth">
+      <DTS:VariableValue
+        DTS:DataType="7">9/13/2017 1:53:00 PM</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{900F9309-C616-4EEB-A8F4-4D29AABF6CFE}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="dtStartDate">
+      <DTS:VariableValue
+        DTS:DataType="7">9/4/2017 4:49:00 PM</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{4FE4C174-A5E6-4666-B0D1-E9C2100AC7A3}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="@[$Package::int_DataloadWorkFlowID]"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="intApplicationDataloadWorkflowID">
+      <DTS:VariableValue
+        DTS:DataType="3">0</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{4C1FD088-1457-4AC4-88E4-92671C435E93}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="intDataLoadID">
+      <DTS:VariableValue
+        DTS:DataType="3">0</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{FE161770-B813-4310-836F-9E3DC2709EA1}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="intDebug">
+      <DTS:VariableValue
+        DTS:DataType="3">0</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{77823559-29FD-4E03-9F01-3C17AF4A8112}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="intNumRecs">
+      <DTS:VariableValue
+        DTS:DataType="3">0</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{DC901BEC-C97C-4A70-AA9C-EA4562ADA157}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="intRecInsertedCount">
+      <DTS:VariableValue
+        DTS:DataType="3">0</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{1F97A556-3E96-4225-A4BE-1F8BA241799D}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="intRecUpdatedCount">
+      <DTS:VariableValue
+        DTS:DataType="3">0</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{91F88BC0-9463-4D81-88FA-CABA5A85E670}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="@[User::intNumRecs]"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="intRecWithIssueCount">
+      <DTS:VariableValue
+        DTS:DataType="3">0</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{5E501A21-56A6-44C7-9297-236C275F2A2F}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="intSourceRecCount">
+      <DTS:VariableValue
+        DTS:DataType="3">0</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{21A49B18-F3CE-4697-98F6-EA815B509F25}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="int_DataloadWorkFlowID">
+      <DTS:VariableValue
+        DTS:DataType="3">0</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{67D186F7-978D-4168-96FA-18C83F595433}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="rsWorkflowStep_Configuration">
+      <DTS:VariableValue
+        DTS:DataSubType="ManagedSerializable"
+        DTS:DataType="13">
+        <SOAP-ENV:Envelope xmlns:clr="http://schemas.microsoft.com/soap/encoding/clr/1.0" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+          <SOAP-ENV:Body>
+            <xsd:anyType
+              id="ref-1"></xsd:anyType>
+          </SOAP-ENV:Body>
+        </SOAP-ENV:Envelope>
+      </DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{A4E957D3-4928-429B-BB28-7C084B9773B4}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="strArchiveFileNameFormat">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{B27A1532-3000-43D7-ADA9-A36B59A8F352}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="@[System::PackageName] + &quot; Fails to execute.&#xA;&#xA;Please, check Package and run again &#xA;&#xA;From  BI_DEV_TEAM&quot;"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="strBody">
+      <DTS:VariableValue
+        DTS:DataType="8">05_scr2dst_tblCIF Fails to execute.
+
+Please, check Package and run again 
+
+From  BI_DEV_TEAM</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{A3BBAD1D-6C5D-4837-AF97-BA2DC5603D11}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="strClientName">
+      <DTS:VariableValue
+        DTS:DataType="8">MasterCard Automation</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{C92294CC-1477-4D42-A4FC-A66B0716FCD2}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="strConnection">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{BB78271E-182F-4DEE-B575-4C8BF8572DDB}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="strCorruptFolder">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{252E8EA2-0B56-40A6-A55D-C07782FF59DA}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="strDestinationFolder">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{916F2542-84D3-49B1-88B1-E5CF9A4C323C}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="strFileName_Format_Export">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{9B0BC2B5-D497-4AA4-B58B-A1CF29AAC026}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="strFileName_Format_Import">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{CC24BD27-1481-4177-BB55-F30805F641AD}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="@[$Project::FromEmail]"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="strFromEmail">
+      <DTS:VariableValue
+        DTS:DataType="8">harshad.deshmukh@collinsongroup.com</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{FE1F452B-F0A7-4396-BEB3-7229AEE9917D}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="strProcessUnknownFile">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{1B2DE905-D9BA-4EBA-A0C0-1E00D9805A2A}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="strSourceFolder">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{57256C2E-EE15-476F-9D27-FC757EAC9B2E}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="strStoredProcedureName">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{109F6958-5670-442C-BEA3-D9AAA04A9A03}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="@[System::PackageName] + &quot; Fails to execute.Please check Package and run again&quot;"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="strSubject">
+      <DTS:VariableValue
+        DTS:DataType="8">05_scr2dst_tblCIF Fails to execute.Please check Package and run again</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{64B59BAA-9623-4200-B044-F9795EB21012}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="@[$Project::ToEmail]"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="strToEmail">
+      <DTS:VariableValue
+        DTS:DataType="8">harshad.deshmukh@collinsongroup.com</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{9912DD97-43A3-4B0C-8EF5-59E28D94D478}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="strUnknownFolder">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
+    </DTS:Variable>
+  </DTS:Variables>
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Flag Data Load Complete"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{E68F9488-2017-46B7-B850-4DA01258A7BE}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Flag Data Load Complete"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2016; © 2015 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="1">
+      <DTS:Variables />
+      <DTS:LoggingOptions
+        DTS:FilterKind="0" />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{DB2FC1A9-9D29-448A-8097-D56B89869BDD}"
+          SQLTask:SqlStatementSource="EXECUTE [audit_log].[usp_updDataloadWorkflowStepStatus] ?, ?, ?, ?, 'Complete'" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="1"
+            SQLTask:DtsVariableName="User::intRecInsertedCount"
+            SQLTask:ParameterDirection="Input"
+            SQLTask:DataType="3"
+            SQLTask:ParameterSize="-1" />
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="2"
+            SQLTask:DtsVariableName="User::intRecUpdatedCount"
+            SQLTask:ParameterDirection="Input"
+            SQLTask:DataType="3"
+            SQLTask:ParameterSize="-1" />
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="3"
+            SQLTask:DtsVariableName="User::intRecWithIssueCount"
+            SQLTask:ParameterDirection="Input"
+            SQLTask:DataType="3"
+            SQLTask:ParameterSize="-1" />
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="0"
+            SQLTask:DtsVariableName="$Package::int_DataloadWorkFlowID"
+            SQLTask:ParameterDirection="Input"
+            SQLTask:DataType="3"
+            SQLTask:ParameterSize="-1" />
+        </SQLTask:SqlTaskData>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Flag Data Load Failed"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{E7124A1F-90F3-4DDD-A1C0-646634A80B54}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Flag Data Load Failed"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2016; © 2015 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:LoggingOptions
+        DTS:FilterKind="0" />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{DB2FC1A9-9D29-448A-8097-D56B89869BDD}"
+          SQLTask:SqlStatementSource="EXECUTE [audit_log].[usp_updDataloadWorkflowStepStatus] ?, Null, Null, Null, 'Failed'" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="0"
+            SQLTask:DtsVariableName="$Package::int_DataloadWorkFlowID"
+            SQLTask:ParameterDirection="Input"
+            SQLTask:DataType="3"
+            SQLTask:ParameterSize="-1" />
+        </SQLTask:SqlTaskData>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Flag Dataload as Start"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{FA980971-4E05-4119-A505-C0CE9CFEF9FA}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Flag Dataload as Start"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2016; © 2015 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:LoggingOptions
+        DTS:FilterKind="0" />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{DB2FC1A9-9D29-448A-8097-D56B89869BDD}"
+          SQLTask:SqlStatementSource="EXECUTE [audit_log].[usp_updDataloadWorkflowStepStatus] ?, ?, ?, ?, 'Start'" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="0"
+            SQLTask:DtsVariableName="$Package::int_DataloadWorkFlowID"
+            SQLTask:ParameterDirection="Input"
+            SQLTask:DataType="3"
+            SQLTask:ParameterSize="-1" />
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="1"
+            SQLTask:DtsVariableName="User::intRecInsertedCount"
+            SQLTask:ParameterDirection="Input"
+            SQLTask:DataType="3"
+            SQLTask:ParameterSize="-1" />
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="2"
+            SQLTask:DtsVariableName="User::intRecUpdatedCount"
+            SQLTask:ParameterDirection="Input"
+            SQLTask:DataType="3"
+            SQLTask:ParameterSize="-1" />
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="3"
+            SQLTask:DtsVariableName="User::intRecWithIssueCount"
+            SQLTask:ParameterDirection="Input"
+            SQLTask:DataType="3"
+            SQLTask:ParameterSize="-1" />
+        </SQLTask:SqlTaskData>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Get the Configuration"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:DelayValidation="True"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{520F783A-FB2C-4061-9F09-5C6382C9C725}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Get the Configuration"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2016; © 2015 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:LoggingOptions
+        DTS:FilterKind="0" />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{DB2FC1A9-9D29-448A-8097-D56B89869BDD}"
+          SQLTask:SqlStatementSource="EXECUTE [audit_log].[usp_getDataloadWorkflowStepConfiguration] ?"
+          SQLTask:ResultType="ResultSetType_Rowset" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+          <SQLTask:ResultBinding
+            SQLTask:ResultName="0"
+            SQLTask:DtsVariableName="User::rsWorkflowStep_Configuration" />
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="0"
+            SQLTask:DtsVariableName="$Package::int_DataloadWorkFlowID"
+            SQLTask:ParameterDirection="Input"
+            SQLTask:DataType="3"
+            SQLTask:ParameterSize="-1" />
+        </SQLTask:SqlTaskData>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Sequence Container"
+      DTS:CreationName="STOCK:SEQUENCE"
+      DTS:Description="Sequence Container"
+      DTS:DTSID="{F73FFB81-30FE-4602-B768-4A443493C98E}"
+      DTS:ExecutableType="STOCK:SEQUENCE"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Sequence Container">
+      <DTS:Variables />
+      <DTS:LoggingOptions
+        DTS:FilterKind="0" />
+      <DTS:Executables>
+        <DTS:Executable
+          DTS:refId="Package\Sequence Container\Delete tblCIF"
+          DTS:CreationName="Microsoft.ExecuteSQLTask"
+          DTS:Description="Execute SQL Task"
+          DTS:Disabled="True"
+          DTS:DTSID="{2975cce5-afe1-4ed8-8ce0-575e9dcca39e}"
+          DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Delete tblCIF"
+          DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2016; © 2015 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+          DTS:ThreadHint="0">
+          <DTS:Variables />
+          <DTS:PropertyExpression
+            DTS:Name="Disable">@[User::intNumRecs]&lt;=0</DTS:PropertyExpression>
+          <DTS:ObjectData>
+            <SQLTask:SqlTaskData
+              SQLTask:Connection="{E9AA5473-8FE8-4687-A6FF-9F02DC983002}"
+              SQLTask:SqlStatementSource="DISABLE TRIGGER [dbo].[trg_AutoAudit_tblCIF] ON [dbo].[tblCIF]; &#xA;DELETE from mastercard_db.dbo.tblCIF WHERE [Report_Month] BETWEEN ? AND ? ;&#xA;ENABLE TRIGGER [dbo].[trg_AutoAudit_tblCIF] ON [dbo].[tblCIF];" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+              <SQLTask:ParameterBinding
+                SQLTask:ParameterName="0"
+                SQLTask:DtsVariableName="User::dtStartDate"
+                SQLTask:ParameterDirection="Input"
+                SQLTask:DataType="7"
+                SQLTask:ParameterSize="-1" />
+              <SQLTask:ParameterBinding
+                SQLTask:ParameterName="1"
+                SQLTask:DtsVariableName="User::dtEndDate"
+                SQLTask:ParameterDirection="Input"
+                SQLTask:DataType="7"
+                SQLTask:ParameterSize="-1" />
+            </SQLTask:SqlTaskData>
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\Sequence Container\Get Current Reporting Month"
+          DTS:CreationName="Microsoft.ExecuteSQLTask"
+          DTS:Description="Execute SQL Task"
+          DTS:DTSID="{d92f54a8-39cf-4551-81d7-d87b3822e3a3}"
+          DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Get Current Reporting Month"
+          DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2016; © 2015 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+          DTS:ThreadHint="0">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <SQLTask:SqlTaskData
+              SQLTask:Connection="{F70A16E4-3093-4EA1-B02B-98C946D4E37F}"
+              SQLTask:SqlStatementSource="Execute [dbo].[usp_ReportMonth_Sel_ByClient]  ?, ? , ? output  , ? output  , ? output" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+              <SQLTask:ParameterBinding
+                SQLTask:ParameterName="2"
+                SQLTask:DtsVariableName="User::dtStartDate"
+                SQLTask:ParameterDirection="Output"
+                SQLTask:DataType="135"
+                SQLTask:ParameterSize="-1" />
+              <SQLTask:ParameterBinding
+                SQLTask:ParameterName="3"
+                SQLTask:DtsVariableName="User::dtEndDate"
+                SQLTask:ParameterDirection="Output"
+                SQLTask:DataType="135"
+                SQLTask:ParameterSize="-1" />
+              <SQLTask:ParameterBinding
+                SQLTask:ParameterName="4"
+                SQLTask:DtsVariableName="User::dtReportMonth"
+                SQLTask:ParameterDirection="Output"
+                SQLTask:DataType="135"
+                SQLTask:ParameterSize="-1" />
+              <SQLTask:ParameterBinding
+                SQLTask:ParameterName="0"
+                SQLTask:DtsVariableName="User::strClientName"
+                SQLTask:ParameterDirection="Input"
+                SQLTask:DataType="129"
+                SQLTask:ParameterSize="-1" />
+              <SQLTask:ParameterBinding
+                SQLTask:ParameterName="1"
+                SQLTask:DtsVariableName="$Package::int_DataloadWorkFlowID"
+                SQLTask:ParameterDirection="Input"
+                SQLTask:DataType="3"
+                SQLTask:ParameterSize="-1" />
+            </SQLTask:SqlTaskData>
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\Sequence Container\Load tblCIF"
+          DTS:CreationName="Microsoft.Pipeline"
+          DTS:Description="Data Flow Task"
+          DTS:DTSID="{238f4822-6eb0-4b67-ac14-672f4a1f73aa}"
+          DTS:ExecutableType="Microsoft.Pipeline"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Load tblCIF"
+          DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <pipeline
+              version="1">
+              <components>
+                <component
+                  refId="Package\Sequence Container\Load tblCIF\Derived Column"
+                  componentClassID="Microsoft.DerivedColumn"
+                  contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+                  description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+                  name="Derived Column"
+                  usesDispositions="true">
+                  <inputs>
+                    <input
+                      refId="Package\Sequence Container\Load tblCIF\Derived Column.Inputs[Derived Column Input]"
+                      description="Input to the Derived Column Transformation"
+                      name="Derived Column Input">
+                      <externalMetadataColumns />
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\Sequence Container\Load tblCIF\Derived Column.Outputs[Derived Column Output]"
+                      description="Default Output of the Derived Column Transformation"
+                      exclusionGroup="1"
+                      name="Derived Column Output"
+                      synchronousInputId="Package\Sequence Container\Load tblCIF\Derived Column.Inputs[Derived Column Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Sequence Container\Load tblCIF\Derived Column.Outputs[Derived Column Output].Columns[d_CreatedDate]"
+                          dataType="date"
+                          errorOrTruncationOperation="Computation"
+                          errorRowDisposition="FailComponent"
+                          lineageId="Package\Sequence Container\Load tblCIF\Derived Column.Outputs[Derived Column Output].Columns[d_CreatedDate]"
+                          name="d_CreatedDate"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.String"
+                              description="Derived Column Expression"
+                              name="Expression">@[System::ContainerStartTime]</property>
+                            <property
+                              containsID="true"
+                              dataType="System.String"
+                              description="Derived Column Friendly Expression"
+                              expressionType="Notify"
+                              name="FriendlyExpression">@[System::ContainerStartTime]</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Sequence Container\Load tblCIF\Derived Column.Outputs[Derived Column Output].Columns[d_CreatedBy]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Computation"
+                          errorRowDisposition="FailComponent"
+                          length="50"
+                          lineageId="Package\Sequence Container\Load tblCIF\Derived Column.Outputs[Derived Column Output].Columns[d_CreatedBy]"
+                          name="d_CreatedBy"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.String"
+                              description="Derived Column Expression"
+                              name="Expression">(DT_STR,50,1252)@[System::UserName]</property>
+                            <property
+                              containsID="true"
+                              dataType="System.String"
+                              description="Derived Column Friendly Expression"
+                              expressionType="Notify"
+                              name="FriendlyExpression">(DT_STR,50,1252)@[System::UserName]</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Sequence Container\Load tblCIF\Derived Column.Outputs[Derived Column Output].Columns[DataloadWorkFlowID]"
+                          dataType="i4"
+                          errorOrTruncationOperation="Computation"
+                          errorRowDisposition="FailComponent"
+                          lineageId="Package\Sequence Container\Load tblCIF\Derived Column.Outputs[Derived Column Output].Columns[DataloadWorkFlowID]"
+                          name="DataloadWorkFlowID"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.String"
+                              description="Derived Column Expression"
+                              name="Expression">@[$Package::int_DataloadWorkFlowID]</property>
+                            <property
+                              containsID="true"
+                              dataType="System.String"
+                              description="Derived Column Friendly Expression"
+                              expressionType="Notify"
+                              name="FriendlyExpression">@[$Package::int_DataloadWorkFlowID]</property>
+                          </properties>
+                        </outputColumn>
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                    <output
+                      refId="Package\Sequence Container\Load tblCIF\Derived Column.Outputs[Derived Column Error Output]"
+                      description="Error Output of the Derived Column Transformation"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="Derived Column Error Output"
+                      synchronousInputId="Package\Sequence Container\Load tblCIF\Derived Column.Inputs[Derived Column Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Sequence Container\Load tblCIF\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container\Load tblCIF\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Load tblCIF\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container\Load tblCIF\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\Sequence Container\Load tblCIF\DST_tblCIF"
+                  componentClassID="Microsoft.OLEDBDestination"
+                  contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+                  description="OLE DB Destination"
+                  name="DST_tblCIF"
+                  usesDispositions="true"
+                  version="4">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of the database object used to open a rowset."
+                      name="OpenRowset">[dbo].[tblCIF]</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable that contains the name of the database object used to open a rowset."
+                      name="OpenRowsetVariable"></property>
+                    <property
+                      dataType="System.String"
+                      description="The SQL command to be executed."
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the column code page to use when code page information is unavailable from the data source."
+                      name="DefaultCodePage">1252</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Forces the use of the DefaultCodePage property value when describing character data."
+                      name="AlwaysUseDefaultCodePage">false</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the mode used to access the database."
+                      name="AccessMode"
+                      typeConverter="AccessMode">3</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepIdentity">true</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepNulls">true</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                      name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                      name="FastLoadMaxInsertCommitSize">2147483647</property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Sequence Container\Load tblCIF\DST_tblCIF.Connections[OleDbConnection]"
+                      connectionManagerID="{E9AA5473-8FE8-4687-A6FF-9F02DC983002}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[mastercard_reporting]"
+                      description="The OLE DB runtime connection used to access the database."
+                      name="OleDbConnection" />
+                  </connections>
+                  <inputs>
+                    <input
+                      refId="Package\Sequence Container\Load tblCIF\DST_tblCIF.Inputs[OLE DB Destination Input]"
+                      errorOrTruncationOperation="Insert"
+                      errorRowDisposition="FailComponent"
+                      hasSideEffects="true"
+                      name="OLE DB Destination Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\Sequence Container\Load tblCIF\DST_tblCIF.Inputs[OLE DB Destination Input].Columns[report_month]"
+                          cachedDataType="dbTimeStamp"
+                          cachedName="report_month"
+                          externalMetadataColumnId="Package\Sequence Container\Load tblCIF\DST_tblCIF.Inputs[OLE DB Destination Input].ExternalColumns[report_month]"
+                          lineageId="Package\Sequence Container\Load tblCIF\SRC_tblCIF.Outputs[OLE DB Source Output].Columns[report_month]" />
+                        <inputColumn
+                          refId="Package\Sequence Container\Load tblCIF\DST_tblCIF.Inputs[OLE DB Destination Input].Columns[country]"
+                          cachedDataType="wstr"
+                          cachedLength="50"
+                          cachedName="country"
+                          externalMetadataColumnId="Package\Sequence Container\Load tblCIF\DST_tblCIF.Inputs[OLE DB Destination Input].ExternalColumns[country]"
+                          lineageId="Package\Sequence Container\Load tblCIF\SRC_tblCIF.Outputs[OLE DB Source Output].Columns[country]" />
+                        <inputColumn
+                          refId="Package\Sequence Container\Load tblCIF\DST_tblCIF.Inputs[OLE DB Destination Input].Columns[mci_region]"
+                          cachedDataType="wstr"
+                          cachedLength="255"
+                          cachedName="mci_region"
+                          externalMetadataColumnId="Package\Sequence Container\Load tblCIF\DST_tblCIF.Inputs[OLE DB Destination Input].ExternalColumns[mci_region]"
+                          lineageId="Package\Sequence Container\Load tblCIF\SRC_tblCIF.Outputs[OLE DB Source Output].Columns[mci_region]" />
+                        <inputColumn
+                          refId="Package\Sequence Container\Load tblCIF\DST_tblCIF.Inputs[OLE DB Destination Input].Columns[bank]"
+                          cachedDataType="wstr"
+                          cachedLength="255"
+                          cachedName="bank"
+                          externalMetadataColumnId="Package\Sequence Container\Load tblCIF\DST_tblCIF.Inputs[OLE DB Destination Input].ExternalColumns[bank]"
+                          lineageId="Package\Sequence Container\Load tblCIF\SRC_tblCIF.Outputs[OLE DB Source Output].Columns[bank]" />
+                        <inputColumn
+                          refId="Package\Sequence Container\Load tblCIF\DST_tblCIF.Inputs[OLE DB Destination Input].Columns[associate_prefix]"
+                          cachedDataType="wstr"
+                          cachedLength="255"
+                          cachedName="associate_prefix"
+                          externalMetadataColumnId="Package\Sequence Container\Load tblCIF\DST_tblCIF.Inputs[OLE DB Destination Input].ExternalColumns[associate_prefix]"
+                          lineageId="Package\Sequence Container\Load tblCIF\SRC_tblCIF.Outputs[OLE DB Source Output].Columns[associate_prefix]" />
+                        <inputColumn
+                          refId="Package\Sequence Container\Load tblCIF\DST_tblCIF.Inputs[OLE DB Destination Input].Columns[deal_type]"
+                          cachedDataType="wstr"
+                          cachedLength="255"
+                          cachedName="deal_type"
+                          externalMetadataColumnId="Package\Sequence Container\Load tblCIF\DST_tblCIF.Inputs[OLE DB Destination Input].ExternalColumns[deal_type]"
+                          lineageId="Package\Sequence Container\Load tblCIF\SRC_tblCIF.Outputs[OLE DB Source Output].Columns[deal_type]" />
+                        <inputColumn
+                          refId="Package\Sequence Container\Load tblCIF\DST_tblCIF.Inputs[OLE DB Destination Input].Columns[total]"
+                          cachedDataType="r8"
+                          cachedName="total"
+                          externalMetadataColumnId="Package\Sequence Container\Load tblCIF\DST_tblCIF.Inputs[OLE DB Destination Input].ExternalColumns[total]"
+                          lineageId="Package\Sequence Container\Load tblCIF\SRC_tblCIF.Outputs[OLE DB Source Output].Columns[total]" />
+                        <inputColumn
+                          refId="Package\Sequence Container\Load tblCIF\DST_tblCIF.Inputs[OLE DB Destination Input].Columns[tbl_index]"
+                          cachedDataType="i4"
+                          cachedName="tbl_index"
+                          externalMetadataColumnId="Package\Sequence Container\Load tblCIF\DST_tblCIF.Inputs[OLE DB Destination Input].ExternalColumns[tbl_index]"
+                          lineageId="Package\Sequence Container\Load tblCIF\SRC_tblCIF.Outputs[OLE DB Source Output].Columns[tbl_index]" />
+                        <inputColumn
+                          refId="Package\Sequence Container\Load tblCIF\DST_tblCIF.Inputs[OLE DB Destination Input].Columns[checksum_value]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="45"
+                          cachedName="checksum_value"
+                          externalMetadataColumnId="Package\Sequence Container\Load tblCIF\DST_tblCIF.Inputs[OLE DB Destination Input].ExternalColumns[checksum_value]"
+                          lineageId="Package\Sequence Container\Load tblCIF\SRC_tblCIF.Outputs[OLE DB Source Output].Columns[checksum_value]" />
+                        <inputColumn
+                          refId="Package\Sequence Container\Load tblCIF\DST_tblCIF.Inputs[OLE DB Destination Input].Columns[DataloadWorkFlowID]"
+                          cachedDataType="i4"
+                          cachedName="DataloadWorkFlowID"
+                          externalMetadataColumnId="Package\Sequence Container\Load tblCIF\DST_tblCIF.Inputs[OLE DB Destination Input].ExternalColumns[DataLoadWorkFlowID]"
+                          lineageId="Package\Sequence Container\Load tblCIF\Derived Column.Outputs[Derived Column Output].Columns[DataloadWorkFlowID]" />
+                        <inputColumn
+                          refId="Package\Sequence Container\Load tblCIF\DST_tblCIF.Inputs[OLE DB Destination Input].Columns[d_CreatedDate]"
+                          cachedDataType="date"
+                          cachedName="d_CreatedDate"
+                          externalMetadataColumnId="Package\Sequence Container\Load tblCIF\DST_tblCIF.Inputs[OLE DB Destination Input].ExternalColumns[CreatedDate]"
+                          lineageId="Package\Sequence Container\Load tblCIF\Derived Column.Outputs[Derived Column Output].Columns[d_CreatedDate]" />
+                        <inputColumn
+                          refId="Package\Sequence Container\Load tblCIF\DST_tblCIF.Inputs[OLE DB Destination Input].Columns[d_CreatedBy]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="d_CreatedBy"
+                          externalMetadataColumnId="Package\Sequence Container\Load tblCIF\DST_tblCIF.Inputs[OLE DB Destination Input].ExternalColumns[CreatedBy]"
+                          lineageId="Package\Sequence Container\Load tblCIF\Derived Column.Outputs[Derived Column Output].Columns[d_CreatedBy]" />
+                      </inputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Load tblCIF\DST_tblCIF.Inputs[OLE DB Destination Input].ExternalColumns[report_month]"
+                          dataType="dbDate"
+                          name="report_month" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Load tblCIF\DST_tblCIF.Inputs[OLE DB Destination Input].ExternalColumns[mci_region]"
+                          dataType="wstr"
+                          length="255"
+                          name="mci_region" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Load tblCIF\DST_tblCIF.Inputs[OLE DB Destination Input].ExternalColumns[country]"
+                          dataType="wstr"
+                          length="255"
+                          name="country" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Load tblCIF\DST_tblCIF.Inputs[OLE DB Destination Input].ExternalColumns[bank]"
+                          dataType="wstr"
+                          length="255"
+                          name="bank" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Load tblCIF\DST_tblCIF.Inputs[OLE DB Destination Input].ExternalColumns[associate_prefix]"
+                          dataType="wstr"
+                          length="255"
+                          name="associate_prefix" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Load tblCIF\DST_tblCIF.Inputs[OLE DB Destination Input].ExternalColumns[deal_type]"
+                          dataType="wstr"
+                          length="255"
+                          name="deal_type" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Load tblCIF\DST_tblCIF.Inputs[OLE DB Destination Input].ExternalColumns[total]"
+                          dataType="r8"
+                          name="total" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Load tblCIF\DST_tblCIF.Inputs[OLE DB Destination Input].ExternalColumns[tbl_index]"
+                          dataType="i4"
+                          name="tbl_index" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Load tblCIF\DST_tblCIF.Inputs[OLE DB Destination Input].ExternalColumns[CreatedDate]"
+                          dataType="dbTimeStamp"
+                          name="CreatedDate" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Load tblCIF\DST_tblCIF.Inputs[OLE DB Destination Input].ExternalColumns[CreatedBy]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="CreatedBy" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Load tblCIF\DST_tblCIF.Inputs[OLE DB Destination Input].ExternalColumns[UpdatedDate]"
+                          dataType="dbTimeStamp"
+                          name="UpdatedDate" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Load tblCIF\DST_tblCIF.Inputs[OLE DB Destination Input].ExternalColumns[UpdatedBy]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="UpdatedBy" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Load tblCIF\DST_tblCIF.Inputs[OLE DB Destination Input].ExternalColumns[DataLoadWorkFlowID]"
+                          dataType="i4"
+                          name="DataLoadWorkFlowID" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Load tblCIF\DST_tblCIF.Inputs[OLE DB Destination Input].ExternalColumns[checksum_value]"
+                          codePage="1252"
+                          dataType="str"
+                          length="45"
+                          name="checksum_value" />
+                      </externalMetadataColumns>
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\Sequence Container\Load tblCIF\DST_tblCIF.Outputs[OLE DB Destination Error Output]"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="OLE DB Destination Error Output"
+                      synchronousInputId="Package\Sequence Container\Load tblCIF\DST_tblCIF.Inputs[OLE DB Destination Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Sequence Container\Load tblCIF\DST_tblCIF.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container\Load tblCIF\DST_tblCIF.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Load tblCIF\DST_tblCIF.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container\Load tblCIF\DST_tblCIF.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\Sequence Container\Load tblCIF\Row Count"
+                  componentClassID="Microsoft.RowCount"
+                  contactInfo="Row Count;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+                  description="Counts rows as they pass through a data flow. For example, use the number of rows processed to determine whether or not to perform cleanup operations, or update text in an e-mail message to communicate processing status."
+                  name="Row Count">
+                  <properties>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable to hold the row count."
+                      name="VariableName">User::intRecInsertedCount</property>
+                  </properties>
+                  <inputs>
+                    <input
+                      refId="Package\Sequence Container\Load tblCIF\Row Count.Inputs[Row Count Input 1]"
+                      hasSideEffects="true"
+                      name="Row Count Input 1">
+                      <externalMetadataColumns />
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\Sequence Container\Load tblCIF\Row Count.Outputs[Row Count Output 1]"
+                      name="Row Count Output 1"
+                      synchronousInputId="Package\Sequence Container\Load tblCIF\Row Count.Inputs[Row Count Input 1]">
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\Sequence Container\Load tblCIF\SRC_tblCIF"
+                  componentClassID="Microsoft.OLEDBSource"
+                  contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+                  description="OLE DB Source"
+                  name="SRC_tblCIF"
+                  usesDispositions="true"
+                  version="7">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of the database object used to open a rowset."
+                      name="OpenRowset"></property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable that contains the name of the database object used to open a rowset."
+                      name="OpenRowsetVariable">User::query1</property>
+                    <property
+                      dataType="System.String"
+                      description="The SQL command to be executed."
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">SELECT  [report_month],[mci_region],cast([country] as nvarchar(50))as country,[bank],[associate_prefix],[deal_type],[total],[tbl_index],[UpdatedDate],[UpdatedBy],[CreatedDate],[CreatedBy],
+ CONVERT(VARCHAR(45),HASHBYTES('SHA1',
+ISNULL(CAST(report_month AS Varchar(max)),'NA') + 
+ISNULL(CAST(mci_region AS Varchar(max)),'NA') + 
+ISNULL(CAST(country AS Varchar(max)),'NA') + 
+ISNULL(CAST(bank AS Varchar(max)),'NA') + 
+ISNULL(CAST(associate_prefix AS Varchar(max)),'NA') + 
+ISNULL(CAST(deal_type AS Varchar(max)),'NA') + 
+ISNULL(CAST(total AS Varchar(max)),'NA') + 
+ISNULL(CAST(tbl_index AS Varchar(max)),'NA') ),1) AS checksum_value
+   FROM mastercard_db.dbo.tblCIF
+   WHERE [report_month] BETWEEN  ? AND ?</property>
+                    <property
+                      dataType="System.String"
+                      description="The variable that contains the SQL command to be executed."
+                      name="SqlCommandVariable"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the column code page to use when code page information is unavailable from the data source."
+                      name="DefaultCodePage">1252</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Forces the use of the DefaultCodePage property value when describing character data."
+                      name="AlwaysUseDefaultCodePage">false</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the mode used to access the database."
+                      name="AccessMode"
+                      typeConverter="AccessMode">2</property>
+                    <property
+                      dataType="System.String"
+                      description="The mappings between the parameters in the SQL command and variables."
+                      name="ParameterMapping">"Parameter0:Input",{900F9309-C616-4EEB-A8F4-4D29AABF6CFE};"Parameter1:Input",{063372D8-6150-43EF-B93D-FDB8D41C86F0};</property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Sequence Container\Load tblCIF\SRC_tblCIF.Connections[OleDbConnection]"
+                      connectionManagerID="{B76F9C84-5874-4661-9065-A8C2C06D3BA9}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[mastercard_Happi]"
+                      description="The OLE DB runtime connection used to access the database."
+                      name="OleDbConnection" />
+                  </connections>
+                  <outputs>
+                    <output
+                      refId="Package\Sequence Container\Load tblCIF\SRC_tblCIF.Outputs[OLE DB Source Output]"
+                      name="OLE DB Source Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Sequence Container\Load tblCIF\SRC_tblCIF.Outputs[OLE DB Source Output].Columns[CreatedDate]"
+                          dataType="dbTimeStamp"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container\Load tblCIF\SRC_tblCIF.Outputs[OLE DB Source Output].ExternalColumns[CreatedDate]"
+                          lineageId="Package\Sequence Container\Load tblCIF\SRC_tblCIF.Outputs[OLE DB Source Output].Columns[CreatedDate]"
+                          name="CreatedDate"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Load tblCIF\SRC_tblCIF.Outputs[OLE DB Source Output].Columns[CreatedBy]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container\Load tblCIF\SRC_tblCIF.Outputs[OLE DB Source Output].ExternalColumns[CreatedBy]"
+                          length="50"
+                          lineageId="Package\Sequence Container\Load tblCIF\SRC_tblCIF.Outputs[OLE DB Source Output].Columns[CreatedBy]"
+                          name="CreatedBy"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Load tblCIF\SRC_tblCIF.Outputs[OLE DB Source Output].Columns[UpdatedDate]"
+                          dataType="dbTimeStamp"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container\Load tblCIF\SRC_tblCIF.Outputs[OLE DB Source Output].ExternalColumns[UpdatedDate]"
+                          lineageId="Package\Sequence Container\Load tblCIF\SRC_tblCIF.Outputs[OLE DB Source Output].Columns[UpdatedDate]"
+                          name="UpdatedDate"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Load tblCIF\SRC_tblCIF.Outputs[OLE DB Source Output].Columns[UpdatedBy]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container\Load tblCIF\SRC_tblCIF.Outputs[OLE DB Source Output].ExternalColumns[UpdatedBy]"
+                          length="50"
+                          lineageId="Package\Sequence Container\Load tblCIF\SRC_tblCIF.Outputs[OLE DB Source Output].Columns[UpdatedBy]"
+                          name="UpdatedBy"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Load tblCIF\SRC_tblCIF.Outputs[OLE DB Source Output].Columns[report_month]"
+                          dataType="dbTimeStamp"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container\Load tblCIF\SRC_tblCIF.Outputs[OLE DB Source Output].ExternalColumns[report_month]"
+                          lineageId="Package\Sequence Container\Load tblCIF\SRC_tblCIF.Outputs[OLE DB Source Output].Columns[report_month]"
+                          name="report_month"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Load tblCIF\SRC_tblCIF.Outputs[OLE DB Source Output].Columns[country]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container\Load tblCIF\SRC_tblCIF.Outputs[OLE DB Source Output].ExternalColumns[country]"
+                          length="50"
+                          lineageId="Package\Sequence Container\Load tblCIF\SRC_tblCIF.Outputs[OLE DB Source Output].Columns[country]"
+                          name="country"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Load tblCIF\SRC_tblCIF.Outputs[OLE DB Source Output].Columns[mci_region]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container\Load tblCIF\SRC_tblCIF.Outputs[OLE DB Source Output].ExternalColumns[mci_region]"
+                          length="255"
+                          lineageId="Package\Sequence Container\Load tblCIF\SRC_tblCIF.Outputs[OLE DB Source Output].Columns[mci_region]"
+                          name="mci_region"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Load tblCIF\SRC_tblCIF.Outputs[OLE DB Source Output].Columns[bank]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container\Load tblCIF\SRC_tblCIF.Outputs[OLE DB Source Output].ExternalColumns[bank]"
+                          length="255"
+                          lineageId="Package\Sequence Container\Load tblCIF\SRC_tblCIF.Outputs[OLE DB Source Output].Columns[bank]"
+                          name="bank"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Load tblCIF\SRC_tblCIF.Outputs[OLE DB Source Output].Columns[associate_prefix]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container\Load tblCIF\SRC_tblCIF.Outputs[OLE DB Source Output].ExternalColumns[associate_prefix]"
+                          length="255"
+                          lineageId="Package\Sequence Container\Load tblCIF\SRC_tblCIF.Outputs[OLE DB Source Output].Columns[associate_prefix]"
+                          name="associate_prefix"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Load tblCIF\SRC_tblCIF.Outputs[OLE DB Source Output].Columns[deal_type]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container\Load tblCIF\SRC_tblCIF.Outputs[OLE DB Source Output].ExternalColumns[deal_type]"
+                          length="255"
+                          lineageId="Package\Sequence Container\Load tblCIF\SRC_tblCIF.Outputs[OLE DB Source Output].Columns[deal_type]"
+                          name="deal_type"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Load tblCIF\SRC_tblCIF.Outputs[OLE DB Source Output].Columns[total]"
+                          dataType="r8"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container\Load tblCIF\SRC_tblCIF.Outputs[OLE DB Source Output].ExternalColumns[total]"
+                          lineageId="Package\Sequence Container\Load tblCIF\SRC_tblCIF.Outputs[OLE DB Source Output].Columns[total]"
+                          name="total"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Load tblCIF\SRC_tblCIF.Outputs[OLE DB Source Output].Columns[tbl_index]"
+                          dataType="i4"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container\Load tblCIF\SRC_tblCIF.Outputs[OLE DB Source Output].ExternalColumns[tbl_index]"
+                          lineageId="Package\Sequence Container\Load tblCIF\SRC_tblCIF.Outputs[OLE DB Source Output].Columns[tbl_index]"
+                          name="tbl_index"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Load tblCIF\SRC_tblCIF.Outputs[OLE DB Source Output].Columns[checksum_value]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container\Load tblCIF\SRC_tblCIF.Outputs[OLE DB Source Output].ExternalColumns[checksum_value]"
+                          length="45"
+                          lineageId="Package\Sequence Container\Load tblCIF\SRC_tblCIF.Outputs[OLE DB Source Output].Columns[checksum_value]"
+                          name="checksum_value"
+                          truncationRowDisposition="FailComponent" />
+                      </outputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Load tblCIF\SRC_tblCIF.Outputs[OLE DB Source Output].ExternalColumns[CreatedDate]"
+                          dataType="dbTimeStamp"
+                          name="CreatedDate" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Load tblCIF\SRC_tblCIF.Outputs[OLE DB Source Output].ExternalColumns[CreatedBy]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="CreatedBy" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Load tblCIF\SRC_tblCIF.Outputs[OLE DB Source Output].ExternalColumns[UpdatedDate]"
+                          dataType="dbTimeStamp"
+                          name="UpdatedDate" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Load tblCIF\SRC_tblCIF.Outputs[OLE DB Source Output].ExternalColumns[UpdatedBy]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="UpdatedBy" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Load tblCIF\SRC_tblCIF.Outputs[OLE DB Source Output].ExternalColumns[report_month]"
+                          dataType="dbDate"
+                          name="report_month" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Load tblCIF\SRC_tblCIF.Outputs[OLE DB Source Output].ExternalColumns[country]"
+                          dataType="wstr"
+                          length="50"
+                          name="country" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Load tblCIF\SRC_tblCIF.Outputs[OLE DB Source Output].ExternalColumns[mci_region]"
+                          dataType="wstr"
+                          length="255"
+                          name="mci_region" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Load tblCIF\SRC_tblCIF.Outputs[OLE DB Source Output].ExternalColumns[bank]"
+                          dataType="wstr"
+                          length="255"
+                          name="bank" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Load tblCIF\SRC_tblCIF.Outputs[OLE DB Source Output].ExternalColumns[associate_prefix]"
+                          dataType="wstr"
+                          length="255"
+                          name="associate_prefix" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Load tblCIF\SRC_tblCIF.Outputs[OLE DB Source Output].ExternalColumns[deal_type]"
+                          dataType="wstr"
+                          length="255"
+                          name="deal_type" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Load tblCIF\SRC_tblCIF.Outputs[OLE DB Source Output].ExternalColumns[total]"
+                          dataType="r8"
+                          name="total" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Load tblCIF\SRC_tblCIF.Outputs[OLE DB Source Output].ExternalColumns[tbl_index]"
+                          dataType="i4"
+                          name="tbl_index" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Load tblCIF\SRC_tblCIF.Outputs[OLE DB Source Output].ExternalColumns[checksum_value]"
+                          codePage="1252"
+                          dataType="str"
+                          length="45"
+                          name="checksum_value" />
+                      </externalMetadataColumns>
+                    </output>
+                    <output
+                      refId="Package\Sequence Container\Load tblCIF\SRC_tblCIF.Outputs[OLE DB Source Error Output]"
+                      isErrorOut="true"
+                      name="OLE DB Source Error Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Sequence Container\Load tblCIF\SRC_tblCIF.Outputs[OLE DB Source Error Output].Columns[report_month]"
+                          dataType="dbDate"
+                          lineageId="Package\Sequence Container\Load tblCIF\SRC_tblCIF.Outputs[OLE DB Source Error Output].Columns[report_month]"
+                          name="report_month" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Load tblCIF\SRC_tblCIF.Outputs[OLE DB Source Error Output].Columns[mci_region]"
+                          dataType="wstr"
+                          length="255"
+                          lineageId="Package\Sequence Container\Load tblCIF\SRC_tblCIF.Outputs[OLE DB Source Error Output].Columns[mci_region]"
+                          name="mci_region" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Load tblCIF\SRC_tblCIF.Outputs[OLE DB Source Error Output].Columns[country]"
+                          dataType="wstr"
+                          length="50"
+                          lineageId="Package\Sequence Container\Load tblCIF\SRC_tblCIF.Outputs[OLE DB Source Error Output].Columns[country]"
+                          name="country" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Load tblCIF\SRC_tblCIF.Outputs[OLE DB Source Error Output].Columns[bank]"
+                          dataType="wstr"
+                          length="255"
+                          lineageId="Package\Sequence Container\Load tblCIF\SRC_tblCIF.Outputs[OLE DB Source Error Output].Columns[bank]"
+                          name="bank" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Load tblCIF\SRC_tblCIF.Outputs[OLE DB Source Error Output].Columns[associate_prefix]"
+                          dataType="wstr"
+                          length="255"
+                          lineageId="Package\Sequence Container\Load tblCIF\SRC_tblCIF.Outputs[OLE DB Source Error Output].Columns[associate_prefix]"
+                          name="associate_prefix" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Load tblCIF\SRC_tblCIF.Outputs[OLE DB Source Error Output].Columns[deal_type]"
+                          dataType="wstr"
+                          length="255"
+                          lineageId="Package\Sequence Container\Load tblCIF\SRC_tblCIF.Outputs[OLE DB Source Error Output].Columns[deal_type]"
+                          name="deal_type" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Load tblCIF\SRC_tblCIF.Outputs[OLE DB Source Error Output].Columns[total]"
+                          dataType="r8"
+                          lineageId="Package\Sequence Container\Load tblCIF\SRC_tblCIF.Outputs[OLE DB Source Error Output].Columns[total]"
+                          name="total" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Load tblCIF\SRC_tblCIF.Outputs[OLE DB Source Error Output].Columns[tbl_index]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container\Load tblCIF\SRC_tblCIF.Outputs[OLE DB Source Error Output].Columns[tbl_index]"
+                          name="tbl_index" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Load tblCIF\SRC_tblCIF.Outputs[OLE DB Source Error Output].Columns[CreatedDate]"
+                          dataType="dbTimeStamp"
+                          lineageId="Package\Sequence Container\Load tblCIF\SRC_tblCIF.Outputs[OLE DB Source Error Output].Columns[CreatedDate]"
+                          name="CreatedDate" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Load tblCIF\SRC_tblCIF.Outputs[OLE DB Source Error Output].Columns[CreatedBy]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          lineageId="Package\Sequence Container\Load tblCIF\SRC_tblCIF.Outputs[OLE DB Source Error Output].Columns[CreatedBy]"
+                          name="CreatedBy" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Load tblCIF\SRC_tblCIF.Outputs[OLE DB Source Error Output].Columns[UpdatedDate]"
+                          dataType="dbTimeStamp"
+                          lineageId="Package\Sequence Container\Load tblCIF\SRC_tblCIF.Outputs[OLE DB Source Error Output].Columns[UpdatedDate]"
+                          name="UpdatedDate" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Load tblCIF\SRC_tblCIF.Outputs[OLE DB Source Error Output].Columns[UpdatedBy]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          lineageId="Package\Sequence Container\Load tblCIF\SRC_tblCIF.Outputs[OLE DB Source Error Output].Columns[UpdatedBy]"
+                          name="UpdatedBy" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Load tblCIF\SRC_tblCIF.Outputs[OLE DB Source Error Output].Columns[checksum_value]"
+                          codePage="1252"
+                          dataType="str"
+                          length="45"
+                          lineageId="Package\Sequence Container\Load tblCIF\SRC_tblCIF.Outputs[OLE DB Source Error Output].Columns[checksum_value]"
+                          name="checksum_value" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Load tblCIF\SRC_tblCIF.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container\Load tblCIF\SRC_tblCIF.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Load tblCIF\SRC_tblCIF.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container\Load tblCIF\SRC_tblCIF.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+              </components>
+              <paths>
+                <path
+                  refId="Package\Sequence Container\Load tblCIF.Paths[Derived Column Output]"
+                  endId="Package\Sequence Container\Load tblCIF\Row Count.Inputs[Row Count Input 1]"
+                  name="Derived Column Output"
+                  startId="Package\Sequence Container\Load tblCIF\Derived Column.Outputs[Derived Column Output]" />
+                <path
+                  refId="Package\Sequence Container\Load tblCIF.Paths[OLE DB Source Output]"
+                  endId="Package\Sequence Container\Load tblCIF\Derived Column.Inputs[Derived Column Input]"
+                  name="OLE DB Source Output"
+                  startId="Package\Sequence Container\Load tblCIF\SRC_tblCIF.Outputs[OLE DB Source Output]" />
+                <path
+                  refId="Package\Sequence Container\Load tblCIF.Paths[Row Count Output 1]"
+                  endId="Package\Sequence Container\Load tblCIF\DST_tblCIF.Inputs[OLE DB Destination Input]"
+                  name="Row Count Output 1"
+                  startId="Package\Sequence Container\Load tblCIF\Row Count.Outputs[Row Count Output 1]" />
+              </paths>
+            </pipeline>
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\Sequence Container\Set NumRecs"
+          DTS:CreationName="Microsoft.ExecuteSQLTask"
+          DTS:Description="Execute SQL Task"
+          DTS:DTSID="{7C46B92E-2BFA-4286-9153-11214EE4EB45}"
+          DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Set NumRecs"
+          DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2016; © 2015 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+          DTS:ThreadHint="0">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <SQLTask:SqlTaskData
+              SQLTask:Connection="{E9AA5473-8FE8-4687-A6FF-9F02DC983002}"
+              SQLTask:BypassPrepare="False"
+              SQLTask:SqlStatementSource="select count(1) from mastercard_db.dbo.tblCIF WHERE report_month BETWEEN  ? AND  ?"
+              SQLTask:ResultType="ResultSetType_SingleRow" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+              <SQLTask:ResultBinding
+                SQLTask:ResultName="0"
+                SQLTask:DtsVariableName="User::intNumRecs" />
+              <SQLTask:ParameterBinding
+                SQLTask:ParameterName="0"
+                SQLTask:DtsVariableName="User::dtStartDate"
+                SQLTask:ParameterDirection="Input"
+                SQLTask:DataType="7"
+                SQLTask:ParameterSize="-1" />
+              <SQLTask:ParameterBinding
+                SQLTask:ParameterName="1"
+                SQLTask:DtsVariableName="User::dtEndDate"
+                SQLTask:ParameterDirection="Input"
+                SQLTask:DataType="7"
+                SQLTask:ParameterSize="-1" />
+            </SQLTask:SqlTaskData>
+          </DTS:ObjectData>
+        </DTS:Executable>
+      </DTS:Executables>
+      <DTS:PrecedenceConstraints>
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\Sequence Container.PrecedenceConstraints[Constraint]"
+          DTS:CreationName=""
+          DTS:DTSID="{15AA5170-A04B-4AA4-99BE-D5F055415639}"
+          DTS:From="Package\Sequence Container\Get Current Reporting Month"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint"
+          DTS:To="Package\Sequence Container\Set NumRecs" />
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\Sequence Container.PrecedenceConstraints[Constraint 1]"
+          DTS:CreationName=""
+          DTS:DTSID="{85CBBF17-3515-4061-83D9-1A9B6039B33C}"
+          DTS:From="Package\Sequence Container\Set NumRecs"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint 1"
+          DTS:To="Package\Sequence Container\Delete tblCIF" />
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\Sequence Container.PrecedenceConstraints[Constraint 2]"
+          DTS:CreationName=""
+          DTS:DTSID="{2CDE66D1-76D5-458C-8009-077DF0020EEB}"
+          DTS:From="Package\Sequence Container\Delete tblCIF"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint 2"
+          DTS:To="Package\Sequence Container\Load tblCIF" />
+      </DTS:PrecedenceConstraints>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Set up configuration variables"
+      DTS:CreationName="Microsoft.ScriptTask"
+      DTS:Description="Script Task"
+      DTS:DTSID="{9141CC81-1CCE-4235-A005-A4182AB61D74}"
+      DTS:ExecutableType="Microsoft.ScriptTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Set up configuration variables"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:LoggingOptions
+        DTS:FilterKind="0" />
+      <DTS:ObjectData>
+        <ScriptProject
+          Name="ST_f5336450293a4c4f8bfc561dca1e58b4"
+          VSTAMajorVersion="14"
+          VSTAMinorVersion="0"
+          Language="CSharp"
+          ReadOnlyVariables="User::rsWorkflowStep_Configuration,$Package::int_DataloadWorkFlowID"
+          ReadWriteVariables="User::intApplicationDataloadWorkflowID,User::intDataLoadID,User::intDebug,User::strArchiveFileNameFormat,User::strBody,User::strCorruptFolder,User::strDestinationFolder,User::strFileName_Format_Export,User::strFileName_Format_Import,User::strFromEmail,User::strProcessUnknownFile,User::strSourceFolder,User::strStoredProcedureName,User::strSubject,User::strToEmail,User::strUnknownFolder">
+          <ProjectItem
+            Name="ST_f5336450293a4c4f8bfc561dca1e58b4.csproj"
+            Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectTypeGuids>{30D016F9-3734-4E33-A861-5E7D899E18F3};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{76e995d4-be46-402d-bd21-8eacd6b2edea}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ST_c61a8384d92948f6909a5d9680009df3</RootNamespace>
+    <AssemblyName>ST_f5336450293a4c4f8bfc561dca1e58b4</AssemblyName>
+    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ResolveAssemblyReferenceIgnoreTargetFrameworkAttributeVersionMismatch>true</ResolveAssemblyReferenceIgnoreTargetFrameworkAttributeVersionMismatch>
+    <TargetFrameworkProfile></TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>.\bin\Debug\</OutputPath>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>true</Optimize>
+    <OutputPath>.\bin\Release\</OutputPath>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.SqlServer.ManagedDTS, Version=13.0.0.0, Culture=Neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.SqlServer.ScriptTask, Version=13.0.0.0, Culture=Neutral, PublicKeyToken=89845dcd8080cc91" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="ScriptMain.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <!-- Include the build rules for a C# project.-->
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{30D016F9-3734-4E33-A861-5E7D899E18F3}">
+        <ProjectProperties HostName="ScriptTask" HostPackage="{B3A685AA-7EAF-4BC6-9940-57959FA5AC07}" ApplicationType="usd" Language="cs" TemplatesPath="" DebugInfoCommandLine="" DebugInfoWorkingDir="" IconImageList="" />
+        <Host Name="ScriptTask" GeneratedNamespace="$safeprojectname" IconIndex=""></Host>
+        <ProjectClient>
+          <HostIdentifier>SSIS_ST130</HostIdentifier>
+        </ProjectClient>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>]]></ProjectItem>
+          <ProjectItem
+            Name="Properties\Resources.resx"
+            Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+</root>]]></ProjectItem>
+          <ProjectItem
+            Name="Properties\Settings.Designer.cs"
+            Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
+// <auto-generated>
+//     This code was generated by a tool.
+//
+//     Changes to this file may cause incorrect behavior and will be lost if
+//     the code is regenerated.
+// </auto-generated>
+//------------------------------------------------------------------------------
+
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_c61a8384d92948f6909a5d9680009df3.Properties.Settings.get_Default():ST_c61a8384d92948f6909a5d9680009df3.Properties.Sett" +
+    "ings")]
+
+namespace ST_c61a8384d92948f6909a5d9680009df3.Properties {
+    
+    
+    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
+        
+        [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
+        private static Settings defaultInstance = new Settings();
+        
+        public static Settings Default {
+            get {
+                return defaultInstance;
+            }
+        }
+    }
+}]]></ProjectItem>
+          <ProjectItem
+            Name="ScriptMain.cs"
+            Encoding="UTF8"><![CDATA[#region Help:  Introduction to the script task
+/* The Script Task allows you to perform virtually any operation that can be accomplished in
+ * a .Net application within the context of an Integration Services control flow. 
+ * 
+ * Expand the other regions which have "Help" prefixes for examples of specific ways to use
+ * Integration Services features within this script task. */
+#endregion
+
+
+#region Namespaces
+using System;
+using System.Data;
+using System.Data.OleDb;
+using Microsoft.SqlServer.Dts.Runtime;
+using System.Windows.Forms;
+using System.Xml;
+#endregion
+
+namespace ST_c61a8384d92948f6909a5d9680009df3
+{
+    /// <summary>
+    /// ScriptMain is the entry point class of the script.  Do not change the name, attributes,
+    /// or parent of this class.
+    /// </summary>
+	[Microsoft.SqlServer.Dts.Tasks.ScriptTask.SSISScriptTaskEntryPointAttribute]
+	public partial class ScriptMain : Microsoft.SqlServer.Dts.Tasks.ScriptTask.VSTARTScriptObjectModelBase
+	{
+        #region Help:  Using Integration Services variables and parameters in a script
+        /* To use a variable in this script, first ensure that the variable has been added to 
+         * either the list contained in the ReadOnlyVariables property or the list contained in 
+         * the ReadWriteVariables property of this script task, according to whether or not your
+         * code needs to write to the variable.  To add the variable, save this script, close this instance of
+         * Visual Studio, and update the ReadOnlyVariables and 
+         * ReadWriteVariables properties in the Script Transformation Editor window.
+         * To use a parameter in this script, follow the same steps. Parameters are always read-only.
+         * 
+         * Example of reading from a variable:
+         *  DateTime startTime = (DateTime) Dts.Variables["System::StartTime"].Value;
+         * 
+         * Example of writing to a variable:
+         *  Dts.Variables["User::myStringVariable"].Value = "new value";
+         * 
+         * Example of reading from a package parameter:
+         *  int batchId = (int) Dts.Variables["$Package::batchId"].Value;
+         *  
+         * Example of reading from a project parameter:
+         *  int batchId = (int) Dts.Variables["$Project::batchId"].Value;
+         * 
+         * Example of reading from a sensitive project parameter:
+         *  int batchId = (int) Dts.Variables["$Project::batchId"].GetSensitiveValue();
+         * */
+
+        #endregion
+
+        #region Help:  Firing Integration Services events from a script
+        /* This script task can fire events for logging purposes.
+         * 
+         * Example of firing an error event:
+         *  Dts.Events.FireError(18, "Process Values", "Bad value", "", 0);
+         * 
+         * Example of firing an information event:
+         *  Dts.Events.FireInformation(3, "Process Values", "Processing has started", "", 0, ref fireAgain)
+         * 
+         * Example of firing a warning event:
+         *  Dts.Events.FireWarning(14, "Process Values", "No values received for input", "", 0);
+         * */
+        #endregion
+
+        #region Help:  Using Integration Services connection managers in a script
+        /* Some types of connection managers can be used in this script task.  See the topic 
+         * "Working with Connection Managers Programatically" for details.
+         * 
+         * Example of using an ADO.Net connection manager:
+         *  object rawConnection = Dts.Connections["Sales DB"].AcquireConnection(Dts.Transaction);
+         *  SqlConnection myADONETConnection = (SqlConnection)rawConnection;
+         *  //Use the connection in some code here, then release the connection
+         *  Dts.Connections["Sales DB"].ReleaseConnection(rawConnection);
+         *
+         * Example of using a File connection manager
+         *  object rawConnection = Dts.Connections["Prices.zip"].AcquireConnection(Dts.Transaction);
+         *  string filePath = (string)rawConnection;
+         *  //Use the connection in some code here, then release the connection
+         *  Dts.Connections["Prices.zip"].ReleaseConnection(rawConnection);
+         * */
+        #endregion
+
+
+		/// <summary>
+        /// This method is called when this script task executes in the control flow.
+        /// Before returning from this method, set the value of Dts.TaskResult to indicate success or failure.
+        /// To open Help, press F1.
+        /// </summary>
+		public void Main()
+		{
+            /*
+             * Configuration variables
+            //====== Read only variables =========//
+            * User::rsWorkflowStep_Configuration
+            * $Package::int_DataloadWorkFlowID
+            //====== Read and write variables =========//
+            * User::intApplicationDataloadWorkflowID
+            * User::intDataLoadID
+            * User::strArchiveFileNameFormat
+            * User::strBody
+            * User::strCorruptFolder
+            * User::strDestinationFolder
+            * User::strFileName_Format_Import
+            * User::strFileName_Format_Export
+            * User::strFromEmail
+            * User::strProcessUnknownFile
+            * User::strSourceFolder
+            * User::strStoredProcedureName
+            * User::strSubject
+            * User::strToEmail
+            * User::strUnknownFolder
+            */
+            // TODO: Add your code here
+
+
+            // define oledb adapter
+            OleDbDataAdapter oleDA_wrkflwStpConfig = new OleDbDataAdapter();
+            // define data table to hold the values
+            DataTable dt_wrkflwStpConfig = new DataTable();
+            // define DataRow
+            DataRow dr_wrkflwStpConfig = null;
+
+            // polulate ther table 
+            oleDA_wrkflwStpConfig.Fill(dt_wrkflwStpConfig, Dts.Variables["rsWorkflowStep_Configuration"].Value);
+
+            foreach (DataRow row_ in dt_wrkflwStpConfig.Rows)
+            {
+                dr_wrkflwStpConfig = row_;
+
+                Dts.Variables["User::intApplicationDataloadWorkflowID"].Value = Convert.ToInt32(row_["ApplicationDataloadWorkflowID"].ToString());
+                Dts.Variables["User::intDataLoadID"].Value = Convert.ToInt32(row_["DataLoadID"].ToString());
+                Dts.Variables["strArchiveFileNameFormat"].Value =  Convert.ToString(row_["ArchiveFileNameFormat"].ToString());
+                Dts.Variables["strBody"].Value = Convert.ToString(row_["Body"].ToString());
+                Dts.Variables["strCorruptFolder"].Value = Convert.ToString(row_["CorruptFolder"].ToString()); 
+                Dts.Variables["strDestinationFolder"].Value = Convert.ToString(row_["DestinationFolder"].ToString());
+                Dts.Variables["strFileName_Format_Import"].Value = Convert.ToString(row_["FileName_Format_Import"].ToString());
+                Dts.Variables["strFileName_Format_Export"].Value = Convert.ToString(row_["FileName_Format_Export"].ToString());
+                Dts.Variables["strFromEmail"].Value = Convert.ToString(row_["FromEmail"].ToString());
+                Dts.Variables["strProcessUnknownFile"].Value = Convert.ToString(row_["ProcessUnknownFile"].ToString());
+                Dts.Variables["strSourceFolder"].Value = Convert.ToString(row_["SourceFolder"].ToString());
+                Dts.Variables["strStoredProcedureName"].Value = Convert.ToString(row_["StoredProcedureName"].ToString());
+                Dts.Variables["strSubject"].Value = Convert.ToString(row_["Subject"].ToString());
+                Dts.Variables["strToEmail"].Value = Convert.ToString(row_["ToEmail"].ToString());
+                Dts.Variables["strUnknownFolder"].Value = Convert.ToString(row_["UnknownFolder"].ToString());
+
+            }
+
+            int intdebug;
+            intdebug = Convert.ToInt32(Dts.Variables["intDebug"].Value);
+
+            if (intdebug == 1)
+            {
+                MessageBox.Show(
+                            " int_DataloadWorkFlowID :" + Convert.ToString(Dts.Variables["int_DataloadWorkFlowID"].Value)
+                            + Environment.NewLine
+                            + "ApplicationDataloadWorkflowID :" + Dts.Variables["User::intApplicationDataloadWorkflowID"].Value
+                            + Environment.NewLine
+                            + "intDataLoadID :" + Dts.Variables["User::intDataLoadID"].Value
+                            +Environment.NewLine
+                            + "strArchiveFileNameFormat :" + Dts.Variables["strArchiveFileNameFormat"].Value 
+                            +Environment.NewLine
+                            + "strBody :" + Dts.Variables["strBody"].Value
+                            +Environment.NewLine
+                            + "strCorruptFolder :" + Dts.Variables["strCorruptFolder"].Value
+                            +Environment.NewLine
+                            + "strDestinationFolder :" + Dts.Variables["strDestinationFolder"].Value
+                            +Environment.NewLine
+                            + "strFileName_Format_Import :" + Dts.Variables["strFileName_Format_Import"].Value
+                            + Environment.NewLine
+                            + "strFileName_Format_Export :" + Dts.Variables["strFileName_Format_Export"].Value
+                            + Environment.NewLine
+                            + "strFromEmail :" + Dts.Variables["strFromEmail"].Value
+                            +Environment.NewLine
+                            + "strProcessUnknownFile :" + Dts.Variables["strProcessUnknownFile"].Value
+                            +Environment.NewLine
+                            + "strSourceFolder :" + Dts.Variables["strSourceFolder"].Value
+                            +Environment.NewLine
+                            + "strStoredProcedureName :" + Dts.Variables["strStoredProcedureName"].Value
+                            +Environment.NewLine
+                            + "strSubject :" + Dts.Variables["strSubject"].Value
+                            +Environment.NewLine
+                            + "strToEmail :" + Dts.Variables["strToEmail"].Value
+                            +Environment.NewLine
+                            + "strUnknownFolder :" + Dts.Variables["strUnknownFolder"].Value
+                            +Environment.NewLine
+                    );
+
+            };
+
+
+         
+        Dts.TaskResult = (int)ScriptResults.Success;
+		}
+
+        private static string getString(object o)
+        {
+            if (o == DBNull.Value) return "";
+            return (string)o;
+        }
+
+        #region ScriptResults declaration
+        /// <summary>
+        /// This enum provides a convenient shorthand within the scope of this class for setting the
+        /// result of the script.
+        /// 
+        /// This code was generated automatically.
+        /// </summary>
+        enum ScriptResults
+        {
+            Success = Microsoft.SqlServer.Dts.Runtime.DTSExecResult.Success,
+            Failure = Microsoft.SqlServer.Dts.Runtime.DTSExecResult.Failure
+        };
+        #endregion
+
+	}
+}]]></ProjectItem>
+          <ProjectItem
+            Name="Project"
+            Encoding="UTF16LE"><![CDATA[<?xml version="1.0" encoding="UTF-16" standalone="yes"?>
+<c:Project xmlns:c="http://schemas.microsoft.com/codeprojectml/2010/08/main" xmlns:msb="http://schemas.microsoft.com/developer/msbuild/2003" runtimeVersion="4.0" schemaVersion="1.0">
+	<msb:PropertyGroup>
+		<msb:Language>msBuild</msb:Language>
+		<msb:CodeName>ST_f5336450293a4c4f8bfc561dca1e58b4</msb:CodeName>
+		<msb:DisplayName>ST_f5336450293a4c4f8bfc561dca1e58b4</msb:DisplayName>
+		<msb:ProjectId>{5CA61469-B475-40A9-8C8B-D548D93F4BE6}</msb:ProjectId>
+	</msb:PropertyGroup>
+	<msb:ItemGroup>
+		<msb:Project Include="ST_f5336450293a4c4f8bfc561dca1e58b4.csproj"/>
+		<msb:File Include="ScriptMain.cs"/>
+		<msb:File Include="Properties\AssemblyInfo.cs"/>
+		<msb:File Include="Properties\Settings.settings"/>
+		<msb:File Include="Properties\Resources.resx"/>
+		<msb:File Include="Properties\Resources.Designer.cs"/>
+		<msb:File Include="Properties\Settings.Designer.cs"/>
+	</msb:ItemGroup>
+</c:Project>]]></ProjectItem>
+          <ProjectItem
+            Name="Properties\AssemblyInfo.cs"
+            Encoding="UTF8"><![CDATA[using System.Reflection;
+using System.Runtime.CompilerServices;
+
+//
+// General Information about an assembly is controlled through the following 
+// set of attributes. Change these attribute values to modify the information
+// associated with an assembly.
+//
+[assembly: AssemblyTitle("ST_c61a8384d92948f6909a5d9680009df3")]
+[assembly: AssemblyDescription("")]
+[assembly: AssemblyConfiguration("")]
+[assembly: AssemblyCompany("Microsoft")]
+[assembly: AssemblyProduct("ST_c61a8384d92948f6909a5d9680009df3")]
+[assembly: AssemblyCopyright("Copyright @ Microsoft 2017")]
+[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCulture("")]
+//
+// Version information for an assembly consists of the following four values:
+//
+//      Major Version
+//      Minor Version 
+//      Build Number
+//      Revision
+//
+// You can specify all the values or you can default the Revision and Build Numbers 
+// by using the '*' as shown below:
+
+[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
+          <ProjectItem
+            Name="Properties\Settings.settings"
+            Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
+<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
+  <Profiles>
+    <Profile Name="(Default)" />
+  </Profiles>
+  <Settings />
+</SettingsFile>]]></ProjectItem>
+          <ProjectItem
+            Name="Properties\Resources.Designer.cs"
+            Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
+// <auto-generated>
+//     This code was generated by a tool.
+//
+//     Changes to this file may cause incorrect behavior and will be lost if
+//     the code is regenerated.
+// </auto-generated>
+//------------------------------------------------------------------------------
+
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_c61a8384d92948f6909a5d9680009df3.Properties.Resources.get_ResourceManager():System.Resources.Resou" +
+    "rceManager")]
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_c61a8384d92948f6909a5d9680009df3.Properties.Resources.get_Culture():System.Globalization.CultureIn" +
+    "fo")]
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_c61a8384d92948f6909a5d9680009df3.Properties.Resources.set_Culture(System.Globalization.CultureInfo" +
+    "):Void")]
+
+namespace ST_c61a8384d92948f6909a5d9680009df3.Properties {
+    
+    
+    /// <summary>
+    ///   A strongly-typed resource class, for looking up localized strings, etc.
+    /// </summary>
+    // This class was auto-generated by the StronglyTypedResourceBuilder
+    // class via a tool like ResGen or Visual Studio.
+    // To add or remove a member, edit your .ResX file then rerun ResGen
+    // with the /str option, or rebuild your VS project.
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+    internal class Resources {
+        
+        private static global::System.Resources.ResourceManager resourceMan;
+        
+        private static global::System.Globalization.CultureInfo resourceCulture;
+        
+        [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
+        internal Resources() {
+        }
+        
+        /// <summary>
+        ///   Returns the cached ResourceManager instance used by this class.
+        /// </summary>
+        [global::System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        internal static global::System.Resources.ResourceManager ResourceManager {
+            get {
+                if ((resourceMan == null)) {
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("ST_c61a8384d92948f6909a5d9680009df3.Properties.Resources", typeof(Resources).Assembly);
+                    resourceMan = temp;
+                }
+                return resourceMan;
+            }
+        }
+        
+        /// <summary>
+        ///   Overrides the current thread's CurrentUICulture property for all
+        ///   resource lookups using this strongly typed resource class.
+        /// </summary>
+        [global::System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        internal static global::System.Globalization.CultureInfo Culture {
+            get {
+                return resourceCulture;
+            }
+            set {
+                resourceCulture = value;
+            }
+        }
+    }
+}]]></ProjectItem>
+          <BinaryItem
+            Name="ST_f5336450293a4c4f8bfc561dca1e58b4.dll">TVqQAAMAAAAEAAAA//8AALgAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAgAAAAA4fug4AtAnNIbgBTM0hVGhpcyBwcm9ncmFtIGNhbm5vdCBiZSBydW4gaW4gRE9TIG1v
+ZGUuDQ0KJAAAAAAAAABQRQAATAEDADut4mMAAAAAAAAAAOAAIiALATAAACAAAAAIAAAAAAAAAj4A
+AAAgAAAAQAAAAAAAEAAgAAAAAgAABAAAAAAAAAAGAAAAAAAAAACAAAAAAgAAAAAAAAMAYIUAABAA
+ABAAAAAAEAAAEAAAAAAAABAAAAAAAAAAAAAAALA9AABPAAAAAEAAAJwEAAAAAAAAAAAAAAAAAAAA
+AAAAAGAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAIAAACAAAAAAAAAAAAAAACCAAAEgAAAAAAAAAAAAAAC50ZXh0AAAACB4AAAAgAAAAIAAAAAIA
+AAAAAAAAAAAAAAAAACAAAGAucnNyYwAAAJwEAAAAQAAAAAYAAAAiAAAAAAAAAAAAAAAAAABAAABA
+LnJlbG9jAAAMAAAAAGAAAAACAAAAKAAAAAAAAAAAAAAAAAAAQAAAQgAAAAAAAAAAAAAAAAAAAADk
+PQAAAAAAAEgAAAACAAUAaCcAAJAVAAABAAAAAAAAAPg8AAC4AAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAABswBQByBgAAAQAAEXMQAAAKcxEAAAoKBgIoEgAACm8TAAAK
+cgEAAHBvFAAACm8VAAAKbxYAAAomBm8XAAAKbxgAAAoLONcCAAAHbxkAAAp0EQAAAQwCKBIAAApv
+EwAACnI7AABwbxQAAAoIcokAAHBvGgAACm8bAAAKKBwAAAqMIwAAAW8dAAAKAigSAAAKbxMAAApy
+xQAAcG8UAAAKCHLtAABwbxoAAApvGwAACigcAAAKjCMAAAFvHQAACgIoEgAACm8TAAAKcgMBAHBv
+FAAACghyNQEAcG8aAAAKbxsAAAooHgAACm8dAAAKAigSAAAKbxMAAApyYQEAcG8UAAAKCHJxAQBw
+bxoAAApvGwAACigeAAAKbx0AAAoCKBIAAApvEwAACnJ7AQBwbxQAAAoIcp0BAHBvGgAACm8bAAAK
+KB4AAApvHQAACgIoEgAACm8TAAAKcrkBAHBvFAAACghy4wEAcG8aAAAKbxsAAAooHgAACm8dAAAK
+AigSAAAKbxMAAApyBwIAcG8UAAAKCHI7AgBwbxoAAApvGwAACigeAAAKbx0AAAoCKBIAAApvEwAA
+CnJpAgBwbxQAAAoIcp0CAHBvGgAACm8bAAAKKB4AAApvHQAACgIoEgAACm8TAAAKcssCAHBvFAAA
+Cghy5QIAcG8aAAAKbxsAAAooHgAACm8dAAAKAigSAAAKbxMAAApy+QIAcG8UAAAKCHIlAwBwbxoA
+AApvGwAACigeAAAKbx0AAAoCKBIAAApvEwAACnJLAwBwbxQAAAoIcmsDAHBvGgAACm8bAAAKKB4A
+AApvHQAACgIoEgAACm8TAAAKcoUDAHBvFAAACghyswMAcG8aAAAKbxsAAAooHgAACm8dAAAKAigS
+AAAKbxMAAApy2wMAcG8UAAAKCHLxAwBwbxoAAApvGwAACigeAAAKbx0AAAoCKBIAAApvEwAACnIB
+BABwbxQAAAoIchcEAHBvGgAACm8bAAAKKB4AAApvHQAACgIoEgAACm8TAAAKcicEAHBvFAAACghy
+SQQAcG8aAAAKbxsAAAooHgAACm8dAAAKB28fAAAKOh79///eEQd1EgAAAQ0JLAYJbyAAAArcAigS
+AAAKbxMAAApyZQQAcG8UAAAKbxUAAAooIQAAChdADgMAAB8wjRMAAAElFnJ3BABwoiUXAigSAAAK
+bxMAAApyqwQAcG8UAAAKbxUAAAooIgAACqIlGCgjAAAKoiUZctkEAHCiJRoCKBIAAApvEwAACnI7
+AABwbxQAAApvFQAACqIlGygjAAAKoiUcchkFAHCiJR0CKBIAAApvEwAACnLFAABwbxQAAApvFQAA
+CqIlHigjAAAKoiUfCXI5BQBwoiUfCgIoEgAACm8TAAAKcgMBAHBvFAAACm8VAAAKoiUfCygjAAAK
+oiUfDHJvBQBwoiUfDQIoEgAACm8TAAAKcmEBAHBvFAAACm8VAAAKoiUfDigjAAAKoiUfD3KDBQBw
+oiUfEAIoEgAACm8TAAAKcnsBAHBvFAAACm8VAAAKoiUfESgjAAAKoiUfEnKpBQBwoiUfEwIoEgAA
+Cm8TAAAKcrkBAHBvFAAACm8VAAAKoiUfFCgjAAAKoiUfFXLXBQBwoiUfFgIoEgAACm8TAAAKcgcC
+AHBvFAAACm8VAAAKoiUfFygjAAAKoiUfGHIPBgBwoiUfGQIoEgAACm8TAAAKcmkCAHBvFAAACm8V
+AAAKoiUfGigjAAAKoiUfG3JHBgBwoiUfHAIoEgAACm8TAAAKcssCAHBvFAAACm8VAAAKoiUfHSgj
+AAAKoiUfHnJlBgBwoiUfHwIoEgAACm8TAAAKcvkCAHBvFAAACm8VAAAKoiUfICgjAAAKoiUfIXKV
+BgBwoiUfIgIoEgAACm8TAAAKcksDAHBvFAAACm8VAAAKoiUfIygjAAAKoiUfJHK5BgBwoiUfJQIo
+EgAACm8TAAAKcoUDAHBvFAAACm8VAAAKoiUfJigjAAAKoiUfJ3LrBgBwoiUfKAIoEgAACm8TAAAK
+ctsDAHBvFAAACm8VAAAKoiUfKSgjAAAKoiUfKnIFBwBwoiUfKwIoEgAACm8TAAAKcgEEAHBvFAAA
+Cm8VAAAKoiUfLCgjAAAKoiUfLXIfBwBwoiUfLgIoEgAACm8TAAAKcicEAHBvFAAACm8VAAAKoiUf
+LygjAAAKoigkAAAKKCUAAAomAigSAAAKFm8mAAAKKgAAQRwAAAIAAAA4AAAA6QIAACEDAAARAAAA
+AAAAAFYCficAAAozBnJFBwBwKgJ0JQAAASoeAigoAAAKKh4CKCkAAAoqrn4BAAAELR5yRwcAcNAD
+AAACKCoAAApvKwAACnMsAAAKgAEAAAR+AQAABCoafgIAAAQqHgKAAgAABCoafgMAAAQqHgIoLQAA
+CioucwkAAAaAAwAABCpCU0pCAQABAAAAAAAMAAAAdjQuMC4zMDMxOQAAAAAFAGwAAAC4BAAAI34A
+ACQFAADQBgAAI1N0cmluZ3MAAAAA9AsAALwHAAAjVVMAsBMAABAAAAAjR1VJRAAAAMATAADQAQAA
+I0Jsb2IAAAAAAAAAAgAAAVcdogEJAwAAAPoBMwAWAAABAAAAKwAAAAUAAAAGAAAACgAAAAIAAAAt
+AAAAAgAAABAAAAABAAAAAgAAAAMAAAAEAAAAAQAAAAYAAAABAAAAAQAAAAAAGAQBAAAAAAAGALQC
+MQUGAEMDMQUGAAACHgUPAKUFAAAGAC0CogQGAJcCogQGAHgCogQGACoDogQGANQCogQGAO0CogQG
+AEQCogQGAF8CewMKAAgDxwMKAFwBxwMOALgAgQAGAPcEDwYOAKgGgQAGAMsAVQQGAFAGVQQGAFwE
+VQQGAOMBHgUGANYEUQUGAMYEjQQSALMBAgQSABQCAgQSAJMBeAQGAMgBMQUOAOYEjQAKAPADxwMW
+AOcF+wAWAMIA+wAOALQEgQAOAHgBgQAGAJcGVQQGAAMAVQQGAH8GVQQGAKEDVQQaALUG+gUaAGMG
++gUGAEUEVQQGACcBVQQGANcAVQQGAMQGogQAAAAAUQAAAAAAAQABAAEAEABtBAkAOQABAAEAAAAQ
+AFgFtAVNAAEABAAAARAA8QW0BWkAAwAIAAMBAAAyBgAAUQAEAAsAEQBhBLsAEQBMAb8AEQCoAMMA
+BgZ5AMcAVoAiBsoAVoAsAcoAUCAAAAAAhgBzBAYAAQDsJgAAAACRAJ4DbQABAAInAAAAAIYYEQUG
+AAIACicAAAAAgxgRBQYAAgASJwAAAACTCNIEzgACAD4nAAAAAJMINAHTAAIARScAAAAAkwhAAdgA
+AgBNJwAAAACWCFcG3gADAFQnAAAAAIYYEQUGAAMAXCcAAAAAkRgXBeMAAwAAAAEA0AQAAAEAdQMJ
+ABEFAQARABEFBgAZABEFCgApABEFEAAxABEFEAA5ABEFEABBABEFEABJABEFEABRABEFEABZABEF
+EABhABEFEABpABEFBgCpABEFBgDJABEFFQDZABEFBgDhABEFBgB5ABEFBgBxACoGJgDpAOMFKwDx
+AEwEMAD5AGEDNgDhAEAEOgB5AEAGQQAJAQMFRwCBAIsGNgCJAEwETACZAJUDUQARAQEAVQD5AGsD
+WgARAZUDXwCBAJ8GZACRAKsBBgARAQEAaAARAZUDbQAhARsBcgApAUkGdgAxAbAGfADpAHAGAQBB
+AW8DgwBxABEFBgCZABEFBgBJAekAiABJAcAGkQCxABEFlwDRABEFBgAIABQAsQAIABgAtgApAHMA
+HgEuAAsA9gAuABMA/wAuABsAHgEuACMAJwEuACsAUAEuADMAUAEuADsAVgEuAEMAJwEuAEsAZQEu
+AFMAUAEuAFsAhQFDAGMAtgBJAHMAHgFhAHsAtgBjAGsAtgAbAAMAAQAEAAMAAADWBOcAAABUAewA
+AABbBvEAAgAFAAMAAgAGAAUAAQAHAAUAAgAIAAcABIAAAAEAAAD2IF2MAAAAAAAALQAAAAQAAAAA
+AAAAAAAAAJ8AnwAAAAAADQAAAAAAAAAAAAAAqACoAwAAAAAEAAAAAAAAAAAAAACfAIEAAAAAAAQA
+AAAAAAAAAAAAAJ8AVQQAAAAADQAAAAAAAAAAAAAAqABaAAAAAAAEAAAAAAAAAAAAAACfAPoFAAAA
+AAAAAAABAAAAYgUAAAUAAgAAAABUb0ludDMyAFNUX2M2MWE4Mzg0ZDkyOTQ4ZjY5MDlhNWQ5Njgw
+MDA5ZGYzAFNUX2Y1MzM2NDUwMjkzYTRjNGY4YmZjNTYxZGNhMWU1OGI0ADxNb2R1bGU+AE1pY3Jv
+c29mdC5TcWxTZXJ2ZXIuTWFuYWdlZERUUwB2YWx1ZV9fAFN5c3RlbS5EYXRhAFN5c3RlbS5EYXRh
+Lk9sZURiAG1zY29ybGliAGRlZmF1bHRJbnN0YW5jZQBEYXRhVGFibGUAVmFyaWFibGUASURpc3Bv
+c2FibGUAUnVudGltZVR5cGVIYW5kbGUAR2V0VHlwZUZyb21IYW5kbGUATWljcm9zb2Z0LlNxbFNl
+cnZlci5EdHMuUnVudGltZQBnZXRfTmV3TGluZQBUeXBlAEZhaWx1cmUAZ2V0X0N1bHR1cmUAc2V0
+X0N1bHR1cmUAcmVzb3VyY2VDdWx0dXJlAFZTVEFSVFNjcmlwdE9iamVjdE1vZGVsQmFzZQBJbnRl
+cm5hbERhdGFDb2xsZWN0aW9uQmFzZQBBcHBsaWNhdGlvblNldHRpbmdzQmFzZQBEaXNwb3NlAEVk
+aXRvckJyb3dzYWJsZVN0YXRlAENvbXBpbGVyR2VuZXJhdGVkQXR0cmlidXRlAERlYnVnZ2VyTm9u
+VXNlckNvZGVBdHRyaWJ1dGUARGVidWdnYWJsZUF0dHJpYnV0ZQBFZGl0b3JCcm93c2FibGVBdHRy
+aWJ1dGUAQXNzZW1ibHlUaXRsZUF0dHJpYnV0ZQBBc3NlbWJseVRyYWRlbWFya0F0dHJpYnV0ZQBU
+YXJnZXRGcmFtZXdvcmtBdHRyaWJ1dGUAQXNzZW1ibHlDb25maWd1cmF0aW9uQXR0cmlidXRlAEFz
+c2VtYmx5RGVzY3JpcHRpb25BdHRyaWJ1dGUAQ29tcGlsYXRpb25SZWxheGF0aW9uc0F0dHJpYnV0
+ZQBBc3NlbWJseVByb2R1Y3RBdHRyaWJ1dGUAQXNzZW1ibHlDb3B5cmlnaHRBdHRyaWJ1dGUAU1NJ
+U1NjcmlwdFRhc2tFbnRyeVBvaW50QXR0cmlidXRlAEFzc2VtYmx5Q29tcGFueUF0dHJpYnV0ZQBS
+dW50aW1lQ29tcGF0aWJpbGl0eUF0dHJpYnV0ZQBnZXRfVmFsdWUAc2V0X1ZhbHVlAHZhbHVlAFN5
+c3RlbS5SdW50aW1lLlZlcnNpb25pbmcAVG9TdHJpbmcAZ2V0U3RyaW5nAE1pY3Jvc29mdC5TcWxT
+ZXJ2ZXIuU2NyaXB0VGFzawBNaWNyb3NvZnQuU3FsU2VydmVyLkR0cy5UYXNrcy5TY3JpcHRUYXNr
+AFNjcmlwdE9iamVjdE1vZGVsAFN5c3RlbS5Db21wb25lbnRNb2RlbABTVF9mNTMzNjQ1MDI5M2E0
+YzRmOGJmYzU2MWRjYTFlNThiNC5kbGwARmlsbABEQk51bGwAZ2V0X0l0ZW0AU3lzdGVtAEVudW0A
+cmVzb3VyY2VNYW4AU2NyaXB0TWFpbgBTeXN0ZW0uQ29uZmlndXJhdGlvbgBTeXN0ZW0uR2xvYmFs
+aXphdGlvbgBTeXN0ZW0uUmVmbGVjdGlvbgBEYXRhUm93Q29sbGVjdGlvbgBDdWx0dXJlSW5mbwBn
+ZXRfUmVzb3VyY2VNYW5hZ2VyAE9sZURiRGF0YUFkYXB0ZXIASUVudW1lcmF0b3IAR2V0RW51bWVy
+YXRvcgAuY3RvcgAuY2N0b3IAU3lzdGVtLkRpYWdub3N0aWNzAFN5c3RlbS5SdW50aW1lLkNvbXBp
+bGVyU2VydmljZXMAU3lzdGVtLlJlc291cmNlcwBTVF9jNjFhODM4NGQ5Mjk0OGY2OTA5YTVkOTY4
+MDAwOWRmMy5Qcm9wZXJ0aWVzLlJlc291cmNlcy5yZXNvdXJjZXMARGVidWdnaW5nTW9kZXMAU1Rf
+YzYxYTgzODRkOTI5NDhmNjkwOWE1ZDk2ODAwMDlkZjMuUHJvcGVydGllcwBnZXRfVmFyaWFibGVz
+AFNldHRpbmdzAFN5c3RlbS5XaW5kb3dzLkZvcm1zAFN5c3RlbS5Db2xsZWN0aW9ucwBTdWNjZXNz
+AGdldF9EdHMAU2NyaXB0UmVzdWx0cwBnZXRfUm93cwBDb25jYXQAT2JqZWN0AGdldF9EZWZhdWx0
+AERpYWxvZ1Jlc3VsdABzZXRfVGFza1Jlc3VsdABFbnZpcm9ubWVudABnZXRfQ3VycmVudABDb252
+ZXJ0AE1vdmVOZXh0AERhdGFSb3cAU2hvdwBNZXNzYWdlQm94AGdldF9Bc3NlbWJseQAAAAAAOXIA
+cwBXAG8AcgBrAGYAbABvAHcAUwB0AGUAcABfAEMAbwBuAGYAaQBnAHUAcgBhAHQAaQBvAG4AAE1V
+AHMAZQByADoAOgBpAG4AdABBAHAAcABsAGkAYwBhAHQAaQBvAG4ARABhAHQAYQBsAG8AYQBkAFcA
+bwByAGsAZgBsAG8AdwBJAEQAADtBAHAAcABsAGkAYwBhAHQAaQBvAG4ARABhAHQAYQBsAG8AYQBk
+AFcAbwByAGsAZgBsAG8AdwBJAEQAACdVAHMAZQByADoAOgBpAG4AdABEAGEAdABhAEwAbwBhAGQA
+SQBEAAAVRABhAHQAYQBMAG8AYQBkAEkARAAAMXMAdAByAEEAcgBjAGgAaQB2AGUARgBpAGwAZQBO
+AGEAbQBlAEYAbwByAG0AYQB0AAArQQByAGMAaABpAHYAZQBGAGkAbABlAE4AYQBtAGUARgBvAHIA
+bQBhAHQAAA9zAHQAcgBCAG8AZAB5AAAJQgBvAGQAeQAAIXMAdAByAEMAbwByAHIAdQBwAHQARgBv
+AGwAZABlAHIAABtDAG8AcgByAHUAcAB0AEYAbwBsAGQAZQByAAApcwB0AHIARABlAHMAdABpAG4A
+YQB0AGkAbwBuAEYAbwBsAGQAZQByAAAjRABlAHMAdABpAG4AYQB0AGkAbwBuAEYAbwBsAGQAZQBy
+AAAzcwB0AHIARgBpAGwAZQBOAGEAbQBlAF8ARgBvAHIAbQBhAHQAXwBJAG0AcABvAHIAdAAALUYA
+aQBsAGUATgBhAG0AZQBfAEYAbwByAG0AYQB0AF8ASQBtAHAAbwByAHQAADNzAHQAcgBGAGkAbABl
+AE4AYQBtAGUAXwBGAG8AcgBtAGEAdABfAEUAeABwAG8AcgB0AAAtRgBpAGwAZQBOAGEAbQBlAF8A
+RgBvAHIAbQBhAHQAXwBFAHgAcABvAHIAdAAAGXMAdAByAEYAcgBvAG0ARQBtAGEAaQBsAAATRgBy
+AG8AbQBFAG0AYQBpAGwAACtzAHQAcgBQAHIAbwBjAGUAcwBzAFUAbgBrAG4AbwB3AG4ARgBpAGwA
+ZQAAJVAAcgBvAGMAZQBzAHMAVQBuAGsAbgBvAHcAbgBGAGkAbABlAAAfcwB0AHIAUwBvAHUAcgBj
+AGUARgBvAGwAZABlAHIAABlTAG8AdQByAGMAZQBGAG8AbABkAGUAcgAALXMAdAByAFMAdABvAHIA
+ZQBkAFAAcgBvAGMAZQBkAHUAcgBlAE4AYQBtAGUAACdTAHQAbwByAGUAZABQAHIAbwBjAGUAZAB1
+AHIAZQBOAGEAbQBlAAAVcwB0AHIAUwB1AGIAagBlAGMAdAAAD1MAdQBiAGoAZQBjAHQAABVzAHQA
+cgBUAG8ARQBtAGEAaQBsAAAPVABvAEUAbQBhAGkAbAAAIXMAdAByAFUAbgBrAG4AbwB3AG4ARgBv
+AGwAZABlAHIAABtVAG4AawBuAG8AdwBuAEYAbwBsAGQAZQByAAARaQBuAHQARABlAGIAdQBnAAAz
+IABpAG4AdABfAEQAYQB0AGEAbABvAGEAZABXAG8AcgBrAEYAbABvAHcASQBEACAAOgAALWkAbgB0
+AF8ARABhAHQAYQBsAG8AYQBkAFcAbwByAGsARgBsAG8AdwBJAEQAAD9BAHAAcABsAGkAYwBhAHQA
+aQBvAG4ARABhAHQAYQBsAG8AYQBkAFcAbwByAGsAZgBsAG8AdwBJAEQAIAA6AAAfaQBuAHQARABh
+AHQAYQBMAG8AYQBkAEkARAAgADoAADVzAHQAcgBBAHIAYwBoAGkAdgBlAEYAaQBsAGUATgBhAG0A
+ZQBGAG8AcgBtAGEAdAAgADoAABNzAHQAcgBCAG8AZAB5ACAAOgAAJXMAdAByAEMAbwByAHIAdQBw
+AHQARgBvAGwAZABlAHIAIAA6AAAtcwB0AHIARABlAHMAdABpAG4AYQB0AGkAbwBuAEYAbwBsAGQA
+ZQByACAAOgAAN3MAdAByAEYAaQBsAGUATgBhAG0AZQBfAEYAbwByAG0AYQB0AF8ASQBtAHAAbwBy
+AHQAIAA6AAA3cwB0AHIARgBpAGwAZQBOAGEAbQBlAF8ARgBvAHIAbQBhAHQAXwBFAHgAcABvAHIA
+dAAgADoAAB1zAHQAcgBGAHIAbwBtAEUAbQBhAGkAbAAgADoAAC9zAHQAcgBQAHIAbwBjAGUAcwBz
+AFUAbgBrAG4AbwB3AG4ARgBpAGwAZQAgADoAACNzAHQAcgBTAG8AdQByAGMAZQBGAG8AbABkAGUA
+cgAgADoAADFzAHQAcgBTAHQAbwByAGUAZABQAHIAbwBjAGUAZAB1AHIAZQBOAGEAbQBlACAAOgAA
+GXMAdAByAFMAdQBiAGoAZQBjAHQAIAA6AAAZcwB0AHIAVABvAEUAbQBhAGkAbAAgADoAACVzAHQA
+cgBVAG4AawBuAG8AdwBuAEYAbwBsAGQAZQByACAAOgAAAQBxUwBUAF8AYwA2ADEAYQA4ADMAOAA0
+AGQAOQAyADkANAA4AGYANgA5ADAAOQBhADUAZAA5ADYAOAAwADAAMAA5AGQAZgAzAC4AUAByAG8A
+cABlAHIAdABpAGUAcwAuAFIAZQBzAG8AdQByAGMAZQBzAAAAAACK04rFo9q2Q47xtXHVfP+3AAQg
+AQEIAyAAAQUgAQEREQQgAQEOBSABARFhCgcEEj0SQRJFEkkEIAASdQQgABJ5BSABEn0cAyAAHAYg
+AggSPRwFIAASgIEEIAASQQQgARwOAyAADgQAAQgOBCABARwEAAEODgMgAAIEAAEIHAQAAQ4cAwAA
+DgUAAQ4dHAYAARGAnQ4EBhKAoQgAARKApRGAqQUgABKArQcgAgEOEoCtCLd6XFYZNOCJCImEXc2A
+gMyRBAAAAAAEAQAAAAMGElkDBhJdAwYSEAIGCAMGERQEAAASWQQAABJdBQABARJdBAAAEhADAAAB
+BAgAElkECAASXQQIABIQCAEACAAAAAAAHgEAAQBUAhZXcmFwTm9uRXhjZXB0aW9uVGhyb3dzAQgB
+AAIAAAAAACgBACNTVF9jNjFhODM4NGQ5Mjk0OGY2OTA5YTVkOTY4MDAwOWRmMwAABQEAAAAADgEA
+CU1pY3Jvc29mdAAAHwEAGkNvcHlyaWdodCBAIE1pY3Jvc29mdCAyMDE3AABJAQAaLk5FVEZyYW1l
+d29yayxWZXJzaW9uPXY0LjcBAFQOFEZyYW1ld29ya0Rpc3BsYXlOYW1lEi5ORVQgRnJhbWV3b3Jr
+IDQuNwC0AAAAzsrvvgEAAACRAAAAbFN5c3RlbS5SZXNvdXJjZXMuUmVzb3VyY2VSZWFkZXIsIG1z
+Y29ybGliLCBWZXJzaW9uPTQuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49
+Yjc3YTVjNTYxOTM0ZTA4OSNTeXN0ZW0uUmVzb3VyY2VzLlJ1bnRpbWVSZXNvdXJjZVNldAIAAAAA
+AAAAAAAAAFBBRFBBRFC0AAAA2D0AAAAAAAAAAAAA8j0AAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AOQ9AAAAAAAAAAAAAAAAX0NvckRsbE1haW4AbXNjb3JlZS5kbGwAAAAAAP8lACAAEAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAQ
+AAAAGAAAgAAAAAAAAAAAAAAAAAAAAQABAAAAMAAAgAAAAAAAAAAAAAAAAAAAAQAAAAAASAAAAFhA
+AAA+BAAAAAAAAAAAAAA+BDQAAABWAFMAXwBWAEUAUgBTAEkATwBOAF8ASQBOAEYATwAAAAAAvQTv
+/gAAAQAAAAEAXYz2IAAAAQBdjPYgPwAAAAAAAAAEAAAAAgAAAAAAAAAAAAAAAAAAAEQAAAABAFYA
+YQByAEYAaQBsAGUASQBuAGYAbwAAAAAAJAAEAAAAVAByAGEAbgBzAGwAYQB0AGkAbwBuAAAAAAAA
+ALAEngMAAAEAUwB0AHIAaQBuAGcARgBpAGwAZQBJAG4AZgBvAAAAegMAAAEAMAAwADAAMAAwADQA
+YgAwAAAAGgABAAEAQwBvAG0AbQBlAG4AdABzAAAAAAAAADQACgABAEMAbwBtAHAAYQBuAHkATgBh
+AG0AZQAAAAAATQBpAGMAcgBvAHMAbwBmAHQAAABwACQAAQBGAGkAbABlAEQAZQBzAGMAcgBpAHAA
+dABpAG8AbgAAAAAAUwBUAF8AYwA2ADEAYQA4ADMAOAA0AGQAOQAyADkANAA4AGYANgA5ADAAOQBh
+ADUAZAA5ADYAOAAwADAAMAA5AGQAZgAzAAAAPgAPAAEARgBpAGwAZQBWAGUAcgBzAGkAbwBuAAAA
+AAAxAC4AMAAuADgANAAzADgALgAzADUAOQAzADMAAAAAAHAAKAABAEkAbgB0AGUAcgBuAGEAbABO
+AGEAbQBlAAAAUwBUAF8AZgA1ADMAMwA2ADQANQAwADIAOQAzAGEANABjADQAZgA4AGIAZgBjADUA
+NgAxAGQAYwBhADEAZQA1ADgAYgA0AC4AZABsAGwAAABaABsAAQBMAGUAZwBhAGwAQwBvAHAAeQBy
+AGkAZwBoAHQAAABDAG8AcAB5AHIAaQBnAGgAdAAgAEAAIABNAGkAYwByAG8AcwBvAGYAdAAgADIA
+MAAxADcAAAAAACoAAQABAEwAZQBnAGEAbABUAHIAYQBkAGUAbQBhAHIAawBzAAAAAAAAAAAAeAAo
+AAEATwByAGkAZwBpAG4AYQBsAEYAaQBsAGUAbgBhAG0AZQAAAFMAVABfAGYANQAzADMANgA0ADUA
+MAAyADkAMwBhADQAYwA0AGYAOABiAGYAYwA1ADYAMQBkAGMAYQAxAGUANQA4AGIANAAuAGQAbABs
+AAAAaAAkAAEAUAByAG8AZAB1AGMAdABOAGEAbQBlAAAAAABTAFQAXwBjADYAMQBhADgAMwA4ADQA
+ZAA5ADIAOQA0ADgAZgA2ADkAMAA5AGEANQBkADkANgA4ADAAMAAwADkAZABmADMAAABCAA8AAQBQ
+AHIAbwBkAHUAYwB0AFYAZQByAHMAaQBvAG4AAAAxAC4AMAAuADgANAAzADgALgAzADUAOQAzADMA
+AAAAAEYADwABAEEAcwBzAGUAbQBiAGwAeQAgAFYAZQByAHMAaQBvAG4AAAAxAC4AMAAuADgANAAz
+ADgALgAzADUAOQAzADMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwAAAMAAAABD4AAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
+        </ScriptProject>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint]"
+      DTS:CreationName=""
+      DTS:DTSID="{FE520506-3C1D-47AF-AD5C-711CECABF834}"
+      DTS:From="Package\Sequence Container"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint"
+      DTS:To="Package\Flag Data Load Complete" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 1]"
+      DTS:CreationName=""
+      DTS:DTSID="{53B0CDD3-01CB-455E-A1DD-E662021248B8}"
+      DTS:From="Package\Sequence Container"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 1"
+      DTS:To="Package\Flag Data Load Failed"
+      DTS:Value="1" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 2]"
+      DTS:CreationName=""
+      DTS:DTSID="{F6325A26-3077-4F2C-A32E-A9C2293174D6}"
+      DTS:From="Package\Set up configuration variables"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 2"
+      DTS:To="Package\Sequence Container" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 3]"
+      DTS:CreationName=""
+      DTS:DTSID="{3533A665-13F3-48B3-B8EC-7FF611D8621D}"
+      DTS:From="Package\Flag Dataload as Start"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 3"
+      DTS:To="Package\Get the Configuration" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 4]"
+      DTS:CreationName=""
+      DTS:DTSID="{01E5F406-D6FE-49C1-8AB2-64A952250EB0}"
+      DTS:From="Package\Get the Configuration"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 4"
+      DTS:To="Package\Set up configuration variables" />
+  </DTS:PrecedenceConstraints>
+  <DTS:EventHandlers>
+    <DTS:EventHandler
+      DTS:refId="Package.EventHandlers[OnError]"
+      DTS:CreationName="OnError"
+      DTS:DTSID="{88C4E4F1-E54A-47D7-8D12-68A5B834BF13}"
+      DTS:EventID="0"
+      DTS:EventName="OnError"
+      DTS:LocaleID="-1">
+      <DTS:Variables>
+        <DTS:Variable
+          DTS:CreationName=""
+          DTS:Description="The propagate property of the event"
+          DTS:DTSID="{3F9EAF50-4184-415C-8645-BB325A9CB92A}"
+          DTS:IncludeInDebugDump="6789"
+          DTS:Namespace="System"
+          DTS:ObjectName="Propagate">
+          <DTS:VariableValue
+            DTS:DataType="11">-1</DTS:VariableValue>
+        </DTS:Variable>
+      </DTS:Variables>
+      <DTS:Executables>
+        <DTS:Executable
+          DTS:refId="Package.EventHandlers[OnError]\Send Mail Task"
+          DTS:CreationName="Microsoft.SendMailTask"
+          DTS:Description="Send Mail Task"
+          DTS:DTSID="{ca5f2f4f-39b9-4bd3-a2fb-982c75bfc68a}"
+          DTS:ExecutableType="Microsoft.SendMailTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Send Mail Task"
+          DTS:TaskContact="Send Mail Task; Microsoft Corporation; SQL Server 2016; © 2015 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+          <DTS:Variables />
+          <DTS:PropertyExpression
+            DTS:Name="Disable">@[User::int_DataloadWorkFlowID] &gt;0</DTS:PropertyExpression>
+          <DTS:PropertyExpression
+            DTS:Name="FromLine">@[User::strFromEmail]</DTS:PropertyExpression>
+          <DTS:PropertyExpression
+            DTS:Name="Subject">@[User::strSubject]</DTS:PropertyExpression>
+          <DTS:PropertyExpression
+            DTS:Name="ToLine">@[User::strToEmail]</DTS:PropertyExpression>
+          <DTS:ObjectData>
+            <SendMailTask:SendMailTaskData
+              SendMailTask:SMTPServer="{5AC8790B-694C-4AB7-A834-E6EE3E9A5213}"
+              SendMailTask:From="harshad.deshmukh@collinsongroup.com"
+              SendMailTask:To="harshad.deshmukh@collinsongroup.com"
+              SendMailTask:Subject="05_scr2dst_tblCIF Fails to execute.Please check Package and run again"
+              SendMailTask:MessageSourceType="Variable"
+              SendMailTask:MessageSource="User::strBody" xmlns:SendMailTask="www.microsoft.com/sqlserver/dts/tasks/sendmailtask" />
+          </DTS:ObjectData>
+        </DTS:Executable>
+      </DTS:Executables>
+    </DTS:EventHandler>
+  </DTS:EventHandlers>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="198.4,41.6"
+          Id="Package\Flag Data Load Complete"
+          TopLeft="55.7857151420746,693.217644810922" />
+        <NodeLayout
+          Size="198.4,44.8"
+          Id="Package\Flag Data Load Failed"
+          TopLeft="435.92857312183,691.617645248492" />
+        <NodeLayout
+          Size="220,41.6"
+          Id="Package\Flag Dataload as Start"
+          TopLeft="265.700000204358,6.11176471446208" />
+        <NodeLayout
+          Size="220,41.6"
+          Id="Package\Get the Configuration"
+          TopLeft="265.700000204358,72.2294112756589" />
+        <NodeLayout
+          Size="227.2,41.6"
+          Id="Package\Sequence Container\Delete tblCIF"
+          TopLeft="50.3000049046105,192.347053096534" />
+        <NodeLayout
+          Size="235.2,41.6"
+          Id="Package\Sequence Container\Get Current Reporting Month"
+          TopLeft="45.1571476741709,29.029402524294" />
+        <NodeLayout
+          Size="234.4,41.6"
+          Id="Package\Sequence Container\Load tblCIF"
+          TopLeft="48.5857191611307,270.641172453112" />
+        <NodeLayout
+          Size="227.2,41.6"
+          Id="Package\Sequence Container\Set NumRecs"
+          TopLeft="51.4428620669304,112.829404311031" />
+        <EdgeLayout
+          Id="Package\Sequence Container.PrecedenceConstraints[Constraint]"
+          TopLeft="163.900004870551,70.629402524294">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,42.200001786737"
+              Start="0,0"
+              End="0,34.700001786737">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,34.700001786737" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Sequence Container.PrecedenceConstraints[Constraint 1]"
+          TopLeft="164.47143348577,154.429404311031">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,37.917648785503"
+              Start="0,0"
+              End="0,30.417648785503">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,30.417648785503" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Sequence Container.PrecedenceConstraints[Constraint 2]"
+          TopLeft="164.842862032871,233.947053096534">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,36.6941193565779"
+              Start="0,0"
+              End="0,29.1941193565779">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,29.1941193565779" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="328.8,367.2"
+          Size="328.8,410.4"
+          Id="Package\Sequence Container"
+          TopLeft="205.5571429058,224.652939975303" />
+        <NodeLayout
+          Size="220,41.6"
+          Id="Package\Set up configuration variables"
+          TopLeft="265.700000204358,150.582352126098" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="316.490476239133,635.052939975303">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-161.504761097059,58.1647048356191"
+              Start="0,0"
+              End="-161.504761097059,50.6647048356191">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,19.4348834979347" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,19.4348834979347"
+                    Point2="0,23.4348834979347"
+                    Point3="-4,23.4348834979347" />
+                  <mssgle:LineSegment
+                    End="-157.504761097059,23.4348834979347" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-157.504761097059,23.4348834979347"
+                    Point2="-161.504761097059,23.4348834979347"
+                    Point3="-161.504761097059,27.4348834979347" />
+                  <mssgle:LineSegment
+                    End="-161.504761097059,50.6647048356191" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 1]"
+          TopLeft="423.423809572467,635.052939975303">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="111.704763549363,56.564705273189"
+              Start="0,0"
+              End="111.704763549363,49.064705273189">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,18.7902347638224" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,18.7902347638224"
+                    Point2="0,22.7902347638224"
+                    Point3="4,22.7902347638224" />
+                  <mssgle:LineSegment
+                    End="107.704763549363,22.7902347638224" />
+                  <mssgle:CubicBezierSegment
+                    Point1="107.704763549363,22.7902347638224"
+                    Point2="111.704763549363,22.7902347638224"
+                    Point3="111.704763549363,26.7902347638224" />
+                  <mssgle:LineSegment
+                    End="111.704763549363,49.064705273189" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="40.6110341184317,27.7902347638224,30.4826953125,9.7490234375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 2]"
+          TopLeft="372.828571555079,192.182352126098">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,32.470587849205"
+              Start="0,0"
+              End="0,24.970587849205">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,24.970587849205" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 3]"
+          TopLeft="375.700000204358,47.7117647144621">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,24.5176465611968"
+              Start="0,0"
+              End="0,17.0176465611968">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,17.0176465611968" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 4]"
+          TopLeft="375.700000204358,113.829411275659">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,36.7529408504391"
+              Start="0,0"
+              End="0,29.2529408504391">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,29.2529408504391" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <DtsEventHandler
+    design-time-name="Package.EventHandlers[OnError]">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="150.4,41.6"
+          Id="Package.EventHandlers[OnError]\Send Mail Task"
+          TopLeft="280.8,116" />
+      </GraphLayout>
+    </LayoutInfo>
+  </DtsEventHandler>
+  <TaskHost
+    design-time-name="Package\Sequence Container\Load tblCIF">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="154.4,41.6"
+          Id="Package\Sequence Container\Load tblCIF\Row Count"
+          TopLeft="24.3571426333213,202.696081248397" />
+        <NodeLayout
+          Size="154.4,41.6"
+          Id="Package\Sequence Container\Load tblCIF\DST_tblCIF"
+          TopLeft="24.3571426333213,290.588239369508" />
+        <NodeLayout
+          Size="154.4,41.6"
+          Id="Package\Sequence Container\Load tblCIF\Derived Column"
+          TopLeft="24.3571426333213,114.803923127286" />
+        <NodeLayout
+          Size="154.4,41.6"
+          Id="Package\Sequence Container\Load tblCIF\SRC_tblCIF"
+          TopLeft="24.3571426333213,26.9117650061742" />
+        <EdgeLayout
+          Id="Package\Sequence Container\Load tblCIF.Paths[Derived Column Output]"
+          TopLeft="101.557142633321,156.403923127286">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,46.2921581211112"
+              Start="0,0"
+              End="0,38.7921581211112">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,38.7921581211112" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Sequence Container\Load tblCIF.Paths[Row Count Output 1]"
+          TopLeft="101.557142633321,244.296081248397">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,46.2921581211113"
+              Start="0,0"
+              End="0,38.7921581211113">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,38.7921581211113" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Sequence Container\Load tblCIF.Paths[OLE DB Source Output]"
+          TopLeft="101.557142633321,68.5117650061742">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,46.2921581211113"
+              Start="0,0"
+              End="0,38.7921581211113">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,38.7921581211113" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Sequence Container\Load tblCIF\DST_tblCIF">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Sequence Container\Load tblCIF\SRC_tblCIF">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

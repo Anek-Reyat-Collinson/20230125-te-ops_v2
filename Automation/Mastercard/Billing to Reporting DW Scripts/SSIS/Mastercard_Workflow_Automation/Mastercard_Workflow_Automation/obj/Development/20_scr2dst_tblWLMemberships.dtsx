@@ -1,0 +1,3026 @@
+<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="9/4/2017 12:09:08 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="TCG02603"
+  DTS:CreatorName="TCG\Abdul.Abbas"
+  DTS:DTSID="{A7212868-FEC2-4C52-8D15-B5348EB5A436}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="15.0.2000.170"
+  DTS:LocaleID="2057"
+  DTS:ObjectName="20_scr2dst_tblWLMemberships"
+  DTS:PackageType="5"
+  DTS:VersionBuild="46"
+  DTS:VersionGUID="{B860FE36-2763-4AE3-B6E7-8F2EC6910429}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:PackageParameters>
+    <DTS:PackageParameter
+      DTS:CreationName=""
+      DTS:DataType="3"
+      DTS:DTSID="{32C37562-33CE-4AB6-9D73-C20C80DDA7C6}"
+      DTS:ObjectName="int_DataloadWorkFlowID">
+      <DTS:Property
+        DTS:DataType="3"
+        DTS:Name="ParameterValue">0</DTS:Property>
+    </DTS:PackageParameter>
+  </DTS:PackageParameters>
+  <DTS:Variables>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{2494C08F-30EC-4B45-A68E-224698924A95}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="dtEndDate">
+      <DTS:VariableValue
+        DTS:DataType="7">9/4/2017 4:59:00 PM</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{DF774B69-88FB-47B0-AE78-05F589328C60}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="dtReportMonth">
+      <DTS:VariableValue
+        DTS:DataType="7">9/13/2017 1:53:57 PM</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{5D906CD3-9A47-4C59-8838-616433627263}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="dtStartDate">
+      <DTS:VariableValue
+        DTS:DataType="7">9/4/2017 4:49:00 PM</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{0226E2FC-0C10-4070-AEF3-083B255DA706}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="@[$Package::int_DataloadWorkFlowID]"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="intApplicationDataloadWorkflowID">
+      <DTS:VariableValue
+        DTS:DataType="3">0</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{988FF860-50F6-451C-B75F-ABCB39E2BAB7}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="intDataLoadID">
+      <DTS:VariableValue
+        DTS:DataType="3">0</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{9B3E6FF8-DC23-499A-9198-83E793C86C2C}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="intDebug">
+      <DTS:VariableValue
+        DTS:DataType="3">0</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{63055465-A058-4132-A27C-DF4BA9845204}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="intNumRecs">
+      <DTS:VariableValue
+        DTS:DataType="3">0</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{110BFAA3-3EC4-49F9-9A6B-54E9F13E2829}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="intRecInsertedCount">
+      <DTS:VariableValue
+        DTS:DataType="3">0</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{D1AFA25F-2C6C-4001-98F1-FF871CB77019}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="intRecUpdatedCount">
+      <DTS:VariableValue
+        DTS:DataType="3">0</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{99B2E3D2-34A9-454B-88D5-A05C45241F0F}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="@[User::intNumRecs]"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="intRecWithIssueCount">
+      <DTS:VariableValue
+        DTS:DataType="3">0</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{39F6544D-7990-4ABF-B4AB-64420FCA24BD}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="intSourceRecCount">
+      <DTS:VariableValue
+        DTS:DataType="3">0</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{B6CF6D8F-B62F-4F70-97A7-0227431127BA}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="int_DataloadWorkFlowID">
+      <DTS:VariableValue
+        DTS:DataType="3">0</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{27CED07C-FD0E-4A48-B3C0-F193C3CC8FE4}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="rsWorkflowStep_Configuration">
+      <DTS:VariableValue
+        DTS:DataSubType="ManagedSerializable"
+        DTS:DataType="13">
+        <SOAP-ENV:Envelope xmlns:clr="http://schemas.microsoft.com/soap/encoding/clr/1.0" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+          <SOAP-ENV:Body>
+            <xsd:anyType
+              id="ref-1"></xsd:anyType>
+          </SOAP-ENV:Body>
+        </SOAP-ENV:Envelope>
+      </DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{2DAEBA17-1D76-4489-99DC-8E4BD2733BA8}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="strArchiveFileNameFormat">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{0B0EDAF1-03C7-4035-BE30-BEE8AAA849DA}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="@[System::PackageName] + &quot; Fails to execute.&#xA;&#xA;Please, check Package and run again &#xA;&#xA;From  BI_DEV_TEAM&quot;"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="strBody">
+      <DTS:VariableValue
+        DTS:DataType="8">20_scr2dst_tblWLMemberships Fails to execute.
+
+Please, check Package and run again 
+
+From  BI_DEV_TEAM</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{AA5740BA-49BC-413D-A5E9-8DB98D989C5B}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="strClientName">
+      <DTS:VariableValue
+        DTS:DataType="8">MasterCard Automation</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{F207DE97-ECFA-491E-92AE-D2809E053828}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="strConnection">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{16529CD6-1E25-48FB-8B58-CD595512E93C}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="strCorruptFolder">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{D1CBD160-D45B-4AA7-9A5E-AFE4E3452035}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="strDestinationFolder">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{DD50B028-A82C-4162-BC9C-75E86E6E1D1B}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="strFileName_Format_Export">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{B6DE102C-D2EA-49D9-BA0C-0D9B1D37F5B4}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="strFileName_Format_Import">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{033173EC-D37E-4B24-A591-FEF7AF02006E}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="@[$Project::FromEmail]"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="strFromEmail">
+      <DTS:VariableValue
+        DTS:DataType="8">harshad.deshmukh@collinsongroup.com</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{11967D70-9605-417F-85A8-C82770A98980}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="strProcessUnknownFile">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{02BF485A-CC16-4BDF-94F7-C418D676CC49}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="strSourceFolder">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{0054105A-4758-4632-98AE-FE9F636CD87E}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="strStoredProcedureName">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{EED9E614-47AC-4D6A-B119-84280316A6FF}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="@[System::PackageName] + &quot; Fails to execute.&quot;"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="strSubject">
+      <DTS:VariableValue
+        DTS:DataType="8">20_scr2dst_tblWLMemberships Fails to execute.</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{F522E5B7-B6B6-4DFA-96AF-66E2FB261946}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="@[$Project::ToEmail]"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="strToEmail">
+      <DTS:VariableValue
+        DTS:DataType="8">harshad.deshmukh@collinsongroup.com</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{ED098FA6-9CC4-44D8-A2AB-E7D91F3F0735}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="strUnknownFolder">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
+    </DTS:Variable>
+  </DTS:Variables>
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Flag Data Load Complete"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{AAC680D8-BBD9-4DC0-B46A-C38D01C097E7}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Flag Data Load Complete"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2016; © 2015 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:LoggingOptions
+        DTS:FilterKind="0" />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{DB2FC1A9-9D29-448A-8097-D56B89869BDD}"
+          SQLTask:SqlStatementSource="EXECUTE [audit_log].[usp_updDataloadWorkflowStepStatus] ?, ?, ?, ?, 'Complete'" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="1"
+            SQLTask:DtsVariableName="User::intRecInsertedCount"
+            SQLTask:ParameterDirection="Input"
+            SQLTask:DataType="3"
+            SQLTask:ParameterSize="-1" />
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="2"
+            SQLTask:DtsVariableName="User::intRecUpdatedCount"
+            SQLTask:ParameterDirection="Input"
+            SQLTask:DataType="3"
+            SQLTask:ParameterSize="-1" />
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="3"
+            SQLTask:DtsVariableName="User::intRecWithIssueCount"
+            SQLTask:ParameterDirection="Input"
+            SQLTask:DataType="3"
+            SQLTask:ParameterSize="-1" />
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="0"
+            SQLTask:DtsVariableName="$Package::int_DataloadWorkFlowID"
+            SQLTask:ParameterDirection="Input"
+            SQLTask:DataType="3"
+            SQLTask:ParameterSize="-1" />
+        </SQLTask:SqlTaskData>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Flag Data Load Failed"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{DAFF0FF0-8EA1-4837-BEA4-D09B5A67329D}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Flag Data Load Failed"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2016; © 2015 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="1">
+      <DTS:Variables />
+      <DTS:LoggingOptions
+        DTS:FilterKind="0" />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{DB2FC1A9-9D29-448A-8097-D56B89869BDD}"
+          SQLTask:SqlStatementSource="EXECUTE [audit_log].[usp_updDataloadWorkflowStepStatus] ?, Null, Null, Null, 'Failed'" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="0"
+            SQLTask:DtsVariableName="$Package::int_DataloadWorkFlowID"
+            SQLTask:ParameterDirection="Input"
+            SQLTask:DataType="3"
+            SQLTask:ParameterSize="-1" />
+        </SQLTask:SqlTaskData>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Flag Dataload as Start"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{C5F91DFF-F9E7-4219-8AE4-3F2206B71C7B}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Flag Dataload as Start"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2016; © 2015 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:LoggingOptions
+        DTS:FilterKind="0" />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{DB2FC1A9-9D29-448A-8097-D56B89869BDD}"
+          SQLTask:SqlStatementSource="EXECUTE [audit_log].[usp_updDataloadWorkflowStepStatus] ?, ?, ?, ?, 'Start'" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="0"
+            SQLTask:DtsVariableName="$Package::int_DataloadWorkFlowID"
+            SQLTask:ParameterDirection="Input"
+            SQLTask:DataType="3"
+            SQLTask:ParameterSize="-1" />
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="1"
+            SQLTask:DtsVariableName="User::intRecInsertedCount"
+            SQLTask:ParameterDirection="Input"
+            SQLTask:DataType="3"
+            SQLTask:ParameterSize="-1" />
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="2"
+            SQLTask:DtsVariableName="User::intRecUpdatedCount"
+            SQLTask:ParameterDirection="Input"
+            SQLTask:DataType="3"
+            SQLTask:ParameterSize="-1" />
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="3"
+            SQLTask:DtsVariableName="User::intRecWithIssueCount"
+            SQLTask:ParameterDirection="Input"
+            SQLTask:DataType="3"
+            SQLTask:ParameterSize="-1" />
+        </SQLTask:SqlTaskData>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Get the Configuration"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:DelayValidation="True"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{E8BA4765-4E44-4245-AC34-43FA6EA1E59D}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Get the Configuration"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2016; © 2015 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:LoggingOptions
+        DTS:FilterKind="0" />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{DB2FC1A9-9D29-448A-8097-D56B89869BDD}"
+          SQLTask:SqlStatementSource="EXECUTE [audit_log].[usp_getDataloadWorkflowStepConfiguration] ?"
+          SQLTask:ResultType="ResultSetType_Rowset" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+          <SQLTask:ResultBinding
+            SQLTask:ResultName="0"
+            SQLTask:DtsVariableName="User::rsWorkflowStep_Configuration" />
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="0"
+            SQLTask:DtsVariableName="$Package::int_DataloadWorkFlowID"
+            SQLTask:ParameterDirection="Input"
+            SQLTask:DataType="3"
+            SQLTask:ParameterSize="-1" />
+        </SQLTask:SqlTaskData>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Sequence Container"
+      DTS:CreationName="STOCK:SEQUENCE"
+      DTS:Description="Sequence Container"
+      DTS:DTSID="{4C63B633-ED8B-4DFC-81F6-A361638796BB}"
+      DTS:ExecutableType="STOCK:SEQUENCE"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Sequence Container">
+      <DTS:Variables />
+      <DTS:LoggingOptions
+        DTS:FilterKind="0" />
+      <DTS:Executables>
+        <DTS:Executable
+          DTS:refId="Package\Sequence Container\Delete tblWLMemberships"
+          DTS:CreationName="Microsoft.ExecuteSQLTask"
+          DTS:Description="Execute SQL Task"
+          DTS:Disabled="True"
+          DTS:DTSID="{2e900a21-f0d0-43e4-8428-722eb0504eb1}"
+          DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Delete tblWLMemberships"
+          DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2016; © 2015 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+          DTS:ThreadHint="0">
+          <DTS:Variables />
+          <DTS:PropertyExpression
+            DTS:Name="Disable">@[User::intNumRecs]&lt;= 0</DTS:PropertyExpression>
+          <DTS:ObjectData>
+            <SQLTask:SqlTaskData
+              SQLTask:Connection="{E9AA5473-8FE8-4687-A6FF-9F02DC983002}"
+              SQLTask:SqlStatementSource="DISABLE TRIGGER dbo.trg_AutoAudit_tblWLMemberships ON dbo.tblWLMemberships;&#xA;DELETE from [mastercard_db].[dbo].[tblWLMemberships]WHERE [billing_month] BETWEEN  ? AND ?;&#xA;ENABLE TRIGGER dbo.trg_AutoAudit_tblWLMemberships ON dbo.tblWLMemberships;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+              <SQLTask:ParameterBinding
+                SQLTask:ParameterName="0"
+                SQLTask:DtsVariableName="User::dtStartDate"
+                SQLTask:ParameterDirection="Input"
+                SQLTask:DataType="7"
+                SQLTask:ParameterSize="-1" />
+              <SQLTask:ParameterBinding
+                SQLTask:ParameterName="1"
+                SQLTask:DtsVariableName="User::dtEndDate"
+                SQLTask:ParameterDirection="Input"
+                SQLTask:DataType="7"
+                SQLTask:ParameterSize="-1" />
+            </SQLTask:SqlTaskData>
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\Sequence Container\Get Current Reporting Month"
+          DTS:CreationName="Microsoft.ExecuteSQLTask"
+          DTS:Description="Execute SQL Task"
+          DTS:DTSID="{e4399494-2231-4bc8-a413-c050c28bb590}"
+          DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Get Current Reporting Month"
+          DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2016; © 2015 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+          DTS:ThreadHint="0">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <SQLTask:SqlTaskData
+              SQLTask:Connection="{F70A16E4-3093-4EA1-B02B-98C946D4E37F}"
+              SQLTask:SqlStatementSource="Execute [dbo].[usp_ReportMonth_Sel_ByClient]  ?, ? , ? output  , ? output  , ? output" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+              <SQLTask:ParameterBinding
+                SQLTask:ParameterName="2"
+                SQLTask:DtsVariableName="User::dtStartDate"
+                SQLTask:ParameterDirection="Output"
+                SQLTask:DataType="135"
+                SQLTask:ParameterSize="-1" />
+              <SQLTask:ParameterBinding
+                SQLTask:ParameterName="3"
+                SQLTask:DtsVariableName="User::dtEndDate"
+                SQLTask:ParameterDirection="Output"
+                SQLTask:DataType="135"
+                SQLTask:ParameterSize="-1" />
+              <SQLTask:ParameterBinding
+                SQLTask:ParameterName="4"
+                SQLTask:DtsVariableName="User::dtReportMonth"
+                SQLTask:ParameterDirection="Output"
+                SQLTask:DataType="135"
+                SQLTask:ParameterSize="-1" />
+              <SQLTask:ParameterBinding
+                SQLTask:ParameterName="0"
+                SQLTask:DtsVariableName="User::strClientName"
+                SQLTask:ParameterDirection="Input"
+                SQLTask:DataType="129"
+                SQLTask:ParameterSize="-1" />
+              <SQLTask:ParameterBinding
+                SQLTask:ParameterName="1"
+                SQLTask:DtsVariableName="$Package::int_DataloadWorkFlowID"
+                SQLTask:ParameterDirection="Input"
+                SQLTask:DataType="3"
+                SQLTask:ParameterSize="-1" />
+            </SQLTask:SqlTaskData>
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\Sequence Container\Load tblWLMemberships"
+          DTS:CreationName="Microsoft.Pipeline"
+          DTS:Description="Data Flow Task"
+          DTS:DTSID="{88d3cbf1-1a60-45b8-8c37-49bfcc0edf0d}"
+          DTS:ExecutableType="Microsoft.Pipeline"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Load tblWLMemberships"
+          DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <pipeline
+              version="1">
+              <components>
+                <component
+                  refId="Package\Sequence Container\Load tblWLMemberships\Derived Column"
+                  componentClassID="Microsoft.DerivedColumn"
+                  contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+                  description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+                  name="Derived Column"
+                  usesDispositions="true">
+                  <inputs>
+                    <input
+                      refId="Package\Sequence Container\Load tblWLMemberships\Derived Column.Inputs[Derived Column Input]"
+                      description="Input to the Derived Column Transformation"
+                      name="Derived Column Input">
+                      <externalMetadataColumns />
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\Sequence Container\Load tblWLMemberships\Derived Column.Outputs[Derived Column Output]"
+                      description="Default Output of the Derived Column Transformation"
+                      exclusionGroup="1"
+                      name="Derived Column Output"
+                      synchronousInputId="Package\Sequence Container\Load tblWLMemberships\Derived Column.Inputs[Derived Column Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Sequence Container\Load tblWLMemberships\Derived Column.Outputs[Derived Column Output].Columns[d_CreatedDate]"
+                          dataType="date"
+                          errorOrTruncationOperation="Computation"
+                          errorRowDisposition="FailComponent"
+                          lineageId="Package\Sequence Container\Load tblWLMemberships\Derived Column.Outputs[Derived Column Output].Columns[d_CreatedDate]"
+                          name="d_CreatedDate"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.String"
+                              description="Derived Column Expression"
+                              name="Expression">@[System::ContainerStartTime]</property>
+                            <property
+                              containsID="true"
+                              dataType="System.String"
+                              description="Derived Column Friendly Expression"
+                              expressionType="Notify"
+                              name="FriendlyExpression">@[System::ContainerStartTime]</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Sequence Container\Load tblWLMemberships\Derived Column.Outputs[Derived Column Output].Columns[d_CreatedBy]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Computation"
+                          errorRowDisposition="FailComponent"
+                          length="50"
+                          lineageId="Package\Sequence Container\Load tblWLMemberships\Derived Column.Outputs[Derived Column Output].Columns[d_CreatedBy]"
+                          name="d_CreatedBy"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.String"
+                              description="Derived Column Expression"
+                              name="Expression">(DT_STR,50,1252)@[System::UserName]</property>
+                            <property
+                              containsID="true"
+                              dataType="System.String"
+                              description="Derived Column Friendly Expression"
+                              expressionType="Notify"
+                              name="FriendlyExpression">(DT_STR,50,1252)@[System::UserName]</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Sequence Container\Load tblWLMemberships\Derived Column.Outputs[Derived Column Output].Columns[DataLoadWorkFlowID]"
+                          dataType="i4"
+                          errorOrTruncationOperation="Computation"
+                          errorRowDisposition="FailComponent"
+                          lineageId="Package\Sequence Container\Load tblWLMemberships\Derived Column.Outputs[Derived Column Output].Columns[DataLoadWorkFlowID]"
+                          name="DataLoadWorkFlowID"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.String"
+                              description="Derived Column Expression"
+                              name="Expression">@[$Package::int_DataloadWorkFlowID]</property>
+                            <property
+                              containsID="true"
+                              dataType="System.String"
+                              description="Derived Column Friendly Expression"
+                              expressionType="Notify"
+                              name="FriendlyExpression">@[$Package::int_DataloadWorkFlowID]</property>
+                          </properties>
+                        </outputColumn>
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                    <output
+                      refId="Package\Sequence Container\Load tblWLMemberships\Derived Column.Outputs[Derived Column Error Output]"
+                      description="Error Output of the Derived Column Transformation"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="Derived Column Error Output"
+                      synchronousInputId="Package\Sequence Container\Load tblWLMemberships\Derived Column.Inputs[Derived Column Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Sequence Container\Load tblWLMemberships\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container\Load tblWLMemberships\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Load tblWLMemberships\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container\Load tblWLMemberships\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\Sequence Container\Load tblWLMemberships\DST_tblWLMemberships"
+                  componentClassID="Microsoft.OLEDBDestination"
+                  contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+                  description="OLE DB Destination"
+                  name="DST_tblWLMemberships"
+                  usesDispositions="true"
+                  version="4">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of the database object used to open a rowset."
+                      name="OpenRowset">[dbo].[tblWLMemberships]</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable that contains the name of the database object used to open a rowset."
+                      name="OpenRowsetVariable"></property>
+                    <property
+                      dataType="System.String"
+                      description="The SQL command to be executed."
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the column code page to use when code page information is unavailable from the data source."
+                      name="DefaultCodePage">1252</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Forces the use of the DefaultCodePage property value when describing character data."
+                      name="AlwaysUseDefaultCodePage">false</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the mode used to access the database."
+                      name="AccessMode"
+                      typeConverter="AccessMode">3</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepIdentity">true</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepNulls">true</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                      name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                      name="FastLoadMaxInsertCommitSize">2147483647</property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Sequence Container\Load tblWLMemberships\DST_tblWLMemberships.Connections[OleDbConnection]"
+                      connectionManagerID="{E9AA5473-8FE8-4687-A6FF-9F02DC983002}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[mastercard_reporting]"
+                      description="The OLE DB runtime connection used to access the database."
+                      name="OleDbConnection" />
+                  </connections>
+                  <inputs>
+                    <input
+                      refId="Package\Sequence Container\Load tblWLMemberships\DST_tblWLMemberships.Inputs[OLE DB Destination Input]"
+                      errorOrTruncationOperation="Insert"
+                      errorRowDisposition="FailComponent"
+                      hasSideEffects="true"
+                      name="OLE DB Destination Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\Sequence Container\Load tblWLMemberships\DST_tblWLMemberships.Inputs[OLE DB Destination Input].Columns[billing_month]"
+                          cachedDataType="dbTimeStamp"
+                          cachedName="billing_month"
+                          externalMetadataColumnId="Package\Sequence Container\Load tblWLMemberships\DST_tblWLMemberships.Inputs[OLE DB Destination Input].ExternalColumns[billing_month]"
+                          lineageId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Output].Columns[billing_month]" />
+                        <inputColumn
+                          refId="Package\Sequence Container\Load tblWLMemberships\DST_tblWLMemberships.Inputs[OLE DB Destination Input].Columns[validity]"
+                          cachedDataType="i4"
+                          cachedName="validity"
+                          externalMetadataColumnId="Package\Sequence Container\Load tblWLMemberships\DST_tblWLMemberships.Inputs[OLE DB Destination Input].ExternalColumns[validity]"
+                          lineageId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Output].Columns[validity]" />
+                        <inputColumn
+                          refId="Package\Sequence Container\Load tblWLMemberships\DST_tblWLMemberships.Inputs[OLE DB Destination Input].Columns[client_id]"
+                          cachedDataType="wstr"
+                          cachedLength="20"
+                          cachedName="client_id"
+                          externalMetadataColumnId="Package\Sequence Container\Load tblWLMemberships\DST_tblWLMemberships.Inputs[OLE DB Destination Input].ExternalColumns[client_id]"
+                          lineageId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Output].Columns[client_id]" />
+                        <inputColumn
+                          refId="Package\Sequence Container\Load tblWLMemberships\DST_tblWLMemberships.Inputs[OLE DB Destination Input].Columns[consumer_no]"
+                          cachedDataType="wstr"
+                          cachedLength="20"
+                          cachedName="consumer_no"
+                          externalMetadataColumnId="Package\Sequence Container\Load tblWLMemberships\DST_tblWLMemberships.Inputs[OLE DB Destination Input].ExternalColumns[consumer_no]"
+                          lineageId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Output].Columns[consumer_no]" />
+                        <inputColumn
+                          refId="Package\Sequence Container\Load tblWLMemberships\DST_tblWLMemberships.Inputs[OLE DB Destination Input].Columns[activity_code]"
+                          cachedDataType="wstr"
+                          cachedLength="40"
+                          cachedName="activity_code"
+                          externalMetadataColumnId="Package\Sequence Container\Load tblWLMemberships\DST_tblWLMemberships.Inputs[OLE DB Destination Input].ExternalColumns[activity_code]"
+                          lineageId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Output].Columns[activity_code]" />
+                        <inputColumn
+                          refId="Package\Sequence Container\Load tblWLMemberships\DST_tblWLMemberships.Inputs[OLE DB Destination Input].Columns[currency]"
+                          cachedDataType="wstr"
+                          cachedLength="5"
+                          cachedName="currency"
+                          externalMetadataColumnId="Package\Sequence Container\Load tblWLMemberships\DST_tblWLMemberships.Inputs[OLE DB Destination Input].ExternalColumns[currency]"
+                          lineageId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Output].Columns[currency]" />
+                        <inputColumn
+                          refId="Package\Sequence Container\Load tblWLMemberships\DST_tblWLMemberships.Inputs[OLE DB Destination Input].Columns[amount]"
+                          cachedDataType="r8"
+                          cachedName="amount"
+                          externalMetadataColumnId="Package\Sequence Container\Load tblWLMemberships\DST_tblWLMemberships.Inputs[OLE DB Destination Input].ExternalColumns[amount]"
+                          lineageId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Output].Columns[amount]" />
+                        <inputColumn
+                          refId="Package\Sequence Container\Load tblWLMemberships\DST_tblWLMemberships.Inputs[OLE DB Destination Input].Columns[current_validity_year]"
+                          cachedDataType="i4"
+                          cachedName="current_validity_year"
+                          externalMetadataColumnId="Package\Sequence Container\Load tblWLMemberships\DST_tblWLMemberships.Inputs[OLE DB Destination Input].ExternalColumns[current_validity_year]"
+                          lineageId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Output].Columns[current_validity_year]" />
+                        <inputColumn
+                          refId="Package\Sequence Container\Load tblWLMemberships\DST_tblWLMemberships.Inputs[OLE DB Destination Input].Columns[cost_centre]"
+                          cachedDataType="wstr"
+                          cachedLength="20"
+                          cachedName="cost_centre"
+                          externalMetadataColumnId="Package\Sequence Container\Load tblWLMemberships\DST_tblWLMemberships.Inputs[OLE DB Destination Input].ExternalColumns[cost_centre]"
+                          lineageId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Output].Columns[cost_centre]" />
+                        <inputColumn
+                          refId="Package\Sequence Container\Load tblWLMemberships\DST_tblWLMemberships.Inputs[OLE DB Destination Input].Columns[group_code]"
+                          cachedDataType="wstr"
+                          cachedLength="20"
+                          cachedName="group_code"
+                          externalMetadataColumnId="Package\Sequence Container\Load tblWLMemberships\DST_tblWLMemberships.Inputs[OLE DB Destination Input].ExternalColumns[group_code]"
+                          lineageId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Output].Columns[group_code]" />
+                        <inputColumn
+                          refId="Package\Sequence Container\Load tblWLMemberships\DST_tblWLMemberships.Inputs[OLE DB Destination Input].Columns[vendor_code]"
+                          cachedDataType="wstr"
+                          cachedLength="20"
+                          cachedName="vendor_code"
+                          externalMetadataColumnId="Package\Sequence Container\Load tblWLMemberships\DST_tblWLMemberships.Inputs[OLE DB Destination Input].ExternalColumns[vendor_code]"
+                          lineageId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Output].Columns[vendor_code]" />
+                        <inputColumn
+                          refId="Package\Sequence Container\Load tblWLMemberships\DST_tblWLMemberships.Inputs[OLE DB Destination Input].Columns[user_invitation_code]"
+                          cachedDataType="wstr"
+                          cachedLength="20"
+                          cachedName="user_invitation_code"
+                          externalMetadataColumnId="Package\Sequence Container\Load tblWLMemberships\DST_tblWLMemberships.Inputs[OLE DB Destination Input].ExternalColumns[user_invitation_code]"
+                          lineageId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Output].Columns[user_invitation_code]" />
+                        <inputColumn
+                          refId="Package\Sequence Container\Load tblWLMemberships\DST_tblWLMemberships.Inputs[OLE DB Destination Input].Columns[DataLoadWorkFlowID]"
+                          cachedDataType="i4"
+                          cachedName="DataLoadWorkFlowID"
+                          externalMetadataColumnId="Package\Sequence Container\Load tblWLMemberships\DST_tblWLMemberships.Inputs[OLE DB Destination Input].ExternalColumns[DataLoadWorkFlowID]"
+                          lineageId="Package\Sequence Container\Load tblWLMemberships\Derived Column.Outputs[Derived Column Output].Columns[DataLoadWorkFlowID]" />
+                        <inputColumn
+                          refId="Package\Sequence Container\Load tblWLMemberships\DST_tblWLMemberships.Inputs[OLE DB Destination Input].Columns[po_number]"
+                          cachedDataType="wstr"
+                          cachedLength="20"
+                          cachedName="po_number"
+                          externalMetadataColumnId="Package\Sequence Container\Load tblWLMemberships\DST_tblWLMemberships.Inputs[OLE DB Destination Input].ExternalColumns[po_number]"
+                          lineageId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Output].Columns[po_number]" />
+                        <inputColumn
+                          refId="Package\Sequence Container\Load tblWLMemberships\DST_tblWLMemberships.Inputs[OLE DB Destination Input].Columns[glac_code]"
+                          cachedDataType="wstr"
+                          cachedLength="20"
+                          cachedName="glac_code"
+                          externalMetadataColumnId="Package\Sequence Container\Load tblWLMemberships\DST_tblWLMemberships.Inputs[OLE DB Destination Input].ExternalColumns[glac_code]"
+                          lineageId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Output].Columns[glac_code]" />
+                        <inputColumn
+                          refId="Package\Sequence Container\Load tblWLMemberships\DST_tblWLMemberships.Inputs[OLE DB Destination Input].Columns[type_code]"
+                          cachedDataType="i4"
+                          cachedName="type_code"
+                          externalMetadataColumnId="Package\Sequence Container\Load tblWLMemberships\DST_tblWLMemberships.Inputs[OLE DB Destination Input].ExternalColumns[type_code]"
+                          lineageId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Output].Columns[type_code]" />
+                        <inputColumn
+                          refId="Package\Sequence Container\Load tblWLMemberships\DST_tblWLMemberships.Inputs[OLE DB Destination Input].Columns[remarks]"
+                          cachedDataType="wstr"
+                          cachedLength="200"
+                          cachedName="remarks"
+                          externalMetadataColumnId="Package\Sequence Container\Load tblWLMemberships\DST_tblWLMemberships.Inputs[OLE DB Destination Input].ExternalColumns[remarks]"
+                          lineageId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Output].Columns[remarks]" />
+                        <inputColumn
+                          refId="Package\Sequence Container\Load tblWLMemberships\DST_tblWLMemberships.Inputs[OLE DB Destination Input].Columns[tbl_index]"
+                          cachedDataType="i4"
+                          cachedName="tbl_index"
+                          externalMetadataColumnId="Package\Sequence Container\Load tblWLMemberships\DST_tblWLMemberships.Inputs[OLE DB Destination Input].ExternalColumns[tbl_index]"
+                          lineageId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Output].Columns[tbl_index]" />
+                        <inputColumn
+                          refId="Package\Sequence Container\Load tblWLMemberships\DST_tblWLMemberships.Inputs[OLE DB Destination Input].Columns[d_CreatedDate]"
+                          cachedDataType="date"
+                          cachedName="d_CreatedDate"
+                          externalMetadataColumnId="Package\Sequence Container\Load tblWLMemberships\DST_tblWLMemberships.Inputs[OLE DB Destination Input].ExternalColumns[CreatedDate]"
+                          lineageId="Package\Sequence Container\Load tblWLMemberships\Derived Column.Outputs[Derived Column Output].Columns[d_CreatedDate]" />
+                        <inputColumn
+                          refId="Package\Sequence Container\Load tblWLMemberships\DST_tblWLMemberships.Inputs[OLE DB Destination Input].Columns[d_CreatedBy]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="d_CreatedBy"
+                          externalMetadataColumnId="Package\Sequence Container\Load tblWLMemberships\DST_tblWLMemberships.Inputs[OLE DB Destination Input].ExternalColumns[CreatedBy]"
+                          lineageId="Package\Sequence Container\Load tblWLMemberships\Derived Column.Outputs[Derived Column Output].Columns[d_CreatedBy]" />
+                        <inputColumn
+                          refId="Package\Sequence Container\Load tblWLMemberships\DST_tblWLMemberships.Inputs[OLE DB Destination Input].Columns[checksum_value]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="45"
+                          cachedName="checksum_value"
+                          externalMetadataColumnId="Package\Sequence Container\Load tblWLMemberships\DST_tblWLMemberships.Inputs[OLE DB Destination Input].ExternalColumns[checksum_value]"
+                          lineageId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Output].Columns[checksum_value]" />
+                        <inputColumn
+                          refId="Package\Sequence Container\Load tblWLMemberships\DST_tblWLMemberships.Inputs[OLE DB Destination Input].Columns[external_identifier]"
+                          cachedDataType="i8"
+                          cachedName="external_identifier"
+                          externalMetadataColumnId="Package\Sequence Container\Load tblWLMemberships\DST_tblWLMemberships.Inputs[OLE DB Destination Input].ExternalColumns[external_identifier]"
+                          lineageId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Output].Columns[external_identifier]" />
+                      </inputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Load tblWLMemberships\DST_tblWLMemberships.Inputs[OLE DB Destination Input].ExternalColumns[CreatedDate]"
+                          dataType="dbTimeStamp"
+                          name="CreatedDate" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Load tblWLMemberships\DST_tblWLMemberships.Inputs[OLE DB Destination Input].ExternalColumns[CreatedBy]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="CreatedBy" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Load tblWLMemberships\DST_tblWLMemberships.Inputs[OLE DB Destination Input].ExternalColumns[UpdatedDate]"
+                          dataType="dbTimeStamp"
+                          name="UpdatedDate" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Load tblWLMemberships\DST_tblWLMemberships.Inputs[OLE DB Destination Input].ExternalColumns[UpdatedBy]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="UpdatedBy" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Load tblWLMemberships\DST_tblWLMemberships.Inputs[OLE DB Destination Input].ExternalColumns[billing_month]"
+                          dataType="dbTimeStamp"
+                          name="billing_month" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Load tblWLMemberships\DST_tblWLMemberships.Inputs[OLE DB Destination Input].ExternalColumns[validity]"
+                          dataType="i4"
+                          name="validity" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Load tblWLMemberships\DST_tblWLMemberships.Inputs[OLE DB Destination Input].ExternalColumns[tbl_index]"
+                          dataType="i4"
+                          name="tbl_index" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Load tblWLMemberships\DST_tblWLMemberships.Inputs[OLE DB Destination Input].ExternalColumns[client_id]"
+                          dataType="wstr"
+                          length="20"
+                          name="client_id" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Load tblWLMemberships\DST_tblWLMemberships.Inputs[OLE DB Destination Input].ExternalColumns[consumer_no]"
+                          dataType="wstr"
+                          length="20"
+                          name="consumer_no" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Load tblWLMemberships\DST_tblWLMemberships.Inputs[OLE DB Destination Input].ExternalColumns[activity_code]"
+                          dataType="wstr"
+                          length="40"
+                          name="activity_code" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Load tblWLMemberships\DST_tblWLMemberships.Inputs[OLE DB Destination Input].ExternalColumns[currency]"
+                          dataType="wstr"
+                          length="5"
+                          name="currency" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Load tblWLMemberships\DST_tblWLMemberships.Inputs[OLE DB Destination Input].ExternalColumns[amount]"
+                          dataType="r8"
+                          name="amount" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Load tblWLMemberships\DST_tblWLMemberships.Inputs[OLE DB Destination Input].ExternalColumns[current_validity_year]"
+                          dataType="i4"
+                          name="current_validity_year" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Load tblWLMemberships\DST_tblWLMemberships.Inputs[OLE DB Destination Input].ExternalColumns[cost_centre]"
+                          dataType="wstr"
+                          length="20"
+                          name="cost_centre" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Load tblWLMemberships\DST_tblWLMemberships.Inputs[OLE DB Destination Input].ExternalColumns[group_code]"
+                          dataType="wstr"
+                          length="20"
+                          name="group_code" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Load tblWLMemberships\DST_tblWLMemberships.Inputs[OLE DB Destination Input].ExternalColumns[vendor_code]"
+                          dataType="wstr"
+                          length="20"
+                          name="vendor_code" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Load tblWLMemberships\DST_tblWLMemberships.Inputs[OLE DB Destination Input].ExternalColumns[user_invitation_code]"
+                          dataType="wstr"
+                          length="20"
+                          name="user_invitation_code" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Load tblWLMemberships\DST_tblWLMemberships.Inputs[OLE DB Destination Input].ExternalColumns[DataLoadWorkFlowID]"
+                          dataType="i4"
+                          name="DataLoadWorkFlowID" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Load tblWLMemberships\DST_tblWLMemberships.Inputs[OLE DB Destination Input].ExternalColumns[checksum_value]"
+                          codePage="1252"
+                          dataType="str"
+                          length="45"
+                          name="checksum_value" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Load tblWLMemberships\DST_tblWLMemberships.Inputs[OLE DB Destination Input].ExternalColumns[po_number]"
+                          dataType="wstr"
+                          length="20"
+                          name="po_number" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Load tblWLMemberships\DST_tblWLMemberships.Inputs[OLE DB Destination Input].ExternalColumns[glac_code]"
+                          dataType="wstr"
+                          length="20"
+                          name="glac_code" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Load tblWLMemberships\DST_tblWLMemberships.Inputs[OLE DB Destination Input].ExternalColumns[type_code]"
+                          dataType="i4"
+                          name="type_code" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Load tblWLMemberships\DST_tblWLMemberships.Inputs[OLE DB Destination Input].ExternalColumns[remarks]"
+                          dataType="wstr"
+                          length="200"
+                          name="remarks" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Load tblWLMemberships\DST_tblWLMemberships.Inputs[OLE DB Destination Input].ExternalColumns[external_identifier]"
+                          dataType="i8"
+                          name="external_identifier" />
+                      </externalMetadataColumns>
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\Sequence Container\Load tblWLMemberships\DST_tblWLMemberships.Outputs[OLE DB Destination Error Output]"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="OLE DB Destination Error Output"
+                      synchronousInputId="Package\Sequence Container\Load tblWLMemberships\DST_tblWLMemberships.Inputs[OLE DB Destination Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Sequence Container\Load tblWLMemberships\DST_tblWLMemberships.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container\Load tblWLMemberships\DST_tblWLMemberships.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Load tblWLMemberships\DST_tblWLMemberships.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container\Load tblWLMemberships\DST_tblWLMemberships.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\Sequence Container\Load tblWLMemberships\Row Count"
+                  componentClassID="Microsoft.RowCount"
+                  contactInfo="Row Count;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+                  description="Counts rows as they pass through a data flow. For example, use the number of rows processed to determine whether or not to perform cleanup operations, or update text in an e-mail message to communicate processing status."
+                  name="Row Count">
+                  <properties>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable to hold the row count."
+                      name="VariableName">User::intRecInsertedCount</property>
+                  </properties>
+                  <inputs>
+                    <input
+                      refId="Package\Sequence Container\Load tblWLMemberships\Row Count.Inputs[Row Count Input 1]"
+                      hasSideEffects="true"
+                      name="Row Count Input 1">
+                      <externalMetadataColumns />
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\Sequence Container\Load tblWLMemberships\Row Count.Outputs[Row Count Output 1]"
+                      name="Row Count Output 1"
+                      synchronousInputId="Package\Sequence Container\Load tblWLMemberships\Row Count.Inputs[Row Count Input 1]">
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships"
+                  componentClassID="Microsoft.OLEDBSource"
+                  contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+                  description="OLE DB Source"
+                  name="SRC_tblWLMemberships"
+                  usesDispositions="true"
+                  version="7">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of the database object used to open a rowset."
+                      name="OpenRowset"></property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable that contains the name of the database object used to open a rowset."
+                      name="OpenRowsetVariable">User::query1</property>
+                    <property
+                      dataType="System.String"
+                      description="The SQL command to be executed."
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">SELECT [billing_month],[client_id],[consumer_no],[activity_code],[currency],
+		   [amount],[validity],[current_validity_year],[cost_centre],[group_code],
+		   [vendor_code],[user_invitation_code],
+		   [tbl_index],[CreatedDate],[CreatedBy],[UpdatedDate],[UpdatedBy],
+		   [po_number],[glac_code],[type_code],[remarks],
+external_identifier
+,CONVERT(VARCHAR(45), HASHBYTES('SHA1',
+ISNULL(CAST([billing_month] AS Varchar(max)),'NA') + 
+ISNULL(CAST([client_id] AS Varchar(max)),'NA') + 
+ISNULL(CAST([consumer_no] AS Varchar(max)),'NA') + 
+ISNULL(CAST([activity_code] AS Varchar(max)),'NA') + 
+ISNULL(CAST([currency] AS Varchar(max)),'NA') + 
+ISNULL(CAST([amount] AS Varchar(max)),'NA') + 
+ISNULL(CAST([validity] AS Varchar(max)),'NA') + 
+ISNULL(CAST([current_validity_year] AS Varchar(max)),'NA') + 
+ISNULL(CAST([cost_centre] AS Varchar(max)),'NA') + 
+ISNULL(CAST([group_code] AS Varchar(max)),'NA') + 
+ISNULL(CAST([vendor_code] AS Varchar(max)),'NA') + 
+ISNULL(CAST([user_invitation_code] AS Varchar(max)),'NA') + 
+ISNULL(CAST([tbl_index] AS Varchar(max)),'NA') + 
+ISNULL(CAST([CreatedDate] AS Varchar(max)),'NA') + 
+ISNULL(CAST([CreatedBy] AS Varchar(max)),'NA') + 
+ISNULL(CAST([UpdatedDate] AS Varchar(max)),'NA') + 
+ISNULL(CAST([UpdatedBy] AS Varchar(max)),'NA')   + 
+ISNULL(CAST([po_number] AS Varchar(max)),'NA') + 
+ISNULL(CAST([glac_code] AS Varchar(max)),'NA') + 
+ISNULL(CAST([type_code] AS Varchar(max)),'NA') + 
+ISNULL(CAST([remarks] AS Varchar(max)),'NA')+
+ISNULL(CAST([external_identifier] AS Varchar(max)),'NA')
+),1) as checksum_value
+	FROM mastercard_db.dbo.tblWLMemberships
+	WHERE [billing_month] BETWEEN  ? AND ?</property>
+                    <property
+                      dataType="System.String"
+                      description="The variable that contains the SQL command to be executed."
+                      name="SqlCommandVariable"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the column code page to use when code page information is unavailable from the data source."
+                      name="DefaultCodePage">1252</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Forces the use of the DefaultCodePage property value when describing character data."
+                      name="AlwaysUseDefaultCodePage">false</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the mode used to access the database."
+                      name="AccessMode"
+                      typeConverter="AccessMode">2</property>
+                    <property
+                      dataType="System.String"
+                      description="The mappings between the parameters in the SQL command and variables."
+                      name="ParameterMapping">"Parameter0:Input",{5D906CD3-9A47-4C59-8838-616433627263};"Parameter1:Input",{2494C08F-30EC-4B45-A68E-224698924A95};</property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Connections[OleDbConnection]"
+                      connectionManagerID="{B76F9C84-5874-4661-9065-A8C2C06D3BA9}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[mastercard_Happi]"
+                      description="The OLE DB runtime connection used to access the database."
+                      name="OleDbConnection" />
+                  </connections>
+                  <outputs>
+                    <output
+                      refId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Output]"
+                      name="OLE DB Source Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Output].Columns[CreatedDate]"
+                          dataType="dbTimeStamp"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Output].ExternalColumns[CreatedDate]"
+                          lineageId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Output].Columns[CreatedDate]"
+                          name="CreatedDate"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Output].Columns[CreatedBy]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Output].ExternalColumns[CreatedBy]"
+                          length="50"
+                          lineageId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Output].Columns[CreatedBy]"
+                          name="CreatedBy"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Output].Columns[UpdatedDate]"
+                          dataType="dbTimeStamp"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Output].ExternalColumns[UpdatedDate]"
+                          lineageId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Output].Columns[UpdatedDate]"
+                          name="UpdatedDate"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Output].Columns[UpdatedBy]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Output].ExternalColumns[UpdatedBy]"
+                          length="50"
+                          lineageId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Output].Columns[UpdatedBy]"
+                          name="UpdatedBy"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Output].Columns[billing_month]"
+                          dataType="dbTimeStamp"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Output].ExternalColumns[billing_month]"
+                          lineageId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Output].Columns[billing_month]"
+                          name="billing_month"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Output].Columns[validity]"
+                          dataType="i4"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Output].ExternalColumns[validity]"
+                          lineageId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Output].Columns[validity]"
+                          name="validity"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Output].Columns[tbl_index]"
+                          dataType="i4"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Output].ExternalColumns[tbl_index]"
+                          lineageId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Output].Columns[tbl_index]"
+                          name="tbl_index"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Output].Columns[client_id]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Output].ExternalColumns[client_id]"
+                          length="20"
+                          lineageId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Output].Columns[client_id]"
+                          name="client_id"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Output].Columns[consumer_no]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Output].ExternalColumns[consumer_no]"
+                          length="20"
+                          lineageId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Output].Columns[consumer_no]"
+                          name="consumer_no"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Output].Columns[activity_code]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Output].ExternalColumns[activity_code]"
+                          length="40"
+                          lineageId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Output].Columns[activity_code]"
+                          name="activity_code"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Output].Columns[currency]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Output].ExternalColumns[currency]"
+                          length="5"
+                          lineageId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Output].Columns[currency]"
+                          name="currency"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Output].Columns[amount]"
+                          dataType="r8"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Output].ExternalColumns[amount]"
+                          lineageId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Output].Columns[amount]"
+                          name="amount"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Output].Columns[current_validity_year]"
+                          dataType="i4"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Output].ExternalColumns[current_validity_year]"
+                          lineageId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Output].Columns[current_validity_year]"
+                          name="current_validity_year"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Output].Columns[cost_centre]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Output].ExternalColumns[cost_centre]"
+                          length="20"
+                          lineageId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Output].Columns[cost_centre]"
+                          name="cost_centre"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Output].Columns[group_code]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Output].ExternalColumns[group_code]"
+                          length="20"
+                          lineageId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Output].Columns[group_code]"
+                          name="group_code"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Output].Columns[vendor_code]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Output].ExternalColumns[vendor_code]"
+                          length="20"
+                          lineageId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Output].Columns[vendor_code]"
+                          name="vendor_code"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Output].Columns[user_invitation_code]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Output].ExternalColumns[user_invitation_code]"
+                          length="20"
+                          lineageId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Output].Columns[user_invitation_code]"
+                          name="user_invitation_code"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Output].Columns[po_number]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Output].ExternalColumns[po_number]"
+                          length="20"
+                          lineageId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Output].Columns[po_number]"
+                          name="po_number"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Output].Columns[glac_code]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Output].ExternalColumns[glac_code]"
+                          length="20"
+                          lineageId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Output].Columns[glac_code]"
+                          name="glac_code"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Output].Columns[type_code]"
+                          dataType="i4"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Output].ExternalColumns[type_code]"
+                          lineageId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Output].Columns[type_code]"
+                          name="type_code"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Output].Columns[remarks]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Output].ExternalColumns[remarks]"
+                          length="200"
+                          lineageId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Output].Columns[remarks]"
+                          name="remarks"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Output].Columns[checksum_value]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Output].ExternalColumns[checksum_value]"
+                          length="45"
+                          lineageId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Output].Columns[checksum_value]"
+                          name="checksum_value"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Output].Columns[external_identifier]"
+                          dataType="i8"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Output].ExternalColumns[external_identifier]"
+                          lineageId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Output].Columns[external_identifier]"
+                          name="external_identifier"
+                          truncationRowDisposition="FailComponent" />
+                      </outputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Output].ExternalColumns[CreatedDate]"
+                          dataType="dbTimeStamp"
+                          name="CreatedDate" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Output].ExternalColumns[CreatedBy]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="CreatedBy" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Output].ExternalColumns[UpdatedDate]"
+                          dataType="dbTimeStamp"
+                          name="UpdatedDate" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Output].ExternalColumns[UpdatedBy]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="UpdatedBy" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Output].ExternalColumns[billing_month]"
+                          dataType="dbTimeStamp"
+                          name="billing_month" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Output].ExternalColumns[validity]"
+                          dataType="i4"
+                          name="validity" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Output].ExternalColumns[tbl_index]"
+                          dataType="i4"
+                          name="tbl_index" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Output].ExternalColumns[client_id]"
+                          dataType="wstr"
+                          length="20"
+                          name="client_id" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Output].ExternalColumns[consumer_no]"
+                          dataType="wstr"
+                          length="20"
+                          name="consumer_no" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Output].ExternalColumns[activity_code]"
+                          dataType="wstr"
+                          length="40"
+                          name="activity_code" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Output].ExternalColumns[currency]"
+                          dataType="wstr"
+                          length="5"
+                          name="currency" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Output].ExternalColumns[amount]"
+                          dataType="r8"
+                          name="amount" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Output].ExternalColumns[current_validity_year]"
+                          dataType="i4"
+                          name="current_validity_year" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Output].ExternalColumns[cost_centre]"
+                          dataType="wstr"
+                          length="20"
+                          name="cost_centre" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Output].ExternalColumns[group_code]"
+                          dataType="wstr"
+                          length="20"
+                          name="group_code" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Output].ExternalColumns[vendor_code]"
+                          dataType="wstr"
+                          length="20"
+                          name="vendor_code" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Output].ExternalColumns[user_invitation_code]"
+                          dataType="wstr"
+                          length="20"
+                          name="user_invitation_code" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Output].ExternalColumns[po_number]"
+                          dataType="wstr"
+                          length="20"
+                          name="po_number" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Output].ExternalColumns[glac_code]"
+                          dataType="wstr"
+                          length="20"
+                          name="glac_code" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Output].ExternalColumns[type_code]"
+                          dataType="i4"
+                          name="type_code" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Output].ExternalColumns[remarks]"
+                          dataType="wstr"
+                          length="200"
+                          name="remarks" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Output].ExternalColumns[checksum_value]"
+                          codePage="1252"
+                          dataType="str"
+                          length="45"
+                          name="checksum_value" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Output].ExternalColumns[external_identifier]"
+                          dataType="i8"
+                          name="external_identifier" />
+                      </externalMetadataColumns>
+                    </output>
+                    <output
+                      refId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Error Output]"
+                      isErrorOut="true"
+                      name="OLE DB Source Error Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Error Output].Columns[billing_month]"
+                          dataType="dbTimeStamp"
+                          lineageId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Error Output].Columns[billing_month]"
+                          name="billing_month" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Error Output].Columns[client_id]"
+                          dataType="wstr"
+                          length="20"
+                          lineageId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Error Output].Columns[client_id]"
+                          name="client_id" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Error Output].Columns[consumer_no]"
+                          dataType="wstr"
+                          length="20"
+                          lineageId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Error Output].Columns[consumer_no]"
+                          name="consumer_no" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Error Output].Columns[activity_code]"
+                          dataType="wstr"
+                          length="40"
+                          lineageId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Error Output].Columns[activity_code]"
+                          name="activity_code" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Error Output].Columns[currency]"
+                          dataType="wstr"
+                          length="5"
+                          lineageId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Error Output].Columns[currency]"
+                          name="currency" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Error Output].Columns[amount]"
+                          dataType="r8"
+                          lineageId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Error Output].Columns[amount]"
+                          name="amount" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Error Output].Columns[validity]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Error Output].Columns[validity]"
+                          name="validity" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Error Output].Columns[current_validity_year]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Error Output].Columns[current_validity_year]"
+                          name="current_validity_year" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Error Output].Columns[cost_centre]"
+                          dataType="wstr"
+                          length="20"
+                          lineageId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Error Output].Columns[cost_centre]"
+                          name="cost_centre" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Error Output].Columns[group_code]"
+                          dataType="wstr"
+                          length="20"
+                          lineageId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Error Output].Columns[group_code]"
+                          name="group_code" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Error Output].Columns[vendor_code]"
+                          dataType="wstr"
+                          length="20"
+                          lineageId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Error Output].Columns[vendor_code]"
+                          name="vendor_code" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Error Output].Columns[user_invitation_code]"
+                          dataType="wstr"
+                          length="20"
+                          lineageId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Error Output].Columns[user_invitation_code]"
+                          name="user_invitation_code" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Error Output].Columns[tbl_index]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Error Output].Columns[tbl_index]"
+                          name="tbl_index" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Error Output].Columns[CreatedDate]"
+                          dataType="dbTimeStamp"
+                          lineageId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Error Output].Columns[CreatedDate]"
+                          name="CreatedDate" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Error Output].Columns[CreatedBy]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          lineageId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Error Output].Columns[CreatedBy]"
+                          name="CreatedBy" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Error Output].Columns[UpdatedDate]"
+                          dataType="dbTimeStamp"
+                          lineageId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Error Output].Columns[UpdatedDate]"
+                          name="UpdatedDate" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Error Output].Columns[UpdatedBy]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          lineageId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Error Output].Columns[UpdatedBy]"
+                          name="UpdatedBy" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Error Output].Columns[po_number]"
+                          dataType="wstr"
+                          length="20"
+                          lineageId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Error Output].Columns[po_number]"
+                          name="po_number" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Error Output].Columns[glac_code]"
+                          dataType="wstr"
+                          length="20"
+                          lineageId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Error Output].Columns[glac_code]"
+                          name="glac_code" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Error Output].Columns[type_code]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Error Output].Columns[type_code]"
+                          name="type_code" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Error Output].Columns[remarks]"
+                          dataType="wstr"
+                          length="200"
+                          lineageId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Error Output].Columns[remarks]"
+                          name="remarks" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Error Output].Columns[external_identifier]"
+                          dataType="i8"
+                          lineageId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Error Output].Columns[external_identifier]"
+                          name="external_identifier" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Error Output].Columns[checksum_value]"
+                          codePage="1252"
+                          dataType="str"
+                          length="45"
+                          lineageId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Error Output].Columns[checksum_value]"
+                          name="checksum_value" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+              </components>
+              <paths>
+                <path
+                  refId="Package\Sequence Container\Load tblWLMemberships.Paths[Derived Column Output]"
+                  endId="Package\Sequence Container\Load tblWLMemberships\Row Count.Inputs[Row Count Input 1]"
+                  name="Derived Column Output"
+                  startId="Package\Sequence Container\Load tblWLMemberships\Derived Column.Outputs[Derived Column Output]" />
+                <path
+                  refId="Package\Sequence Container\Load tblWLMemberships.Paths[OLE DB Source Output]"
+                  endId="Package\Sequence Container\Load tblWLMemberships\Derived Column.Inputs[Derived Column Input]"
+                  name="OLE DB Source Output"
+                  startId="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships.Outputs[OLE DB Source Output]" />
+                <path
+                  refId="Package\Sequence Container\Load tblWLMemberships.Paths[Row Count Output 1]"
+                  endId="Package\Sequence Container\Load tblWLMemberships\DST_tblWLMemberships.Inputs[OLE DB Destination Input]"
+                  name="Row Count Output 1"
+                  startId="Package\Sequence Container\Load tblWLMemberships\Row Count.Outputs[Row Count Output 1]" />
+              </paths>
+            </pipeline>
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\Sequence Container\Set NumRecs"
+          DTS:CreationName="Microsoft.ExecuteSQLTask"
+          DTS:Description="Execute SQL Task"
+          DTS:DTSID="{0616d540-131d-43bf-82d0-6d451b0c3ddf}"
+          DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Set NumRecs"
+          DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2016; © 2015 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+          DTS:ThreadHint="0">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <SQLTask:SqlTaskData
+              SQLTask:Connection="{E9AA5473-8FE8-4687-A6FF-9F02DC983002}"
+              SQLTask:BypassPrepare="False"
+              SQLTask:SqlStatementSource="select count(1) from mastercard_db.dbo.tblWLMemberships WHERE [billing_month] BETWEEN  ? AND ?"
+              SQLTask:ResultType="ResultSetType_SingleRow" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+              <SQLTask:ResultBinding
+                SQLTask:ResultName="0"
+                SQLTask:DtsVariableName="User::intNumRecs" />
+              <SQLTask:ParameterBinding
+                SQLTask:ParameterName="0"
+                SQLTask:DtsVariableName="User::dtStartDate"
+                SQLTask:ParameterDirection="Input"
+                SQLTask:DataType="7"
+                SQLTask:ParameterSize="-1" />
+              <SQLTask:ParameterBinding
+                SQLTask:ParameterName="1"
+                SQLTask:DtsVariableName="User::dtEndDate"
+                SQLTask:ParameterDirection="Input"
+                SQLTask:DataType="7"
+                SQLTask:ParameterSize="-1" />
+            </SQLTask:SqlTaskData>
+          </DTS:ObjectData>
+        </DTS:Executable>
+      </DTS:Executables>
+      <DTS:PrecedenceConstraints>
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\Sequence Container.PrecedenceConstraints[Constraint]"
+          DTS:CreationName=""
+          DTS:DTSID="{4613C896-01F3-4FC8-BCA5-B7DE67086D56}"
+          DTS:From="Package\Sequence Container\Get Current Reporting Month"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint"
+          DTS:To="Package\Sequence Container\Set NumRecs" />
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\Sequence Container.PrecedenceConstraints[Constraint 1]"
+          DTS:CreationName=""
+          DTS:DTSID="{c931c4a7-e241-49c5-b0e2-9da2e94fb63c}"
+          DTS:From="Package\Sequence Container\Set NumRecs"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint 1"
+          DTS:To="Package\Sequence Container\Delete tblWLMemberships" />
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\Sequence Container.PrecedenceConstraints[Constraint 2]"
+          DTS:CreationName=""
+          DTS:DTSID="{f7560ad3-3f49-4e57-8b3f-3941810190bd}"
+          DTS:From="Package\Sequence Container\Delete tblWLMemberships"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint 2"
+          DTS:To="Package\Sequence Container\Load tblWLMemberships" />
+      </DTS:PrecedenceConstraints>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Set up configuration variables"
+      DTS:CreationName="Microsoft.ScriptTask"
+      DTS:Description="Script Task"
+      DTS:DTSID="{7271F4C2-E646-43F9-A7AE-7A94BA7E8253}"
+      DTS:ExecutableType="Microsoft.ScriptTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Set up configuration variables"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:LoggingOptions
+        DTS:FilterKind="0" />
+      <DTS:ObjectData>
+        <ScriptProject
+          Name="ST_f5336450293a4c4f8bfc561dca1e58b4"
+          VSTAMajorVersion="14"
+          VSTAMinorVersion="0"
+          Language="CSharp"
+          ReadOnlyVariables="User::rsWorkflowStep_Configuration,$Package::int_DataloadWorkFlowID"
+          ReadWriteVariables="User::intApplicationDataloadWorkflowID,User::intDataLoadID,User::intDebug,User::strArchiveFileNameFormat,User::strBody,User::strCorruptFolder,User::strDestinationFolder,User::strFileName_Format_Export,User::strFileName_Format_Import,User::strFromEmail,User::strProcessUnknownFile,User::strSourceFolder,User::strStoredProcedureName,User::strSubject,User::strToEmail,User::strUnknownFolder">
+          <ProjectItem
+            Name="ST_f5336450293a4c4f8bfc561dca1e58b4.csproj"
+            Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectTypeGuids>{30D016F9-3734-4E33-A861-5E7D899E18F3};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{76e995d4-be46-402d-bd21-8eacd6b2edea}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ST_c61a8384d92948f6909a5d9680009df3</RootNamespace>
+    <AssemblyName>ST_f5336450293a4c4f8bfc561dca1e58b4</AssemblyName>
+    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ResolveAssemblyReferenceIgnoreTargetFrameworkAttributeVersionMismatch>true</ResolveAssemblyReferenceIgnoreTargetFrameworkAttributeVersionMismatch>
+    <TargetFrameworkProfile></TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>.\bin\Debug\</OutputPath>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>true</Optimize>
+    <OutputPath>.\bin\Release\</OutputPath>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.SqlServer.ManagedDTS, Version=13.0.0.0, Culture=Neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.SqlServer.ScriptTask, Version=13.0.0.0, Culture=Neutral, PublicKeyToken=89845dcd8080cc91" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="ScriptMain.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <!-- Include the build rules for a C# project.-->
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{30D016F9-3734-4E33-A861-5E7D899E18F3}">
+        <ProjectProperties HostName="ScriptTask" HostPackage="{B3A685AA-7EAF-4BC6-9940-57959FA5AC07}" ApplicationType="usd" Language="cs" TemplatesPath="" DebugInfoCommandLine="" DebugInfoWorkingDir="" IconImageList="" />
+        <Host Name="ScriptTask" GeneratedNamespace="$safeprojectname" IconIndex=""></Host>
+        <ProjectClient>
+          <HostIdentifier>SSIS_ST130</HostIdentifier>
+        </ProjectClient>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>]]></ProjectItem>
+          <ProjectItem
+            Name="Properties\Resources.resx"
+            Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+</root>]]></ProjectItem>
+          <ProjectItem
+            Name="Properties\Settings.Designer.cs"
+            Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
+// <auto-generated>
+//     This code was generated by a tool.
+//
+//     Changes to this file may cause incorrect behavior and will be lost if
+//     the code is regenerated.
+// </auto-generated>
+//------------------------------------------------------------------------------
+
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_c61a8384d92948f6909a5d9680009df3.Properties.Settings.get_Default():ST_c61a8384d92948f6909a5d9680009df3.Properties.Sett" +
+    "ings")]
+
+namespace ST_c61a8384d92948f6909a5d9680009df3.Properties {
+    
+    
+    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
+        
+        [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
+        private static Settings defaultInstance = new Settings();
+        
+        public static Settings Default {
+            get {
+                return defaultInstance;
+            }
+        }
+    }
+}]]></ProjectItem>
+          <ProjectItem
+            Name="ScriptMain.cs"
+            Encoding="UTF8"><![CDATA[#region Help:  Introduction to the script task
+/* The Script Task allows you to perform virtually any operation that can be accomplished in
+ * a .Net application within the context of an Integration Services control flow. 
+ * 
+ * Expand the other regions which have "Help" prefixes for examples of specific ways to use
+ * Integration Services features within this script task. */
+#endregion
+
+
+#region Namespaces
+using System;
+using System.Data;
+using System.Data.OleDb;
+using Microsoft.SqlServer.Dts.Runtime;
+using System.Windows.Forms;
+using System.Xml;
+#endregion
+
+namespace ST_c61a8384d92948f6909a5d9680009df3
+{
+    /// <summary>
+    /// ScriptMain is the entry point class of the script.  Do not change the name, attributes,
+    /// or parent of this class.
+    /// </summary>
+	[Microsoft.SqlServer.Dts.Tasks.ScriptTask.SSISScriptTaskEntryPointAttribute]
+	public partial class ScriptMain : Microsoft.SqlServer.Dts.Tasks.ScriptTask.VSTARTScriptObjectModelBase
+	{
+        #region Help:  Using Integration Services variables and parameters in a script
+        /* To use a variable in this script, first ensure that the variable has been added to 
+         * either the list contained in the ReadOnlyVariables property or the list contained in 
+         * the ReadWriteVariables property of this script task, according to whether or not your
+         * code needs to write to the variable.  To add the variable, save this script, close this instance of
+         * Visual Studio, and update the ReadOnlyVariables and 
+         * ReadWriteVariables properties in the Script Transformation Editor window.
+         * To use a parameter in this script, follow the same steps. Parameters are always read-only.
+         * 
+         * Example of reading from a variable:
+         *  DateTime startTime = (DateTime) Dts.Variables["System::StartTime"].Value;
+         * 
+         * Example of writing to a variable:
+         *  Dts.Variables["User::myStringVariable"].Value = "new value";
+         * 
+         * Example of reading from a package parameter:
+         *  int batchId = (int) Dts.Variables["$Package::batchId"].Value;
+         *  
+         * Example of reading from a project parameter:
+         *  int batchId = (int) Dts.Variables["$Project::batchId"].Value;
+         * 
+         * Example of reading from a sensitive project parameter:
+         *  int batchId = (int) Dts.Variables["$Project::batchId"].GetSensitiveValue();
+         * */
+
+        #endregion
+
+        #region Help:  Firing Integration Services events from a script
+        /* This script task can fire events for logging purposes.
+         * 
+         * Example of firing an error event:
+         *  Dts.Events.FireError(18, "Process Values", "Bad value", "", 0);
+         * 
+         * Example of firing an information event:
+         *  Dts.Events.FireInformation(3, "Process Values", "Processing has started", "", 0, ref fireAgain)
+         * 
+         * Example of firing a warning event:
+         *  Dts.Events.FireWarning(14, "Process Values", "No values received for input", "", 0);
+         * */
+        #endregion
+
+        #region Help:  Using Integration Services connection managers in a script
+        /* Some types of connection managers can be used in this script task.  See the topic 
+         * "Working with Connection Managers Programatically" for details.
+         * 
+         * Example of using an ADO.Net connection manager:
+         *  object rawConnection = Dts.Connections["Sales DB"].AcquireConnection(Dts.Transaction);
+         *  SqlConnection myADONETConnection = (SqlConnection)rawConnection;
+         *  //Use the connection in some code here, then release the connection
+         *  Dts.Connections["Sales DB"].ReleaseConnection(rawConnection);
+         *
+         * Example of using a File connection manager
+         *  object rawConnection = Dts.Connections["Prices.zip"].AcquireConnection(Dts.Transaction);
+         *  string filePath = (string)rawConnection;
+         *  //Use the connection in some code here, then release the connection
+         *  Dts.Connections["Prices.zip"].ReleaseConnection(rawConnection);
+         * */
+        #endregion
+
+
+		/// <summary>
+        /// This method is called when this script task executes in the control flow.
+        /// Before returning from this method, set the value of Dts.TaskResult to indicate success or failure.
+        /// To open Help, press F1.
+        /// </summary>
+		public void Main()
+		{
+            /*
+             * Configuration variables
+            //====== Read only variables =========//
+            * User::rsWorkflowStep_Configuration
+            * $Package::int_DataloadWorkFlowID
+            //====== Read and write variables =========//
+            * User::intApplicationDataloadWorkflowID
+            * User::intDataLoadID
+            * User::strArchiveFileNameFormat
+            * User::strBody
+            * User::strCorruptFolder
+            * User::strDestinationFolder
+            * User::strFileName_Format_Import
+            * User::strFileName_Format_Export
+            * User::strFromEmail
+            * User::strProcessUnknownFile
+            * User::strSourceFolder
+            * User::strStoredProcedureName
+            * User::strSubject
+            * User::strToEmail
+            * User::strUnknownFolder
+            */
+            // TODO: Add your code here
+
+
+            // define oledb adapter
+            OleDbDataAdapter oleDA_wrkflwStpConfig = new OleDbDataAdapter();
+            // define data table to hold the values
+            DataTable dt_wrkflwStpConfig = new DataTable();
+            // define DataRow
+            DataRow dr_wrkflwStpConfig = null;
+
+            // polulate ther table 
+            oleDA_wrkflwStpConfig.Fill(dt_wrkflwStpConfig, Dts.Variables["rsWorkflowStep_Configuration"].Value);
+
+            foreach (DataRow row_ in dt_wrkflwStpConfig.Rows)
+            {
+                dr_wrkflwStpConfig = row_;
+
+                Dts.Variables["User::intApplicationDataloadWorkflowID"].Value = Convert.ToInt32(row_["ApplicationDataloadWorkflowID"].ToString());
+                Dts.Variables["User::intDataLoadID"].Value = Convert.ToInt32(row_["DataLoadID"].ToString());
+                Dts.Variables["strArchiveFileNameFormat"].Value =  Convert.ToString(row_["ArchiveFileNameFormat"].ToString());
+                Dts.Variables["strBody"].Value = Convert.ToString(row_["Body"].ToString());
+                Dts.Variables["strCorruptFolder"].Value = Convert.ToString(row_["CorruptFolder"].ToString()); 
+                Dts.Variables["strDestinationFolder"].Value = Convert.ToString(row_["DestinationFolder"].ToString());
+                Dts.Variables["strFileName_Format_Import"].Value = Convert.ToString(row_["FileName_Format_Import"].ToString());
+                Dts.Variables["strFileName_Format_Export"].Value = Convert.ToString(row_["FileName_Format_Export"].ToString());
+                Dts.Variables["strFromEmail"].Value = Convert.ToString(row_["FromEmail"].ToString());
+                Dts.Variables["strProcessUnknownFile"].Value = Convert.ToString(row_["ProcessUnknownFile"].ToString());
+                Dts.Variables["strSourceFolder"].Value = Convert.ToString(row_["SourceFolder"].ToString());
+                Dts.Variables["strStoredProcedureName"].Value = Convert.ToString(row_["StoredProcedureName"].ToString());
+                Dts.Variables["strSubject"].Value = Convert.ToString(row_["Subject"].ToString());
+                Dts.Variables["strToEmail"].Value = Convert.ToString(row_["ToEmail"].ToString());
+                Dts.Variables["strUnknownFolder"].Value = Convert.ToString(row_["UnknownFolder"].ToString());
+
+            }
+
+            int intdebug;
+            intdebug = Convert.ToInt32(Dts.Variables["intDebug"].Value);
+
+            if (intdebug == 1)
+            {
+                MessageBox.Show(
+                            " int_DataloadWorkFlowID :" + Convert.ToString(Dts.Variables["int_DataloadWorkFlowID"].Value)
+                            + Environment.NewLine
+                            + "ApplicationDataloadWorkflowID :" + Dts.Variables["User::intApplicationDataloadWorkflowID"].Value
+                            + Environment.NewLine
+                            + "intDataLoadID :" + Dts.Variables["User::intDataLoadID"].Value
+                            +Environment.NewLine
+                            + "strArchiveFileNameFormat :" + Dts.Variables["strArchiveFileNameFormat"].Value 
+                            +Environment.NewLine
+                            + "strBody :" + Dts.Variables["strBody"].Value
+                            +Environment.NewLine
+                            + "strCorruptFolder :" + Dts.Variables["strCorruptFolder"].Value
+                            +Environment.NewLine
+                            + "strDestinationFolder :" + Dts.Variables["strDestinationFolder"].Value
+                            +Environment.NewLine
+                            + "strFileName_Format_Import :" + Dts.Variables["strFileName_Format_Import"].Value
+                            + Environment.NewLine
+                            + "strFileName_Format_Export :" + Dts.Variables["strFileName_Format_Export"].Value
+                            + Environment.NewLine
+                            + "strFromEmail :" + Dts.Variables["strFromEmail"].Value
+                            +Environment.NewLine
+                            + "strProcessUnknownFile :" + Dts.Variables["strProcessUnknownFile"].Value
+                            +Environment.NewLine
+                            + "strSourceFolder :" + Dts.Variables["strSourceFolder"].Value
+                            +Environment.NewLine
+                            + "strStoredProcedureName :" + Dts.Variables["strStoredProcedureName"].Value
+                            +Environment.NewLine
+                            + "strSubject :" + Dts.Variables["strSubject"].Value
+                            +Environment.NewLine
+                            + "strToEmail :" + Dts.Variables["strToEmail"].Value
+                            +Environment.NewLine
+                            + "strUnknownFolder :" + Dts.Variables["strUnknownFolder"].Value
+                            +Environment.NewLine
+                    );
+
+            };
+
+
+         
+        Dts.TaskResult = (int)ScriptResults.Success;
+		}
+
+        private static string getString(object o)
+        {
+            if (o == DBNull.Value) return "";
+            return (string)o;
+        }
+
+        #region ScriptResults declaration
+        /// <summary>
+        /// This enum provides a convenient shorthand within the scope of this class for setting the
+        /// result of the script.
+        /// 
+        /// This code was generated automatically.
+        /// </summary>
+        enum ScriptResults
+        {
+            Success = Microsoft.SqlServer.Dts.Runtime.DTSExecResult.Success,
+            Failure = Microsoft.SqlServer.Dts.Runtime.DTSExecResult.Failure
+        };
+        #endregion
+
+	}
+}]]></ProjectItem>
+          <ProjectItem
+            Name="Project"
+            Encoding="UTF16LE"><![CDATA[<?xml version="1.0" encoding="UTF-16" standalone="yes"?>
+<c:Project xmlns:c="http://schemas.microsoft.com/codeprojectml/2010/08/main" xmlns:msb="http://schemas.microsoft.com/developer/msbuild/2003" runtimeVersion="4.0" schemaVersion="1.0">
+	<msb:PropertyGroup>
+		<msb:Language>msBuild</msb:Language>
+		<msb:CodeName>ST_f5336450293a4c4f8bfc561dca1e58b4</msb:CodeName>
+		<msb:DisplayName>ST_f5336450293a4c4f8bfc561dca1e58b4</msb:DisplayName>
+		<msb:ProjectId>{F8A20F4D-D4E1-4F15-AE41-347D1328701C}</msb:ProjectId>
+	</msb:PropertyGroup>
+	<msb:ItemGroup>
+		<msb:Project Include="ST_f5336450293a4c4f8bfc561dca1e58b4.csproj"/>
+		<msb:File Include="ScriptMain.cs"/>
+		<msb:File Include="Properties\AssemblyInfo.cs"/>
+		<msb:File Include="Properties\Settings.settings"/>
+		<msb:File Include="Properties\Resources.resx"/>
+		<msb:File Include="Properties\Resources.Designer.cs"/>
+		<msb:File Include="Properties\Settings.Designer.cs"/>
+	</msb:ItemGroup>
+</c:Project>]]></ProjectItem>
+          <ProjectItem
+            Name="Properties\AssemblyInfo.cs"
+            Encoding="UTF8"><![CDATA[using System.Reflection;
+using System.Runtime.CompilerServices;
+
+//
+// General Information about an assembly is controlled through the following 
+// set of attributes. Change these attribute values to modify the information
+// associated with an assembly.
+//
+[assembly: AssemblyTitle("ST_c61a8384d92948f6909a5d9680009df3")]
+[assembly: AssemblyDescription("")]
+[assembly: AssemblyConfiguration("")]
+[assembly: AssemblyCompany("Microsoft")]
+[assembly: AssemblyProduct("ST_c61a8384d92948f6909a5d9680009df3")]
+[assembly: AssemblyCopyright("Copyright @ Microsoft 2017")]
+[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCulture("")]
+//
+// Version information for an assembly consists of the following four values:
+//
+//      Major Version
+//      Minor Version 
+//      Build Number
+//      Revision
+//
+// You can specify all the values or you can default the Revision and Build Numbers 
+// by using the '*' as shown below:
+
+[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
+          <ProjectItem
+            Name="Properties\Settings.settings"
+            Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
+<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
+  <Profiles>
+    <Profile Name="(Default)" />
+  </Profiles>
+  <Settings />
+</SettingsFile>]]></ProjectItem>
+          <ProjectItem
+            Name="Properties\Resources.Designer.cs"
+            Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
+// <auto-generated>
+//     This code was generated by a tool.
+//
+//     Changes to this file may cause incorrect behavior and will be lost if
+//     the code is regenerated.
+// </auto-generated>
+//------------------------------------------------------------------------------
+
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_c61a8384d92948f6909a5d9680009df3.Properties.Resources.get_ResourceManager():System.Resources.Resou" +
+    "rceManager")]
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_c61a8384d92948f6909a5d9680009df3.Properties.Resources.get_Culture():System.Globalization.CultureIn" +
+    "fo")]
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_c61a8384d92948f6909a5d9680009df3.Properties.Resources.set_Culture(System.Globalization.CultureInfo" +
+    "):Void")]
+
+namespace ST_c61a8384d92948f6909a5d9680009df3.Properties {
+    
+    
+    /// <summary>
+    ///   A strongly-typed resource class, for looking up localized strings, etc.
+    /// </summary>
+    // This class was auto-generated by the StronglyTypedResourceBuilder
+    // class via a tool like ResGen or Visual Studio.
+    // To add or remove a member, edit your .ResX file then rerun ResGen
+    // with the /str option, or rebuild your VS project.
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+    internal class Resources {
+        
+        private static global::System.Resources.ResourceManager resourceMan;
+        
+        private static global::System.Globalization.CultureInfo resourceCulture;
+        
+        [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
+        internal Resources() {
+        }
+        
+        /// <summary>
+        ///   Returns the cached ResourceManager instance used by this class.
+        /// </summary>
+        [global::System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        internal static global::System.Resources.ResourceManager ResourceManager {
+            get {
+                if ((resourceMan == null)) {
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("ST_c61a8384d92948f6909a5d9680009df3.Properties.Resources", typeof(Resources).Assembly);
+                    resourceMan = temp;
+                }
+                return resourceMan;
+            }
+        }
+        
+        /// <summary>
+        ///   Overrides the current thread's CurrentUICulture property for all
+        ///   resource lookups using this strongly typed resource class.
+        /// </summary>
+        [global::System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        internal static global::System.Globalization.CultureInfo Culture {
+            get {
+                return resourceCulture;
+            }
+            set {
+                resourceCulture = value;
+            }
+        }
+    }
+}]]></ProjectItem>
+          <BinaryItem
+            Name="ST_f5336450293a4c4f8bfc561dca1e58b4.dll">TVqQAAMAAAAEAAAA//8AALgAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAgAAAAA4fug4AtAnNIbgBTM0hVGhpcyBwcm9ncmFtIGNhbm5vdCBiZSBydW4gaW4gRE9TIG1v
+ZGUuDQ0KJAAAAAAAAABQRQAATAEDANWt4mMAAAAAAAAAAOAAIiALATAAACAAAAAIAAAAAAAAAj4A
+AAAgAAAAQAAAAAAAEAAgAAAAAgAABAAAAAAAAAAGAAAAAAAAAACAAAAAAgAAAAAAAAMAYIUAABAA
+ABAAAAAAEAAAEAAAAAAAABAAAAAAAAAAAAAAALA9AABPAAAAAEAAAJwEAAAAAAAAAAAAAAAAAAAA
+AAAAAGAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAIAAACAAAAAAAAAAAAAAACCAAAEgAAAAAAAAAAAAAAC50ZXh0AAAACB4AAAAgAAAAIAAAAAIA
+AAAAAAAAAAAAAAAAACAAAGAucnNyYwAAAJwEAAAAQAAAAAYAAAAiAAAAAAAAAAAAAAAAAABAAABA
+LnJlbG9jAAAMAAAAAGAAAAACAAAAKAAAAAAAAAAAAAAAAAAAQAAAQgAAAAAAAAAAAAAAAAAAAADk
+PQAAAAAAAEgAAAACAAUAaCcAAJAVAAABAAAAAAAAAPg8AAC4AAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAABswBQByBgAAAQAAEXMQAAAKcxEAAAoKBgIoEgAACm8TAAAK
+cgEAAHBvFAAACm8VAAAKbxYAAAomBm8XAAAKbxgAAAoLONcCAAAHbxkAAAp0EQAAAQwCKBIAAApv
+EwAACnI7AABwbxQAAAoIcokAAHBvGgAACm8bAAAKKBwAAAqMIwAAAW8dAAAKAigSAAAKbxMAAApy
+xQAAcG8UAAAKCHLtAABwbxoAAApvGwAACigcAAAKjCMAAAFvHQAACgIoEgAACm8TAAAKcgMBAHBv
+FAAACghyNQEAcG8aAAAKbxsAAAooHgAACm8dAAAKAigSAAAKbxMAAApyYQEAcG8UAAAKCHJxAQBw
+bxoAAApvGwAACigeAAAKbx0AAAoCKBIAAApvEwAACnJ7AQBwbxQAAAoIcp0BAHBvGgAACm8bAAAK
+KB4AAApvHQAACgIoEgAACm8TAAAKcrkBAHBvFAAACghy4wEAcG8aAAAKbxsAAAooHgAACm8dAAAK
+AigSAAAKbxMAAApyBwIAcG8UAAAKCHI7AgBwbxoAAApvGwAACigeAAAKbx0AAAoCKBIAAApvEwAA
+CnJpAgBwbxQAAAoIcp0CAHBvGgAACm8bAAAKKB4AAApvHQAACgIoEgAACm8TAAAKcssCAHBvFAAA
+Cghy5QIAcG8aAAAKbxsAAAooHgAACm8dAAAKAigSAAAKbxMAAApy+QIAcG8UAAAKCHIlAwBwbxoA
+AApvGwAACigeAAAKbx0AAAoCKBIAAApvEwAACnJLAwBwbxQAAAoIcmsDAHBvGgAACm8bAAAKKB4A
+AApvHQAACgIoEgAACm8TAAAKcoUDAHBvFAAACghyswMAcG8aAAAKbxsAAAooHgAACm8dAAAKAigS
+AAAKbxMAAApy2wMAcG8UAAAKCHLxAwBwbxoAAApvGwAACigeAAAKbx0AAAoCKBIAAApvEwAACnIB
+BABwbxQAAAoIchcEAHBvGgAACm8bAAAKKB4AAApvHQAACgIoEgAACm8TAAAKcicEAHBvFAAACghy
+SQQAcG8aAAAKbxsAAAooHgAACm8dAAAKB28fAAAKOh79///eEQd1EgAAAQ0JLAYJbyAAAArcAigS
+AAAKbxMAAApyZQQAcG8UAAAKbxUAAAooIQAAChdADgMAAB8wjRMAAAElFnJ3BABwoiUXAigSAAAK
+bxMAAApyqwQAcG8UAAAKbxUAAAooIgAACqIlGCgjAAAKoiUZctkEAHCiJRoCKBIAAApvEwAACnI7
+AABwbxQAAApvFQAACqIlGygjAAAKoiUcchkFAHCiJR0CKBIAAApvEwAACnLFAABwbxQAAApvFQAA
+CqIlHigjAAAKoiUfCXI5BQBwoiUfCgIoEgAACm8TAAAKcgMBAHBvFAAACm8VAAAKoiUfCygjAAAK
+oiUfDHJvBQBwoiUfDQIoEgAACm8TAAAKcmEBAHBvFAAACm8VAAAKoiUfDigjAAAKoiUfD3KDBQBw
+oiUfEAIoEgAACm8TAAAKcnsBAHBvFAAACm8VAAAKoiUfESgjAAAKoiUfEnKpBQBwoiUfEwIoEgAA
+Cm8TAAAKcrkBAHBvFAAACm8VAAAKoiUfFCgjAAAKoiUfFXLXBQBwoiUfFgIoEgAACm8TAAAKcgcC
+AHBvFAAACm8VAAAKoiUfFygjAAAKoiUfGHIPBgBwoiUfGQIoEgAACm8TAAAKcmkCAHBvFAAACm8V
+AAAKoiUfGigjAAAKoiUfG3JHBgBwoiUfHAIoEgAACm8TAAAKcssCAHBvFAAACm8VAAAKoiUfHSgj
+AAAKoiUfHnJlBgBwoiUfHwIoEgAACm8TAAAKcvkCAHBvFAAACm8VAAAKoiUfICgjAAAKoiUfIXKV
+BgBwoiUfIgIoEgAACm8TAAAKcksDAHBvFAAACm8VAAAKoiUfIygjAAAKoiUfJHK5BgBwoiUfJQIo
+EgAACm8TAAAKcoUDAHBvFAAACm8VAAAKoiUfJigjAAAKoiUfJ3LrBgBwoiUfKAIoEgAACm8TAAAK
+ctsDAHBvFAAACm8VAAAKoiUfKSgjAAAKoiUfKnIFBwBwoiUfKwIoEgAACm8TAAAKcgEEAHBvFAAA
+Cm8VAAAKoiUfLCgjAAAKoiUfLXIfBwBwoiUfLgIoEgAACm8TAAAKcicEAHBvFAAACm8VAAAKoiUf
+LygjAAAKoigkAAAKKCUAAAomAigSAAAKFm8mAAAKKgAAQRwAAAIAAAA4AAAA6QIAACEDAAARAAAA
+AAAAAFYCficAAAozBnJFBwBwKgJ0JQAAASoeAigoAAAKKh4CKCkAAAoqrn4BAAAELR5yRwcAcNAD
+AAACKCoAAApvKwAACnMsAAAKgAEAAAR+AQAABCoafgIAAAQqHgKAAgAABCoafgMAAAQqHgIoLQAA
+CioucwkAAAaAAwAABCpCU0pCAQABAAAAAAAMAAAAdjQuMC4zMDMxOQAAAAAFAGwAAAC4BAAAI34A
+ACQFAADQBgAAI1N0cmluZ3MAAAAA9AsAALwHAAAjVVMAsBMAABAAAAAjR1VJRAAAAMATAADQAQAA
+I0Jsb2IAAAAAAAAAAgAAAVcdogEJAwAAAPoBMwAWAAABAAAAKwAAAAUAAAAGAAAACgAAAAIAAAAt
+AAAAAgAAABAAAAABAAAAAgAAAAMAAAAEAAAAAQAAAAYAAAABAAAAAQAAAAAAGAQBAAAAAAAGALQC
+MQUGAEMDMQUGAAACHgUPAKUFAAAGAC0CogQGAJcCogQGAHgCogQGACoDogQGANQCogQGAO0CogQG
+AEQCogQGAF8CewMKAAgDxwMKAFwBxwMOALgAgQAGAPcEDwYOAKgGgQAGAMsAVQQGAFAGVQQGAFwE
+VQQGAOMBHgUGANYEUQUGAMYEjQQSALMBAgQSABQCAgQSAJMBeAQGAMgBMQUOAOYEjQAKAPADxwMW
+AOcF+wAWAMIA+wAOALQEgQAOAHgBgQAGAJcGVQQGAAMAVQQGAH8GVQQGAKEDVQQaALUG+gUaAGMG
++gUGAEUEVQQGACcBVQQGANcAVQQGAMQGogQAAAAAUQAAAAAAAQABAAEAEABtBAkAOQABAAEAAAAQ
+AFgFtAVNAAEABAAAARAA8QW0BWkAAwAIAAMBAAAyBgAAUQAEAAsAEQBhBLsAEQBMAb8AEQCoAMMA
+BgZ5AMcAVoAiBsoAVoAsAcoAUCAAAAAAhgBzBAYAAQDsJgAAAACRAJ4DbQABAAInAAAAAIYYEQUG
+AAIACicAAAAAgxgRBQYAAgASJwAAAACTCNIEzgACAD4nAAAAAJMINAHTAAIARScAAAAAkwhAAdgA
+AgBNJwAAAACWCFcG3gADAFQnAAAAAIYYEQUGAAMAXCcAAAAAkRgXBeMAAwAAAAEA0AQAAAEAdQMJ
+ABEFAQARABEFBgAZABEFCgApABEFEAAxABEFEAA5ABEFEABBABEFEABJABEFEABRABEFEABZABEF
+EABhABEFEABpABEFBgCpABEFBgDJABEFFQDZABEFBgDhABEFBgB5ABEFBgBxACoGJgDpAOMFKwDx
+AEwEMAD5AGEDNgDhAEAEOgB5AEAGQQAJAQMFRwCBAIsGNgCJAEwETACZAJUDUQARAQEAVQD5AGsD
+WgARAZUDXwCBAJ8GZACRAKsBBgARAQEAaAARAZUDbQAhARsBcgApAUkGdgAxAbAGfADpAHAGAQBB
+AW8DgwBxABEFBgCZABEFBgBJAekAiABJAcAGkQCxABEFlwDRABEFBgAIABQAsQAIABgAtgApAHMA
+HgEuAAsA9gAuABMA/wAuABsAHgEuACMAJwEuACsAUAEuADMAUAEuADsAVgEuAEMAJwEuAEsAZQEu
+AFMAUAEuAFsAhQFDAGMAtgBJAHMAHgFhAHsAtgBjAGsAtgAbAAMAAQAEAAMAAADWBOcAAABUAewA
+AABbBvEAAgAFAAMAAgAGAAUAAQAHAAUAAgAIAAcABIAAAAEAAAD2IKqMAAAAAAAALQAAAAQAAAAA
+AAAAAAAAAJ8AnwAAAAAADQAAAAAAAAAAAAAAqACoAwAAAAAEAAAAAAAAAAAAAACfAIEAAAAAAAQA
+AAAAAAAAAAAAAJ8AVQQAAAAADQAAAAAAAAAAAAAAqABaAAAAAAAEAAAAAAAAAAAAAACfAPoFAAAA
+AAAAAAABAAAAYgUAAAUAAgAAAABUb0ludDMyAFNUX2M2MWE4Mzg0ZDkyOTQ4ZjY5MDlhNWQ5Njgw
+MDA5ZGYzAFNUX2Y1MzM2NDUwMjkzYTRjNGY4YmZjNTYxZGNhMWU1OGI0ADxNb2R1bGU+AE1pY3Jv
+c29mdC5TcWxTZXJ2ZXIuTWFuYWdlZERUUwB2YWx1ZV9fAFN5c3RlbS5EYXRhAFN5c3RlbS5EYXRh
+Lk9sZURiAG1zY29ybGliAGRlZmF1bHRJbnN0YW5jZQBEYXRhVGFibGUAVmFyaWFibGUASURpc3Bv
+c2FibGUAUnVudGltZVR5cGVIYW5kbGUAR2V0VHlwZUZyb21IYW5kbGUATWljcm9zb2Z0LlNxbFNl
+cnZlci5EdHMuUnVudGltZQBnZXRfTmV3TGluZQBUeXBlAEZhaWx1cmUAZ2V0X0N1bHR1cmUAc2V0
+X0N1bHR1cmUAcmVzb3VyY2VDdWx0dXJlAFZTVEFSVFNjcmlwdE9iamVjdE1vZGVsQmFzZQBJbnRl
+cm5hbERhdGFDb2xsZWN0aW9uQmFzZQBBcHBsaWNhdGlvblNldHRpbmdzQmFzZQBEaXNwb3NlAEVk
+aXRvckJyb3dzYWJsZVN0YXRlAENvbXBpbGVyR2VuZXJhdGVkQXR0cmlidXRlAERlYnVnZ2VyTm9u
+VXNlckNvZGVBdHRyaWJ1dGUARGVidWdnYWJsZUF0dHJpYnV0ZQBFZGl0b3JCcm93c2FibGVBdHRy
+aWJ1dGUAQXNzZW1ibHlUaXRsZUF0dHJpYnV0ZQBBc3NlbWJseVRyYWRlbWFya0F0dHJpYnV0ZQBU
+YXJnZXRGcmFtZXdvcmtBdHRyaWJ1dGUAQXNzZW1ibHlDb25maWd1cmF0aW9uQXR0cmlidXRlAEFz
+c2VtYmx5RGVzY3JpcHRpb25BdHRyaWJ1dGUAQ29tcGlsYXRpb25SZWxheGF0aW9uc0F0dHJpYnV0
+ZQBBc3NlbWJseVByb2R1Y3RBdHRyaWJ1dGUAQXNzZW1ibHlDb3B5cmlnaHRBdHRyaWJ1dGUAU1NJ
+U1NjcmlwdFRhc2tFbnRyeVBvaW50QXR0cmlidXRlAEFzc2VtYmx5Q29tcGFueUF0dHJpYnV0ZQBS
+dW50aW1lQ29tcGF0aWJpbGl0eUF0dHJpYnV0ZQBnZXRfVmFsdWUAc2V0X1ZhbHVlAHZhbHVlAFN5
+c3RlbS5SdW50aW1lLlZlcnNpb25pbmcAVG9TdHJpbmcAZ2V0U3RyaW5nAE1pY3Jvc29mdC5TcWxT
+ZXJ2ZXIuU2NyaXB0VGFzawBNaWNyb3NvZnQuU3FsU2VydmVyLkR0cy5UYXNrcy5TY3JpcHRUYXNr
+AFNjcmlwdE9iamVjdE1vZGVsAFN5c3RlbS5Db21wb25lbnRNb2RlbABTVF9mNTMzNjQ1MDI5M2E0
+YzRmOGJmYzU2MWRjYTFlNThiNC5kbGwARmlsbABEQk51bGwAZ2V0X0l0ZW0AU3lzdGVtAEVudW0A
+cmVzb3VyY2VNYW4AU2NyaXB0TWFpbgBTeXN0ZW0uQ29uZmlndXJhdGlvbgBTeXN0ZW0uR2xvYmFs
+aXphdGlvbgBTeXN0ZW0uUmVmbGVjdGlvbgBEYXRhUm93Q29sbGVjdGlvbgBDdWx0dXJlSW5mbwBn
+ZXRfUmVzb3VyY2VNYW5hZ2VyAE9sZURiRGF0YUFkYXB0ZXIASUVudW1lcmF0b3IAR2V0RW51bWVy
+YXRvcgAuY3RvcgAuY2N0b3IAU3lzdGVtLkRpYWdub3N0aWNzAFN5c3RlbS5SdW50aW1lLkNvbXBp
+bGVyU2VydmljZXMAU3lzdGVtLlJlc291cmNlcwBTVF9jNjFhODM4NGQ5Mjk0OGY2OTA5YTVkOTY4
+MDAwOWRmMy5Qcm9wZXJ0aWVzLlJlc291cmNlcy5yZXNvdXJjZXMARGVidWdnaW5nTW9kZXMAU1Rf
+YzYxYTgzODRkOTI5NDhmNjkwOWE1ZDk2ODAwMDlkZjMuUHJvcGVydGllcwBnZXRfVmFyaWFibGVz
+AFNldHRpbmdzAFN5c3RlbS5XaW5kb3dzLkZvcm1zAFN5c3RlbS5Db2xsZWN0aW9ucwBTdWNjZXNz
+AGdldF9EdHMAU2NyaXB0UmVzdWx0cwBnZXRfUm93cwBDb25jYXQAT2JqZWN0AGdldF9EZWZhdWx0
+AERpYWxvZ1Jlc3VsdABzZXRfVGFza1Jlc3VsdABFbnZpcm9ubWVudABnZXRfQ3VycmVudABDb252
+ZXJ0AE1vdmVOZXh0AERhdGFSb3cAU2hvdwBNZXNzYWdlQm94AGdldF9Bc3NlbWJseQAAAAAAOXIA
+cwBXAG8AcgBrAGYAbABvAHcAUwB0AGUAcABfAEMAbwBuAGYAaQBnAHUAcgBhAHQAaQBvAG4AAE1V
+AHMAZQByADoAOgBpAG4AdABBAHAAcABsAGkAYwBhAHQAaQBvAG4ARABhAHQAYQBsAG8AYQBkAFcA
+bwByAGsAZgBsAG8AdwBJAEQAADtBAHAAcABsAGkAYwBhAHQAaQBvAG4ARABhAHQAYQBsAG8AYQBk
+AFcAbwByAGsAZgBsAG8AdwBJAEQAACdVAHMAZQByADoAOgBpAG4AdABEAGEAdABhAEwAbwBhAGQA
+SQBEAAAVRABhAHQAYQBMAG8AYQBkAEkARAAAMXMAdAByAEEAcgBjAGgAaQB2AGUARgBpAGwAZQBO
+AGEAbQBlAEYAbwByAG0AYQB0AAArQQByAGMAaABpAHYAZQBGAGkAbABlAE4AYQBtAGUARgBvAHIA
+bQBhAHQAAA9zAHQAcgBCAG8AZAB5AAAJQgBvAGQAeQAAIXMAdAByAEMAbwByAHIAdQBwAHQARgBv
+AGwAZABlAHIAABtDAG8AcgByAHUAcAB0AEYAbwBsAGQAZQByAAApcwB0AHIARABlAHMAdABpAG4A
+YQB0AGkAbwBuAEYAbwBsAGQAZQByAAAjRABlAHMAdABpAG4AYQB0AGkAbwBuAEYAbwBsAGQAZQBy
+AAAzcwB0AHIARgBpAGwAZQBOAGEAbQBlAF8ARgBvAHIAbQBhAHQAXwBJAG0AcABvAHIAdAAALUYA
+aQBsAGUATgBhAG0AZQBfAEYAbwByAG0AYQB0AF8ASQBtAHAAbwByAHQAADNzAHQAcgBGAGkAbABl
+AE4AYQBtAGUAXwBGAG8AcgBtAGEAdABfAEUAeABwAG8AcgB0AAAtRgBpAGwAZQBOAGEAbQBlAF8A
+RgBvAHIAbQBhAHQAXwBFAHgAcABvAHIAdAAAGXMAdAByAEYAcgBvAG0ARQBtAGEAaQBsAAATRgBy
+AG8AbQBFAG0AYQBpAGwAACtzAHQAcgBQAHIAbwBjAGUAcwBzAFUAbgBrAG4AbwB3AG4ARgBpAGwA
+ZQAAJVAAcgBvAGMAZQBzAHMAVQBuAGsAbgBvAHcAbgBGAGkAbABlAAAfcwB0AHIAUwBvAHUAcgBj
+AGUARgBvAGwAZABlAHIAABlTAG8AdQByAGMAZQBGAG8AbABkAGUAcgAALXMAdAByAFMAdABvAHIA
+ZQBkAFAAcgBvAGMAZQBkAHUAcgBlAE4AYQBtAGUAACdTAHQAbwByAGUAZABQAHIAbwBjAGUAZAB1
+AHIAZQBOAGEAbQBlAAAVcwB0AHIAUwB1AGIAagBlAGMAdAAAD1MAdQBiAGoAZQBjAHQAABVzAHQA
+cgBUAG8ARQBtAGEAaQBsAAAPVABvAEUAbQBhAGkAbAAAIXMAdAByAFUAbgBrAG4AbwB3AG4ARgBv
+AGwAZABlAHIAABtVAG4AawBuAG8AdwBuAEYAbwBsAGQAZQByAAARaQBuAHQARABlAGIAdQBnAAAz
+IABpAG4AdABfAEQAYQB0AGEAbABvAGEAZABXAG8AcgBrAEYAbABvAHcASQBEACAAOgAALWkAbgB0
+AF8ARABhAHQAYQBsAG8AYQBkAFcAbwByAGsARgBsAG8AdwBJAEQAAD9BAHAAcABsAGkAYwBhAHQA
+aQBvAG4ARABhAHQAYQBsAG8AYQBkAFcAbwByAGsAZgBsAG8AdwBJAEQAIAA6AAAfaQBuAHQARABh
+AHQAYQBMAG8AYQBkAEkARAAgADoAADVzAHQAcgBBAHIAYwBoAGkAdgBlAEYAaQBsAGUATgBhAG0A
+ZQBGAG8AcgBtAGEAdAAgADoAABNzAHQAcgBCAG8AZAB5ACAAOgAAJXMAdAByAEMAbwByAHIAdQBw
+AHQARgBvAGwAZABlAHIAIAA6AAAtcwB0AHIARABlAHMAdABpAG4AYQB0AGkAbwBuAEYAbwBsAGQA
+ZQByACAAOgAAN3MAdAByAEYAaQBsAGUATgBhAG0AZQBfAEYAbwByAG0AYQB0AF8ASQBtAHAAbwBy
+AHQAIAA6AAA3cwB0AHIARgBpAGwAZQBOAGEAbQBlAF8ARgBvAHIAbQBhAHQAXwBFAHgAcABvAHIA
+dAAgADoAAB1zAHQAcgBGAHIAbwBtAEUAbQBhAGkAbAAgADoAAC9zAHQAcgBQAHIAbwBjAGUAcwBz
+AFUAbgBrAG4AbwB3AG4ARgBpAGwAZQAgADoAACNzAHQAcgBTAG8AdQByAGMAZQBGAG8AbABkAGUA
+cgAgADoAADFzAHQAcgBTAHQAbwByAGUAZABQAHIAbwBjAGUAZAB1AHIAZQBOAGEAbQBlACAAOgAA
+GXMAdAByAFMAdQBiAGoAZQBjAHQAIAA6AAAZcwB0AHIAVABvAEUAbQBhAGkAbAAgADoAACVzAHQA
+cgBVAG4AawBuAG8AdwBuAEYAbwBsAGQAZQByACAAOgAAAQBxUwBUAF8AYwA2ADEAYQA4ADMAOAA0
+AGQAOQAyADkANAA4AGYANgA5ADAAOQBhADUAZAA5ADYAOAAwADAAMAA5AGQAZgAzAC4AUAByAG8A
+cABlAHIAdABpAGUAcwAuAFIAZQBzAG8AdQByAGMAZQBzAAAAAACC1Ltr98/uT7qoiUrTFxhKAAQg
+AQEIAyAAAQUgAQEREQQgAQEOBSABARFhCgcEEj0SQRJFEkkEIAASdQQgABJ5BSABEn0cAyAAHAYg
+AggSPRwFIAASgIEEIAASQQQgARwOAyAADgQAAQgOBCABARwEAAEODgMgAAIEAAEIHAQAAQ4cAwAA
+DgUAAQ4dHAYAARGAnQ4EBhKAoQgAARKApRGAqQUgABKArQcgAgEOEoCtCLd6XFYZNOCJCImEXc2A
+gMyRBAAAAAAEAQAAAAMGElkDBhJdAwYSEAIGCAMGERQEAAASWQQAABJdBQABARJdBAAAEhADAAAB
+BAgAElkECAASXQQIABIQCAEACAAAAAAAHgEAAQBUAhZXcmFwTm9uRXhjZXB0aW9uVGhyb3dzAQgB
+AAIAAAAAACgBACNTVF9jNjFhODM4NGQ5Mjk0OGY2OTA5YTVkOTY4MDAwOWRmMwAABQEAAAAADgEA
+CU1pY3Jvc29mdAAAHwEAGkNvcHlyaWdodCBAIE1pY3Jvc29mdCAyMDE3AABJAQAaLk5FVEZyYW1l
+d29yayxWZXJzaW9uPXY0LjcBAFQOFEZyYW1ld29ya0Rpc3BsYXlOYW1lEi5ORVQgRnJhbWV3b3Jr
+IDQuNwC0AAAAzsrvvgEAAACRAAAAbFN5c3RlbS5SZXNvdXJjZXMuUmVzb3VyY2VSZWFkZXIsIG1z
+Y29ybGliLCBWZXJzaW9uPTQuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49
+Yjc3YTVjNTYxOTM0ZTA4OSNTeXN0ZW0uUmVzb3VyY2VzLlJ1bnRpbWVSZXNvdXJjZVNldAIAAAAA
+AAAAAAAAAFBBRFBBRFC0AAAA2D0AAAAAAAAAAAAA8j0AAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AOQ9AAAAAAAAAAAAAAAAX0NvckRsbE1haW4AbXNjb3JlZS5kbGwAAAAAAP8lACAAEAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAQ
+AAAAGAAAgAAAAAAAAAAAAAAAAAAAAQABAAAAMAAAgAAAAAAAAAAAAAAAAAAAAQAAAAAASAAAAFhA
+AAA+BAAAAAAAAAAAAAA+BDQAAABWAFMAXwBWAEUAUgBTAEkATwBOAF8ASQBOAEYATwAAAAAAvQTv
+/gAAAQAAAAEAqoz2IAAAAQCqjPYgPwAAAAAAAAAEAAAAAgAAAAAAAAAAAAAAAAAAAEQAAAABAFYA
+YQByAEYAaQBsAGUASQBuAGYAbwAAAAAAJAAEAAAAVAByAGEAbgBzAGwAYQB0AGkAbwBuAAAAAAAA
+ALAEngMAAAEAUwB0AHIAaQBuAGcARgBpAGwAZQBJAG4AZgBvAAAAegMAAAEAMAAwADAAMAAwADQA
+YgAwAAAAGgABAAEAQwBvAG0AbQBlAG4AdABzAAAAAAAAADQACgABAEMAbwBtAHAAYQBuAHkATgBh
+AG0AZQAAAAAATQBpAGMAcgBvAHMAbwBmAHQAAABwACQAAQBGAGkAbABlAEQAZQBzAGMAcgBpAHAA
+dABpAG8AbgAAAAAAUwBUAF8AYwA2ADEAYQA4ADMAOAA0AGQAOQAyADkANAA4AGYANgA5ADAAOQBh
+ADUAZAA5ADYAOAAwADAAMAA5AGQAZgAzAAAAPgAPAAEARgBpAGwAZQBWAGUAcgBzAGkAbwBuAAAA
+AAAxAC4AMAAuADgANAAzADgALgAzADYAMAAxADAAAAAAAHAAKAABAEkAbgB0AGUAcgBuAGEAbABO
+AGEAbQBlAAAAUwBUAF8AZgA1ADMAMwA2ADQANQAwADIAOQAzAGEANABjADQAZgA4AGIAZgBjADUA
+NgAxAGQAYwBhADEAZQA1ADgAYgA0AC4AZABsAGwAAABaABsAAQBMAGUAZwBhAGwAQwBvAHAAeQBy
+AGkAZwBoAHQAAABDAG8AcAB5AHIAaQBnAGgAdAAgAEAAIABNAGkAYwByAG8AcwBvAGYAdAAgADIA
+MAAxADcAAAAAACoAAQABAEwAZQBnAGEAbABUAHIAYQBkAGUAbQBhAHIAawBzAAAAAAAAAAAAeAAo
+AAEATwByAGkAZwBpAG4AYQBsAEYAaQBsAGUAbgBhAG0AZQAAAFMAVABfAGYANQAzADMANgA0ADUA
+MAAyADkAMwBhADQAYwA0AGYAOABiAGYAYwA1ADYAMQBkAGMAYQAxAGUANQA4AGIANAAuAGQAbABs
+AAAAaAAkAAEAUAByAG8AZAB1AGMAdABOAGEAbQBlAAAAAABTAFQAXwBjADYAMQBhADgAMwA4ADQA
+ZAA5ADIAOQA0ADgAZgA2ADkAMAA5AGEANQBkADkANgA4ADAAMAAwADkAZABmADMAAABCAA8AAQBQ
+AHIAbwBkAHUAYwB0AFYAZQByAHMAaQBvAG4AAAAxAC4AMAAuADgANAAzADgALgAzADYAMAAxADAA
+AAAAAEYADwABAEEAcwBzAGUAbQBiAGwAeQAgAFYAZQByAHMAaQBvAG4AAAAxAC4AMAAuADgANAAz
+ADgALgAzADYAMAAxADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwAAAMAAAABD4AAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
+        </ScriptProject>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint]"
+      DTS:CreationName=""
+      DTS:DTSID="{1019B807-6D6E-4912-ABC0-38EF6E400B27}"
+      DTS:From="Package\Sequence Container"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint"
+      DTS:To="Package\Flag Data Load Complete" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 1]"
+      DTS:CreationName=""
+      DTS:DTSID="{C0085C80-97C1-4A40-8A54-7F3EAEC330BE}"
+      DTS:From="Package\Sequence Container"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 1"
+      DTS:To="Package\Flag Data Load Failed"
+      DTS:Value="1" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 2]"
+      DTS:CreationName=""
+      DTS:DTSID="{DFDF6A3C-7C32-43EC-9066-F807B8429CEA}"
+      DTS:From="Package\Set up configuration variables"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 2"
+      DTS:To="Package\Sequence Container" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 3]"
+      DTS:CreationName=""
+      DTS:DTSID="{F596D354-97A9-4F8C-8DBA-22841E586738}"
+      DTS:From="Package\Flag Dataload as Start"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 3"
+      DTS:To="Package\Get the Configuration" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 4]"
+      DTS:CreationName=""
+      DTS:DTSID="{9BEB1F57-D6D1-4087-8962-91CAA96DF236}"
+      DTS:From="Package\Get the Configuration"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 4"
+      DTS:To="Package\Set up configuration variables" />
+  </DTS:PrecedenceConstraints>
+  <DTS:EventHandlers>
+    <DTS:EventHandler
+      DTS:refId="Package.EventHandlers[OnError]"
+      DTS:CreationName="OnError"
+      DTS:DTSID="{D390254C-E4EF-42C5-958D-404028DE0E44}"
+      DTS:EventID="0"
+      DTS:EventName="OnError"
+      DTS:LocaleID="-1">
+      <DTS:Variables>
+        <DTS:Variable
+          DTS:CreationName=""
+          DTS:Description="The propagate property of the event"
+          DTS:DTSID="{6779B8D9-8C77-4C3F-AA2C-CF0F5416A3F6}"
+          DTS:IncludeInDebugDump="6789"
+          DTS:Namespace="System"
+          DTS:ObjectName="Propagate">
+          <DTS:VariableValue
+            DTS:DataType="11">-1</DTS:VariableValue>
+        </DTS:Variable>
+      </DTS:Variables>
+      <DTS:Executables>
+        <DTS:Executable
+          DTS:refId="Package.EventHandlers[OnError]\Send Mail Task"
+          DTS:CreationName="Microsoft.SendMailTask"
+          DTS:Description="Send Mail Task"
+          DTS:DTSID="{807aab86-6c74-40ce-a65c-79418da32707}"
+          DTS:ExecutableType="Microsoft.SendMailTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Send Mail Task"
+          DTS:TaskContact="Send Mail Task; Microsoft Corporation; SQL Server 2016; © 2015 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+          <DTS:Variables />
+          <DTS:PropertyExpression
+            DTS:Name="Disable">@[User::int_DataloadWorkFlowID] &gt;0</DTS:PropertyExpression>
+          <DTS:PropertyExpression
+            DTS:Name="FromLine">@[User::strFromEmail]</DTS:PropertyExpression>
+          <DTS:PropertyExpression
+            DTS:Name="Subject">@[User::strSubject]</DTS:PropertyExpression>
+          <DTS:PropertyExpression
+            DTS:Name="ToLine">@[User::strToEmail]</DTS:PropertyExpression>
+          <DTS:ObjectData>
+            <SendMailTask:SendMailTaskData
+              SendMailTask:SMTPServer="{5AC8790B-694C-4AB7-A834-E6EE3E9A5213}"
+              SendMailTask:From="harshad.deshmukh@collinsongroup.com"
+              SendMailTask:To="harshad.deshmukh@collinsongroup.com"
+              SendMailTask:Subject="20_scr2dst_tblWLMemberships Fails to execute."
+              SendMailTask:MessageSourceType="Variable"
+              SendMailTask:MessageSource="User::strBody" xmlns:SendMailTask="www.microsoft.com/sqlserver/dts/tasks/sendmailtask" />
+          </DTS:ObjectData>
+        </DTS:Executable>
+      </DTS:Executables>
+    </DTS:EventHandler>
+  </DTS:EventHandlers>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="198.4,41.6"
+          Id="Package\Flag Data Load Complete"
+          TopLeft="59.2142866290343,635.947056232439" />
+        <NodeLayout
+          Size="198.4,44.8"
+          Id="Package\Flag Data Load Failed"
+          TopLeft="387.357144949388,632.276467945666" />
+        <NodeLayout
+          Size="220,41.6"
+          Id="Package\Flag Dataload as Start"
+          TopLeft="230.271428172442,6.11176471446208" />
+        <NodeLayout
+          Size="220,41.6"
+          Id="Package\Get the Configuration"
+          TopLeft="230.271428172442,78.34705842028" />
+        <NodeLayout
+          Size="216.8,41.6"
+          Id="Package\Sequence Container\Delete tblWLMemberships"
+          TopLeft="31.3285755060155,147.809803320984" />
+        <NodeLayout
+          Size="216.8,41.6"
+          Id="Package\Sequence Container\Get Current Reporting Month"
+          TopLeft="31.3285755060155,11.5235203858475" />
+        <NodeLayout
+          Size="216.8,41.6"
+          Id="Package\Sequence Container\Load tblWLMemberships"
+          TopLeft="31.3285755060155,215.952944788553" />
+        <NodeLayout
+          Size="215.2,41.6"
+          Id="Package\Sequence Container\Set NumRecs"
+          TopLeft="31.3285755060155,79.666661853416" />
+        <EdgeLayout
+          Id="Package\Sequence Container.PrecedenceConstraints[Constraint]"
+          TopLeft="139.328575506016,53.1235203858475">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,26.5431414675685"
+              Start="0,0"
+              End="0,19.0431414675685">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,19.0431414675685" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Sequence Container.PrecedenceConstraints[Constraint 1]"
+          TopLeft="139.328575506016,121.266661853416">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,26.543141467568"
+              Start="0,0"
+              End="0,19.043141467568">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,19.043141467568" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Sequence Container.PrecedenceConstraints[Constraint 2]"
+          TopLeft="139.728575506015,189.409803320984">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,26.5431414675685"
+              Start="0,0"
+              End="0,19.0431414675685">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,19.0431414675685" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="276,312.8"
+          Size="276,356"
+          Id="Package\Sequence Container"
+          TopLeft="208.157143859475,224.652939975303" />
+        <NodeLayout
+          Size="220,41.6"
+          Id="Package\Set up configuration variables"
+          TopLeft="230.271428172442,150.582352126098" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="301.490477192808,580.652939975303">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-143.076190563774,55.2941162571359"
+              Start="0,0"
+              End="-143.076190563774,47.7941162571359">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,18.3088653487004" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,18.3088653487004"
+                    Point2="0,22.3088653487004"
+                    Point3="-4,22.3088653487004" />
+                  <mssgle:LineSegment
+                    End="-139.076190563774,22.3088653487004" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-139.076190563774,22.3088653487004"
+                    Point2="-143.076190563774,22.3088653487004"
+                    Point3="-143.076190563774,26.3088653487004" />
+                  <mssgle:LineSegment
+                    End="-143.076190563774,47.7941162571359" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 1]"
+          TopLeft="390.823810526141,580.652939975303">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="95.7333344232468,51.6235279703629"
+              Start="0,0"
+              End="95.7333344232468,44.1235279703629">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,16.8279363569188" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,16.8279363569188"
+                    Point2="0,20.8279363569188"
+                    Point3="4,20.8279363569188" />
+                  <mssgle:LineSegment
+                    End="91.7333344232468,20.8279363569188" />
+                  <mssgle:CubicBezierSegment
+                    Point1="91.7333344232468,20.8279363569188"
+                    Point2="95.7333344232468,20.8279363569188"
+                    Point3="95.7333344232468,24.8279363569188" />
+                  <mssgle:LineSegment
+                    End="95.7333344232468,44.1235279703629" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="32.6253195553734,25.8279363569188,30.4826953125,9.7490234375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 2]"
+          TopLeft="343.214286015958,192.182352126098">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,32.4705878492051"
+              Start="0,0"
+              End="0,24.9705878492051">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,24.9705878492051" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 3]"
+          TopLeft="340.271428172442,47.7117647144621">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,30.635293705818"
+              Start="0,0"
+              End="0,23.135293705818">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,23.135293705818" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 4]"
+          TopLeft="340.271428172442,119.94705842028">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,30.635293705818"
+              Start="0,0"
+              End="0,23.135293705818">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,23.135293705818" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <DtsEventHandler
+    design-time-name="Package.EventHandlers[OnError]">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="150.4,41.6"
+          Id="Package.EventHandlers[OnError]\Send Mail Task"
+          TopLeft="351.77142858116,199.2" />
+      </GraphLayout>
+    </LayoutInfo>
+  </DtsEventHandler>
+  <TaskHost
+    design-time-name="Package\Sequence Container\Load tblWLMemberships">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="194.4,41.6"
+          Id="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships"
+          TopLeft="93.9714297051333,13.4529412880075" />
+        <NodeLayout
+          Size="194.4,41.6"
+          Id="Package\Sequence Container\Load tblWLMemberships\DST_tblWLMemberships"
+          TopLeft="93.9714297051333,257.029410983948" />
+        <NodeLayout
+          Size="194.4,41.6"
+          Id="Package\Sequence Container\Load tblWLMemberships\Derived Column"
+          TopLeft="93.9714297051333,94.645097853321" />
+        <NodeLayout
+          Size="194.4,41.6"
+          Id="Package\Sequence Container\Load tblWLMemberships\Row Count"
+          TopLeft="93.9714297051333,175.837254418635" />
+        <EdgeLayout
+          Id="Package\Sequence Container\Load tblWLMemberships.Paths[Row Count Output 1]"
+          TopLeft="191.171429705133,217.437254418634">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,39.5921565653135"
+              Start="0,0"
+              End="0,32.0921565653135">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,32.0921565653135" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Sequence Container\Load tblWLMemberships.Paths[OLE DB Source Output]"
+          TopLeft="191.171429705133,55.0529412880075">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,39.5921565653135"
+              Start="0,0"
+              End="0,32.0921565653135">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,32.0921565653135" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Sequence Container\Load tblWLMemberships.Paths[Derived Column Output]"
+          TopLeft="191.171429705133,136.245097853321">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,39.5921565653135"
+              Start="0,0"
+              End="0,32.0921565653135">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,32.0921565653135" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Sequence Container\Load tblWLMemberships\SRC_tblWLMemberships">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Sequence Container\Load tblWLMemberships\DST_tblWLMemberships">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
