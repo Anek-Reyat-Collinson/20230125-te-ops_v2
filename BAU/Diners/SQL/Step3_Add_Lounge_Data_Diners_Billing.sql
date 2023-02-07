@@ -1,0 +1,127 @@
+USE diners_billing_db
+GO
+--Taking the backup of tblTempLoungeData table
+SELECT * INTO Backups.bkup.diners_billing_db_tblTempLoungeData_20200709_HD FROM dbo.tblTempLoungeData --(942 rows affected)
+
+
+--qupdLoungeCurrencyErrors
+BEGIN TRANSACTION
+-- [Price Zone (PTG Internal Info only)]  is an attribute in the dbo.tblTempLoungeData table 
+-- hence if the subquery will fail if executed individually.
+UPDATE 
+dbo.tblTempLoungeData 
+SET [Currency] = 
+(
+SELECT c.DinersCurrencyID 
+FROM dbo.tblCurrencies c 
+INNER JOIN (SELECT * FROM dbo.tblPriceZones WHERE client_id='DINERS2012' AND end_date='2029-12-31') p 
+ON p.currency = c.PPCurrencyID 
+WHERE p.zone_id = [Price Zone (PTG Internal Info only)] 
+)
+--commit
+/*
+-- Test script for the above 
+SELECT * FROM dbo.tblTempLoungeData 
+INNER JOIN
+(
+SELECT c.DinersCurrencyID, p.zone_id
+FROM dbo.tblCurrencies c 
+INNER JOIN (SELECT * FROM dbo.tblPriceZones WHERE client_id='DINERS2012' AND end_date='2029-12-31') p 
+ON p.currency = c.PPCurrencyID 
+) r
+on r.zone_id = [Price Zone (PTG Internal Info only)]
+*/
+
+--COMMIT
+
+
+--qupdLoungeMemberFeeErrors
+BEGIN TRANSACTION
+UPDATE 
+dbo.tblTempLoungeData 
+SET [Member Fee Price] = 
+(
+SELECT 
+p.member_fee 
+FROM dbo.tblPriceZones p 
+WHERE p.zone_id = [Price Zone (PTG Internal Info only)]
+AND client_id='DINERS2012' AND end_date='2029-12-31'
+)
+--COMMIT
+
+
+--qupdLoungeGuestFeeErrors
+BEGIN TRANSACTION
+UPDATE 
+dbo.tblTempLoungeData 
+SET [Guest Fee Price] = 
+(
+SELECT 
+guest_fee 
+FROM dbo.tblPriceZones p 
+WHERE p.zone_id = [Price Zone (PTG Internal Info only)]
+AND client_id='DINERS2012' AND end_date='2029-12-31'
+)
+--COMMIT
+
+
+--qdelLoungesToUpdate - Delete any entries from live table that are common to both
+BEGIN TRANSACTION
+delete from tblDinersLoungeData where [PP Lounge Code] in (select [ptg lounge code] from tbltemploungedata)--938 records deleted
+--COMMIT
+
+--qappLoungesToAdd - Now, append all the New Lounges
+
+USE diners_billing_db
+
+INSERT INTO dbo.tblDinersLoungeData 
+ ( [Submission Date], 
+ [Diners ID], 
+ [PP Lounge Code], 
+ [Price Zone], 
+ [Currency], 
+ [Member Fee Price], 
+ [Guest Fee Price], 
+ [Lounge Name], 
+ [Airport Code], 
+ [Airport Short Name], 
+ City, 
+ Country, 
+ Location, 
+ Terminal, 
+ [Opening Hours], 
+ Conditions, 
+ Additional, 
+ [Air Conditioning], 
+ [Conference Facilities], 
+ [Disabled Access], 
+ Fax, 
+ [Flight Information Monitor], 
+ [Internet/Dataport], 
+ [Newspapers/Magazines], 
+ [Refreshments (Alcoholic)], 
+ [Refreshments (Soft Drinks)], 
+ [Shower Facilities], 
+ Telephone, 
+ Television, 
+ [Wi-fi], 
+ Active 
+ )
+
+SELECT  tblTempLoungeData.[Submission Date], tblTempLoungeData.[Diners ID], tblTempLoungeData.[PTG Lounge Code], tblTempLoungeData.[Price Zone (PTG Internal Info only)], 
+  tblTempLoungeData.Currency, tblTempLoungeData.[Member Fee Price], tblTempLoungeData.[Guest Fee Price], tblTempLoungeData.[Lounge Name], tblTempLoungeData.[Airport Code], 
+  tblTempLoungeData.[Airport Short Name], tblTempLoungeData.City, tblTempLoungeData.Country, 
+  CONVERT (NVARCHAR(255), tblTempLoungeData.Location) AS Location, 
+  tblTempLoungeData.Terminal, tblTempLoungeData.[Opening Hours], 
+  CONVERT (NVARCHAR(255), tblTempLoungeData.Conditions) AS Conditions, 
+  CONVERT (NVARCHAR(255), tblTempLoungeData.Additional) AS Additional, 
+  tblTempLoungeData.[Air Conditioning], tblTempLoungeData.[Conference Facilities], tblTempLoungeData.[Disabled Access], 
+  tblTempLoungeData.Fax, tblTempLoungeData.[Flight Information Monitor], tblTempLoungeData.[Internet/Dataport], tblTempLoungeData.[Newspapers/Magazines], 
+  tblTempLoungeData.[Refreshments (Alcoholic)], tblTempLoungeData.[Refreshments (Soft Drinks)], tblTempLoungeData.[Shower Facilities], tblTempLoungeData.Telephone, 
+  tblTempLoungeData.Television, tblTempLoungeData.[Wi-fi], 1 --(918 rows affected)
+
+FROM dbo.tblTempLoungeData--9(942 rows affected)38
+
+--tblDinersLoungeData RIGHT JOIN tblTempLoungeData ON tblDinersLoungeData.[PP Lounge Code] = tblTempLoungeData.[PTG Lounge Code]
+
+SELECT * FROM dbo.tblDinersLoungeData 
