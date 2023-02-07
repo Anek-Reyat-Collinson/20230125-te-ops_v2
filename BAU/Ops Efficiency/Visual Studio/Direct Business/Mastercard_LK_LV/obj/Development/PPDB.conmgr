@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="PPDB"
+  DTS:DTSID="{f460308a-b32c-4a7d-be9d-13aa544e141f}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:Retain="True"
+      DTS:ConnectRetryCount="1"
+      DTS:ConnectRetryInterval="5"
+      DTS:ConnectionString="Data Source=10.204.200.67;User ID=OPSBI_ETL;Initial Catalog=PPass;Provider=SQLNCLI11.1;Persist Security Info=True;">
+      <DTS:Password
+        DTS:Name="Password"
+        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAtLA5LoNE9UyNE7hTNrO5nwAAAAACAAAAAAADZgAAwAAAABAAAABSUeE6N859kmCLNuphbNpGAAAAAASAAACgAAAAEAAAANrowHbZK3eDXIbGMYMOPbSAAAAAVWoFgezTsTfpJ5djF3jm+ul/ZA49HiSE350ND216ZgfouCXpBPTIdt2I5VTVgZJMAz0BmiRgz9BXWemQyI2yXorQ0DZFYcby7Wpc86vzVtc78RHFBsOi/XCIQKtXHFx5+fgPNo8IF6NyLjc2sBRfewWf3A0sYIGCFPWc0vxqnygUAAAAk7ogYSBy4DImsrb0xW5xAuc5dn0=</DTS:Password>
+    </DTS:ConnectionManager>
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1831
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "Direct Business", "Direct Business\Direct Business.dtproj", "{B5C00801-716E-41E0-935F-8CB1BDD2B29A}"
+EndProject
+Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "Mastercard_LK_LV", "Mastercard_LK_LV\Mastercard_LK_LV.dtproj", "{C0804E60-FC15-4503-97EA-6C33D157A805}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B5C00801-716E-41E0-935F-8CB1BDD2B29A}.Development|Default.ActiveCfg = Development
+		{B5C00801-716E-41E0-935F-8CB1BDD2B29A}.Development|Default.Build.0 = Development
+		{C0804E60-FC15-4503-97EA-6C33D157A805}.Development|Default.ActiveCfg = Development
+		{C0804E60-FC15-4503-97EA-6C33D157A805}.Development|Default.Build.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {057882C8-A75A-40D1-9CDD-38B444313C2C}
+	EndGlobalSection
+EndGlobal
