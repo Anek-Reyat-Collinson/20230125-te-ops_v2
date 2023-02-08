@@ -1,0 +1,770 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2021.1">
+  <Nodes>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="942" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="Client ID" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="bin" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_Client ID" selected="True" input="Left_" />
+                <SelectField field="Left_consumer_no" selected="True" input="Left_" />
+                <SelectField field="Left_Card Prefix" selected="True" input="Left_" />
+                <SelectField field="Left_ica" selected="True" input="Left_" />
+                <SelectField field="Left_purchase_no" selected="True" input="Left_" />
+                <SelectField field="Left_source_code" selected="True" input="Left_" />
+                <SelectField field="Left_is_card_blocked" selected="True" input="Left_" />
+                <SelectField field="Right_Source Code" selected="True" input="Right_" />
+                <SelectField field="Right_cg_region_of_issue" selected="True" input="Right_" />
+                <SelectField field="Right_clean_issuer_name" selected="True" input="Right_" />
+                <SelectField field="Right_client_name" selected="True" input="Right_" />
+                <SelectField field="Right_client_region_of_issue" selected="True" input="Right_" />
+                <SelectField field="Right_client_service_centre" selected="True" input="Right_" />
+                <SelectField field="Right_country_of_issue" selected="True" input="Right_" />
+                <SelectField field="Right_EEA Countries" selected="True" input="Right_" />
+                <SelectField field="Right_deal_status" selected="True" input="Right_" />
+                <SelectField field="Right_deal_type" selected="True" input="Right_" />
+                <SelectField field="Right_enrolment_method" selected="True" input="Right_" />
+                <SelectField field="Right_BIN" selected="True" input="Right_" />
+                <SelectField field="Left_Source Code" selected="False" rename="Left_Source Code" input="Left_" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="1050" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="21">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="1302" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="Client ID" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="Client ID" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_Source Code" selected="True" rename="Right_Source Code" input="Right_" />
+                <SelectField field="Right_Client ID" selected="True" rename="Right_Client ID" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="22">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="1434" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="20">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="893" y="329" width="181" height="165" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>D&amp;I Data</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="18">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="918" y="378" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">Z:\8. OPERATIONS\1. Global Team\Ylli\PP Data Extract\D&amp;I Data.xlsx|||`Sheet1$`</File>
+              <FormatSpecificOptions>
+                <FirstRowData>False</FirstRowData>
+                <ImportLine>1</ImportLine>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>D&amp;I Data.xlsx
+Query=`Sheet1$`</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Client Region" size="255" source="File: Z:\8. OPERATIONS\1. Global Team\Ylli\PP Data Extract\D&amp;I Data.xlsx|||`Sheet1$`" type="V_String" />
+                <Field name="Source Code" size="255" source="File: Z:\8. OPERATIONS\1. Global Team\Ylli\PP Data Extract\D&amp;I Data.xlsx|||`Sheet1$`" type="V_String" />
+                <Field name="bin" size="255" source="File: Z:\8. OPERATIONS\1. Global Team\Ylli\PP Data Extract\D&amp;I Data.xlsx|||`Sheet1$`" type="V_String" />
+                <Field name="Client ID" size="255" source="File: Z:\8. OPERATIONS\1. Global Team\Ylli\PP Data Extract\D&amp;I Data.xlsx|||`Sheet1$`" type="V_String" />
+                <Field name="Authenticated Source Code" size="255" source="File: Z:\8. OPERATIONS\1. Global Team\Ylli\PP Data Extract\D&amp;I Data.xlsx|||`Sheet1$`" type="V_String" />
+                <Field name="Lounge Programme" size="255" source="File: Z:\8. OPERATIONS\1. Global Team\Ylli\PP Data Extract\D&amp;I Data.xlsx|||`Sheet1$`" type="V_String" />
+                <Field name="Deal Type" size="255" source="File: Z:\8. OPERATIONS\1. Global Team\Ylli\PP Data Extract\D&amp;I Data.xlsx|||`Sheet1$`" type="V_String" />
+                <Field name="Country Of Issue" size="255" source="File: Z:\8. OPERATIONS\1. Global Team\Ylli\PP Data Extract\D&amp;I Data.xlsx|||`Sheet1$`" type="V_String" />
+                <Field name="EEA Country Y/N" size="255" source="File: Z:\8. OPERATIONS\1. Global Team\Ylli\PP Data Extract\D&amp;I Data.xlsx|||`Sheet1$`" type="V_String" />
+                <Field name="Client" size="255" source="File: Z:\8. OPERATIONS\1. Global Team\Ylli\PP Data Extract\D&amp;I Data.xlsx|||`Sheet1$`" type="V_String" />
+                <Field name="Issuer Name" size="255" source="File: Z:\8. OPERATIONS\1. Global Team\Ylli\PP Data Extract\D&amp;I Data.xlsx|||`Sheet1$`" type="V_WString" />
+                <Field name="Enrolment Method" size="255" source="File: Z:\8. OPERATIONS\1. Global Team\Ylli\PP Data Extract\D&amp;I Data.xlsx|||`Sheet1$`" type="V_String" />
+                <Field name="CIF" source="File: Z:\8. OPERATIONS\1. Global Team\Ylli\PP Data Extract\D&amp;I Data.xlsx|||`Sheet1$`" type="Double" />
+                <Field name="Active Members" source="File: Z:\8. OPERATIONS\1. Global Team\Ylli\PP Data Extract\D&amp;I Data.xlsx|||`Sheet1$`" type="Double" />
+                <Field name="Visit Volume" source="File: Z:\8. OPERATIONS\1. Global Team\Ylli\PP Data Extract\D&amp;I Data.xlsx|||`Sheet1$`" type="Double" />
+                <Field name="Visit_card_transaction_type_code" size="255" source="File: Z:\8. OPERATIONS\1. Global Team\Ylli\PP Data Extract\D&amp;I Data.xlsx|||`Sheet1$`" type="V_String" />
+                <Field name="Visit_card_validation_type_desc" size="255" source="File: Z:\8. OPERATIONS\1. Global Team\Ylli\PP Data Extract\D&amp;I Data.xlsx|||`Sheet1$`" type="V_WString" />
+                <Field name="SignUp_card_validation_type_desc" size="255" source="File: Z:\8. OPERATIONS\1. Global Team\Ylli\PP Data Extract\D&amp;I Data.xlsx|||`Sheet1$`" type="V_String" />
+                <Field name="SignUp_card_transaction_type_code" size="255" source="File: Z:\8. OPERATIONS\1. Global Team\Ylli\PP Data Extract\D&amp;I Data.xlsx|||`Sheet1$`" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="19">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="990" y="378" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="True" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Client Region" selected="True" />
+                <SelectField field="Source Code" selected="True" />
+                <SelectField field="CIF" selected="True" />
+                <SelectField field="Active Members" selected="True" />
+                <SelectField field="Visit Volume" selected="True" />
+                <SelectField field="Client ID" selected="True" />
+                <SelectField field="bin" selected="False" />
+                <SelectField field="Authenticated Source Code" selected="False" />
+                <SelectField field="Lounge Programme" selected="False" />
+                <SelectField field="Deal Type" selected="False" />
+                <SelectField field="Country Of Issue" selected="False" />
+                <SelectField field="EEA Country Y/N" selected="False" />
+                <SelectField field="Client" selected="False" />
+                <SelectField field="Issuer Name" selected="False" />
+                <SelectField field="Enrolment Method" selected="False" />
+                <SelectField field="Visit_card_transaction_type_code" selected="False" />
+                <SelectField field="Visit_card_validation_type_desc" selected="False" />
+                <SelectField field="SignUp_card_validation_type_desc" selected="False" />
+                <SelectField field="SignUp_card_transaction_type_code" selected="False" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="53" y="220" width="769" height="674" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>CMS Data</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="5">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="78" y="281" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <CachedCosmeticName>CMS OPS</CachedCosmeticName>
+              <File RecordLimit="" FileFormat="23">aka:5f15b5140b05360e6c4ed393|||Select view_globalops_issuers1.bid, view_globalops_issuers1.billing_inclusion_lounge_visits, view_globalops_issuers1.billing_inclusion_memberships, view_globalops_issuers1.bin, view_globalops_issuers1.card_segment, view_globalops_issuers1.card_type, view_globalops_issuers1.cg_region_of_issue, view_globalops_issuers1.clean_issuer_name, view_globalops_issuers1.client_name, view_globalops_issuers1.client_region_of_issue, view_globalops_issuers1.client_service_centre, view_globalops_issuers1.client_sub_region_of_issue, view_globalops_issuers1.consolidated_report, view_globalops_issuers1.contract_type, view_globalops_issuers1.country_of_issue, view_globalops_issuers1.country_of_issue_iso, view_globalops_issuers1.currency, view_globalops_issuers1.deal_cancellation_date, view_globalops_issuers1.deal_start_date, view_globalops_issuers1.deal_status, view_globalops_issuers1.deal_type, view_globalops_issuers1.decline, view_globalops_issuers1.enrolment_method, view_globalops_issuers1.group_code, view_globalops_issuers1.ica, view_globalops_issuers1.issuer_name, view_globalops_issuers1.lounge_programme, view_globalops_issuers1.lounge_set_selected, view_globalops_issuers1.lv_report_credit_card_type, view_globalops_issuers1.membership_fee, view_globalops_issuers1.membership_fee_currency, view_globalops_issuers1.model, view_globalops_issuers1.po_charge_type, view_globalops_issuers1.prefix, view_globalops_issuers1.reporting_ica, view_globalops_issuers1.selected_non_selected, view_globalops_issuers1.source_code, view_globalops_issuers1.implementation_type From cms.view_globalops_issuers view_globalops_issuers1</File>
+              <FormatSpecificOptions>
+                <PreSQL />
+                <PreSQLOnConfig>True</PreSQLOnConfig>
+                <NoProgress>True</NoProgress>
+                <CacheData>False</CacheData>
+                <TableStyle>Quoted</TableStyle>
+                <ReadUncommitted>False</ReadUncommitted>
+                <PostSQL />
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>aka:CMS OPS
+Table=Select view_globalops_issuers1.bid, view_globalops_issuers1.billing_inclusion_lounge_visits, view_globalops_issuers1.billing_inclusion_memberships, view_globalops_issuers1.bin, view_globalops_issuers1.card_segment, view_globalops_issuers1.card_type, view_globalops_issuers1.cg_region_of_issue, view_globalops_issuers1.clean_issuer_name, view_globalops_issuers1.client_name, view_globalops_issuers1.client_region_of_issue, view_globalops_issuers1.client_service_centre, view_globalops_issuers1.client_sub_region_of_issue, view_globalops_issuers1.consolidated_report, view_globalops_issuers1.contract_type, view_globalops_issuers1.country_of_issue, view_globalops_issuers1.country_of_issue_iso, view_globalops_issuers1.currency, view_globalops_issuers1.deal_cancellation_date, view_globalops_issuers1.deal_start_date, view_globalops_issuers1.deal_status, view_globalops_issuers1.deal_type, view_globalops_issuers1.decline, view_globalops_issuers1.enrolment_method, view_globalops_issuers1.group_code, view_globalops_issuers1.ica, view_globalops_issuers1.issuer_name, view_globalops_issuers1.lounge_programme, view_globalops_issuers1.lounge_set_selected, view_globalops_issuers1.lv_report_credit_card_type, view_globalops_issuers1.membership_fee, view_globalops_issuers1.membership_fee_currency, view_globalops_issuers1.model, view_globalops_issuers1.po_charge_type, view_globalops_issuers1.prefix, view_globalops_issuers1.reporting_ica, view_globalops_issuers1.selected_non_selected, view_globalops_issuers1.source_code, view_globalops_issuers1.implementation_type From cms.view_globalops_issuers view_globalops_issuers1</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="bid" size="45" source="File: aka:5f15b5140b05360e6c4ed393|||Select view_globalops_issuers1.bid, view_globalops_issuers1.billing_inclusion_lounge_visits, view_globalops_issuers1.billing_inclusion_memberships, view_globalops_issuers1.bin, view_globalops_issuers1.card_segment, view_globalops_issuers1.card_type, view_globalops_issuers1.cg_region_of_issue, view_globalops_issuers1.clean_issuer_name, view_globalops_issuers1.client_name, view_globalops_issuers1.client_region_of_issue, view_globalops_issuers1.client_service_centre, view_globalops_issuers1.client_sub_region_of_issue, view_globalops_issuers1.consolidated_report, view_globalops_issuers1.contract_type, view_globalops_issuers1.country_of_issue, view_globalops_issuers1.country_of_issue_iso, view_globalops_issuers1.currency, view_globalops_issuers1.deal_cancellation_date, view_globalops_issuers1.deal_start_date, view_globalops_issuers1.deal_status, view_globalops_issuers1.deal_type, view_globalops_issuers1.decline, view_globalops_issuers1.enrolment_method, view_globalops_issuers1.group_code, view_globalops_issuers1.ica, view_globalops_issuers1.issuer_name, view_globalops_issuers1.lounge_programme, view_globalops_issuers1.lounge_set_selected, view_globalops_issuers1.lv_report_credit_card_type, view_globalops_issuers1.membership_fee, view_globalops_issuers1.membership_fee_currency, view_globalops_issuers1.model, view_globalops_issuers1.po_charge_type, view_globalops_issuers1.prefix, view_globalops_issuers1.reporting_ica, view_globalops_issuers1.selected_non_selected, view_globalops_issuers1.source_code, view_globalops_issuers1.implementation_type From cms.view_globalops_issuers view_globalops_issuers1" type="V_WString" />
+                <Field name="billing_inclusion_lounge_visits" source="File: aka:5f15b5140b05360e6c4ed393|||Select view_globalops_issuers1.bid, view_globalops_issuers1.billing_inclusion_lounge_visits, view_globalops_issuers1.billing_inclusion_memberships, view_globalops_issuers1.bin, view_globalops_issuers1.card_segment, view_globalops_issuers1.card_type, view_globalops_issuers1.cg_region_of_issue, view_globalops_issuers1.clean_issuer_name, view_globalops_issuers1.client_name, view_globalops_issuers1.client_region_of_issue, view_globalops_issuers1.client_service_centre, view_globalops_issuers1.client_sub_region_of_issue, view_globalops_issuers1.consolidated_report, view_globalops_issuers1.contract_type, view_globalops_issuers1.country_of_issue, view_globalops_issuers1.country_of_issue_iso, view_globalops_issuers1.currency, view_globalops_issuers1.deal_cancellation_date, view_globalops_issuers1.deal_start_date, view_globalops_issuers1.deal_status, view_globalops_issuers1.deal_type, view_globalops_issuers1.decline, view_globalops_issuers1.enrolment_method, view_globalops_issuers1.group_code, view_globalops_issuers1.ica, view_globalops_issuers1.issuer_name, view_globalops_issuers1.lounge_programme, view_globalops_issuers1.lounge_set_selected, view_globalops_issuers1.lv_report_credit_card_type, view_globalops_issuers1.membership_fee, view_globalops_issuers1.membership_fee_currency, view_globalops_issuers1.model, view_globalops_issuers1.po_charge_type, view_globalops_issuers1.prefix, view_globalops_issuers1.reporting_ica, view_globalops_issuers1.selected_non_selected, view_globalops_issuers1.source_code, view_globalops_issuers1.implementation_type From cms.view_globalops_issuers view_globalops_issuers1" type="Int16" />
+                <Field name="billing_inclusion_memberships" source="File: aka:5f15b5140b05360e6c4ed393|||Select view_globalops_issuers1.bid, view_globalops_issuers1.billing_inclusion_lounge_visits, view_globalops_issuers1.billing_inclusion_memberships, view_globalops_issuers1.bin, view_globalops_issuers1.card_segment, view_globalops_issuers1.card_type, view_globalops_issuers1.cg_region_of_issue, view_globalops_issuers1.clean_issuer_name, view_globalops_issuers1.client_name, view_globalops_issuers1.client_region_of_issue, view_globalops_issuers1.client_service_centre, view_globalops_issuers1.client_sub_region_of_issue, view_globalops_issuers1.consolidated_report, view_globalops_issuers1.contract_type, view_globalops_issuers1.country_of_issue, view_globalops_issuers1.country_of_issue_iso, view_globalops_issuers1.currency, view_globalops_issuers1.deal_cancellation_date, view_globalops_issuers1.deal_start_date, view_globalops_issuers1.deal_status, view_globalops_issuers1.deal_type, view_globalops_issuers1.decline, view_globalops_issuers1.enrolment_method, view_globalops_issuers1.group_code, view_globalops_issuers1.ica, view_globalops_issuers1.issuer_name, view_globalops_issuers1.lounge_programme, view_globalops_issuers1.lounge_set_selected, view_globalops_issuers1.lv_report_credit_card_type, view_globalops_issuers1.membership_fee, view_globalops_issuers1.membership_fee_currency, view_globalops_issuers1.model, view_globalops_issuers1.po_charge_type, view_globalops_issuers1.prefix, view_globalops_issuers1.reporting_ica, view_globalops_issuers1.selected_non_selected, view_globalops_issuers1.source_code, view_globalops_issuers1.implementation_type From cms.view_globalops_issuers view_globalops_issuers1" type="Int16" />
+                <Field name="bin" size="255" source="File: aka:5f15b5140b05360e6c4ed393|||Select view_globalops_issuers1.bid, view_globalops_issuers1.billing_inclusion_lounge_visits, view_globalops_issuers1.billing_inclusion_memberships, view_globalops_issuers1.bin, view_globalops_issuers1.card_segment, view_globalops_issuers1.card_type, view_globalops_issuers1.cg_region_of_issue, view_globalops_issuers1.clean_issuer_name, view_globalops_issuers1.client_name, view_globalops_issuers1.client_region_of_issue, view_globalops_issuers1.client_service_centre, view_globalops_issuers1.client_sub_region_of_issue, view_globalops_issuers1.consolidated_report, view_globalops_issuers1.contract_type, view_globalops_issuers1.country_of_issue, view_globalops_issuers1.country_of_issue_iso, view_globalops_issuers1.currency, view_globalops_issuers1.deal_cancellation_date, view_globalops_issuers1.deal_start_date, view_globalops_issuers1.deal_status, view_globalops_issuers1.deal_type, view_globalops_issuers1.decline, view_globalops_issuers1.enrolment_method, view_globalops_issuers1.group_code, view_globalops_issuers1.ica, view_globalops_issuers1.issuer_name, view_globalops_issuers1.lounge_programme, view_globalops_issuers1.lounge_set_selected, view_globalops_issuers1.lv_report_credit_card_type, view_globalops_issuers1.membership_fee, view_globalops_issuers1.membership_fee_currency, view_globalops_issuers1.model, view_globalops_issuers1.po_charge_type, view_globalops_issuers1.prefix, view_globalops_issuers1.reporting_ica, view_globalops_issuers1.selected_non_selected, view_globalops_issuers1.source_code, view_globalops_issuers1.implementation_type From cms.view_globalops_issuers view_globalops_issuers1" type="V_WString" />
+                <Field name="card_segment" size="45" source="File: aka:5f15b5140b05360e6c4ed393|||Select view_globalops_issuers1.bid, view_globalops_issuers1.billing_inclusion_lounge_visits, view_globalops_issuers1.billing_inclusion_memberships, view_globalops_issuers1.bin, view_globalops_issuers1.card_segment, view_globalops_issuers1.card_type, view_globalops_issuers1.cg_region_of_issue, view_globalops_issuers1.clean_issuer_name, view_globalops_issuers1.client_name, view_globalops_issuers1.client_region_of_issue, view_globalops_issuers1.client_service_centre, view_globalops_issuers1.client_sub_region_of_issue, view_globalops_issuers1.consolidated_report, view_globalops_issuers1.contract_type, view_globalops_issuers1.country_of_issue, view_globalops_issuers1.country_of_issue_iso, view_globalops_issuers1.currency, view_globalops_issuers1.deal_cancellation_date, view_globalops_issuers1.deal_start_date, view_globalops_issuers1.deal_status, view_globalops_issuers1.deal_type, view_globalops_issuers1.decline, view_globalops_issuers1.enrolment_method, view_globalops_issuers1.group_code, view_globalops_issuers1.ica, view_globalops_issuers1.issuer_name, view_globalops_issuers1.lounge_programme, view_globalops_issuers1.lounge_set_selected, view_globalops_issuers1.lv_report_credit_card_type, view_globalops_issuers1.membership_fee, view_globalops_issuers1.membership_fee_currency, view_globalops_issuers1.model, view_globalops_issuers1.po_charge_type, view_globalops_issuers1.prefix, view_globalops_issuers1.reporting_ica, view_globalops_issuers1.selected_non_selected, view_globalops_issuers1.source_code, view_globalops_issuers1.implementation_type From cms.view_globalops_issuers view_globalops_issuers1" type="V_WString" />
+                <Field name="card_type" size="45" source="File: aka:5f15b5140b05360e6c4ed393|||Select view_globalops_issuers1.bid, view_globalops_issuers1.billing_inclusion_lounge_visits, view_globalops_issuers1.billing_inclusion_memberships, view_globalops_issuers1.bin, view_globalops_issuers1.card_segment, view_globalops_issuers1.card_type, view_globalops_issuers1.cg_region_of_issue, view_globalops_issuers1.clean_issuer_name, view_globalops_issuers1.client_name, view_globalops_issuers1.client_region_of_issue, view_globalops_issuers1.client_service_centre, view_globalops_issuers1.client_sub_region_of_issue, view_globalops_issuers1.consolidated_report, view_globalops_issuers1.contract_type, view_globalops_issuers1.country_of_issue, view_globalops_issuers1.country_of_issue_iso, view_globalops_issuers1.currency, view_globalops_issuers1.deal_cancellation_date, view_globalops_issuers1.deal_start_date, view_globalops_issuers1.deal_status, view_globalops_issuers1.deal_type, view_globalops_issuers1.decline, view_globalops_issuers1.enrolment_method, view_globalops_issuers1.group_code, view_globalops_issuers1.ica, view_globalops_issuers1.issuer_name, view_globalops_issuers1.lounge_programme, view_globalops_issuers1.lounge_set_selected, view_globalops_issuers1.lv_report_credit_card_type, view_globalops_issuers1.membership_fee, view_globalops_issuers1.membership_fee_currency, view_globalops_issuers1.model, view_globalops_issuers1.po_charge_type, view_globalops_issuers1.prefix, view_globalops_issuers1.reporting_ica, view_globalops_issuers1.selected_non_selected, view_globalops_issuers1.source_code, view_globalops_issuers1.implementation_type From cms.view_globalops_issuers view_globalops_issuers1" type="V_WString" />
+                <Field name="cg_region_of_issue" size="45" source="File: aka:5f15b5140b05360e6c4ed393|||Select view_globalops_issuers1.bid, view_globalops_issuers1.billing_inclusion_lounge_visits, view_globalops_issuers1.billing_inclusion_memberships, view_globalops_issuers1.bin, view_globalops_issuers1.card_segment, view_globalops_issuers1.card_type, view_globalops_issuers1.cg_region_of_issue, view_globalops_issuers1.clean_issuer_name, view_globalops_issuers1.client_name, view_globalops_issuers1.client_region_of_issue, view_globalops_issuers1.client_service_centre, view_globalops_issuers1.client_sub_region_of_issue, view_globalops_issuers1.consolidated_report, view_globalops_issuers1.contract_type, view_globalops_issuers1.country_of_issue, view_globalops_issuers1.country_of_issue_iso, view_globalops_issuers1.currency, view_globalops_issuers1.deal_cancellation_date, view_globalops_issuers1.deal_start_date, view_globalops_issuers1.deal_status, view_globalops_issuers1.deal_type, view_globalops_issuers1.decline, view_globalops_issuers1.enrolment_method, view_globalops_issuers1.group_code, view_globalops_issuers1.ica, view_globalops_issuers1.issuer_name, view_globalops_issuers1.lounge_programme, view_globalops_issuers1.lounge_set_selected, view_globalops_issuers1.lv_report_credit_card_type, view_globalops_issuers1.membership_fee, view_globalops_issuers1.membership_fee_currency, view_globalops_issuers1.model, view_globalops_issuers1.po_charge_type, view_globalops_issuers1.prefix, view_globalops_issuers1.reporting_ica, view_globalops_issuers1.selected_non_selected, view_globalops_issuers1.source_code, view_globalops_issuers1.implementation_type From cms.view_globalops_issuers view_globalops_issuers1" type="V_WString" />
+                <Field name="clean_issuer_name" size="255" source="File: aka:5f15b5140b05360e6c4ed393|||Select view_globalops_issuers1.bid, view_globalops_issuers1.billing_inclusion_lounge_visits, view_globalops_issuers1.billing_inclusion_memberships, view_globalops_issuers1.bin, view_globalops_issuers1.card_segment, view_globalops_issuers1.card_type, view_globalops_issuers1.cg_region_of_issue, view_globalops_issuers1.clean_issuer_name, view_globalops_issuers1.client_name, view_globalops_issuers1.client_region_of_issue, view_globalops_issuers1.client_service_centre, view_globalops_issuers1.client_sub_region_of_issue, view_globalops_issuers1.consolidated_report, view_globalops_issuers1.contract_type, view_globalops_issuers1.country_of_issue, view_globalops_issuers1.country_of_issue_iso, view_globalops_issuers1.currency, view_globalops_issuers1.deal_cancellation_date, view_globalops_issuers1.deal_start_date, view_globalops_issuers1.deal_status, view_globalops_issuers1.deal_type, view_globalops_issuers1.decline, view_globalops_issuers1.enrolment_method, view_globalops_issuers1.group_code, view_globalops_issuers1.ica, view_globalops_issuers1.issuer_name, view_globalops_issuers1.lounge_programme, view_globalops_issuers1.lounge_set_selected, view_globalops_issuers1.lv_report_credit_card_type, view_globalops_issuers1.membership_fee, view_globalops_issuers1.membership_fee_currency, view_globalops_issuers1.model, view_globalops_issuers1.po_charge_type, view_globalops_issuers1.prefix, view_globalops_issuers1.reporting_ica, view_globalops_issuers1.selected_non_selected, view_globalops_issuers1.source_code, view_globalops_issuers1.implementation_type From cms.view_globalops_issuers view_globalops_issuers1" type="V_WString" />
+                <Field name="client_name" size="255" source="File: aka:5f15b5140b05360e6c4ed393|||Select view_globalops_issuers1.bid, view_globalops_issuers1.billing_inclusion_lounge_visits, view_globalops_issuers1.billing_inclusion_memberships, view_globalops_issuers1.bin, view_globalops_issuers1.card_segment, view_globalops_issuers1.card_type, view_globalops_issuers1.cg_region_of_issue, view_globalops_issuers1.clean_issuer_name, view_globalops_issuers1.client_name, view_globalops_issuers1.client_region_of_issue, view_globalops_issuers1.client_service_centre, view_globalops_issuers1.client_sub_region_of_issue, view_globalops_issuers1.consolidated_report, view_globalops_issuers1.contract_type, view_globalops_issuers1.country_of_issue, view_globalops_issuers1.country_of_issue_iso, view_globalops_issuers1.currency, view_globalops_issuers1.deal_cancellation_date, view_globalops_issuers1.deal_start_date, view_globalops_issuers1.deal_status, view_globalops_issuers1.deal_type, view_globalops_issuers1.decline, view_globalops_issuers1.enrolment_method, view_globalops_issuers1.group_code, view_globalops_issuers1.ica, view_globalops_issuers1.issuer_name, view_globalops_issuers1.lounge_programme, view_globalops_issuers1.lounge_set_selected, view_globalops_issuers1.lv_report_credit_card_type, view_globalops_issuers1.membership_fee, view_globalops_issuers1.membership_fee_currency, view_globalops_issuers1.model, view_globalops_issuers1.po_charge_type, view_globalops_issuers1.prefix, view_globalops_issuers1.reporting_ica, view_globalops_issuers1.selected_non_selected, view_globalops_issuers1.source_code, view_globalops_issuers1.implementation_type From cms.view_globalops_issuers view_globalops_issuers1" type="V_WString" />
+                <Field name="client_region_of_issue" size="65535" source="File: aka:5f15b5140b05360e6c4ed393|||Select view_globalops_issuers1.bid, view_globalops_issuers1.billing_inclusion_lounge_visits, view_globalops_issuers1.billing_inclusion_memberships, view_globalops_issuers1.bin, view_globalops_issuers1.card_segment, view_globalops_issuers1.card_type, view_globalops_issuers1.cg_region_of_issue, view_globalops_issuers1.clean_issuer_name, view_globalops_issuers1.client_name, view_globalops_issuers1.client_region_of_issue, view_globalops_issuers1.client_service_centre, view_globalops_issuers1.client_sub_region_of_issue, view_globalops_issuers1.consolidated_report, view_globalops_issuers1.contract_type, view_globalops_issuers1.country_of_issue, view_globalops_issuers1.country_of_issue_iso, view_globalops_issuers1.currency, view_globalops_issuers1.deal_cancellation_date, view_globalops_issuers1.deal_start_date, view_globalops_issuers1.deal_status, view_globalops_issuers1.deal_type, view_globalops_issuers1.decline, view_globalops_issuers1.enrolment_method, view_globalops_issuers1.group_code, view_globalops_issuers1.ica, view_globalops_issuers1.issuer_name, view_globalops_issuers1.lounge_programme, view_globalops_issuers1.lounge_set_selected, view_globalops_issuers1.lv_report_credit_card_type, view_globalops_issuers1.membership_fee, view_globalops_issuers1.membership_fee_currency, view_globalops_issuers1.model, view_globalops_issuers1.po_charge_type, view_globalops_issuers1.prefix, view_globalops_issuers1.reporting_ica, view_globalops_issuers1.selected_non_selected, view_globalops_issuers1.source_code, view_globalops_issuers1.implementation_type From cms.view_globalops_issuers view_globalops_issuers1" type="V_WString" />
+                <Field name="client_service_centre" size="255" source="File: aka:5f15b5140b05360e6c4ed393|||Select view_globalops_issuers1.bid, view_globalops_issuers1.billing_inclusion_lounge_visits, view_globalops_issuers1.billing_inclusion_memberships, view_globalops_issuers1.bin, view_globalops_issuers1.card_segment, view_globalops_issuers1.card_type, view_globalops_issuers1.cg_region_of_issue, view_globalops_issuers1.clean_issuer_name, view_globalops_issuers1.client_name, view_globalops_issuers1.client_region_of_issue, view_globalops_issuers1.client_service_centre, view_globalops_issuers1.client_sub_region_of_issue, view_globalops_issuers1.consolidated_report, view_globalops_issuers1.contract_type, view_globalops_issuers1.country_of_issue, view_globalops_issuers1.country_of_issue_iso, view_globalops_issuers1.currency, view_globalops_issuers1.deal_cancellation_date, view_globalops_issuers1.deal_start_date, view_globalops_issuers1.deal_status, view_globalops_issuers1.deal_type, view_globalops_issuers1.decline, view_globalops_issuers1.enrolment_method, view_globalops_issuers1.group_code, view_globalops_issuers1.ica, view_globalops_issuers1.issuer_name, view_globalops_issuers1.lounge_programme, view_globalops_issuers1.lounge_set_selected, view_globalops_issuers1.lv_report_credit_card_type, view_globalops_issuers1.membership_fee, view_globalops_issuers1.membership_fee_currency, view_globalops_issuers1.model, view_globalops_issuers1.po_charge_type, view_globalops_issuers1.prefix, view_globalops_issuers1.reporting_ica, view_globalops_issuers1.selected_non_selected, view_globalops_issuers1.source_code, view_globalops_issuers1.implementation_type From cms.view_globalops_issuers view_globalops_issuers1" type="V_WString" />
+                <Field name="client_sub_region_of_issue" size="45" source="File: aka:5f15b5140b05360e6c4ed393|||Select view_globalops_issuers1.bid, view_globalops_issuers1.billing_inclusion_lounge_visits, view_globalops_issuers1.billing_inclusion_memberships, view_globalops_issuers1.bin, view_globalops_issuers1.card_segment, view_globalops_issuers1.card_type, view_globalops_issuers1.cg_region_of_issue, view_globalops_issuers1.clean_issuer_name, view_globalops_issuers1.client_name, view_globalops_issuers1.client_region_of_issue, view_globalops_issuers1.client_service_centre, view_globalops_issuers1.client_sub_region_of_issue, view_globalops_issuers1.consolidated_report, view_globalops_issuers1.contract_type, view_globalops_issuers1.country_of_issue, view_globalops_issuers1.country_of_issue_iso, view_globalops_issuers1.currency, view_globalops_issuers1.deal_cancellation_date, view_globalops_issuers1.deal_start_date, view_globalops_issuers1.deal_status, view_globalops_issuers1.deal_type, view_globalops_issuers1.decline, view_globalops_issuers1.enrolment_method, view_globalops_issuers1.group_code, view_globalops_issuers1.ica, view_globalops_issuers1.issuer_name, view_globalops_issuers1.lounge_programme, view_globalops_issuers1.lounge_set_selected, view_globalops_issuers1.lv_report_credit_card_type, view_globalops_issuers1.membership_fee, view_globalops_issuers1.membership_fee_currency, view_globalops_issuers1.model, view_globalops_issuers1.po_charge_type, view_globalops_issuers1.prefix, view_globalops_issuers1.reporting_ica, view_globalops_issuers1.selected_non_selected, view_globalops_issuers1.source_code, view_globalops_issuers1.implementation_type From cms.view_globalops_issuers view_globalops_issuers1" type="V_WString" />
+                <Field name="consolidated_report" source="File: aka:5f15b5140b05360e6c4ed393|||Select view_globalops_issuers1.bid, view_globalops_issuers1.billing_inclusion_lounge_visits, view_globalops_issuers1.billing_inclusion_memberships, view_globalops_issuers1.bin, view_globalops_issuers1.card_segment, view_globalops_issuers1.card_type, view_globalops_issuers1.cg_region_of_issue, view_globalops_issuers1.clean_issuer_name, view_globalops_issuers1.client_name, view_globalops_issuers1.client_region_of_issue, view_globalops_issuers1.client_service_centre, view_globalops_issuers1.client_sub_region_of_issue, view_globalops_issuers1.consolidated_report, view_globalops_issuers1.contract_type, view_globalops_issuers1.country_of_issue, view_globalops_issuers1.country_of_issue_iso, view_globalops_issuers1.currency, view_globalops_issuers1.deal_cancellation_date, view_globalops_issuers1.deal_start_date, view_globalops_issuers1.deal_status, view_globalops_issuers1.deal_type, view_globalops_issuers1.decline, view_globalops_issuers1.enrolment_method, view_globalops_issuers1.group_code, view_globalops_issuers1.ica, view_globalops_issuers1.issuer_name, view_globalops_issuers1.lounge_programme, view_globalops_issuers1.lounge_set_selected, view_globalops_issuers1.lv_report_credit_card_type, view_globalops_issuers1.membership_fee, view_globalops_issuers1.membership_fee_currency, view_globalops_issuers1.model, view_globalops_issuers1.po_charge_type, view_globalops_issuers1.prefix, view_globalops_issuers1.reporting_ica, view_globalops_issuers1.selected_non_selected, view_globalops_issuers1.source_code, view_globalops_issuers1.implementation_type From cms.view_globalops_issuers view_globalops_issuers1" type="Int16" />
+                <Field name="contract_type" size="45" source="File: aka:5f15b5140b05360e6c4ed393|||Select view_globalops_issuers1.bid, view_globalops_issuers1.billing_inclusion_lounge_visits, view_globalops_issuers1.billing_inclusion_memberships, view_globalops_issuers1.bin, view_globalops_issuers1.card_segment, view_globalops_issuers1.card_type, view_globalops_issuers1.cg_region_of_issue, view_globalops_issuers1.clean_issuer_name, view_globalops_issuers1.client_name, view_globalops_issuers1.client_region_of_issue, view_globalops_issuers1.client_service_centre, view_globalops_issuers1.client_sub_region_of_issue, view_globalops_issuers1.consolidated_report, view_globalops_issuers1.contract_type, view_globalops_issuers1.country_of_issue, view_globalops_issuers1.country_of_issue_iso, view_globalops_issuers1.currency, view_globalops_issuers1.deal_cancellation_date, view_globalops_issuers1.deal_start_date, view_globalops_issuers1.deal_status, view_globalops_issuers1.deal_type, view_globalops_issuers1.decline, view_globalops_issuers1.enrolment_method, view_globalops_issuers1.group_code, view_globalops_issuers1.ica, view_globalops_issuers1.issuer_name, view_globalops_issuers1.lounge_programme, view_globalops_issuers1.lounge_set_selected, view_globalops_issuers1.lv_report_credit_card_type, view_globalops_issuers1.membership_fee, view_globalops_issuers1.membership_fee_currency, view_globalops_issuers1.model, view_globalops_issuers1.po_charge_type, view_globalops_issuers1.prefix, view_globalops_issuers1.reporting_ica, view_globalops_issuers1.selected_non_selected, view_globalops_issuers1.source_code, view_globalops_issuers1.implementation_type From cms.view_globalops_issuers view_globalops_issuers1" type="V_WString" />
+                <Field name="country_of_issue" size="255" source="File: aka:5f15b5140b05360e6c4ed393|||Select view_globalops_issuers1.bid, view_globalops_issuers1.billing_inclusion_lounge_visits, view_globalops_issuers1.billing_inclusion_memberships, view_globalops_issuers1.bin, view_globalops_issuers1.card_segment, view_globalops_issuers1.card_type, view_globalops_issuers1.cg_region_of_issue, view_globalops_issuers1.clean_issuer_name, view_globalops_issuers1.client_name, view_globalops_issuers1.client_region_of_issue, view_globalops_issuers1.client_service_centre, view_globalops_issuers1.client_sub_region_of_issue, view_globalops_issuers1.consolidated_report, view_globalops_issuers1.contract_type, view_globalops_issuers1.country_of_issue, view_globalops_issuers1.country_of_issue_iso, view_globalops_issuers1.currency, view_globalops_issuers1.deal_cancellation_date, view_globalops_issuers1.deal_start_date, view_globalops_issuers1.deal_status, view_globalops_issuers1.deal_type, view_globalops_issuers1.decline, view_globalops_issuers1.enrolment_method, view_globalops_issuers1.group_code, view_globalops_issuers1.ica, view_globalops_issuers1.issuer_name, view_globalops_issuers1.lounge_programme, view_globalops_issuers1.lounge_set_selected, view_globalops_issuers1.lv_report_credit_card_type, view_globalops_issuers1.membership_fee, view_globalops_issuers1.membership_fee_currency, view_globalops_issuers1.model, view_globalops_issuers1.po_charge_type, view_globalops_issuers1.prefix, view_globalops_issuers1.reporting_ica, view_globalops_issuers1.selected_non_selected, view_globalops_issuers1.source_code, view_globalops_issuers1.implementation_type From cms.view_globalops_issuers view_globalops_issuers1" type="V_WString" />
+                <Field name="country_of_issue_iso" size="45" source="File: aka:5f15b5140b05360e6c4ed393|||Select view_globalops_issuers1.bid, view_globalops_issuers1.billing_inclusion_lounge_visits, view_globalops_issuers1.billing_inclusion_memberships, view_globalops_issuers1.bin, view_globalops_issuers1.card_segment, view_globalops_issuers1.card_type, view_globalops_issuers1.cg_region_of_issue, view_globalops_issuers1.clean_issuer_name, view_globalops_issuers1.client_name, view_globalops_issuers1.client_region_of_issue, view_globalops_issuers1.client_service_centre, view_globalops_issuers1.client_sub_region_of_issue, view_globalops_issuers1.consolidated_report, view_globalops_issuers1.contract_type, view_globalops_issuers1.country_of_issue, view_globalops_issuers1.country_of_issue_iso, view_globalops_issuers1.currency, view_globalops_issuers1.deal_cancellation_date, view_globalops_issuers1.deal_start_date, view_globalops_issuers1.deal_status, view_globalops_issuers1.deal_type, view_globalops_issuers1.decline, view_globalops_issuers1.enrolment_method, view_globalops_issuers1.group_code, view_globalops_issuers1.ica, view_globalops_issuers1.issuer_name, view_globalops_issuers1.lounge_programme, view_globalops_issuers1.lounge_set_selected, view_globalops_issuers1.lv_report_credit_card_type, view_globalops_issuers1.membership_fee, view_globalops_issuers1.membership_fee_currency, view_globalops_issuers1.model, view_globalops_issuers1.po_charge_type, view_globalops_issuers1.prefix, view_globalops_issuers1.reporting_ica, view_globalops_issuers1.selected_non_selected, view_globalops_issuers1.source_code, view_globalops_issuers1.implementation_type From cms.view_globalops_issuers view_globalops_issuers1" type="V_WString" />
+                <Field name="currency" size="45" source="File: aka:5f15b5140b05360e6c4ed393|||Select view_globalops_issuers1.bid, view_globalops_issuers1.billing_inclusion_lounge_visits, view_globalops_issuers1.billing_inclusion_memberships, view_globalops_issuers1.bin, view_globalops_issuers1.card_segment, view_globalops_issuers1.card_type, view_globalops_issuers1.cg_region_of_issue, view_globalops_issuers1.clean_issuer_name, view_globalops_issuers1.client_name, view_globalops_issuers1.client_region_of_issue, view_globalops_issuers1.client_service_centre, view_globalops_issuers1.client_sub_region_of_issue, view_globalops_issuers1.consolidated_report, view_globalops_issuers1.contract_type, view_globalops_issuers1.country_of_issue, view_globalops_issuers1.country_of_issue_iso, view_globalops_issuers1.currency, view_globalops_issuers1.deal_cancellation_date, view_globalops_issuers1.deal_start_date, view_globalops_issuers1.deal_status, view_globalops_issuers1.deal_type, view_globalops_issuers1.decline, view_globalops_issuers1.enrolment_method, view_globalops_issuers1.group_code, view_globalops_issuers1.ica, view_globalops_issuers1.issuer_name, view_globalops_issuers1.lounge_programme, view_globalops_issuers1.lounge_set_selected, view_globalops_issuers1.lv_report_credit_card_type, view_globalops_issuers1.membership_fee, view_globalops_issuers1.membership_fee_currency, view_globalops_issuers1.model, view_globalops_issuers1.po_charge_type, view_globalops_issuers1.prefix, view_globalops_issuers1.reporting_ica, view_globalops_issuers1.selected_non_selected, view_globalops_issuers1.source_code, view_globalops_issuers1.implementation_type From cms.view_globalops_issuers view_globalops_issuers1" type="V_WString" />
+                <Field name="deal_cancellation_date" source="File: aka:5f15b5140b05360e6c4ed393|||Select view_globalops_issuers1.bid, view_globalops_issuers1.billing_inclusion_lounge_visits, view_globalops_issuers1.billing_inclusion_memberships, view_globalops_issuers1.bin, view_globalops_issuers1.card_segment, view_globalops_issuers1.card_type, view_globalops_issuers1.cg_region_of_issue, view_globalops_issuers1.clean_issuer_name, view_globalops_issuers1.client_name, view_globalops_issuers1.client_region_of_issue, view_globalops_issuers1.client_service_centre, view_globalops_issuers1.client_sub_region_of_issue, view_globalops_issuers1.consolidated_report, view_globalops_issuers1.contract_type, view_globalops_issuers1.country_of_issue, view_globalops_issuers1.country_of_issue_iso, view_globalops_issuers1.currency, view_globalops_issuers1.deal_cancellation_date, view_globalops_issuers1.deal_start_date, view_globalops_issuers1.deal_status, view_globalops_issuers1.deal_type, view_globalops_issuers1.decline, view_globalops_issuers1.enrolment_method, view_globalops_issuers1.group_code, view_globalops_issuers1.ica, view_globalops_issuers1.issuer_name, view_globalops_issuers1.lounge_programme, view_globalops_issuers1.lounge_set_selected, view_globalops_issuers1.lv_report_credit_card_type, view_globalops_issuers1.membership_fee, view_globalops_issuers1.membership_fee_currency, view_globalops_issuers1.model, view_globalops_issuers1.po_charge_type, view_globalops_issuers1.prefix, view_globalops_issuers1.reporting_ica, view_globalops_issuers1.selected_non_selected, view_globalops_issuers1.source_code, view_globalops_issuers1.implementation_type From cms.view_globalops_issuers view_globalops_issuers1" type="DateTime" />
+                <Field name="deal_start_date" source="File: aka:5f15b5140b05360e6c4ed393|||Select view_globalops_issuers1.bid, view_globalops_issuers1.billing_inclusion_lounge_visits, view_globalops_issuers1.billing_inclusion_memberships, view_globalops_issuers1.bin, view_globalops_issuers1.card_segment, view_globalops_issuers1.card_type, view_globalops_issuers1.cg_region_of_issue, view_globalops_issuers1.clean_issuer_name, view_globalops_issuers1.client_name, view_globalops_issuers1.client_region_of_issue, view_globalops_issuers1.client_service_centre, view_globalops_issuers1.client_sub_region_of_issue, view_globalops_issuers1.consolidated_report, view_globalops_issuers1.contract_type, view_globalops_issuers1.country_of_issue, view_globalops_issuers1.country_of_issue_iso, view_globalops_issuers1.currency, view_globalops_issuers1.deal_cancellation_date, view_globalops_issuers1.deal_start_date, view_globalops_issuers1.deal_status, view_globalops_issuers1.deal_type, view_globalops_issuers1.decline, view_globalops_issuers1.enrolment_method, view_globalops_issuers1.group_code, view_globalops_issuers1.ica, view_globalops_issuers1.issuer_name, view_globalops_issuers1.lounge_programme, view_globalops_issuers1.lounge_set_selected, view_globalops_issuers1.lv_report_credit_card_type, view_globalops_issuers1.membership_fee, view_globalops_issuers1.membership_fee_currency, view_globalops_issuers1.model, view_globalops_issuers1.po_charge_type, view_globalops_issuers1.prefix, view_globalops_issuers1.reporting_ica, view_globalops_issuers1.selected_non_selected, view_globalops_issuers1.source_code, view_globalops_issuers1.implementation_type From cms.view_globalops_issuers view_globalops_issuers1" type="DateTime" />
+                <Field name="deal_status" size="45" source="File: aka:5f15b5140b05360e6c4ed393|||Select view_globalops_issuers1.bid, view_globalops_issuers1.billing_inclusion_lounge_visits, view_globalops_issuers1.billing_inclusion_memberships, view_globalops_issuers1.bin, view_globalops_issuers1.card_segment, view_globalops_issuers1.card_type, view_globalops_issuers1.cg_region_of_issue, view_globalops_issuers1.clean_issuer_name, view_globalops_issuers1.client_name, view_globalops_issuers1.client_region_of_issue, view_globalops_issuers1.client_service_centre, view_globalops_issuers1.client_sub_region_of_issue, view_globalops_issuers1.consolidated_report, view_globalops_issuers1.contract_type, view_globalops_issuers1.country_of_issue, view_globalops_issuers1.country_of_issue_iso, view_globalops_issuers1.currency, view_globalops_issuers1.deal_cancellation_date, view_globalops_issuers1.deal_start_date, view_globalops_issuers1.deal_status, view_globalops_issuers1.deal_type, view_globalops_issuers1.decline, view_globalops_issuers1.enrolment_method, view_globalops_issuers1.group_code, view_globalops_issuers1.ica, view_globalops_issuers1.issuer_name, view_globalops_issuers1.lounge_programme, view_globalops_issuers1.lounge_set_selected, view_globalops_issuers1.lv_report_credit_card_type, view_globalops_issuers1.membership_fee, view_globalops_issuers1.membership_fee_currency, view_globalops_issuers1.model, view_globalops_issuers1.po_charge_type, view_globalops_issuers1.prefix, view_globalops_issuers1.reporting_ica, view_globalops_issuers1.selected_non_selected, view_globalops_issuers1.source_code, view_globalops_issuers1.implementation_type From cms.view_globalops_issuers view_globalops_issuers1" type="V_WString" />
+                <Field name="deal_type" size="45" source="File: aka:5f15b5140b05360e6c4ed393|||Select view_globalops_issuers1.bid, view_globalops_issuers1.billing_inclusion_lounge_visits, view_globalops_issuers1.billing_inclusion_memberships, view_globalops_issuers1.bin, view_globalops_issuers1.card_segment, view_globalops_issuers1.card_type, view_globalops_issuers1.cg_region_of_issue, view_globalops_issuers1.clean_issuer_name, view_globalops_issuers1.client_name, view_globalops_issuers1.client_region_of_issue, view_globalops_issuers1.client_service_centre, view_globalops_issuers1.client_sub_region_of_issue, view_globalops_issuers1.consolidated_report, view_globalops_issuers1.contract_type, view_globalops_issuers1.country_of_issue, view_globalops_issuers1.country_of_issue_iso, view_globalops_issuers1.currency, view_globalops_issuers1.deal_cancellation_date, view_globalops_issuers1.deal_start_date, view_globalops_issuers1.deal_status, view_globalops_issuers1.deal_type, view_globalops_issuers1.decline, view_globalops_issuers1.enrolment_method, view_globalops_issuers1.group_code, view_globalops_issuers1.ica, view_globalops_issuers1.issuer_name, view_globalops_issuers1.lounge_programme, view_globalops_issuers1.lounge_set_selected, view_globalops_issuers1.lv_report_credit_card_type, view_globalops_issuers1.membership_fee, view_globalops_issuers1.membership_fee_currency, view_globalops_issuers1.model, view_globalops_issuers1.po_charge_type, view_globalops_issuers1.prefix, view_globalops_issuers1.reporting_ica, view_globalops_issuers1.selected_non_selected, view_globalops_issuers1.source_code, view_globalops_issuers1.implementation_type From cms.view_globalops_issuers view_globalops_issuers1" type="V_WString" />
+                <Field name="decline" source="File: aka:5f15b5140b05360e6c4ed393|||Select view_globalops_issuers1.bid, view_globalops_issuers1.billing_inclusion_lounge_visits, view_globalops_issuers1.billing_inclusion_memberships, view_globalops_issuers1.bin, view_globalops_issuers1.card_segment, view_globalops_issuers1.card_type, view_globalops_issuers1.cg_region_of_issue, view_globalops_issuers1.clean_issuer_name, view_globalops_issuers1.client_name, view_globalops_issuers1.client_region_of_issue, view_globalops_issuers1.client_service_centre, view_globalops_issuers1.client_sub_region_of_issue, view_globalops_issuers1.consolidated_report, view_globalops_issuers1.contract_type, view_globalops_issuers1.country_of_issue, view_globalops_issuers1.country_of_issue_iso, view_globalops_issuers1.currency, view_globalops_issuers1.deal_cancellation_date, view_globalops_issuers1.deal_start_date, view_globalops_issuers1.deal_status, view_globalops_issuers1.deal_type, view_globalops_issuers1.decline, view_globalops_issuers1.enrolment_method, view_globalops_issuers1.group_code, view_globalops_issuers1.ica, view_globalops_issuers1.issuer_name, view_globalops_issuers1.lounge_programme, view_globalops_issuers1.lounge_set_selected, view_globalops_issuers1.lv_report_credit_card_type, view_globalops_issuers1.membership_fee, view_globalops_issuers1.membership_fee_currency, view_globalops_issuers1.model, view_globalops_issuers1.po_charge_type, view_globalops_issuers1.prefix, view_globalops_issuers1.reporting_ica, view_globalops_issuers1.selected_non_selected, view_globalops_issuers1.source_code, view_globalops_issuers1.implementation_type From cms.view_globalops_issuers view_globalops_issuers1" type="Int16" />
+                <Field name="enrolment_method" size="45" source="File: aka:5f15b5140b05360e6c4ed393|||Select view_globalops_issuers1.bid, view_globalops_issuers1.billing_inclusion_lounge_visits, view_globalops_issuers1.billing_inclusion_memberships, view_globalops_issuers1.bin, view_globalops_issuers1.card_segment, view_globalops_issuers1.card_type, view_globalops_issuers1.cg_region_of_issue, view_globalops_issuers1.clean_issuer_name, view_globalops_issuers1.client_name, view_globalops_issuers1.client_region_of_issue, view_globalops_issuers1.client_service_centre, view_globalops_issuers1.client_sub_region_of_issue, view_globalops_issuers1.consolidated_report, view_globalops_issuers1.contract_type, view_globalops_issuers1.country_of_issue, view_globalops_issuers1.country_of_issue_iso, view_globalops_issuers1.currency, view_globalops_issuers1.deal_cancellation_date, view_globalops_issuers1.deal_start_date, view_globalops_issuers1.deal_status, view_globalops_issuers1.deal_type, view_globalops_issuers1.decline, view_globalops_issuers1.enrolment_method, view_globalops_issuers1.group_code, view_globalops_issuers1.ica, view_globalops_issuers1.issuer_name, view_globalops_issuers1.lounge_programme, view_globalops_issuers1.lounge_set_selected, view_globalops_issuers1.lv_report_credit_card_type, view_globalops_issuers1.membership_fee, view_globalops_issuers1.membership_fee_currency, view_globalops_issuers1.model, view_globalops_issuers1.po_charge_type, view_globalops_issuers1.prefix, view_globalops_issuers1.reporting_ica, view_globalops_issuers1.selected_non_selected, view_globalops_issuers1.source_code, view_globalops_issuers1.implementation_type From cms.view_globalops_issuers view_globalops_issuers1" type="V_WString" />
+                <Field name="group_code" size="255" source="File: aka:5f15b5140b05360e6c4ed393|||Select view_globalops_issuers1.bid, view_globalops_issuers1.billing_inclusion_lounge_visits, view_globalops_issuers1.billing_inclusion_memberships, view_globalops_issuers1.bin, view_globalops_issuers1.card_segment, view_globalops_issuers1.card_type, view_globalops_issuers1.cg_region_of_issue, view_globalops_issuers1.clean_issuer_name, view_globalops_issuers1.client_name, view_globalops_issuers1.client_region_of_issue, view_globalops_issuers1.client_service_centre, view_globalops_issuers1.client_sub_region_of_issue, view_globalops_issuers1.consolidated_report, view_globalops_issuers1.contract_type, view_globalops_issuers1.country_of_issue, view_globalops_issuers1.country_of_issue_iso, view_globalops_issuers1.currency, view_globalops_issuers1.deal_cancellation_date, view_globalops_issuers1.deal_start_date, view_globalops_issuers1.deal_status, view_globalops_issuers1.deal_type, view_globalops_issuers1.decline, view_globalops_issuers1.enrolment_method, view_globalops_issuers1.group_code, view_globalops_issuers1.ica, view_globalops_issuers1.issuer_name, view_globalops_issuers1.lounge_programme, view_globalops_issuers1.lounge_set_selected, view_globalops_issuers1.lv_report_credit_card_type, view_globalops_issuers1.membership_fee, view_globalops_issuers1.membership_fee_currency, view_globalops_issuers1.model, view_globalops_issuers1.po_charge_type, view_globalops_issuers1.prefix, view_globalops_issuers1.reporting_ica, view_globalops_issuers1.selected_non_selected, view_globalops_issuers1.source_code, view_globalops_issuers1.implementation_type From cms.view_globalops_issuers view_globalops_issuers1" type="V_WString" />
+                <Field name="ica" size="12" source="File: aka:5f15b5140b05360e6c4ed393|||Select view_globalops_issuers1.bid, view_globalops_issuers1.billing_inclusion_lounge_visits, view_globalops_issuers1.billing_inclusion_memberships, view_globalops_issuers1.bin, view_globalops_issuers1.card_segment, view_globalops_issuers1.card_type, view_globalops_issuers1.cg_region_of_issue, view_globalops_issuers1.clean_issuer_name, view_globalops_issuers1.client_name, view_globalops_issuers1.client_region_of_issue, view_globalops_issuers1.client_service_centre, view_globalops_issuers1.client_sub_region_of_issue, view_globalops_issuers1.consolidated_report, view_globalops_issuers1.contract_type, view_globalops_issuers1.country_of_issue, view_globalops_issuers1.country_of_issue_iso, view_globalops_issuers1.currency, view_globalops_issuers1.deal_cancellation_date, view_globalops_issuers1.deal_start_date, view_globalops_issuers1.deal_status, view_globalops_issuers1.deal_type, view_globalops_issuers1.decline, view_globalops_issuers1.enrolment_method, view_globalops_issuers1.group_code, view_globalops_issuers1.ica, view_globalops_issuers1.issuer_name, view_globalops_issuers1.lounge_programme, view_globalops_issuers1.lounge_set_selected, view_globalops_issuers1.lv_report_credit_card_type, view_globalops_issuers1.membership_fee, view_globalops_issuers1.membership_fee_currency, view_globalops_issuers1.model, view_globalops_issuers1.po_charge_type, view_globalops_issuers1.prefix, view_globalops_issuers1.reporting_ica, view_globalops_issuers1.selected_non_selected, view_globalops_issuers1.source_code, view_globalops_issuers1.implementation_type From cms.view_globalops_issuers view_globalops_issuers1" type="V_WString" />
+                <Field name="issuer_name" size="255" source="File: aka:5f15b5140b05360e6c4ed393|||Select view_globalops_issuers1.bid, view_globalops_issuers1.billing_inclusion_lounge_visits, view_globalops_issuers1.billing_inclusion_memberships, view_globalops_issuers1.bin, view_globalops_issuers1.card_segment, view_globalops_issuers1.card_type, view_globalops_issuers1.cg_region_of_issue, view_globalops_issuers1.clean_issuer_name, view_globalops_issuers1.client_name, view_globalops_issuers1.client_region_of_issue, view_globalops_issuers1.client_service_centre, view_globalops_issuers1.client_sub_region_of_issue, view_globalops_issuers1.consolidated_report, view_globalops_issuers1.contract_type, view_globalops_issuers1.country_of_issue, view_globalops_issuers1.country_of_issue_iso, view_globalops_issuers1.currency, view_globalops_issuers1.deal_cancellation_date, view_globalops_issuers1.deal_start_date, view_globalops_issuers1.deal_status, view_globalops_issuers1.deal_type, view_globalops_issuers1.decline, view_globalops_issuers1.enrolment_method, view_globalops_issuers1.group_code, view_globalops_issuers1.ica, view_globalops_issuers1.issuer_name, view_globalops_issuers1.lounge_programme, view_globalops_issuers1.lounge_set_selected, view_globalops_issuers1.lv_report_credit_card_type, view_globalops_issuers1.membership_fee, view_globalops_issuers1.membership_fee_currency, view_globalops_issuers1.model, view_globalops_issuers1.po_charge_type, view_globalops_issuers1.prefix, view_globalops_issuers1.reporting_ica, view_globalops_issuers1.selected_non_selected, view_globalops_issuers1.source_code, view_globalops_issuers1.implementation_type From cms.view_globalops_issuers view_globalops_issuers1" type="V_WString" />
+                <Field name="lounge_programme" size="45" source="File: aka:5f15b5140b05360e6c4ed393|||Select view_globalops_issuers1.bid, view_globalops_issuers1.billing_inclusion_lounge_visits, view_globalops_issuers1.billing_inclusion_memberships, view_globalops_issuers1.bin, view_globalops_issuers1.card_segment, view_globalops_issuers1.card_type, view_globalops_issuers1.cg_region_of_issue, view_globalops_issuers1.clean_issuer_name, view_globalops_issuers1.client_name, view_globalops_issuers1.client_region_of_issue, view_globalops_issuers1.client_service_centre, view_globalops_issuers1.client_sub_region_of_issue, view_globalops_issuers1.consolidated_report, view_globalops_issuers1.contract_type, view_globalops_issuers1.country_of_issue, view_globalops_issuers1.country_of_issue_iso, view_globalops_issuers1.currency, view_globalops_issuers1.deal_cancellation_date, view_globalops_issuers1.deal_start_date, view_globalops_issuers1.deal_status, view_globalops_issuers1.deal_type, view_globalops_issuers1.decline, view_globalops_issuers1.enrolment_method, view_globalops_issuers1.group_code, view_globalops_issuers1.ica, view_globalops_issuers1.issuer_name, view_globalops_issuers1.lounge_programme, view_globalops_issuers1.lounge_set_selected, view_globalops_issuers1.lv_report_credit_card_type, view_globalops_issuers1.membership_fee, view_globalops_issuers1.membership_fee_currency, view_globalops_issuers1.model, view_globalops_issuers1.po_charge_type, view_globalops_issuers1.prefix, view_globalops_issuers1.reporting_ica, view_globalops_issuers1.selected_non_selected, view_globalops_issuers1.source_code, view_globalops_issuers1.implementation_type From cms.view_globalops_issuers view_globalops_issuers1" type="V_WString" />
+                <Field name="lounge_set_selected" size="45" source="File: aka:5f15b5140b05360e6c4ed393|||Select view_globalops_issuers1.bid, view_globalops_issuers1.billing_inclusion_lounge_visits, view_globalops_issuers1.billing_inclusion_memberships, view_globalops_issuers1.bin, view_globalops_issuers1.card_segment, view_globalops_issuers1.card_type, view_globalops_issuers1.cg_region_of_issue, view_globalops_issuers1.clean_issuer_name, view_globalops_issuers1.client_name, view_globalops_issuers1.client_region_of_issue, view_globalops_issuers1.client_service_centre, view_globalops_issuers1.client_sub_region_of_issue, view_globalops_issuers1.consolidated_report, view_globalops_issuers1.contract_type, view_globalops_issuers1.country_of_issue, view_globalops_issuers1.country_of_issue_iso, view_globalops_issuers1.currency, view_globalops_issuers1.deal_cancellation_date, view_globalops_issuers1.deal_start_date, view_globalops_issuers1.deal_status, view_globalops_issuers1.deal_type, view_globalops_issuers1.decline, view_globalops_issuers1.enrolment_method, view_globalops_issuers1.group_code, view_globalops_issuers1.ica, view_globalops_issuers1.issuer_name, view_globalops_issuers1.lounge_programme, view_globalops_issuers1.lounge_set_selected, view_globalops_issuers1.lv_report_credit_card_type, view_globalops_issuers1.membership_fee, view_globalops_issuers1.membership_fee_currency, view_globalops_issuers1.model, view_globalops_issuers1.po_charge_type, view_globalops_issuers1.prefix, view_globalops_issuers1.reporting_ica, view_globalops_issuers1.selected_non_selected, view_globalops_issuers1.source_code, view_globalops_issuers1.implementation_type From cms.view_globalops_issuers view_globalops_issuers1" type="V_WString" />
+                <Field name="lv_report_credit_card_type" size="45" source="File: aka:5f15b5140b05360e6c4ed393|||Select view_globalops_issuers1.bid, view_globalops_issuers1.billing_inclusion_lounge_visits, view_globalops_issuers1.billing_inclusion_memberships, view_globalops_issuers1.bin, view_globalops_issuers1.card_segment, view_globalops_issuers1.card_type, view_globalops_issuers1.cg_region_of_issue, view_globalops_issuers1.clean_issuer_name, view_globalops_issuers1.client_name, view_globalops_issuers1.client_region_of_issue, view_globalops_issuers1.client_service_centre, view_globalops_issuers1.client_sub_region_of_issue, view_globalops_issuers1.consolidated_report, view_globalops_issuers1.contract_type, view_globalops_issuers1.country_of_issue, view_globalops_issuers1.country_of_issue_iso, view_globalops_issuers1.currency, view_globalops_issuers1.deal_cancellation_date, view_globalops_issuers1.deal_start_date, view_globalops_issuers1.deal_status, view_globalops_issuers1.deal_type, view_globalops_issuers1.decline, view_globalops_issuers1.enrolment_method, view_globalops_issuers1.group_code, view_globalops_issuers1.ica, view_globalops_issuers1.issuer_name, view_globalops_issuers1.lounge_programme, view_globalops_issuers1.lounge_set_selected, view_globalops_issuers1.lv_report_credit_card_type, view_globalops_issuers1.membership_fee, view_globalops_issuers1.membership_fee_currency, view_globalops_issuers1.model, view_globalops_issuers1.po_charge_type, view_globalops_issuers1.prefix, view_globalops_issuers1.reporting_ica, view_globalops_issuers1.selected_non_selected, view_globalops_issuers1.source_code, view_globalops_issuers1.implementation_type From cms.view_globalops_issuers view_globalops_issuers1" type="V_WString" />
+                <Field name="membership_fee" scale="2" size="12" source="File: aka:5f15b5140b05360e6c4ed393|||Select view_globalops_issuers1.bid, view_globalops_issuers1.billing_inclusion_lounge_visits, view_globalops_issuers1.billing_inclusion_memberships, view_globalops_issuers1.bin, view_globalops_issuers1.card_segment, view_globalops_issuers1.card_type, view_globalops_issuers1.cg_region_of_issue, view_globalops_issuers1.clean_issuer_name, view_globalops_issuers1.client_name, view_globalops_issuers1.client_region_of_issue, view_globalops_issuers1.client_service_centre, view_globalops_issuers1.client_sub_region_of_issue, view_globalops_issuers1.consolidated_report, view_globalops_issuers1.contract_type, view_globalops_issuers1.country_of_issue, view_globalops_issuers1.country_of_issue_iso, view_globalops_issuers1.currency, view_globalops_issuers1.deal_cancellation_date, view_globalops_issuers1.deal_start_date, view_globalops_issuers1.deal_status, view_globalops_issuers1.deal_type, view_globalops_issuers1.decline, view_globalops_issuers1.enrolment_method, view_globalops_issuers1.group_code, view_globalops_issuers1.ica, view_globalops_issuers1.issuer_name, view_globalops_issuers1.lounge_programme, view_globalops_issuers1.lounge_set_selected, view_globalops_issuers1.lv_report_credit_card_type, view_globalops_issuers1.membership_fee, view_globalops_issuers1.membership_fee_currency, view_globalops_issuers1.model, view_globalops_issuers1.po_charge_type, view_globalops_issuers1.prefix, view_globalops_issuers1.reporting_ica, view_globalops_issuers1.selected_non_selected, view_globalops_issuers1.source_code, view_globalops_issuers1.implementation_type From cms.view_globalops_issuers view_globalops_issuers1" type="FixedDecimal" />
+                <Field name="membership_fee_currency" size="45" source="File: aka:5f15b5140b05360e6c4ed393|||Select view_globalops_issuers1.bid, view_globalops_issuers1.billing_inclusion_lounge_visits, view_globalops_issuers1.billing_inclusion_memberships, view_globalops_issuers1.bin, view_globalops_issuers1.card_segment, view_globalops_issuers1.card_type, view_globalops_issuers1.cg_region_of_issue, view_globalops_issuers1.clean_issuer_name, view_globalops_issuers1.client_name, view_globalops_issuers1.client_region_of_issue, view_globalops_issuers1.client_service_centre, view_globalops_issuers1.client_sub_region_of_issue, view_globalops_issuers1.consolidated_report, view_globalops_issuers1.contract_type, view_globalops_issuers1.country_of_issue, view_globalops_issuers1.country_of_issue_iso, view_globalops_issuers1.currency, view_globalops_issuers1.deal_cancellation_date, view_globalops_issuers1.deal_start_date, view_globalops_issuers1.deal_status, view_globalops_issuers1.deal_type, view_globalops_issuers1.decline, view_globalops_issuers1.enrolment_method, view_globalops_issuers1.group_code, view_globalops_issuers1.ica, view_globalops_issuers1.issuer_name, view_globalops_issuers1.lounge_programme, view_globalops_issuers1.lounge_set_selected, view_globalops_issuers1.lv_report_credit_card_type, view_globalops_issuers1.membership_fee, view_globalops_issuers1.membership_fee_currency, view_globalops_issuers1.model, view_globalops_issuers1.po_charge_type, view_globalops_issuers1.prefix, view_globalops_issuers1.reporting_ica, view_globalops_issuers1.selected_non_selected, view_globalops_issuers1.source_code, view_globalops_issuers1.implementation_type From cms.view_globalops_issuers view_globalops_issuers1" type="V_WString" />
+                <Field name="model" size="45" source="File: aka:5f15b5140b05360e6c4ed393|||Select view_globalops_issuers1.bid, view_globalops_issuers1.billing_inclusion_lounge_visits, view_globalops_issuers1.billing_inclusion_memberships, view_globalops_issuers1.bin, view_globalops_issuers1.card_segment, view_globalops_issuers1.card_type, view_globalops_issuers1.cg_region_of_issue, view_globalops_issuers1.clean_issuer_name, view_globalops_issuers1.client_name, view_globalops_issuers1.client_region_of_issue, view_globalops_issuers1.client_service_centre, view_globalops_issuers1.client_sub_region_of_issue, view_globalops_issuers1.consolidated_report, view_globalops_issuers1.contract_type, view_globalops_issuers1.country_of_issue, view_globalops_issuers1.country_of_issue_iso, view_globalops_issuers1.currency, view_globalops_issuers1.deal_cancellation_date, view_globalops_issuers1.deal_start_date, view_globalops_issuers1.deal_status, view_globalops_issuers1.deal_type, view_globalops_issuers1.decline, view_globalops_issuers1.enrolment_method, view_globalops_issuers1.group_code, view_globalops_issuers1.ica, view_globalops_issuers1.issuer_name, view_globalops_issuers1.lounge_programme, view_globalops_issuers1.lounge_set_selected, view_globalops_issuers1.lv_report_credit_card_type, view_globalops_issuers1.membership_fee, view_globalops_issuers1.membership_fee_currency, view_globalops_issuers1.model, view_globalops_issuers1.po_charge_type, view_globalops_issuers1.prefix, view_globalops_issuers1.reporting_ica, view_globalops_issuers1.selected_non_selected, view_globalops_issuers1.source_code, view_globalops_issuers1.implementation_type From cms.view_globalops_issuers view_globalops_issuers1" type="V_WString" />
+                <Field name="po_charge_type" size="45" source="File: aka:5f15b5140b05360e6c4ed393|||Select view_globalops_issuers1.bid, view_globalops_issuers1.billing_inclusion_lounge_visits, view_globalops_issuers1.billing_inclusion_memberships, view_globalops_issuers1.bin, view_globalops_issuers1.card_segment, view_globalops_issuers1.card_type, view_globalops_issuers1.cg_region_of_issue, view_globalops_issuers1.clean_issuer_name, view_globalops_issuers1.client_name, view_globalops_issuers1.client_region_of_issue, view_globalops_issuers1.client_service_centre, view_globalops_issuers1.client_sub_region_of_issue, view_globalops_issuers1.consolidated_report, view_globalops_issuers1.contract_type, view_globalops_issuers1.country_of_issue, view_globalops_issuers1.country_of_issue_iso, view_globalops_issuers1.currency, view_globalops_issuers1.deal_cancellation_date, view_globalops_issuers1.deal_start_date, view_globalops_issuers1.deal_status, view_globalops_issuers1.deal_type, view_globalops_issuers1.decline, view_globalops_issuers1.enrolment_method, view_globalops_issuers1.group_code, view_globalops_issuers1.ica, view_globalops_issuers1.issuer_name, view_globalops_issuers1.lounge_programme, view_globalops_issuers1.lounge_set_selected, view_globalops_issuers1.lv_report_credit_card_type, view_globalops_issuers1.membership_fee, view_globalops_issuers1.membership_fee_currency, view_globalops_issuers1.model, view_globalops_issuers1.po_charge_type, view_globalops_issuers1.prefix, view_globalops_issuers1.reporting_ica, view_globalops_issuers1.selected_non_selected, view_globalops_issuers1.source_code, view_globalops_issuers1.implementation_type From cms.view_globalops_issuers view_globalops_issuers1" type="V_WString" />
+                <Field name="prefix" size="25" source="File: aka:5f15b5140b05360e6c4ed393|||Select view_globalops_issuers1.bid, view_globalops_issuers1.billing_inclusion_lounge_visits, view_globalops_issuers1.billing_inclusion_memberships, view_globalops_issuers1.bin, view_globalops_issuers1.card_segment, view_globalops_issuers1.card_type, view_globalops_issuers1.cg_region_of_issue, view_globalops_issuers1.clean_issuer_name, view_globalops_issuers1.client_name, view_globalops_issuers1.client_region_of_issue, view_globalops_issuers1.client_service_centre, view_globalops_issuers1.client_sub_region_of_issue, view_globalops_issuers1.consolidated_report, view_globalops_issuers1.contract_type, view_globalops_issuers1.country_of_issue, view_globalops_issuers1.country_of_issue_iso, view_globalops_issuers1.currency, view_globalops_issuers1.deal_cancellation_date, view_globalops_issuers1.deal_start_date, view_globalops_issuers1.deal_status, view_globalops_issuers1.deal_type, view_globalops_issuers1.decline, view_globalops_issuers1.enrolment_method, view_globalops_issuers1.group_code, view_globalops_issuers1.ica, view_globalops_issuers1.issuer_name, view_globalops_issuers1.lounge_programme, view_globalops_issuers1.lounge_set_selected, view_globalops_issuers1.lv_report_credit_card_type, view_globalops_issuers1.membership_fee, view_globalops_issuers1.membership_fee_currency, view_globalops_issuers1.model, view_globalops_issuers1.po_charge_type, view_globalops_issuers1.prefix, view_globalops_issuers1.reporting_ica, view_globalops_issuers1.selected_non_selected, view_globalops_issuers1.source_code, view_globalops_issuers1.implementation_type From cms.view_globalops_issuers view_globalops_issuers1" type="V_WString" />
+                <Field name="reporting_ica" size="45" source="File: aka:5f15b5140b05360e6c4ed393|||Select view_globalops_issuers1.bid, view_globalops_issuers1.billing_inclusion_lounge_visits, view_globalops_issuers1.billing_inclusion_memberships, view_globalops_issuers1.bin, view_globalops_issuers1.card_segment, view_globalops_issuers1.card_type, view_globalops_issuers1.cg_region_of_issue, view_globalops_issuers1.clean_issuer_name, view_globalops_issuers1.client_name, view_globalops_issuers1.client_region_of_issue, view_globalops_issuers1.client_service_centre, view_globalops_issuers1.client_sub_region_of_issue, view_globalops_issuers1.consolidated_report, view_globalops_issuers1.contract_type, view_globalops_issuers1.country_of_issue, view_globalops_issuers1.country_of_issue_iso, view_globalops_issuers1.currency, view_globalops_issuers1.deal_cancellation_date, view_globalops_issuers1.deal_start_date, view_globalops_issuers1.deal_status, view_globalops_issuers1.deal_type, view_globalops_issuers1.decline, view_globalops_issuers1.enrolment_method, view_globalops_issuers1.group_code, view_globalops_issuers1.ica, view_globalops_issuers1.issuer_name, view_globalops_issuers1.lounge_programme, view_globalops_issuers1.lounge_set_selected, view_globalops_issuers1.lv_report_credit_card_type, view_globalops_issuers1.membership_fee, view_globalops_issuers1.membership_fee_currency, view_globalops_issuers1.model, view_globalops_issuers1.po_charge_type, view_globalops_issuers1.prefix, view_globalops_issuers1.reporting_ica, view_globalops_issuers1.selected_non_selected, view_globalops_issuers1.source_code, view_globalops_issuers1.implementation_type From cms.view_globalops_issuers view_globalops_issuers1" type="V_WString" />
+                <Field name="selected_non_selected" source="File: aka:5f15b5140b05360e6c4ed393|||Select view_globalops_issuers1.bid, view_globalops_issuers1.billing_inclusion_lounge_visits, view_globalops_issuers1.billing_inclusion_memberships, view_globalops_issuers1.bin, view_globalops_issuers1.card_segment, view_globalops_issuers1.card_type, view_globalops_issuers1.cg_region_of_issue, view_globalops_issuers1.clean_issuer_name, view_globalops_issuers1.client_name, view_globalops_issuers1.client_region_of_issue, view_globalops_issuers1.client_service_centre, view_globalops_issuers1.client_sub_region_of_issue, view_globalops_issuers1.consolidated_report, view_globalops_issuers1.contract_type, view_globalops_issuers1.country_of_issue, view_globalops_issuers1.country_of_issue_iso, view_globalops_issuers1.currency, view_globalops_issuers1.deal_cancellation_date, view_globalops_issuers1.deal_start_date, view_globalops_issuers1.deal_status, view_globalops_issuers1.deal_type, view_globalops_issuers1.decline, view_globalops_issuers1.enrolment_method, view_globalops_issuers1.group_code, view_globalops_issuers1.ica, view_globalops_issuers1.issuer_name, view_globalops_issuers1.lounge_programme, view_globalops_issuers1.lounge_set_selected, view_globalops_issuers1.lv_report_credit_card_type, view_globalops_issuers1.membership_fee, view_globalops_issuers1.membership_fee_currency, view_globalops_issuers1.model, view_globalops_issuers1.po_charge_type, view_globalops_issuers1.prefix, view_globalops_issuers1.reporting_ica, view_globalops_issuers1.selected_non_selected, view_globalops_issuers1.source_code, view_globalops_issuers1.implementation_type From cms.view_globalops_issuers view_globalops_issuers1" type="Int16" />
+                <Field name="source_code" size="255" source="File: aka:5f15b5140b05360e6c4ed393|||Select view_globalops_issuers1.bid, view_globalops_issuers1.billing_inclusion_lounge_visits, view_globalops_issuers1.billing_inclusion_memberships, view_globalops_issuers1.bin, view_globalops_issuers1.card_segment, view_globalops_issuers1.card_type, view_globalops_issuers1.cg_region_of_issue, view_globalops_issuers1.clean_issuer_name, view_globalops_issuers1.client_name, view_globalops_issuers1.client_region_of_issue, view_globalops_issuers1.client_service_centre, view_globalops_issuers1.client_sub_region_of_issue, view_globalops_issuers1.consolidated_report, view_globalops_issuers1.contract_type, view_globalops_issuers1.country_of_issue, view_globalops_issuers1.country_of_issue_iso, view_globalops_issuers1.currency, view_globalops_issuers1.deal_cancellation_date, view_globalops_issuers1.deal_start_date, view_globalops_issuers1.deal_status, view_globalops_issuers1.deal_type, view_globalops_issuers1.decline, view_globalops_issuers1.enrolment_method, view_globalops_issuers1.group_code, view_globalops_issuers1.ica, view_globalops_issuers1.issuer_name, view_globalops_issuers1.lounge_programme, view_globalops_issuers1.lounge_set_selected, view_globalops_issuers1.lv_report_credit_card_type, view_globalops_issuers1.membership_fee, view_globalops_issuers1.membership_fee_currency, view_globalops_issuers1.model, view_globalops_issuers1.po_charge_type, view_globalops_issuers1.prefix, view_globalops_issuers1.reporting_ica, view_globalops_issuers1.selected_non_selected, view_globalops_issuers1.source_code, view_globalops_issuers1.implementation_type From cms.view_globalops_issuers view_globalops_issuers1" type="V_WString" />
+                <Field name="implementation_type" size="45" source="File: aka:5f15b5140b05360e6c4ed393|||Select view_globalops_issuers1.bid, view_globalops_issuers1.billing_inclusion_lounge_visits, view_globalops_issuers1.billing_inclusion_memberships, view_globalops_issuers1.bin, view_globalops_issuers1.card_segment, view_globalops_issuers1.card_type, view_globalops_issuers1.cg_region_of_issue, view_globalops_issuers1.clean_issuer_name, view_globalops_issuers1.client_name, view_globalops_issuers1.client_region_of_issue, view_globalops_issuers1.client_service_centre, view_globalops_issuers1.client_sub_region_of_issue, view_globalops_issuers1.consolidated_report, view_globalops_issuers1.contract_type, view_globalops_issuers1.country_of_issue, view_globalops_issuers1.country_of_issue_iso, view_globalops_issuers1.currency, view_globalops_issuers1.deal_cancellation_date, view_globalops_issuers1.deal_start_date, view_globalops_issuers1.deal_status, view_globalops_issuers1.deal_type, view_globalops_issuers1.decline, view_globalops_issuers1.enrolment_method, view_globalops_issuers1.group_code, view_globalops_issuers1.ica, view_globalops_issuers1.issuer_name, view_globalops_issuers1.lounge_programme, view_globalops_issuers1.lounge_set_selected, view_globalops_issuers1.lv_report_credit_card_type, view_globalops_issuers1.membership_fee, view_globalops_issuers1.membership_fee_currency, view_globalops_issuers1.model, view_globalops_issuers1.po_charge_type, view_globalops_issuers1.prefix, view_globalops_issuers1.reporting_ica, view_globalops_issuers1.selected_non_selected, view_globalops_issuers1.source_code, view_globalops_issuers1.implementation_type From cms.view_globalops_issuers view_globalops_issuers1" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="6">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="186" y="282" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Mode>Simple</Mode>
+              <Simple>
+                <Operator>=</Operator>
+                <Field>lounge_programme</Field>
+                <Operands>
+                  <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+                  <DateType>fixed</DateType>
+                  <PeriodDate>2021-10-21 09:38:48</PeriodDate>
+                  <PeriodType>
+                  </PeriodType>
+                  <PeriodCount>0</PeriodCount>
+                  <StartDate>2021-10-21 09:38:48</StartDate>
+                  <EndDate>2021-10-21 09:38:48</EndDate>
+                  <Operand>Priority Pass</Operand>
+                </Operands>
+              </Simple>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>[lounge_programme] = "Priority Pass"</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="7">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="294" y="270" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Mode>Simple</Mode>
+              <Simple>
+                <Operator>!=</Operator>
+                <Field>deal_status</Field>
+                <Operands>
+                  <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+                  <DateType>fixed</DateType>
+                  <PeriodDate>2021-10-21 09:39:56</PeriodDate>
+                  <PeriodType>
+                  </PeriodType>
+                  <PeriodCount>0</PeriodCount>
+                  <StartDate>2021-10-21 09:39:56</StartDate>
+                  <EndDate>2021-10-21 09:39:56</EndDate>
+                  <Operand>Cancelled</Operand>
+                </Operands>
+              </Simple>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>[deal_status] != "Cancelled"</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="8">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="738" y="269" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="True" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="bid" selected="True" rename="Source Code" />
+                <SelectField field="cg_region_of_issue" selected="True" />
+                <SelectField field="clean_issuer_name" selected="True" />
+                <SelectField field="client_name" selected="True" />
+                <SelectField field="client_region_of_issue" selected="True" />
+                <SelectField field="client_service_centre" selected="True" />
+                <SelectField field="country_of_issue" selected="True" />
+                <SelectField field="EEA Countries" selected="True" />
+                <SelectField field="deal_status" selected="True" />
+                <SelectField field="deal_type" selected="True" />
+                <SelectField field="enrolment_method" selected="True" />
+                <SelectField field="prefix" selected="False" rename="BIN" />
+                <SelectField field="billing_inclusion_lounge_visits" selected="False" />
+                <SelectField field="billing_inclusion_memberships" selected="False" />
+                <SelectField field="bin" selected="True" />
+                <SelectField field="card_segment" selected="False" />
+                <SelectField field="card_type" selected="False" />
+                <SelectField field="client_sub_region_of_issue" selected="False" />
+                <SelectField field="consolidated_report" selected="False" />
+                <SelectField field="contract_type" selected="False" />
+                <SelectField field="country_of_issue_iso" selected="False" />
+                <SelectField field="currency" selected="False" />
+                <SelectField field="deal_cancellation_date" selected="False" />
+                <SelectField field="deal_start_date" selected="False" />
+                <SelectField field="decline" selected="False" />
+                <SelectField field="group_code" selected="False" />
+                <SelectField field="ica" selected="False" />
+                <SelectField field="issuer_name" selected="False" />
+                <SelectField field="lounge_programme" selected="False" />
+                <SelectField field="lounge_set_selected" selected="False" />
+                <SelectField field="lv_report_credit_card_type" selected="False" />
+                <SelectField field="membership_fee" selected="False" />
+                <SelectField field="membership_fee_currency" selected="False" />
+                <SelectField field="model" selected="False" />
+                <SelectField field="po_charge_type" selected="False" />
+                <SelectField field="reporting_ica" selected="False" />
+                <SelectField field="selected_non_selected" selected="False" />
+                <SelectField field="source_code" selected="False" />
+                <SelectField field="implementation_type" selected="False" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="9">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="318" y="378" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">Z:\8. OPERATIONS\1. Global Team\Ylli\LK Data Extract\EEA Countries List.xlsx|||`Sheet1$`</File>
+              <FormatSpecificOptions>
+                <FirstRowData>False</FirstRowData>
+                <ImportLine>1</ImportLine>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>EEA Countries List.xlsx
+Query=`Sheet1$`</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="EEA Countries" size="255" source="File: Z:\8. OPERATIONS\1. Global Team\Ylli\LK Data Extract\EEA Countries List.xlsx|||`Sheet1$`" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="11">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+            <Position x="414" y="270" />
+          </GuiSettings>
+          <Properties>
+            <Configuration joinByRecordPos="False">
+              <JoinInfo connection="Left">
+                <Field field="country_of_issue" />
+              </JoinInfo>
+              <JoinInfo connection="Right">
+                <Field field="EEA Countries" />
+              </JoinInfo>
+              <SelectConfiguration>
+                <Configuration outputConnection="Join">
+                  <OrderChanged value="False" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="Left_bid" selected="True" input="Left_" />
+                    <SelectField field="Left_billing_inclusion_lounge_visits" selected="True" input="Left_" />
+                    <SelectField field="Left_billing_inclusion_memberships" selected="True" input="Left_" />
+                    <SelectField field="Left_bin" selected="True" input="Left_" />
+                    <SelectField field="Left_card_segment" selected="True" input="Left_" />
+                    <SelectField field="Left_card_type" selected="True" input="Left_" />
+                    <SelectField field="Left_cg_region_of_issue" selected="True" input="Left_" />
+                    <SelectField field="Left_clean_issuer_name" selected="True" input="Left_" />
+                    <SelectField field="Left_client_name" selected="True" input="Left_" />
+                    <SelectField field="Left_client_region_of_issue" selected="True" input="Left_" />
+                    <SelectField field="Left_client_service_centre" selected="True" input="Left_" />
+                    <SelectField field="Left_client_sub_region_of_issue" selected="True" input="Left_" />
+                    <SelectField field="Left_consolidated_report" selected="True" input="Left_" />
+                    <SelectField field="Left_contract_type" selected="True" input="Left_" />
+                    <SelectField field="Left_country_of_issue" selected="True" input="Left_" />
+                    <SelectField field="Left_country_of_issue_iso" selected="True" input="Left_" />
+                    <SelectField field="Left_currency" selected="True" input="Left_" />
+                    <SelectField field="Left_deal_cancellation_date" selected="True" input="Left_" />
+                    <SelectField field="Left_deal_start_date" selected="True" input="Left_" />
+                    <SelectField field="Left_deal_status" selected="True" input="Left_" />
+                    <SelectField field="Left_deal_type" selected="True" input="Left_" />
+                    <SelectField field="Left_decline" selected="True" input="Left_" />
+                    <SelectField field="Left_enrolment_method" selected="True" input="Left_" />
+                    <SelectField field="Left_group_code" selected="True" input="Left_" />
+                    <SelectField field="Left_ica" selected="True" input="Left_" />
+                    <SelectField field="Left_issuer_name" selected="True" input="Left_" />
+                    <SelectField field="Left_lounge_programme" selected="True" input="Left_" />
+                    <SelectField field="Left_lounge_set_selected" selected="True" input="Left_" />
+                    <SelectField field="Left_lv_report_credit_card_type" selected="True" input="Left_" />
+                    <SelectField field="Left_membership_fee" selected="True" input="Left_" />
+                    <SelectField field="Left_membership_fee_currency" selected="True" input="Left_" />
+                    <SelectField field="Left_model" selected="True" input="Left_" />
+                    <SelectField field="Left_po_charge_type" selected="True" input="Left_" />
+                    <SelectField field="Left_prefix" selected="True" input="Left_" />
+                    <SelectField field="Left_reporting_ica" selected="True" input="Left_" />
+                    <SelectField field="Left_selected_non_selected" selected="True" input="Left_" />
+                    <SelectField field="Left_source_code" selected="True" input="Left_" />
+                    <SelectField field="Left_implementation_type" selected="True" input="Left_" />
+                    <SelectField field="Right_EEA Countries" selected="True" input="Right_" />
+                    <SelectField field="*Unknown" selected="False" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+        </Node>
+        <Node ToolID="12">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+            <Position x="534" y="270" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <ByName_ErrorMode>Warning</ByName_ErrorMode>
+              <ByName_OutputMode>All</ByName_OutputMode>
+              <Mode>ByName</Mode>
+              <SetOutputOrder value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+        </Node>
+        <Node ToolID="13">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="618" y="270" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="if IsNull([EEA Countries]) then 'N'&#xA;else 'Y' endif" field="EEA Countries" size="255" type="V_String" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText><![CDATA[EEA Countries = if IsNull([EEA Countries]) then 'N'
+else 'Y' endif
+]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="545" y="53" width="277" height="165" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Client ID PP Associate</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="2">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="738" y="102" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Client ID" selected="True" type="V_WString" size="19" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="1">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="570" y="101" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">Z:\8. OPERATIONS\1. Global Team\Ylli\PP Data Extract\Client ID.xlsx|||`Sheet1$`</File>
+              <FormatSpecificOptions>
+                <FirstRowData>False</FirstRowData>
+                <ImportLine>1</ImportLine>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Client ID.xlsx
+Query=`Sheet1$`</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Client ID" source="File: Z:\8. OPERATIONS\1. Global Team\Ylli\PP Data Extract\Client ID.xlsx|||`Sheet1$`" type="Double" />
+                <Field name="consumer_no" source="File: Z:\8. OPERATIONS\1. Global Team\Ylli\PP Data Extract\Client ID.xlsx|||`Sheet1$`" type="Double" />
+                <Field name="Card Prefix" source="File: Z:\8. OPERATIONS\1. Global Team\Ylli\PP Data Extract\Client ID.xlsx|||`Sheet1$`" type="Double" />
+                <Field name="ica" size="255" source="File: Z:\8. OPERATIONS\1. Global Team\Ylli\PP Data Extract\Client ID.xlsx|||`Sheet1$`" type="V_String" />
+                <Field name="purchase_no" source="File: Z:\8. OPERATIONS\1. Global Team\Ylli\PP Data Extract\Client ID.xlsx|||`Sheet1$`" type="Double" />
+                <Field name="source_code" size="255" source="File: Z:\8. OPERATIONS\1. Global Team\Ylli\PP Data Extract\Client ID.xlsx|||`Sheet1$`" type="V_String" />
+                <Field name="is_card_blocked" source="File: Z:\8. OPERATIONS\1. Global Team\Ylli\PP Data Extract\Client ID.xlsx|||`Sheet1$`" type="Double" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection name="#1">
+      <Origin ToolID="16" Connection="Left" />
+      <Destination ToolID="17" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="16" Connection="Join" />
+      <Destination ToolID="17" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="Output" />
+      <Destination ToolID="21" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="Output" />
+      <Destination ToolID="21" Connection="Right" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="21" Connection="Left" />
+      <Destination ToolID="22" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="21" Connection="Join" />
+      <Destination ToolID="22" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="18" Connection="Output" />
+      <Destination ToolID="19" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="True" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="True" />
+      <Destination ToolID="11" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="11" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="16" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="16" Connection="Left" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="11" Connection="Left" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="11" Connection="Join" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Output" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Priority Pass Data Extract V1</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

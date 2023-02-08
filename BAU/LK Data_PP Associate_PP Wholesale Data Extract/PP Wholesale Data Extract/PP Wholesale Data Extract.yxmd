@@ -1,0 +1,1586 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2022.1">
+  <Nodes>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="633" y="163" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="source_code" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="Source Code" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="True" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_source_code" selected="True" input="Left_" />
+                <SelectField field="Left_source_desc" selected="True" input="Left_" />
+                <SelectField field="Left_owner_product" selected="True" input="Left_" />
+                <SelectField field="Left_source_media" selected="True" input="Left_" />
+                <SelectField field="Left_is_access_on_payment_card" selected="True" input="Left_" />
+                <SelectField field="Right_Source Code" selected="False" input="Right_" />
+                <SelectField field="Right_cg_region_of_issue" selected="True" input="Right_" />
+                <SelectField field="Right_clean_issuer_name" selected="True" input="Right_" />
+                <SelectField field="Right_client_name" selected="True" input="Right_" />
+                <SelectField field="Right_client_region_of_issue" selected="True" input="Right_" />
+                <SelectField field="Right_client_service_centre" selected="True" input="Right_" />
+                <SelectField field="Right_country_of_issue" selected="True" input="Right_" />
+                <SelectField field="Right_deal_status" selected="True" input="Right_" />
+                <SelectField field="Right_enrolment_method" selected="True" input="Right_" />
+                <SelectField field="Right_BIN" selected="True" input="Right_" />
+                <SelectField field="Right_deal_type" selected="True" input="Right_" />
+                <SelectField field="Left_First Year Entitlement Method Standard" selected="True" input="Left_" />
+                <SelectField field="Left_Entitlement Method Standard" selected="True" input="Left_" />
+                <SelectField field="Left_Entitlement Method Standard Plus" selected="True" input="Left_" />
+                <SelectField field="Left_Entitlement Method Prestige" selected="True" input="Left_" />
+                <SelectField field="Left_deal_name" selected="True" input="Left_" />
+                <SelectField field="Left_Payments.PaymentCardAgreement.hasAccessOnABankCard" selected="True" input="Left_" />
+                <SelectField field="Left_Payments.PaymentCardAgreement.hasCardHolderDeferredPayments" selected="True" input="Left_" />
+                <SelectField field="Left_Payments.PaymentCardAgreement.hasCardHolderSubscriptionFees" selected="True" input="Left_" />
+                <SelectField field="Left_Payments.PaymentCardAgreement.hasFailedPaymentCardOnFile" selected="True" input="Left_" />
+                <SelectField field="Left_Payments.PaymentCompliance.Enforce.CONSUMPTIONFEE" selected="True" input="Left_" />
+                <SelectField field="Left_Payments.PaymentCompliance.Enforce.SUBSCRIPTIONFEE" selected="True" input="Left_" />
+                <SelectField field="Left_grandfatheringTransaction" selected="True" input="Left_" />
+                <SelectField field="Left_scaEnabled" selected="True" input="Left_" />
+                <SelectField field="Left_Payments.apocEnabled" selected="True" input="Left_" />
+                <SelectField field="Left_Payments.consumptionPaymentCaptureOffset" selected="True" input="Left_" />
+                <SelectField field="Left_Payments.createExplicitPaymentCoFConsent" selected="True" input="Left_" />
+                <SelectField field="Left_Payments.displayPrice" selected="True" input="Left_" />
+                <SelectField field="Left_Payments.paymentAmount" selected="True" input="Left_" />
+                <SelectField field="Left_Payments.paymentAtPointOfUse" selected="True" input="Left_" />
+                <SelectField field="Left_Payments.paymentCardVerificationDuringConsumption" selected="True" input="Left_" />
+                <SelectField field="Left_Payments.paymentCurrency" selected="True" input="Left_" />
+                <SelectField field="Left_Payments.paymentMethod" selected="True" input="Left_" />
+                <SelectField field="Left_Payments.subscriptionCreationRequiresPaymentCardVerification" selected="True" input="Left_" />
+                <SelectField field="Left_Payments.cardVerificationPaymentConfig" selected="True" input="Left_" />
+                <SelectField field="Left_Payments.PaymentCardAgreement.hasCardHolderDeferredPayments | true" selected="False" input="Left_" />
+                <SelectField field="Left_Payments.PaymentCardAgreement.hasCardHolderSubscriptionFees | true" selected="False" input="Left_" />
+                <SelectField field="Left_Payments.consumptionPaymentCaptureOffset | " selected="False" input="Left_" />
+                <SelectField field="Left_Payments.createExplicitPaymentCoFConsent | true" selected="False" input="Left_" />
+                <SelectField field="Left_Payments.paymentAmount | " selected="False" input="Left_" />
+                <SelectField field="Left_Payments.PaymentCompliance.Enforce.CONSUMPTIONFEE | true" selected="False" input="Left_" />
+                <SelectField field="Left_Payments.PaymentCompliance.Enforce.SUBSCRIPTIONFEE | true" selected="False" input="Left_" />
+                <SelectField field="Left_Payments.paymentCurrency | " selected="False" input="Left_" />
+                <SelectField field="Left_Payments.paymentMethod | VERIFY" selected="False" input="Left_" />
+                <SelectField field="Left_scaEnabled | 1" selected="False" input="Left_" />
+                <SelectField field="Left_Payments.paymentCurrency | USD" selected="False" input="Left_" />
+                <SelectField field="Left_Payments.aopcEnabled | 1" selected="False" input="Left_" />
+                <SelectField field="Left_Payments.consumptionPaymentCaptureOffset | 3" selected="False" input="Left_" />
+                <SelectField field="Left_Payments.paymentAmount | 3.25" selected="False" input="Left_" />
+                <SelectField field="Left_Payments.paymentMethod | NOMINAL" selected="False" input="Left_" />
+                <SelectField field="Left_Payments.paymentCurrency | EU" selected="False" input="Left_" />
+                <SelectField field="Left_Payments.consumptionPaymentCaptureOffset | 1" selected="False" input="Left_" />
+                <SelectField field="Left_Payments.displayPrice | true" selected="False" input="Left_" />
+                <SelectField field="Left_Payments.paymentAtPointOfUse | true" selected="False" input="Left_" />
+                <SelectField field="Left_Deal Name" selected="True" input="Left_" />
+                <SelectField field="Left_Has Access On A BankCard" selected="True" input="Left_" />
+                <SelectField field="Left_Can Cardholder pay for consumption" selected="True" input="Left_" />
+                <SelectField field="Left_Cardholder pays Subscription Fees" selected="True" input="Left_" />
+                <SelectField field="Left_Has Failed Payment Card On File" selected="True" input="Left_" />
+                <SelectField field="Left_CoF to be Captured for consumption" selected="True" input="Left_" />
+                <SelectField field="Left_CoF to be Captured for subscription" selected="True" input="Left_" />
+                <SelectField field="Left_Grandfathering Transaction Status" selected="True" input="Left_" />
+                <SelectField field="Left_Enable SCA" selected="True" input="Left_" />
+                <SelectField field="Left_Access On A BankCard" selected="True" input="Left_" />
+                <SelectField field="Left_Deferred Payment Capture Timeline" selected="True" input="Left_" />
+                <SelectField field="Left_Consent required for CoF" selected="True" input="Left_" />
+                <SelectField field="Left_Display Visit Cost" selected="True" input="Left_" />
+                <SelectField field="Left_Payment occurs at Point of Use" selected="True" input="Left_" />
+                <SelectField field="Left_Require Verification if no cardholder charge" selected="True" input="Left_" />
+                <SelectField field="Left_Payment Amount" selected="True" input="Left_" />
+                <SelectField field="Left_Payment Method" selected="True" input="Left_" />
+                <SelectField field="Left_Payment Currency" selected="True" input="Left_" />
+                <SelectField field="Left_Subscription creation card verification" selected="True" input="Left_" />
+                <SelectField field="Left_Payment Verification Configuration" selected="True" input="Left_" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="741" y="163" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="897" y="175" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="source_code" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="Source Code" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="True" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_source_code" selected="True" input="Left_" />
+                <SelectField field="Left_source_desc" selected="True" input="Left_" />
+                <SelectField field="Left_owner_product" selected="True" input="Left_" />
+                <SelectField field="Left_source_media" selected="True" input="Left_" />
+                <SelectField field="Left_is_access_on_payment_card" selected="True" input="Left_" />
+                <SelectField field="Right_EEA Country Y/N" selected="True" input="Right_" />
+                <SelectField field="Right_CIF" selected="True" input="Right_" />
+                <SelectField field="Right_Active Members" selected="True" input="Right_" />
+                <SelectField field="Right_Visit Volume" selected="True" input="Right_" />
+                <SelectField field="Right_Client ID" selected="True" input="Right_" />
+                <SelectField field="Left_First Year Entitlement Method Standard" selected="True" input="Left_" />
+                <SelectField field="Left_Entitlement Method Standard" selected="True" input="Left_" />
+                <SelectField field="Left_Entitlement Method Standard Plus" selected="True" input="Left_" />
+                <SelectField field="Left_Entitlement Method Prestige" selected="True" input="Left_" />
+                <SelectField field="Left_Deal Name" selected="True" input="Left_" />
+                <SelectField field="Left_Has Access On A BankCard" selected="True" input="Left_" />
+                <SelectField field="Left_Can Cardholder pay for consumption" selected="True" input="Left_" />
+                <SelectField field="Left_Cardholder pays Subscription Fees" selected="True" input="Left_" />
+                <SelectField field="Left_Has Failed Payment Card On File" selected="True" input="Left_" />
+                <SelectField field="Left_CoF to be Captured for consumption" selected="True" input="Left_" />
+                <SelectField field="Left_CoF to be Captured for subscription" selected="True" input="Left_" />
+                <SelectField field="Left_Grandfathering Transaction Status" selected="True" input="Left_" />
+                <SelectField field="Left_Enable SCA" selected="True" input="Left_" />
+                <SelectField field="Left_Access On A BankCard" selected="True" input="Left_" />
+                <SelectField field="Left_Deferred Payment Capture Timeline" selected="True" input="Left_" />
+                <SelectField field="Left_Consent required for CoF" selected="True" input="Left_" />
+                <SelectField field="Left_Display Visit Cost" selected="True" input="Left_" />
+                <SelectField field="Left_Payment occurs at Point of Use" selected="True" input="Left_" />
+                <SelectField field="Left_Require Verification if no cardholder charge" selected="True" input="Left_" />
+                <SelectField field="Left_Payment Amount" selected="True" input="Left_" />
+                <SelectField field="Left_Payment Method" selected="True" input="Left_" />
+                <SelectField field="Left_Payment Currency" selected="True" input="Left_" />
+                <SelectField field="Left_Subscription creation card verification" selected="True" input="Left_" />
+                <SelectField field="Left_Payment Verification Configuration" selected="True" input="Left_" />
+                <SelectField field="Left_cg_region_of_issue" selected="True" input="Left_" />
+                <SelectField field="Left_clean_issuer_name" selected="True" input="Left_" />
+                <SelectField field="Left_client_name" selected="True" input="Left_" />
+                <SelectField field="Left_client_region_of_issue" selected="True" input="Left_" />
+                <SelectField field="Left_client_service_centre" selected="True" input="Left_" />
+                <SelectField field="Left_country_of_issue" selected="True" input="Left_" />
+                <SelectField field="Left_deal_status" selected="True" input="Left_" />
+                <SelectField field="Left_enrolment_method" selected="True" input="Left_" />
+                <SelectField field="Left_BIN" selected="True" input="Left_" />
+                <SelectField field="Left_deal_type" selected="True" input="Left_" />
+                <SelectField field="Right_Client Region" selected="True" input="Right_" />
+                <SelectField field="Right_Source Code" selected="False" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="693" y="283" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">\\clbnas01\PriorityPass\8. OPERATIONS\1. Global Team\Ylli\PP Wholesale Data Extract\D&amp;I Data\D&amp;I Data.xlsx|||`Sheet1$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>D&amp;I Data.xlsx
+Query=`Sheet1$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Client Region" size="255" source="File: \\clbnas01\PriorityPass\8. OPERATIONS\1. Global Team\Ylli\PP Wholesale Data Extract\D&amp;I Data\D&amp;I Data.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="Source Code" size="255" source="File: \\clbnas01\PriorityPass\8. OPERATIONS\1. Global Team\Ylli\PP Wholesale Data Extract\D&amp;I Data\D&amp;I Data.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="Client ID" size="255" source="File: \\clbnas01\PriorityPass\8. OPERATIONS\1. Global Team\Ylli\PP Wholesale Data Extract\D&amp;I Data\D&amp;I Data.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="Authenticated Source Code" size="255" source="File: \\clbnas01\PriorityPass\8. OPERATIONS\1. Global Team\Ylli\PP Wholesale Data Extract\D&amp;I Data\D&amp;I Data.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="Lounge Programme" size="255" source="File: \\clbnas01\PriorityPass\8. OPERATIONS\1. Global Team\Ylli\PP Wholesale Data Extract\D&amp;I Data\D&amp;I Data.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="Deal Type" size="255" source="File: \\clbnas01\PriorityPass\8. OPERATIONS\1. Global Team\Ylli\PP Wholesale Data Extract\D&amp;I Data\D&amp;I Data.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="Country Of Issue" size="255" source="File: \\clbnas01\PriorityPass\8. OPERATIONS\1. Global Team\Ylli\PP Wholesale Data Extract\D&amp;I Data\D&amp;I Data.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="EEA Country Y/N" size="255" source="File: \\clbnas01\PriorityPass\8. OPERATIONS\1. Global Team\Ylli\PP Wholesale Data Extract\D&amp;I Data\D&amp;I Data.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="Client" size="255" source="File: \\clbnas01\PriorityPass\8. OPERATIONS\1. Global Team\Ylli\PP Wholesale Data Extract\D&amp;I Data\D&amp;I Data.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="Issuer Name" size="255" source="File: \\clbnas01\PriorityPass\8. OPERATIONS\1. Global Team\Ylli\PP Wholesale Data Extract\D&amp;I Data\D&amp;I Data.xlsx|||`Sheet1$`" type="V_WString" />
+            <Field name="Enrolment Method" size="255" source="File: \\clbnas01\PriorityPass\8. OPERATIONS\1. Global Team\Ylli\PP Wholesale Data Extract\D&amp;I Data\D&amp;I Data.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="CIF" source="File: \\clbnas01\PriorityPass\8. OPERATIONS\1. Global Team\Ylli\PP Wholesale Data Extract\D&amp;I Data\D&amp;I Data.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Active Members" source="File: \\clbnas01\PriorityPass\8. OPERATIONS\1. Global Team\Ylli\PP Wholesale Data Extract\D&amp;I Data\D&amp;I Data.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Visit Volume" source="File: \\clbnas01\PriorityPass\8. OPERATIONS\1. Global Team\Ylli\PP Wholesale Data Extract\D&amp;I Data\D&amp;I Data.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Visit_card_transaction_type_code" size="255" source="File: \\clbnas01\PriorityPass\8. OPERATIONS\1. Global Team\Ylli\PP Wholesale Data Extract\D&amp;I Data\D&amp;I Data.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="Visit_card_validation_type_desc" size="255" source="File: \\clbnas01\PriorityPass\8. OPERATIONS\1. Global Team\Ylli\PP Wholesale Data Extract\D&amp;I Data\D&amp;I Data.xlsx|||`Sheet1$`" type="V_WString" />
+            <Field name="SignUp_card_validation_type_desc" size="255" source="File: \\clbnas01\PriorityPass\8. OPERATIONS\1. Global Team\Ylli\PP Wholesale Data Extract\D&amp;I Data\D&amp;I Data.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="SignUp_card_transaction_type_code" size="255" source="File: \\clbnas01\PriorityPass\8. OPERATIONS\1. Global Team\Ylli\PP Wholesale Data Extract\D&amp;I Data\D&amp;I Data.xlsx|||`Sheet1$`" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="789" y="283" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="True" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Client Region" selected="True" />
+            <SelectField field="Source Code" selected="True" />
+            <SelectField field="EEA Country Y/N" selected="True" />
+            <SelectField field="CIF" selected="True" />
+            <SelectField field="Active Members" selected="True" />
+            <SelectField field="Visit Volume" selected="True" />
+            <SelectField field="Client ID" selected="True" />
+            <SelectField field="Authenticated Source Code" selected="False" />
+            <SelectField field="Lounge Programme" selected="False" />
+            <SelectField field="Deal Type" selected="False" />
+            <SelectField field="Country Of Issue" selected="False" />
+            <SelectField field="Client" selected="False" />
+            <SelectField field="Issuer Name" selected="False" />
+            <SelectField field="Enrolment Method" selected="False" />
+            <SelectField field="Visit_card_transaction_type_code" selected="False" />
+            <SelectField field="Visit_card_validation_type_desc" selected="False" />
+            <SelectField field="SignUp_card_validation_type_desc" selected="False" />
+            <SelectField field="SignUp_card_transaction_type_code" selected="False" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="1017" y="175" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="1795" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="25">\\clbnas01\PriorityPass\8. OPERATIONS\1. Global Team\Ylli\PP Wholesale Data Extract\PP Wholesale Data Extract.xlsx|||PP Wholesale Data</File>
+          <Passwords />
+          <FormatSpecificOptions>
+            <PreserveFormat>False</PreserveFormat>
+            <SkipFieldNames>False</SkipFieldNames>
+            <OutputOption>Overwrite</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>PP Wholesale Data Extract.xlsx
+Query=PP Wholesale Data</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+        <Position x="1101" y="175" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UniqueFields>
+            <Field field="source_code" />
+          </UniqueFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="1183" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="source_code" action="GroupBy" rename="source_code" />
+            <SummarizeField field="source_desc" action="GroupBy" rename="source_desc" />
+            <SummarizeField field="owner_product" action="GroupBy" rename="owner_product" />
+            <SummarizeField field="source_media" action="GroupBy" rename="source_media" />
+            <SummarizeField field="is_access_on_payment_card" action="GroupBy" rename="is_access_on_payment_card" />
+            <SummarizeField field="First Year Entitlement Method Standard" action="GroupBy" rename="First Year Entitlement Method Standard" />
+            <SummarizeField field="Entitlement Method Standard" action="GroupBy" rename="Entitlement Method Standard" />
+            <SummarizeField field="Entitlement Method Standard Plus" action="GroupBy" rename="Entitlement Method Standard Plus" />
+            <SummarizeField field="Entitlement Method Prestige" action="GroupBy" rename="Entitlement Method Prestige" />
+            <SummarizeField field="cg_region_of_issue" action="GroupBy" rename="cg_region_of_issue" />
+            <SummarizeField field="clean_issuer_name" action="GroupBy" rename="clean_issuer_name" />
+            <SummarizeField field="client_name" action="GroupBy" rename="client_name" />
+            <SummarizeField field="client_region_of_issue" action="GroupBy" rename="client_region_of_issue" />
+            <SummarizeField field="client_service_centre" action="GroupBy" rename="client_service_centre" />
+            <SummarizeField field="country_of_issue" action="GroupBy" rename="country_of_issue" />
+            <SummarizeField field="deal_status" action="GroupBy" rename="deal_status" />
+            <SummarizeField field="enrolment_method" action="GroupBy" rename="enrolment_method" />
+            <SummarizeField field="BIN" action="GroupBy" rename="BIN" />
+            <SummarizeField field="deal_type" action="GroupBy" rename="deal_type" />
+            <SummarizeField field="Client Region" action="GroupBy" rename="Client Region" />
+            <SummarizeField field="EEA Country Y/N" action="GroupBy" rename="EEA Country Y/N" />
+            <SummarizeField field="CIF" action="Sum" rename="Sum_CIF" />
+            <SummarizeField field="Active Members" action="Sum" rename="Sum_Active Members" />
+            <SummarizeField field="Visit Volume" action="Sum" rename="Sum_Visit Volume" />
+            <SummarizeField field="Has Access On A BankCard" action="GroupBy" rename="Has Access On A BankCard" />
+            <SummarizeField field="Can Cardholder pay for consumption" action="GroupBy" rename="Can Cardholder pay for consumption" />
+            <SummarizeField field="Cardholder pays Subscription Fees" action="GroupBy" rename="Cardholder pays Subscription Fees" />
+            <SummarizeField field="Has Failed Payment Card On File" action="GroupBy" rename="Has Failed Payment Card On File" />
+            <SummarizeField field="CoF to be Captured for consumption" action="GroupBy" rename="CoF to be Captured for consumption" />
+            <SummarizeField field="CoF to be Captured for subscription" action="GroupBy" rename="CoF to be Captured for subscription" />
+            <SummarizeField field="Grandfathering Transaction Status" action="GroupBy" rename="Grandfathering Transaction Status" />
+            <SummarizeField field="Enable SCA" action="GroupBy" rename="Enable SCA" />
+            <SummarizeField field="Access On A BankCard" action="GroupBy" rename="Access On A BankCard" />
+            <SummarizeField field="Deferred Payment Capture Timeline" action="GroupBy" rename="Deferred Payment Capture Timeline" />
+            <SummarizeField field="Consent required for CoF" action="GroupBy" rename="Consent required for CoF" />
+            <SummarizeField field="Display Visit Cost" action="GroupBy" rename="Display Visit Cost" />
+            <SummarizeField field="Payment occurs at Point of Use" action="GroupBy" rename="Payment occurs at Point of Use" />
+            <SummarizeField field="Require Verification if no cardholder charge" action="GroupBy" rename="Require Verification if no cardholder charge" />
+            <SummarizeField field="Payment Amount" action="GroupBy" rename="Payment Amount" />
+            <SummarizeField field="Payment Method" action="GroupBy" rename="Payment Method" />
+            <SummarizeField field="Payment Currency" action="GroupBy" rename="Payment Currency" />
+            <SummarizeField field="Subscription creation card verification" action="GroupBy" rename="Subscription creation card verification" />
+            <SummarizeField field="Payment Verification Configuration" action="GroupBy" rename="Payment Verification Configuration" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="19">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1267" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="True" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="source_code" selected="True" />
+            <SelectField field="source_desc" selected="True" />
+            <SelectField field="BIN" selected="True" />
+            <SelectField field="source_media" selected="True" />
+            <SelectField field="is_access_on_payment_card" selected="True" />
+            <SelectField field="cg_region_of_issue" selected="True" />
+            <SelectField field="clean_issuer_name" selected="True" />
+            <SelectField field="client_name" selected="True" />
+            <SelectField field="client_region_of_issue" selected="True" />
+            <SelectField field="client_service_centre" selected="True" />
+            <SelectField field="country_of_issue" selected="True" />
+            <SelectField field="deal_status" selected="True" />
+            <SelectField field="enrolment_method" selected="True" />
+            <SelectField field="deal_type" selected="True" />
+            <SelectField field="Client Region" selected="True" />
+            <SelectField field="EEA Country Y/N" selected="True" />
+            <SelectField field="Sum_CIF" selected="True" />
+            <SelectField field="Sum_Active Members" selected="True" />
+            <SelectField field="Sum_Visit Volume" selected="True" />
+            <SelectField field="First Year Entitlement Method Standard" selected="True" />
+            <SelectField field="Entitlement Method Standard" selected="True" />
+            <SelectField field="Entitlement Method Standard Plus" selected="True" />
+            <SelectField field="Entitlement Method Prestige" selected="True" />
+            <SelectField field="owner_product" selected="False" />
+            <SelectField field="Payments.PaymentCardAgreement.hasCardHolderDeferredPayments | true" selected="False" />
+            <SelectField field="Payments.PaymentCardAgreement.hasCardHolderSubscriptionFees | true" selected="False" />
+            <SelectField field="Payments.consumptionPaymentCaptureOffset | " selected="False" />
+            <SelectField field="Payments.createExplicitPaymentCoFConsent | true" selected="False" />
+            <SelectField field="Payments.paymentAmount | " selected="False" />
+            <SelectField field="Payments.PaymentCompliance.Enforce.CONSUMPTIONFEE | true" selected="False" />
+            <SelectField field="Payments.PaymentCompliance.Enforce.SUBSCRIPTIONFEE | true" selected="False" />
+            <SelectField field="Payments.paymentCurrency | " selected="False" />
+            <SelectField field="Payments.paymentMethod | VERIFY" selected="False" />
+            <SelectField field="scaEnabled | 1" selected="False" />
+            <SelectField field="Payments.paymentCurrency | USD" selected="False" />
+            <SelectField field="Payments.aopcEnabled | 1" selected="False" />
+            <SelectField field="Payments.consumptionPaymentCaptureOffset | 3" selected="False" />
+            <SelectField field="Payments.paymentAmount | 3.25" selected="False" />
+            <SelectField field="Payments.paymentMethod | NOMINAL" selected="False" />
+            <SelectField field="Payments.paymentCurrency | EU" selected="False" />
+            <SelectField field="Payments.consumptionPaymentCaptureOffset | 1" selected="False" />
+            <SelectField field="Payments.displayPrice | true" selected="False" />
+            <SelectField field="Payments.paymentAtPointOfUse | true" selected="False" />
+            <SelectField field="Payments.PaymentCardAgreement.hasAccessOnABankCard" selected="False" />
+            <SelectField field="Payments.PaymentCardAgreement.hasCardHolderDeferredPayments" selected="False" />
+            <SelectField field="Payments.PaymentCardAgreement.hasCardHolderSubscriptionFees" selected="False" />
+            <SelectField field="Payments.PaymentCardAgreement.hasFailedPaymentCardOnFile" selected="False" />
+            <SelectField field="Payments.PaymentCompliance.Enforce.CONSUMPTIONFEE" selected="False" />
+            <SelectField field="Payments.PaymentCompliance.Enforce.SUBSCRIPTIONFEE" selected="False" />
+            <SelectField field="grandfatheringTransaction" selected="False" />
+            <SelectField field="scaEnabled" selected="False" />
+            <SelectField field="Payments.apocEnabled" selected="False" />
+            <SelectField field="Payments.consumptionPaymentCaptureOffset" selected="False" />
+            <SelectField field="Payments.createExplicitPaymentCoFConsent" selected="False" />
+            <SelectField field="Payments.displayPrice" selected="False" />
+            <SelectField field="Payments.paymentAmount" selected="False" />
+            <SelectField field="Payments.paymentAtPointOfUse" selected="False" />
+            <SelectField field="Payments.paymentCardVerificationDuringConsumption" selected="False" />
+            <SelectField field="Payments.paymentCurrency" selected="False" />
+            <SelectField field="Payments.paymentMethod" selected="False" />
+            <SelectField field="Payments.subscriptionCreationRequiresPaymentCardVerification" selected="False" />
+            <SelectField field="Payments.cardVerificationPaymentConfig" selected="False" />
+            <SelectField field="Has Access On A BankCard" selected="True" />
+            <SelectField field="Can Cardholder pay for consumption" selected="True" />
+            <SelectField field="Cardholder pays Subscription Fees" selected="True" />
+            <SelectField field="Has Failed Payment Card On File" selected="True" />
+            <SelectField field="CoF to be Captured for consumption" selected="True" />
+            <SelectField field="CoF to be Captured for subscription" selected="True" />
+            <SelectField field="Grandfathering Transaction Status" selected="True" />
+            <SelectField field="Enable SCA" selected="True" />
+            <SelectField field="Access On A BankCard" selected="True" />
+            <SelectField field="Deferred Payment Capture Timeline" selected="True" />
+            <SelectField field="Consent required for CoF" selected="True" />
+            <SelectField field="Display Visit Cost" selected="True" />
+            <SelectField field="Payment occurs at Point of Use" selected="True" />
+            <SelectField field="Require Verification if no cardholder charge" selected="True" />
+            <SelectField field="Payment Amount" selected="True" />
+            <SelectField field="Payment Method" selected="True" />
+            <SelectField field="Payment Currency" selected="True" />
+            <SelectField field="Subscription creation card verification" selected="True" />
+            <SelectField field="Payment Verification Configuration" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="21">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="343" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="source_code" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="Source Code" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="True" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_source_code" selected="True" input="Left_" />
+                <SelectField field="Left_source_desc" selected="True" input="Left_" />
+                <SelectField field="Left_owner_product" selected="True" input="Left_" />
+                <SelectField field="Left_source_media" selected="True" input="Left_" />
+                <SelectField field="Left_is_access_on_payment_card" selected="True" input="Left_" />
+                <SelectField field="Left_First Year Entitlement Method Standard" selected="True" input="Left_" />
+                <SelectField field="Left_Entitlement Method Standard" selected="True" input="Left_" />
+                <SelectField field="Left_Entitlement Method Standard Plus" selected="True" input="Left_" />
+                <SelectField field="Left_Entitlement Method Prestige" selected="True" input="Left_" />
+                <SelectField field="Right_deal_name" selected="False" input="Right_" />
+                <SelectField field="Right_Payments.PaymentCardAgreement.hasAccessOnABankCard" selected="False" input="Right_" />
+                <SelectField field="Right_Payments.PaymentCardAgreement.hasCardHolderDeferredPayments" selected="False" input="Right_" />
+                <SelectField field="Right_Payments.PaymentCardAgreement.hasCardHolderSubscriptionFees" selected="False" input="Right_" />
+                <SelectField field="Right_Payments.PaymentCardAgreement.hasFailedPaymentCardOnFile" selected="False" input="Right_" />
+                <SelectField field="Right_Payments.PaymentCompliance.Enforce.CONSUMPTIONFEE" selected="False" input="Right_" />
+                <SelectField field="Right_Payments.PaymentCompliance.Enforce.SUBSCRIPTIONFEE" selected="False" input="Right_" />
+                <SelectField field="Right_grandfatheringTransaction" selected="False" input="Right_" />
+                <SelectField field="Right_scaEnabled" selected="False" input="Right_" />
+                <SelectField field="Right_Payments.apocEnabled" selected="False" input="Right_" />
+                <SelectField field="Right_Payments.consumptionPaymentCaptureOffset" selected="False" input="Right_" />
+                <SelectField field="Right_Payments.createExplicitPaymentCoFConsent" selected="False" input="Right_" />
+                <SelectField field="Right_Payments.displayPrice" selected="False" input="Right_" />
+                <SelectField field="Right_Payments.paymentAmount" selected="False" input="Right_" />
+                <SelectField field="Right_Payments.paymentAtPointOfUse" selected="False" input="Right_" />
+                <SelectField field="Right_Payments.paymentCardVerificationDuringConsumption" selected="False" input="Right_" />
+                <SelectField field="Right_Payments.paymentCurrency" selected="False" input="Right_" />
+                <SelectField field="Right_Payments.paymentMethod" selected="False" input="Right_" />
+                <SelectField field="Right_Payments.subscriptionCreationRequiresPaymentCardVerification" selected="False" input="Right_" />
+                <SelectField field="Right_Payments.cardVerificationPaymentConfig" selected="False" input="Right_" />
+                <SelectField field="Right_Payments.PaymentCardAgreement.hasCardHolderDeferredPayments | true" selected="False" input="Right_" />
+                <SelectField field="Right_Payments.PaymentCardAgreement.hasCardHolderSubscriptionFees | true" selected="False" input="Right_" />
+                <SelectField field="Right_Payments.consumptionPaymentCaptureOffset | " selected="False" input="Right_" />
+                <SelectField field="Right_Payments.createExplicitPaymentCoFConsent | true" selected="False" input="Right_" />
+                <SelectField field="Right_Payments.paymentAmount | " selected="False" input="Right_" />
+                <SelectField field="Right_Payments.PaymentCompliance.Enforce.CONSUMPTIONFEE | true" selected="False" input="Right_" />
+                <SelectField field="Right_Payments.PaymentCompliance.Enforce.SUBSCRIPTIONFEE | true" selected="False" input="Right_" />
+                <SelectField field="Right_Payments.paymentCurrency | " selected="False" input="Right_" />
+                <SelectField field="Right_Payments.paymentMethod | VERIFY" selected="False" input="Right_" />
+                <SelectField field="Right_scaEnabled | 1" selected="False" input="Right_" />
+                <SelectField field="Right_Payments.paymentCurrency | USD" selected="False" input="Right_" />
+                <SelectField field="Right_Payments.aopcEnabled | 1" selected="False" input="Right_" />
+                <SelectField field="Right_Payments.consumptionPaymentCaptureOffset | 3" selected="False" input="Right_" />
+                <SelectField field="Right_Payments.paymentAmount | 3.25" selected="False" input="Right_" />
+                <SelectField field="Right_Payments.paymentMethod | NOMINAL" selected="False" input="Right_" />
+                <SelectField field="Right_Payments.paymentCurrency | EU" selected="False" input="Right_" />
+                <SelectField field="Right_Payments.consumptionPaymentCaptureOffset | 1" selected="False" input="Right_" />
+                <SelectField field="Right_Payments.displayPrice | true" selected="False" input="Right_" />
+                <SelectField field="Right_Payments.paymentAtPointOfUse | true" selected="False" input="Right_" />
+                <SelectField field="Right_source_code" selected="False" input="Right_" />
+                <SelectField field="Right_source_desc" selected="False" input="Right_" />
+                <SelectField field="Right_owner_product" selected="False" input="Right_" />
+                <SelectField field="Right_Source Code" selected="False" input="Right_" />
+                <SelectField field="Right_Source Description" selected="False" input="Right_" />
+                <SelectField field="Right_Owner Product" selected="False" input="Right_" />
+                <SelectField field="Right_Deal Name" selected="True" input="Right_" />
+                <SelectField field="Right_Has Access On A BankCard" selected="True" input="Right_" />
+                <SelectField field="Right_Can Cardholder pay for consumption" selected="True" input="Right_" />
+                <SelectField field="Right_Cardholder pays Subscription Fees" selected="True" input="Right_" />
+                <SelectField field="Right_Has Failed Payment Card On File" selected="True" input="Right_" />
+                <SelectField field="Right_CoF to be Captured for consumption" selected="True" input="Right_" />
+                <SelectField field="Right_CoF to be Captured for subscription" selected="True" input="Right_" />
+                <SelectField field="Right_Grandfathering Transaction Status" selected="True" input="Right_" />
+                <SelectField field="Right_Enable SCA" selected="True" input="Right_" />
+                <SelectField field="Right_Access On A BankCard" selected="True" input="Right_" />
+                <SelectField field="Right_Deferred Payment Capture Timeline" selected="True" input="Right_" />
+                <SelectField field="Right_Consent required for CoF" selected="True" input="Right_" />
+                <SelectField field="Right_Display Visit Cost" selected="True" input="Right_" />
+                <SelectField field="Right_Payment occurs at Point of Use" selected="True" input="Right_" />
+                <SelectField field="Right_Require Verification if no cardholder charge" selected="True" input="Right_" />
+                <SelectField field="Right_Payment Amount" selected="True" input="Right_" />
+                <SelectField field="Right_Payment Method" selected="True" input="Right_" />
+                <SelectField field="Right_Payment Currency" selected="True" input="Right_" />
+                <SelectField field="Right_Subscription creation card verification" selected="True" input="Right_" />
+                <SelectField field="Right_Payment Verification Configuration" selected="True" input="Right_" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="23">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="439" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="24">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="1339" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="IF [Enable SCA]=&quot;Yes&quot; and [is_access_on_payment_card]=1&#xA;THEN &quot;R2&quot; ELSE &quot;R1&quot; ENDIF&#xA;" field="R1 or R2" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>R1 or R2 = IF [Enable SCA]="Yes" and [is_access_on_payment_card]=1
+THEN "R2" ELS...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="25">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1433" y="161" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="True" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="source_code" selected="True" />
+            <SelectField field="R1 or R2" selected="True" />
+            <SelectField field="source_desc" selected="True" />
+            <SelectField field="BIN" selected="True" />
+            <SelectField field="source_media" selected="True" />
+            <SelectField field="is_access_on_payment_card" selected="True" type="V_WString" size="19" />
+            <SelectField field="cg_region_of_issue" selected="True" />
+            <SelectField field="clean_issuer_name" selected="True" />
+            <SelectField field="client_name" selected="True" />
+            <SelectField field="client_region_of_issue" selected="True" />
+            <SelectField field="client_service_centre" selected="True" />
+            <SelectField field="country_of_issue" selected="True" />
+            <SelectField field="deal_status" selected="True" />
+            <SelectField field="enrolment_method" selected="True" />
+            <SelectField field="deal_type" selected="True" />
+            <SelectField field="Client Region" selected="True" />
+            <SelectField field="EEA Country Y/N" selected="True" />
+            <SelectField field="Sum_CIF" selected="True" />
+            <SelectField field="Sum_Active Members" selected="True" />
+            <SelectField field="Sum_Visit Volume" selected="True" />
+            <SelectField field="First Year Entitlement Method Standard" selected="True" />
+            <SelectField field="Entitlement Method Standard" selected="True" />
+            <SelectField field="Entitlement Method Standard Plus" selected="True" />
+            <SelectField field="Entitlement Method Prestige" selected="True" />
+            <SelectField field="Payments.PaymentCardAgreement.hasCardHolderDeferredPayments | true" selected="False" />
+            <SelectField field="Payments.PaymentCardAgreement.hasCardHolderSubscriptionFees | true" selected="False" />
+            <SelectField field="Payments.consumptionPaymentCaptureOffset | " selected="False" />
+            <SelectField field="Payments.createExplicitPaymentCoFConsent | true" selected="False" />
+            <SelectField field="Payments.paymentAmount | " selected="False" />
+            <SelectField field="Payments.PaymentCompliance.Enforce.CONSUMPTIONFEE | true" selected="False" />
+            <SelectField field="Payments.PaymentCompliance.Enforce.SUBSCRIPTIONFEE | true" selected="False" />
+            <SelectField field="Payments.paymentCurrency | " selected="False" />
+            <SelectField field="Payments.paymentMethod | VERIFY" selected="False" />
+            <SelectField field="scaEnabled | 1" selected="False" />
+            <SelectField field="Payments.paymentCurrency | USD" selected="False" />
+            <SelectField field="Payments.aopcEnabled | 1" selected="False" />
+            <SelectField field="Payments.consumptionPaymentCaptureOffset | 3" selected="False" />
+            <SelectField field="Payments.paymentAmount | 3.25" selected="False" />
+            <SelectField field="Payments.paymentMethod | NOMINAL" selected="False" />
+            <SelectField field="Payments.paymentCurrency | EU" selected="False" />
+            <SelectField field="Payments.consumptionPaymentCaptureOffset | 1" selected="False" />
+            <SelectField field="Payments.displayPrice | true" selected="False" />
+            <SelectField field="Payments.paymentAtPointOfUse | true" selected="False" />
+            <SelectField field="Payments.PaymentCardAgreement.hasAccessOnABankCard" selected="False" />
+            <SelectField field="Payments.PaymentCardAgreement.hasCardHolderDeferredPayments" selected="False" />
+            <SelectField field="Payments.PaymentCardAgreement.hasCardHolderSubscriptionFees" selected="False" />
+            <SelectField field="Payments.PaymentCardAgreement.hasFailedPaymentCardOnFile" selected="False" />
+            <SelectField field="Payments.PaymentCompliance.Enforce.CONSUMPTIONFEE" selected="False" />
+            <SelectField field="Payments.PaymentCompliance.Enforce.SUBSCRIPTIONFEE" selected="False" />
+            <SelectField field="grandfatheringTransaction" selected="False" />
+            <SelectField field="scaEnabled" selected="False" />
+            <SelectField field="Payments.apocEnabled" selected="False" />
+            <SelectField field="Payments.consumptionPaymentCaptureOffset" selected="False" />
+            <SelectField field="Payments.createExplicitPaymentCoFConsent" selected="False" />
+            <SelectField field="Payments.displayPrice" selected="False" />
+            <SelectField field="Payments.paymentAmount" selected="False" />
+            <SelectField field="Payments.paymentAtPointOfUse" selected="False" />
+            <SelectField field="Payments.paymentCardVerificationDuringConsumption" selected="False" />
+            <SelectField field="Payments.paymentCurrency" selected="False" />
+            <SelectField field="Payments.paymentMethod" selected="False" />
+            <SelectField field="Payments.subscriptionCreationRequiresPaymentCardVerification" selected="False" />
+            <SelectField field="Payments.cardVerificationPaymentConfig" selected="False" />
+            <SelectField field="Has Access On A BankCard" selected="True" />
+            <SelectField field="Can Cardholder pay for consumption" selected="True" />
+            <SelectField field="Cardholder pays Subscription Fees" selected="True" />
+            <SelectField field="Has Failed Payment Card On File" selected="True" />
+            <SelectField field="CoF to be Captured for consumption" selected="True" />
+            <SelectField field="CoF to be Captured for subscription" selected="True" />
+            <SelectField field="Grandfathering Transaction Status" selected="True" />
+            <SelectField field="Enable SCA" selected="True" />
+            <SelectField field="Access On A BankCard" selected="True" />
+            <SelectField field="Deferred Payment Capture Timeline" selected="True" />
+            <SelectField field="Consent required for CoF" selected="True" />
+            <SelectField field="Display Visit Cost" selected="True" />
+            <SelectField field="Payment occurs at Point of Use" selected="True" />
+            <SelectField field="Require Verification if no cardholder charge" selected="True" />
+            <SelectField field="Payment Amount" selected="True" />
+            <SelectField field="Payment Method" selected="True" />
+            <SelectField field="Payment Currency" selected="True" />
+            <SelectField field="Subscription creation card verification" selected="True" />
+            <SelectField field="Payment Verification Configuration" selected="True" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="26">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="1615" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>R1 or R2</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2021-12-02 16:48:33</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>R1</Operand>
+              <StartDate>2021-12-02 16:48:33</StartDate>
+              <EndDate>2021-12-02 16:48:33</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[R1 or R2] = "R1"</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="27">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="1795" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="25">\\clbnas01\PriorityPass\8. OPERATIONS\1. Global Team\Ylli\PP Wholesale Data Extract\PP Wholesale Data Extract R2 and above.xlsx|||Sheet1</File>
+          <Passwords />
+          <FormatSpecificOptions>
+            <PreserveFormat>False</PreserveFormat>
+            <SkipFieldNames>False</SkipFieldNames>
+            <OutputOption>Overwrite</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>PP Wholesale Data Extract R2 and above.xlsx
+Query=Sheet1</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="28">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1711" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="True" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="source_code" selected="True" />
+            <SelectField field="source_desc" selected="True" />
+            <SelectField field="BIN" selected="True" />
+            <SelectField field="source_media" selected="True" />
+            <SelectField field="cg_region_of_issue" selected="True" />
+            <SelectField field="clean_issuer_name" selected="True" />
+            <SelectField field="client_name" selected="True" />
+            <SelectField field="client_region_of_issue" selected="True" />
+            <SelectField field="client_service_centre" selected="True" />
+            <SelectField field="country_of_issue" selected="True" />
+            <SelectField field="deal_status" selected="True" />
+            <SelectField field="enrolment_method" selected="True" />
+            <SelectField field="deal_type" selected="True" />
+            <SelectField field="Client Region" selected="True" />
+            <SelectField field="EEA Country Y/N" selected="True" />
+            <SelectField field="Sum_CIF" selected="True" />
+            <SelectField field="Sum_Active Members" selected="True" />
+            <SelectField field="Sum_Visit Volume" selected="True" />
+            <SelectField field="First Year Entitlement Method Standard" selected="True" />
+            <SelectField field="Entitlement Method Standard" selected="True" />
+            <SelectField field="Entitlement Method Standard Plus" selected="True" />
+            <SelectField field="Entitlement Method Prestige" selected="True" />
+            <SelectField field="is_access_on_payment_card" selected="True" rename="Access on a Bank Card" />
+            <SelectField field="Access On A BankCard" selected="False" />
+            <SelectField field="Enable SCA" selected="True" />
+            <SelectField field="Can Cardholder pay for consumption" selected="True" />
+            <SelectField field="Cardholder pays Subscription Fees" selected="True" />
+            <SelectField field="Consent required for CoF" selected="True" />
+            <SelectField field="CoF to be Captured for consumption" selected="True" />
+            <SelectField field="CoF to be Captured for subscription" selected="True" />
+            <SelectField field="Require Verification if no cardholder charge" selected="True" />
+            <SelectField field="Payment Method" selected="True" />
+            <SelectField field="Payment Amount" selected="True" />
+            <SelectField field="Payment Currency" selected="True" />
+            <SelectField field="Display Visit Cost" selected="True" />
+            <SelectField field="Payment occurs at Point of Use" selected="True" />
+            <SelectField field="Deferred Payment Capture Timeline" selected="True" />
+            <SelectField field="Subscription creation card verification" selected="True" />
+            <SelectField field="Payments.PaymentCardAgreement.hasCardHolderDeferredPayments | true" selected="False" />
+            <SelectField field="Payments.PaymentCardAgreement.hasCardHolderSubscriptionFees | true" selected="False" />
+            <SelectField field="Payments.consumptionPaymentCaptureOffset | " selected="False" />
+            <SelectField field="Payments.createExplicitPaymentCoFConsent | true" selected="False" />
+            <SelectField field="Payments.paymentAmount | " selected="False" />
+            <SelectField field="Payments.PaymentCompliance.Enforce.CONSUMPTIONFEE | true" selected="False" />
+            <SelectField field="Payments.PaymentCompliance.Enforce.SUBSCRIPTIONFEE | true" selected="False" />
+            <SelectField field="Payments.paymentCurrency | " selected="False" />
+            <SelectField field="Payments.paymentMethod | VERIFY" selected="False" />
+            <SelectField field="scaEnabled | 1" selected="False" />
+            <SelectField field="Payments.paymentCurrency | USD" selected="False" />
+            <SelectField field="Payments.aopcEnabled | 1" selected="False" />
+            <SelectField field="Payments.consumptionPaymentCaptureOffset | 3" selected="False" />
+            <SelectField field="Payments.paymentAmount | 3.25" selected="False" />
+            <SelectField field="Payments.paymentMethod | NOMINAL" selected="False" />
+            <SelectField field="Payments.paymentCurrency | EU" selected="False" />
+            <SelectField field="Payments.consumptionPaymentCaptureOffset | 1" selected="False" />
+            <SelectField field="Payments.displayPrice | true" selected="False" />
+            <SelectField field="Payments.paymentAtPointOfUse | true" selected="False" />
+            <SelectField field="R1 or R2" selected="False" />
+            <SelectField field="Payments.PaymentCardAgreement.hasAccessOnABankCard" selected="False" />
+            <SelectField field="Payments.PaymentCardAgreement.hasCardHolderDeferredPayments" selected="False" />
+            <SelectField field="Payments.PaymentCardAgreement.hasCardHolderSubscriptionFees" selected="False" />
+            <SelectField field="Payments.PaymentCardAgreement.hasFailedPaymentCardOnFile" selected="False" />
+            <SelectField field="Payments.PaymentCompliance.Enforce.CONSUMPTIONFEE" selected="False" />
+            <SelectField field="Payments.PaymentCompliance.Enforce.SUBSCRIPTIONFEE" selected="False" />
+            <SelectField field="grandfatheringTransaction" selected="False" />
+            <SelectField field="scaEnabled" selected="False" />
+            <SelectField field="Payments.apocEnabled" selected="False" />
+            <SelectField field="Payments.consumptionPaymentCaptureOffset" selected="False" />
+            <SelectField field="Payments.createExplicitPaymentCoFConsent" selected="False" />
+            <SelectField field="Payments.displayPrice" selected="False" />
+            <SelectField field="Payments.paymentAmount" selected="False" />
+            <SelectField field="Payments.paymentAtPointOfUse" selected="False" />
+            <SelectField field="Payments.paymentCardVerificationDuringConsumption" selected="False" />
+            <SelectField field="Payments.paymentCurrency" selected="False" />
+            <SelectField field="Payments.paymentMethod" selected="False" />
+            <SelectField field="Payments.subscriptionCreationRequiresPaymentCardVerification" selected="False" />
+            <SelectField field="Payments.cardVerificationPaymentConfig" selected="False" />
+            <SelectField field="Has Access On A BankCard" selected="False" />
+            <SelectField field="Has Failed Payment Card On File" selected="False" />
+            <SelectField field="Grandfathering Transaction Status" selected="False" />
+            <SelectField field="Payment Verification Configuration" selected="False" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="29">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1711" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="True" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="source_code" selected="True" />
+            <SelectField field="source_desc" selected="True" />
+            <SelectField field="BIN" selected="True" />
+            <SelectField field="source_media" selected="True" />
+            <SelectField field="cg_region_of_issue" selected="True" />
+            <SelectField field="clean_issuer_name" selected="True" />
+            <SelectField field="client_name" selected="True" />
+            <SelectField field="client_region_of_issue" selected="True" />
+            <SelectField field="client_service_centre" selected="True" />
+            <SelectField field="country_of_issue" selected="True" />
+            <SelectField field="deal_status" selected="True" />
+            <SelectField field="enrolment_method" selected="True" />
+            <SelectField field="deal_type" selected="True" />
+            <SelectField field="Client Region" selected="True" />
+            <SelectField field="EEA Country Y/N" selected="True" />
+            <SelectField field="Sum_CIF" selected="True" />
+            <SelectField field="Sum_Active Members" selected="True" />
+            <SelectField field="Sum_Visit Volume" selected="True" />
+            <SelectField field="First Year Entitlement Method Standard" selected="True" />
+            <SelectField field="Entitlement Method Standard" selected="True" />
+            <SelectField field="Entitlement Method Standard Plus" selected="True" />
+            <SelectField field="Entitlement Method Prestige" selected="True" />
+            <SelectField field="is_access_on_payment_card" selected="True" rename="Access on a Payment Card" />
+            <SelectField field="Access On A BankCard" selected="False" />
+            <SelectField field="Enable SCA" selected="True" />
+            <SelectField field="Can Cardholder pay for consumption" selected="True" />
+            <SelectField field="Cardholder pays Subscription Fees" selected="True" />
+            <SelectField field="Consent required for CoF" selected="True" />
+            <SelectField field="CoF to be Captured for consumption" selected="True" />
+            <SelectField field="CoF to be Captured for subscription" selected="True" />
+            <SelectField field="Require Verification if no cardholder charge" selected="True" />
+            <SelectField field="Payment Method" selected="True" />
+            <SelectField field="Payment Amount" selected="True" />
+            <SelectField field="Payment Currency" selected="True" />
+            <SelectField field="Display Visit Cost" selected="True" />
+            <SelectField field="Payment occurs at Point of Use" selected="True" />
+            <SelectField field="Deferred Payment Capture Timeline" selected="True" />
+            <SelectField field="Subscription creation card verification" selected="True" />
+            <SelectField field="Payments.PaymentCardAgreement.hasCardHolderDeferredPayments | true" selected="False" />
+            <SelectField field="Payments.PaymentCardAgreement.hasCardHolderSubscriptionFees | true" selected="False" />
+            <SelectField field="Payments.consumptionPaymentCaptureOffset | " selected="False" />
+            <SelectField field="Payments.createExplicitPaymentCoFConsent | true" selected="False" />
+            <SelectField field="Payments.paymentAmount | " selected="False" />
+            <SelectField field="Payments.PaymentCompliance.Enforce.CONSUMPTIONFEE | true" selected="False" />
+            <SelectField field="Payments.PaymentCompliance.Enforce.SUBSCRIPTIONFEE | true" selected="False" />
+            <SelectField field="Payments.paymentCurrency | " selected="False" />
+            <SelectField field="Payments.paymentMethod | VERIFY" selected="False" />
+            <SelectField field="scaEnabled | 1" selected="False" />
+            <SelectField field="Payments.paymentCurrency | USD" selected="False" />
+            <SelectField field="Payments.aopcEnabled | 1" selected="False" />
+            <SelectField field="Payments.consumptionPaymentCaptureOffset | 3" selected="False" />
+            <SelectField field="Payments.paymentAmount | 3.25" selected="False" />
+            <SelectField field="Payments.paymentMethod | NOMINAL" selected="False" />
+            <SelectField field="Payments.paymentCurrency | EU" selected="False" />
+            <SelectField field="Payments.consumptionPaymentCaptureOffset | 1" selected="False" />
+            <SelectField field="Payments.displayPrice | true" selected="False" />
+            <SelectField field="Payments.paymentAtPointOfUse | true" selected="False" />
+            <SelectField field="R1 or R2" selected="False" />
+            <SelectField field="Payments.PaymentCardAgreement.hasAccessOnABankCard" selected="False" />
+            <SelectField field="Payments.PaymentCardAgreement.hasCardHolderDeferredPayments" selected="False" />
+            <SelectField field="Payments.PaymentCardAgreement.hasCardHolderSubscriptionFees" selected="False" />
+            <SelectField field="Payments.PaymentCardAgreement.hasFailedPaymentCardOnFile" selected="False" />
+            <SelectField field="Payments.PaymentCompliance.Enforce.CONSUMPTIONFEE" selected="False" />
+            <SelectField field="Payments.PaymentCompliance.Enforce.SUBSCRIPTIONFEE" selected="False" />
+            <SelectField field="grandfatheringTransaction" selected="False" />
+            <SelectField field="scaEnabled" selected="False" />
+            <SelectField field="Payments.apocEnabled" selected="False" />
+            <SelectField field="Payments.consumptionPaymentCaptureOffset" selected="False" />
+            <SelectField field="Payments.createExplicitPaymentCoFConsent" selected="False" />
+            <SelectField field="Payments.displayPrice" selected="False" />
+            <SelectField field="Payments.paymentAmount" selected="False" />
+            <SelectField field="Payments.paymentAtPointOfUse" selected="False" />
+            <SelectField field="Payments.paymentCardVerificationDuringConsumption" selected="False" />
+            <SelectField field="Payments.paymentCurrency" selected="False" />
+            <SelectField field="Payments.paymentMethod" selected="False" />
+            <SelectField field="Payments.subscriptionCreationRequiresPaymentCardVerification" selected="False" />
+            <SelectField field="Payments.cardVerificationPaymentConfig" selected="False" />
+            <SelectField field="Has Access On A BankCard" selected="False" />
+            <SelectField field="Has Failed Payment Card On File" selected="False" />
+            <SelectField field="Grandfathering Transaction Status" selected="False" />
+            <SelectField field="Payment Verification Configuration" selected="False" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="31">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="1517" y="161" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="IF [is_access_on_payment_card] = &quot;1&quot; THEN &quot;Yes&quot; ELSE &quot;No&quot; ENDIF" field="is_access_on_payment_card" size="19" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>is_access_on_payment_card = IF [is_access_on_payment_card] = "1" THEN "Yes" ELSE...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="55" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">\\clbnas01\PriorityPass\8. OPERATIONS\1. Global Team\Ylli\PP Wholesale Data Extract\Entitlement Method\PP Wholesale Entitlement Method.xlsx|||`Sheet1$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>PP Wholesale Entitlement Method.xlsx
+Query=`Sheet1$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="source_code" size="255" source="File: \\clbnas01\PriorityPass\8. OPERATIONS\1. Global Team\Ylli\PP Wholesale Data Extract\Entitlement Method\PP Wholesale Entitlement Method.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="source_desc" size="255" source="File: \\clbnas01\PriorityPass\8. OPERATIONS\1. Global Team\Ylli\PP Wholesale Data Extract\Entitlement Method\PP Wholesale Entitlement Method.xlsx|||`Sheet1$`" type="V_WString" />
+            <Field name="owner_product" size="255" source="File: \\clbnas01\PriorityPass\8. OPERATIONS\1. Global Team\Ylli\PP Wholesale Data Extract\Entitlement Method\PP Wholesale Entitlement Method.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="source_media" size="255" source="File: \\clbnas01\PriorityPass\8. OPERATIONS\1. Global Team\Ylli\PP Wholesale Data Extract\Entitlement Method\PP Wholesale Entitlement Method.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="is_access_on_payment_card" source="File: \\clbnas01\PriorityPass\8. OPERATIONS\1. Global Team\Ylli\PP Wholesale Data Extract\Entitlement Method\PP Wholesale Entitlement Method.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="First Year Entitlement Method Standard" size="255" source="File: \\clbnas01\PriorityPass\8. OPERATIONS\1. Global Team\Ylli\PP Wholesale Data Extract\Entitlement Method\PP Wholesale Entitlement Method.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="First Year Entitlement Method Standard Plus" source="File: \\clbnas01\PriorityPass\8. OPERATIONS\1. Global Team\Ylli\PP Wholesale Data Extract\Entitlement Method\PP Wholesale Entitlement Method.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="First Year Entitlement Method Prestige" source="File: \\clbnas01\PriorityPass\8. OPERATIONS\1. Global Team\Ylli\PP Wholesale Data Extract\Entitlement Method\PP Wholesale Entitlement Method.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="First Year Entitlement Method Prestige Plus" source="File: \\clbnas01\PriorityPass\8. OPERATIONS\1. Global Team\Ylli\PP Wholesale Data Extract\Entitlement Method\PP Wholesale Entitlement Method.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Entitlement Method Standard" size="255" source="File: \\clbnas01\PriorityPass\8. OPERATIONS\1. Global Team\Ylli\PP Wholesale Data Extract\Entitlement Method\PP Wholesale Entitlement Method.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="Entitlement Method Standard Plus" size="255" source="File: \\clbnas01\PriorityPass\8. OPERATIONS\1. Global Team\Ylli\PP Wholesale Data Extract\Entitlement Method\PP Wholesale Entitlement Method.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="Entitlement Method Prestige" size="255" source="File: \\clbnas01\PriorityPass\8. OPERATIONS\1. Global Team\Ylli\PP Wholesale Data Extract\Entitlement Method\PP Wholesale Entitlement Method.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="Entitlement Method Prestige Plus" size="255" source="File: \\clbnas01\PriorityPass\8. OPERATIONS\1. Global Team\Ylli\PP Wholesale Data Extract\Entitlement Method\PP Wholesale Entitlement Method.xlsx|||`Sheet1$`" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings>
+        <Position x="151" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="Check Box (135)">False</Value>
+          <Value name="Check Box (136)">False</Value>
+          <Value name="List Box (11)">"First Year Entitlement Method Standard","Entitlement Method Standard","Entitlement Method Standard Plus","Entitlement Method Prestige"</Value>
+          <Value name="Check Box (84)">False</Value>
+          <Value name="Check Box (117)">False</Value>
+          <Value name="Check Box (15)">True</Value>
+          <Value name="Check Box (109)">False</Value>
+          <Value name="Check Box (122)">False</Value>
+          <Value name="Check Box (53)">False</Value>
+          <Value name="Check Box (58)">False</Value>
+          <Value name="Check Box (70)">False</Value>
+          <Value name="Check Box (77)">False</Value>
+          <Value name="Drop Down (81)">upper</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="Cleanse.yxmc" />
+    </Node>
+    <Node ToolID="20">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="55" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">\\clbnas01\PriorityPass\8. OPERATIONS\1. Global Team\Ylli\Requests from Julie\Source Code Extended Attributes.xlsx|||`Sheet1$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Source Code Extended Attributes.xlsx
+Query=`Sheet1$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Source Code" size="255" source="File: \\clbnas01\PriorityPass\8. OPERATIONS\1. Global Team\Ylli\Requests from Julie\Source Code Extended Attributes.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="Source Description" size="255" source="File: \\clbnas01\PriorityPass\8. OPERATIONS\1. Global Team\Ylli\Requests from Julie\Source Code Extended Attributes.xlsx|||`Sheet1$`" type="V_WString" />
+            <Field name="Deal Name" size="255" source="File: \\clbnas01\PriorityPass\8. OPERATIONS\1. Global Team\Ylli\Requests from Julie\Source Code Extended Attributes.xlsx|||`Sheet1$`" type="V_WString" />
+            <Field name="Owner Product" size="255" source="File: \\clbnas01\PriorityPass\8. OPERATIONS\1. Global Team\Ylli\Requests from Julie\Source Code Extended Attributes.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="Has Access On A BankCard" size="255" source="File: \\clbnas01\PriorityPass\8. OPERATIONS\1. Global Team\Ylli\Requests from Julie\Source Code Extended Attributes.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="Can Cardholder pay for consumption" size="255" source="File: \\clbnas01\PriorityPass\8. OPERATIONS\1. Global Team\Ylli\Requests from Julie\Source Code Extended Attributes.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="Cardholder pays Subscription Fees" size="255" source="File: \\clbnas01\PriorityPass\8. OPERATIONS\1. Global Team\Ylli\Requests from Julie\Source Code Extended Attributes.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="Has Failed Payment Card On File" size="255" source="File: \\clbnas01\PriorityPass\8. OPERATIONS\1. Global Team\Ylli\Requests from Julie\Source Code Extended Attributes.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="CoF to be Captured for consumption" size="255" source="File: \\clbnas01\PriorityPass\8. OPERATIONS\1. Global Team\Ylli\Requests from Julie\Source Code Extended Attributes.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="CoF to be Captured for subscription" size="255" source="File: \\clbnas01\PriorityPass\8. OPERATIONS\1. Global Team\Ylli\Requests from Julie\Source Code Extended Attributes.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="Grandfathering Transaction Status" size="255" source="File: \\clbnas01\PriorityPass\8. OPERATIONS\1. Global Team\Ylli\Requests from Julie\Source Code Extended Attributes.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="Enable SCA" size="255" source="File: \\clbnas01\PriorityPass\8. OPERATIONS\1. Global Team\Ylli\Requests from Julie\Source Code Extended Attributes.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="Access On A BankCard" size="255" source="File: \\clbnas01\PriorityPass\8. OPERATIONS\1. Global Team\Ylli\Requests from Julie\Source Code Extended Attributes.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="Deferred Payment Capture Timeline" size="255" source="File: \\clbnas01\PriorityPass\8. OPERATIONS\1. Global Team\Ylli\Requests from Julie\Source Code Extended Attributes.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="Consent required for CoF" size="255" source="File: \\clbnas01\PriorityPass\8. OPERATIONS\1. Global Team\Ylli\Requests from Julie\Source Code Extended Attributes.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="Display Visit Cost" size="255" source="File: \\clbnas01\PriorityPass\8. OPERATIONS\1. Global Team\Ylli\Requests from Julie\Source Code Extended Attributes.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="Payment occurs at Point of Use" size="255" source="File: \\clbnas01\PriorityPass\8. OPERATIONS\1. Global Team\Ylli\Requests from Julie\Source Code Extended Attributes.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="Require Verification if no cardholder charge" size="255" source="File: \\clbnas01\PriorityPass\8. OPERATIONS\1. Global Team\Ylli\Requests from Julie\Source Code Extended Attributes.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="Payment Amount" size="255" source="File: \\clbnas01\PriorityPass\8. OPERATIONS\1. Global Team\Ylli\Requests from Julie\Source Code Extended Attributes.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="Payment Method" size="255" source="File: \\clbnas01\PriorityPass\8. OPERATIONS\1. Global Team\Ylli\Requests from Julie\Source Code Extended Attributes.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="Payment Currency" size="255" source="File: \\clbnas01\PriorityPass\8. OPERATIONS\1. Global Team\Ylli\Requests from Julie\Source Code Extended Attributes.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="Subscription creation card verification" size="255" source="File: \\clbnas01\PriorityPass\8. OPERATIONS\1. Global Team\Ylli\Requests from Julie\Source Code Extended Attributes.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="Payment Verification Configuration" size="255" source="File: \\clbnas01\PriorityPass\8. OPERATIONS\1. Global Team\Ylli\Requests from Julie\Source Code Extended Attributes.xlsx|||`Sheet1$`" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="22">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="151" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="162" y="330" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>lounge_programme</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2021-11-03 17:07:16</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <StartDate>2021-11-03 17:07:16</StartDate>
+              <EndDate>2021-11-03 17:07:16</EndDate>
+              <Operand>Priority Pass</Operand>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[lounge_programme] = "Priority Pass"</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="343" y="306" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="True" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="bin" selected="True" rename="Source Code" />
+            <SelectField field="cg_region_of_issue" selected="True" />
+            <SelectField field="clean_issuer_name" selected="True" />
+            <SelectField field="client_name" selected="True" />
+            <SelectField field="client_region_of_issue" selected="True" />
+            <SelectField field="client_service_centre" selected="True" />
+            <SelectField field="country_of_issue" selected="True" />
+            <SelectField field="deal_status" selected="True" />
+            <SelectField field="enrolment_method" selected="True" />
+            <SelectField field="prefix" selected="True" rename="BIN" />
+            <SelectField field="deal_type" selected="True" />
+            <SelectField field="bid" selected="False" />
+            <SelectField field="EEA Country Y/N" selected="False" />
+            <SelectField field="billing_inclusion_lounge_visits" selected="False" />
+            <SelectField field="billing_inclusion_memberships" selected="False" />
+            <SelectField field="card_segment" selected="False" />
+            <SelectField field="card_type" selected="False" />
+            <SelectField field="client_sub_region_of_issue" selected="False" />
+            <SelectField field="consolidated_report" selected="False" />
+            <SelectField field="contract_type" selected="False" />
+            <SelectField field="country_of_issue_iso" selected="False" />
+            <SelectField field="currency" selected="False" />
+            <SelectField field="deal_start_date" selected="False" />
+            <SelectField field="deal_cancellation_date" selected="False" />
+            <SelectField field="decline" selected="False" />
+            <SelectField field="group_code" selected="False" />
+            <SelectField field="ica" selected="False" />
+            <SelectField field="issuer_name" selected="False" />
+            <SelectField field="lounge_programme" selected="False" />
+            <SelectField field="lounge_set_selected" selected="False" />
+            <SelectField field="lv_report_credit_card_type" selected="False" />
+            <SelectField field="membership_fee" selected="False" />
+            <SelectField field="membership_fee_currency" selected="False" />
+            <SelectField field="model" selected="False" />
+            <SelectField field="po_charge_type" selected="False" />
+            <SelectField field="reporting_ica" selected="False" />
+            <SelectField field="selected_non_selected" selected="False" />
+            <SelectField field="source_code" selected="False" />
+            <SelectField field="implementation_type" selected="False" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+        <Position x="439" y="306" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SortInfo locale="0">
+            <Field field="deal_status" order="Ascending" />
+            <Field field="Source Code" order="Ascending" />
+          </SortInfo>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>deal_status - Ascending
+Source Code - Ascending</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="271" y="318" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>NotContains</Operator>
+            <Field>deal_status</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2021-08-25 15:04:43</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>Cancelled</Operand>
+              <StartDate>2021-08-25 15:04:43</StartDate>
+              <EndDate>2021-08-25 15:04:43</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>!Contains([deal_status],"Cancelled")</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="330" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <CachedCosmeticName>CMS OPS</CachedCosmeticName>
+          <File RecordLimit="" FileFormat="23">aka:5f15b5140b05360e6c4ed393|||select view_globalops_issuers1.bid,
+	view_globalops_issuers1.billing_inclusion_lounge_visits,
+	view_globalops_issuers1.billing_inclusion_memberships,
+	view_globalops_issuers1.bin,
+	view_globalops_issuers1.card_segment,
+	view_globalops_issuers1.card_type,
+	view_globalops_issuers1.cg_region_of_issue,
+	view_globalops_issuers1.clean_issuer_name,
+	view_globalops_issuers1.client_name,
+	view_globalops_issuers1.client_region_of_issue,
+	view_globalops_issuers1.client_service_centre,
+	view_globalops_issuers1.client_sub_region_of_issue,
+	view_globalops_issuers1.consolidated_report,
+	view_globalops_issuers1.contract_type,
+	view_globalops_issuers1.country_of_issue,
+	view_globalops_issuers1.country_of_issue_iso,
+	view_globalops_issuers1.currency,
+	view_globalops_issuers1.deal_cancellation_date,
+	view_globalops_issuers1.deal_start_date,
+	view_globalops_issuers1.deal_status,
+	view_globalops_issuers1.deal_type,
+	view_globalops_issuers1.decline,
+	view_globalops_issuers1.enrolment_method,
+	view_globalops_issuers1.group_code,
+	view_globalops_issuers1.ica,
+	view_globalops_issuers1.issuer_name,
+	view_globalops_issuers1.lounge_programme,
+	view_globalops_issuers1.lounge_set_selected,
+	view_globalops_issuers1.lv_report_credit_card_type,
+	view_globalops_issuers1.membership_fee,
+	view_globalops_issuers1.membership_fee_currency,
+	view_globalops_issuers1.model,
+	view_globalops_issuers1.po_charge_type,
+	view_globalops_issuers1.prefix,
+	view_globalops_issuers1.reporting_ica,
+	view_globalops_issuers1.selected_non_selected,
+	view_globalops_issuers1.source_code,
+	view_globalops_issuers1.implementation_type 
+from cms.view_globalops_issuers view_globalops_issuers1</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <SessionReadOnly>True</SessionReadOnly>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:CMS OPS
+Query=select view_globalops_issuer...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="bid" size="45" source="File: aka:5f15b5140b05360e6c4ed393|||select view_globalops_issuers1.bid,&#xA;	view_globalops_issuers1.billing_inclusion_lounge_visits,&#xA;	view_globalops_issuers1.billing_inclusion_memberships,&#xA;	view_globalops_issuers1.bin,&#xA;	view_globalops_issuers1.card_segment,&#xA;	view_globalops_issuers1.card_type,&#xA;	view_globalops_issuers1.cg_region_of_issue,&#xA;	view_globalops_issuers1.clean_issuer_name,&#xA;	view_globalops_issuers1.client_name,&#xA;	view_globalops_issuers1.client_region_of_issue,&#xA;	view_globalops_issuers1.client_service_centre,&#xA;	view_globalops_issuers1.client_sub_region_of_issue,&#xA;	view_globalops_issuers1.consolidated_report,&#xA;	view_globalops_issuers1.contract_type,&#xA;	view_globalops_issuers1.country_of_issue,&#xA;	view_globalops_issuers1.country_of_issue_iso,&#xA;	view_globalops_issuers1.currency,&#xA;	view_globalops_issuers1.deal_cancellation_date,&#xA;	view_globalops_issuers1.deal_start_date,&#xA;	view_globalops_issuers1.deal_status,&#xA;	view_globalops_issuers1.deal_type,&#xA;	view_globalops_issuers1.decline,&#xA;	view_globalops_issuers1.enrolment_method,&#xA;	view_globalops_issuers1.group_code,&#xA;	view_globalops_issuers1.ica,&#xA;	view_globalops_issuers1.issuer_name,&#xA;	view_globalops_issuers1.lounge_programme,&#xA;	view_globalops_issuers1.lounge_set_selected,&#xA;	view_globalops_issuers1.lv_report_credit_card_type,&#xA;	view_globalops_issuers1.membership_fee,&#xA;	view_globalops_issuers1.membership_fee_currency,&#xA;	view_globalops_issuers1.model,&#xA;	view_globalops_issuers1.po_charge_type,&#xA;	view_globalops_issuers1.prefix,&#xA;	view_globalops_issuers1.reporting_ica,&#xA;	view_globalops_issuers1.selected_non_selected,&#xA;	view_globalops_issuers1.source_code,&#xA;	view_globalops_issuers1.implementation_type &#xA;from cms.view_globalops_issuers view_globalops_issuers1" type="V_WString" />
+            <Field name="billing_inclusion_lounge_visits" source="File: aka:5f15b5140b05360e6c4ed393|||select view_globalops_issuers1.bid,&#xA;	view_globalops_issuers1.billing_inclusion_lounge_visits,&#xA;	view_globalops_issuers1.billing_inclusion_memberships,&#xA;	view_globalops_issuers1.bin,&#xA;	view_globalops_issuers1.card_segment,&#xA;	view_globalops_issuers1.card_type,&#xA;	view_globalops_issuers1.cg_region_of_issue,&#xA;	view_globalops_issuers1.clean_issuer_name,&#xA;	view_globalops_issuers1.client_name,&#xA;	view_globalops_issuers1.client_region_of_issue,&#xA;	view_globalops_issuers1.client_service_centre,&#xA;	view_globalops_issuers1.client_sub_region_of_issue,&#xA;	view_globalops_issuers1.consolidated_report,&#xA;	view_globalops_issuers1.contract_type,&#xA;	view_globalops_issuers1.country_of_issue,&#xA;	view_globalops_issuers1.country_of_issue_iso,&#xA;	view_globalops_issuers1.currency,&#xA;	view_globalops_issuers1.deal_cancellation_date,&#xA;	view_globalops_issuers1.deal_start_date,&#xA;	view_globalops_issuers1.deal_status,&#xA;	view_globalops_issuers1.deal_type,&#xA;	view_globalops_issuers1.decline,&#xA;	view_globalops_issuers1.enrolment_method,&#xA;	view_globalops_issuers1.group_code,&#xA;	view_globalops_issuers1.ica,&#xA;	view_globalops_issuers1.issuer_name,&#xA;	view_globalops_issuers1.lounge_programme,&#xA;	view_globalops_issuers1.lounge_set_selected,&#xA;	view_globalops_issuers1.lv_report_credit_card_type,&#xA;	view_globalops_issuers1.membership_fee,&#xA;	view_globalops_issuers1.membership_fee_currency,&#xA;	view_globalops_issuers1.model,&#xA;	view_globalops_issuers1.po_charge_type,&#xA;	view_globalops_issuers1.prefix,&#xA;	view_globalops_issuers1.reporting_ica,&#xA;	view_globalops_issuers1.selected_non_selected,&#xA;	view_globalops_issuers1.source_code,&#xA;	view_globalops_issuers1.implementation_type &#xA;from cms.view_globalops_issuers view_globalops_issuers1" type="Int16" />
+            <Field name="billing_inclusion_memberships" source="File: aka:5f15b5140b05360e6c4ed393|||select view_globalops_issuers1.bid,&#xA;	view_globalops_issuers1.billing_inclusion_lounge_visits,&#xA;	view_globalops_issuers1.billing_inclusion_memberships,&#xA;	view_globalops_issuers1.bin,&#xA;	view_globalops_issuers1.card_segment,&#xA;	view_globalops_issuers1.card_type,&#xA;	view_globalops_issuers1.cg_region_of_issue,&#xA;	view_globalops_issuers1.clean_issuer_name,&#xA;	view_globalops_issuers1.client_name,&#xA;	view_globalops_issuers1.client_region_of_issue,&#xA;	view_globalops_issuers1.client_service_centre,&#xA;	view_globalops_issuers1.client_sub_region_of_issue,&#xA;	view_globalops_issuers1.consolidated_report,&#xA;	view_globalops_issuers1.contract_type,&#xA;	view_globalops_issuers1.country_of_issue,&#xA;	view_globalops_issuers1.country_of_issue_iso,&#xA;	view_globalops_issuers1.currency,&#xA;	view_globalops_issuers1.deal_cancellation_date,&#xA;	view_globalops_issuers1.deal_start_date,&#xA;	view_globalops_issuers1.deal_status,&#xA;	view_globalops_issuers1.deal_type,&#xA;	view_globalops_issuers1.decline,&#xA;	view_globalops_issuers1.enrolment_method,&#xA;	view_globalops_issuers1.group_code,&#xA;	view_globalops_issuers1.ica,&#xA;	view_globalops_issuers1.issuer_name,&#xA;	view_globalops_issuers1.lounge_programme,&#xA;	view_globalops_issuers1.lounge_set_selected,&#xA;	view_globalops_issuers1.lv_report_credit_card_type,&#xA;	view_globalops_issuers1.membership_fee,&#xA;	view_globalops_issuers1.membership_fee_currency,&#xA;	view_globalops_issuers1.model,&#xA;	view_globalops_issuers1.po_charge_type,&#xA;	view_globalops_issuers1.prefix,&#xA;	view_globalops_issuers1.reporting_ica,&#xA;	view_globalops_issuers1.selected_non_selected,&#xA;	view_globalops_issuers1.source_code,&#xA;	view_globalops_issuers1.implementation_type &#xA;from cms.view_globalops_issuers view_globalops_issuers1" type="Int16" />
+            <Field name="bin" size="255" source="File: aka:5f15b5140b05360e6c4ed393|||select view_globalops_issuers1.bid,&#xA;	view_globalops_issuers1.billing_inclusion_lounge_visits,&#xA;	view_globalops_issuers1.billing_inclusion_memberships,&#xA;	view_globalops_issuers1.bin,&#xA;	view_globalops_issuers1.card_segment,&#xA;	view_globalops_issuers1.card_type,&#xA;	view_globalops_issuers1.cg_region_of_issue,&#xA;	view_globalops_issuers1.clean_issuer_name,&#xA;	view_globalops_issuers1.client_name,&#xA;	view_globalops_issuers1.client_region_of_issue,&#xA;	view_globalops_issuers1.client_service_centre,&#xA;	view_globalops_issuers1.client_sub_region_of_issue,&#xA;	view_globalops_issuers1.consolidated_report,&#xA;	view_globalops_issuers1.contract_type,&#xA;	view_globalops_issuers1.country_of_issue,&#xA;	view_globalops_issuers1.country_of_issue_iso,&#xA;	view_globalops_issuers1.currency,&#xA;	view_globalops_issuers1.deal_cancellation_date,&#xA;	view_globalops_issuers1.deal_start_date,&#xA;	view_globalops_issuers1.deal_status,&#xA;	view_globalops_issuers1.deal_type,&#xA;	view_globalops_issuers1.decline,&#xA;	view_globalops_issuers1.enrolment_method,&#xA;	view_globalops_issuers1.group_code,&#xA;	view_globalops_issuers1.ica,&#xA;	view_globalops_issuers1.issuer_name,&#xA;	view_globalops_issuers1.lounge_programme,&#xA;	view_globalops_issuers1.lounge_set_selected,&#xA;	view_globalops_issuers1.lv_report_credit_card_type,&#xA;	view_globalops_issuers1.membership_fee,&#xA;	view_globalops_issuers1.membership_fee_currency,&#xA;	view_globalops_issuers1.model,&#xA;	view_globalops_issuers1.po_charge_type,&#xA;	view_globalops_issuers1.prefix,&#xA;	view_globalops_issuers1.reporting_ica,&#xA;	view_globalops_issuers1.selected_non_selected,&#xA;	view_globalops_issuers1.source_code,&#xA;	view_globalops_issuers1.implementation_type &#xA;from cms.view_globalops_issuers view_globalops_issuers1" type="V_WString" />
+            <Field name="card_segment" size="45" source="File: aka:5f15b5140b05360e6c4ed393|||select view_globalops_issuers1.bid,&#xA;	view_globalops_issuers1.billing_inclusion_lounge_visits,&#xA;	view_globalops_issuers1.billing_inclusion_memberships,&#xA;	view_globalops_issuers1.bin,&#xA;	view_globalops_issuers1.card_segment,&#xA;	view_globalops_issuers1.card_type,&#xA;	view_globalops_issuers1.cg_region_of_issue,&#xA;	view_globalops_issuers1.clean_issuer_name,&#xA;	view_globalops_issuers1.client_name,&#xA;	view_globalops_issuers1.client_region_of_issue,&#xA;	view_globalops_issuers1.client_service_centre,&#xA;	view_globalops_issuers1.client_sub_region_of_issue,&#xA;	view_globalops_issuers1.consolidated_report,&#xA;	view_globalops_issuers1.contract_type,&#xA;	view_globalops_issuers1.country_of_issue,&#xA;	view_globalops_issuers1.country_of_issue_iso,&#xA;	view_globalops_issuers1.currency,&#xA;	view_globalops_issuers1.deal_cancellation_date,&#xA;	view_globalops_issuers1.deal_start_date,&#xA;	view_globalops_issuers1.deal_status,&#xA;	view_globalops_issuers1.deal_type,&#xA;	view_globalops_issuers1.decline,&#xA;	view_globalops_issuers1.enrolment_method,&#xA;	view_globalops_issuers1.group_code,&#xA;	view_globalops_issuers1.ica,&#xA;	view_globalops_issuers1.issuer_name,&#xA;	view_globalops_issuers1.lounge_programme,&#xA;	view_globalops_issuers1.lounge_set_selected,&#xA;	view_globalops_issuers1.lv_report_credit_card_type,&#xA;	view_globalops_issuers1.membership_fee,&#xA;	view_globalops_issuers1.membership_fee_currency,&#xA;	view_globalops_issuers1.model,&#xA;	view_globalops_issuers1.po_charge_type,&#xA;	view_globalops_issuers1.prefix,&#xA;	view_globalops_issuers1.reporting_ica,&#xA;	view_globalops_issuers1.selected_non_selected,&#xA;	view_globalops_issuers1.source_code,&#xA;	view_globalops_issuers1.implementation_type &#xA;from cms.view_globalops_issuers view_globalops_issuers1" type="V_WString" />
+            <Field name="card_type" size="45" source="File: aka:5f15b5140b05360e6c4ed393|||select view_globalops_issuers1.bid,&#xA;	view_globalops_issuers1.billing_inclusion_lounge_visits,&#xA;	view_globalops_issuers1.billing_inclusion_memberships,&#xA;	view_globalops_issuers1.bin,&#xA;	view_globalops_issuers1.card_segment,&#xA;	view_globalops_issuers1.card_type,&#xA;	view_globalops_issuers1.cg_region_of_issue,&#xA;	view_globalops_issuers1.clean_issuer_name,&#xA;	view_globalops_issuers1.client_name,&#xA;	view_globalops_issuers1.client_region_of_issue,&#xA;	view_globalops_issuers1.client_service_centre,&#xA;	view_globalops_issuers1.client_sub_region_of_issue,&#xA;	view_globalops_issuers1.consolidated_report,&#xA;	view_globalops_issuers1.contract_type,&#xA;	view_globalops_issuers1.country_of_issue,&#xA;	view_globalops_issuers1.country_of_issue_iso,&#xA;	view_globalops_issuers1.currency,&#xA;	view_globalops_issuers1.deal_cancellation_date,&#xA;	view_globalops_issuers1.deal_start_date,&#xA;	view_globalops_issuers1.deal_status,&#xA;	view_globalops_issuers1.deal_type,&#xA;	view_globalops_issuers1.decline,&#xA;	view_globalops_issuers1.enrolment_method,&#xA;	view_globalops_issuers1.group_code,&#xA;	view_globalops_issuers1.ica,&#xA;	view_globalops_issuers1.issuer_name,&#xA;	view_globalops_issuers1.lounge_programme,&#xA;	view_globalops_issuers1.lounge_set_selected,&#xA;	view_globalops_issuers1.lv_report_credit_card_type,&#xA;	view_globalops_issuers1.membership_fee,&#xA;	view_globalops_issuers1.membership_fee_currency,&#xA;	view_globalops_issuers1.model,&#xA;	view_globalops_issuers1.po_charge_type,&#xA;	view_globalops_issuers1.prefix,&#xA;	view_globalops_issuers1.reporting_ica,&#xA;	view_globalops_issuers1.selected_non_selected,&#xA;	view_globalops_issuers1.source_code,&#xA;	view_globalops_issuers1.implementation_type &#xA;from cms.view_globalops_issuers view_globalops_issuers1" type="V_WString" />
+            <Field name="cg_region_of_issue" size="45" source="File: aka:5f15b5140b05360e6c4ed393|||select view_globalops_issuers1.bid,&#xA;	view_globalops_issuers1.billing_inclusion_lounge_visits,&#xA;	view_globalops_issuers1.billing_inclusion_memberships,&#xA;	view_globalops_issuers1.bin,&#xA;	view_globalops_issuers1.card_segment,&#xA;	view_globalops_issuers1.card_type,&#xA;	view_globalops_issuers1.cg_region_of_issue,&#xA;	view_globalops_issuers1.clean_issuer_name,&#xA;	view_globalops_issuers1.client_name,&#xA;	view_globalops_issuers1.client_region_of_issue,&#xA;	view_globalops_issuers1.client_service_centre,&#xA;	view_globalops_issuers1.client_sub_region_of_issue,&#xA;	view_globalops_issuers1.consolidated_report,&#xA;	view_globalops_issuers1.contract_type,&#xA;	view_globalops_issuers1.country_of_issue,&#xA;	view_globalops_issuers1.country_of_issue_iso,&#xA;	view_globalops_issuers1.currency,&#xA;	view_globalops_issuers1.deal_cancellation_date,&#xA;	view_globalops_issuers1.deal_start_date,&#xA;	view_globalops_issuers1.deal_status,&#xA;	view_globalops_issuers1.deal_type,&#xA;	view_globalops_issuers1.decline,&#xA;	view_globalops_issuers1.enrolment_method,&#xA;	view_globalops_issuers1.group_code,&#xA;	view_globalops_issuers1.ica,&#xA;	view_globalops_issuers1.issuer_name,&#xA;	view_globalops_issuers1.lounge_programme,&#xA;	view_globalops_issuers1.lounge_set_selected,&#xA;	view_globalops_issuers1.lv_report_credit_card_type,&#xA;	view_globalops_issuers1.membership_fee,&#xA;	view_globalops_issuers1.membership_fee_currency,&#xA;	view_globalops_issuers1.model,&#xA;	view_globalops_issuers1.po_charge_type,&#xA;	view_globalops_issuers1.prefix,&#xA;	view_globalops_issuers1.reporting_ica,&#xA;	view_globalops_issuers1.selected_non_selected,&#xA;	view_globalops_issuers1.source_code,&#xA;	view_globalops_issuers1.implementation_type &#xA;from cms.view_globalops_issuers view_globalops_issuers1" type="V_WString" />
+            <Field name="clean_issuer_name" size="255" source="File: aka:5f15b5140b05360e6c4ed393|||select view_globalops_issuers1.bid,&#xA;	view_globalops_issuers1.billing_inclusion_lounge_visits,&#xA;	view_globalops_issuers1.billing_inclusion_memberships,&#xA;	view_globalops_issuers1.bin,&#xA;	view_globalops_issuers1.card_segment,&#xA;	view_globalops_issuers1.card_type,&#xA;	view_globalops_issuers1.cg_region_of_issue,&#xA;	view_globalops_issuers1.clean_issuer_name,&#xA;	view_globalops_issuers1.client_name,&#xA;	view_globalops_issuers1.client_region_of_issue,&#xA;	view_globalops_issuers1.client_service_centre,&#xA;	view_globalops_issuers1.client_sub_region_of_issue,&#xA;	view_globalops_issuers1.consolidated_report,&#xA;	view_globalops_issuers1.contract_type,&#xA;	view_globalops_issuers1.country_of_issue,&#xA;	view_globalops_issuers1.country_of_issue_iso,&#xA;	view_globalops_issuers1.currency,&#xA;	view_globalops_issuers1.deal_cancellation_date,&#xA;	view_globalops_issuers1.deal_start_date,&#xA;	view_globalops_issuers1.deal_status,&#xA;	view_globalops_issuers1.deal_type,&#xA;	view_globalops_issuers1.decline,&#xA;	view_globalops_issuers1.enrolment_method,&#xA;	view_globalops_issuers1.group_code,&#xA;	view_globalops_issuers1.ica,&#xA;	view_globalops_issuers1.issuer_name,&#xA;	view_globalops_issuers1.lounge_programme,&#xA;	view_globalops_issuers1.lounge_set_selected,&#xA;	view_globalops_issuers1.lv_report_credit_card_type,&#xA;	view_globalops_issuers1.membership_fee,&#xA;	view_globalops_issuers1.membership_fee_currency,&#xA;	view_globalops_issuers1.model,&#xA;	view_globalops_issuers1.po_charge_type,&#xA;	view_globalops_issuers1.prefix,&#xA;	view_globalops_issuers1.reporting_ica,&#xA;	view_globalops_issuers1.selected_non_selected,&#xA;	view_globalops_issuers1.source_code,&#xA;	view_globalops_issuers1.implementation_type &#xA;from cms.view_globalops_issuers view_globalops_issuers1" type="V_WString" />
+            <Field name="client_name" size="255" source="File: aka:5f15b5140b05360e6c4ed393|||select view_globalops_issuers1.bid,&#xA;	view_globalops_issuers1.billing_inclusion_lounge_visits,&#xA;	view_globalops_issuers1.billing_inclusion_memberships,&#xA;	view_globalops_issuers1.bin,&#xA;	view_globalops_issuers1.card_segment,&#xA;	view_globalops_issuers1.card_type,&#xA;	view_globalops_issuers1.cg_region_of_issue,&#xA;	view_globalops_issuers1.clean_issuer_name,&#xA;	view_globalops_issuers1.client_name,&#xA;	view_globalops_issuers1.client_region_of_issue,&#xA;	view_globalops_issuers1.client_service_centre,&#xA;	view_globalops_issuers1.client_sub_region_of_issue,&#xA;	view_globalops_issuers1.consolidated_report,&#xA;	view_globalops_issuers1.contract_type,&#xA;	view_globalops_issuers1.country_of_issue,&#xA;	view_globalops_issuers1.country_of_issue_iso,&#xA;	view_globalops_issuers1.currency,&#xA;	view_globalops_issuers1.deal_cancellation_date,&#xA;	view_globalops_issuers1.deal_start_date,&#xA;	view_globalops_issuers1.deal_status,&#xA;	view_globalops_issuers1.deal_type,&#xA;	view_globalops_issuers1.decline,&#xA;	view_globalops_issuers1.enrolment_method,&#xA;	view_globalops_issuers1.group_code,&#xA;	view_globalops_issuers1.ica,&#xA;	view_globalops_issuers1.issuer_name,&#xA;	view_globalops_issuers1.lounge_programme,&#xA;	view_globalops_issuers1.lounge_set_selected,&#xA;	view_globalops_issuers1.lv_report_credit_card_type,&#xA;	view_globalops_issuers1.membership_fee,&#xA;	view_globalops_issuers1.membership_fee_currency,&#xA;	view_globalops_issuers1.model,&#xA;	view_globalops_issuers1.po_charge_type,&#xA;	view_globalops_issuers1.prefix,&#xA;	view_globalops_issuers1.reporting_ica,&#xA;	view_globalops_issuers1.selected_non_selected,&#xA;	view_globalops_issuers1.source_code,&#xA;	view_globalops_issuers1.implementation_type &#xA;from cms.view_globalops_issuers view_globalops_issuers1" type="V_WString" />
+            <Field name="client_region_of_issue" size="65535" source="File: aka:5f15b5140b05360e6c4ed393|||select view_globalops_issuers1.bid,&#xA;	view_globalops_issuers1.billing_inclusion_lounge_visits,&#xA;	view_globalops_issuers1.billing_inclusion_memberships,&#xA;	view_globalops_issuers1.bin,&#xA;	view_globalops_issuers1.card_segment,&#xA;	view_globalops_issuers1.card_type,&#xA;	view_globalops_issuers1.cg_region_of_issue,&#xA;	view_globalops_issuers1.clean_issuer_name,&#xA;	view_globalops_issuers1.client_name,&#xA;	view_globalops_issuers1.client_region_of_issue,&#xA;	view_globalops_issuers1.client_service_centre,&#xA;	view_globalops_issuers1.client_sub_region_of_issue,&#xA;	view_globalops_issuers1.consolidated_report,&#xA;	view_globalops_issuers1.contract_type,&#xA;	view_globalops_issuers1.country_of_issue,&#xA;	view_globalops_issuers1.country_of_issue_iso,&#xA;	view_globalops_issuers1.currency,&#xA;	view_globalops_issuers1.deal_cancellation_date,&#xA;	view_globalops_issuers1.deal_start_date,&#xA;	view_globalops_issuers1.deal_status,&#xA;	view_globalops_issuers1.deal_type,&#xA;	view_globalops_issuers1.decline,&#xA;	view_globalops_issuers1.enrolment_method,&#xA;	view_globalops_issuers1.group_code,&#xA;	view_globalops_issuers1.ica,&#xA;	view_globalops_issuers1.issuer_name,&#xA;	view_globalops_issuers1.lounge_programme,&#xA;	view_globalops_issuers1.lounge_set_selected,&#xA;	view_globalops_issuers1.lv_report_credit_card_type,&#xA;	view_globalops_issuers1.membership_fee,&#xA;	view_globalops_issuers1.membership_fee_currency,&#xA;	view_globalops_issuers1.model,&#xA;	view_globalops_issuers1.po_charge_type,&#xA;	view_globalops_issuers1.prefix,&#xA;	view_globalops_issuers1.reporting_ica,&#xA;	view_globalops_issuers1.selected_non_selected,&#xA;	view_globalops_issuers1.source_code,&#xA;	view_globalops_issuers1.implementation_type &#xA;from cms.view_globalops_issuers view_globalops_issuers1" type="V_WString" />
+            <Field name="client_service_centre" size="255" source="File: aka:5f15b5140b05360e6c4ed393|||select view_globalops_issuers1.bid,&#xA;	view_globalops_issuers1.billing_inclusion_lounge_visits,&#xA;	view_globalops_issuers1.billing_inclusion_memberships,&#xA;	view_globalops_issuers1.bin,&#xA;	view_globalops_issuers1.card_segment,&#xA;	view_globalops_issuers1.card_type,&#xA;	view_globalops_issuers1.cg_region_of_issue,&#xA;	view_globalops_issuers1.clean_issuer_name,&#xA;	view_globalops_issuers1.client_name,&#xA;	view_globalops_issuers1.client_region_of_issue,&#xA;	view_globalops_issuers1.client_service_centre,&#xA;	view_globalops_issuers1.client_sub_region_of_issue,&#xA;	view_globalops_issuers1.consolidated_report,&#xA;	view_globalops_issuers1.contract_type,&#xA;	view_globalops_issuers1.country_of_issue,&#xA;	view_globalops_issuers1.country_of_issue_iso,&#xA;	view_globalops_issuers1.currency,&#xA;	view_globalops_issuers1.deal_cancellation_date,&#xA;	view_globalops_issuers1.deal_start_date,&#xA;	view_globalops_issuers1.deal_status,&#xA;	view_globalops_issuers1.deal_type,&#xA;	view_globalops_issuers1.decline,&#xA;	view_globalops_issuers1.enrolment_method,&#xA;	view_globalops_issuers1.group_code,&#xA;	view_globalops_issuers1.ica,&#xA;	view_globalops_issuers1.issuer_name,&#xA;	view_globalops_issuers1.lounge_programme,&#xA;	view_globalops_issuers1.lounge_set_selected,&#xA;	view_globalops_issuers1.lv_report_credit_card_type,&#xA;	view_globalops_issuers1.membership_fee,&#xA;	view_globalops_issuers1.membership_fee_currency,&#xA;	view_globalops_issuers1.model,&#xA;	view_globalops_issuers1.po_charge_type,&#xA;	view_globalops_issuers1.prefix,&#xA;	view_globalops_issuers1.reporting_ica,&#xA;	view_globalops_issuers1.selected_non_selected,&#xA;	view_globalops_issuers1.source_code,&#xA;	view_globalops_issuers1.implementation_type &#xA;from cms.view_globalops_issuers view_globalops_issuers1" type="V_WString" />
+            <Field name="client_sub_region_of_issue" size="45" source="File: aka:5f15b5140b05360e6c4ed393|||select view_globalops_issuers1.bid,&#xA;	view_globalops_issuers1.billing_inclusion_lounge_visits,&#xA;	view_globalops_issuers1.billing_inclusion_memberships,&#xA;	view_globalops_issuers1.bin,&#xA;	view_globalops_issuers1.card_segment,&#xA;	view_globalops_issuers1.card_type,&#xA;	view_globalops_issuers1.cg_region_of_issue,&#xA;	view_globalops_issuers1.clean_issuer_name,&#xA;	view_globalops_issuers1.client_name,&#xA;	view_globalops_issuers1.client_region_of_issue,&#xA;	view_globalops_issuers1.client_service_centre,&#xA;	view_globalops_issuers1.client_sub_region_of_issue,&#xA;	view_globalops_issuers1.consolidated_report,&#xA;	view_globalops_issuers1.contract_type,&#xA;	view_globalops_issuers1.country_of_issue,&#xA;	view_globalops_issuers1.country_of_issue_iso,&#xA;	view_globalops_issuers1.currency,&#xA;	view_globalops_issuers1.deal_cancellation_date,&#xA;	view_globalops_issuers1.deal_start_date,&#xA;	view_globalops_issuers1.deal_status,&#xA;	view_globalops_issuers1.deal_type,&#xA;	view_globalops_issuers1.decline,&#xA;	view_globalops_issuers1.enrolment_method,&#xA;	view_globalops_issuers1.group_code,&#xA;	view_globalops_issuers1.ica,&#xA;	view_globalops_issuers1.issuer_name,&#xA;	view_globalops_issuers1.lounge_programme,&#xA;	view_globalops_issuers1.lounge_set_selected,&#xA;	view_globalops_issuers1.lv_report_credit_card_type,&#xA;	view_globalops_issuers1.membership_fee,&#xA;	view_globalops_issuers1.membership_fee_currency,&#xA;	view_globalops_issuers1.model,&#xA;	view_globalops_issuers1.po_charge_type,&#xA;	view_globalops_issuers1.prefix,&#xA;	view_globalops_issuers1.reporting_ica,&#xA;	view_globalops_issuers1.selected_non_selected,&#xA;	view_globalops_issuers1.source_code,&#xA;	view_globalops_issuers1.implementation_type &#xA;from cms.view_globalops_issuers view_globalops_issuers1" type="V_WString" />
+            <Field name="consolidated_report" source="File: aka:5f15b5140b05360e6c4ed393|||select view_globalops_issuers1.bid,&#xA;	view_globalops_issuers1.billing_inclusion_lounge_visits,&#xA;	view_globalops_issuers1.billing_inclusion_memberships,&#xA;	view_globalops_issuers1.bin,&#xA;	view_globalops_issuers1.card_segment,&#xA;	view_globalops_issuers1.card_type,&#xA;	view_globalops_issuers1.cg_region_of_issue,&#xA;	view_globalops_issuers1.clean_issuer_name,&#xA;	view_globalops_issuers1.client_name,&#xA;	view_globalops_issuers1.client_region_of_issue,&#xA;	view_globalops_issuers1.client_service_centre,&#xA;	view_globalops_issuers1.client_sub_region_of_issue,&#xA;	view_globalops_issuers1.consolidated_report,&#xA;	view_globalops_issuers1.contract_type,&#xA;	view_globalops_issuers1.country_of_issue,&#xA;	view_globalops_issuers1.country_of_issue_iso,&#xA;	view_globalops_issuers1.currency,&#xA;	view_globalops_issuers1.deal_cancellation_date,&#xA;	view_globalops_issuers1.deal_start_date,&#xA;	view_globalops_issuers1.deal_status,&#xA;	view_globalops_issuers1.deal_type,&#xA;	view_globalops_issuers1.decline,&#xA;	view_globalops_issuers1.enrolment_method,&#xA;	view_globalops_issuers1.group_code,&#xA;	view_globalops_issuers1.ica,&#xA;	view_globalops_issuers1.issuer_name,&#xA;	view_globalops_issuers1.lounge_programme,&#xA;	view_globalops_issuers1.lounge_set_selected,&#xA;	view_globalops_issuers1.lv_report_credit_card_type,&#xA;	view_globalops_issuers1.membership_fee,&#xA;	view_globalops_issuers1.membership_fee_currency,&#xA;	view_globalops_issuers1.model,&#xA;	view_globalops_issuers1.po_charge_type,&#xA;	view_globalops_issuers1.prefix,&#xA;	view_globalops_issuers1.reporting_ica,&#xA;	view_globalops_issuers1.selected_non_selected,&#xA;	view_globalops_issuers1.source_code,&#xA;	view_globalops_issuers1.implementation_type &#xA;from cms.view_globalops_issuers view_globalops_issuers1" type="Int16" />
+            <Field name="contract_type" size="45" source="File: aka:5f15b5140b05360e6c4ed393|||select view_globalops_issuers1.bid,&#xA;	view_globalops_issuers1.billing_inclusion_lounge_visits,&#xA;	view_globalops_issuers1.billing_inclusion_memberships,&#xA;	view_globalops_issuers1.bin,&#xA;	view_globalops_issuers1.card_segment,&#xA;	view_globalops_issuers1.card_type,&#xA;	view_globalops_issuers1.cg_region_of_issue,&#xA;	view_globalops_issuers1.clean_issuer_name,&#xA;	view_globalops_issuers1.client_name,&#xA;	view_globalops_issuers1.client_region_of_issue,&#xA;	view_globalops_issuers1.client_service_centre,&#xA;	view_globalops_issuers1.client_sub_region_of_issue,&#xA;	view_globalops_issuers1.consolidated_report,&#xA;	view_globalops_issuers1.contract_type,&#xA;	view_globalops_issuers1.country_of_issue,&#xA;	view_globalops_issuers1.country_of_issue_iso,&#xA;	view_globalops_issuers1.currency,&#xA;	view_globalops_issuers1.deal_cancellation_date,&#xA;	view_globalops_issuers1.deal_start_date,&#xA;	view_globalops_issuers1.deal_status,&#xA;	view_globalops_issuers1.deal_type,&#xA;	view_globalops_issuers1.decline,&#xA;	view_globalops_issuers1.enrolment_method,&#xA;	view_globalops_issuers1.group_code,&#xA;	view_globalops_issuers1.ica,&#xA;	view_globalops_issuers1.issuer_name,&#xA;	view_globalops_issuers1.lounge_programme,&#xA;	view_globalops_issuers1.lounge_set_selected,&#xA;	view_globalops_issuers1.lv_report_credit_card_type,&#xA;	view_globalops_issuers1.membership_fee,&#xA;	view_globalops_issuers1.membership_fee_currency,&#xA;	view_globalops_issuers1.model,&#xA;	view_globalops_issuers1.po_charge_type,&#xA;	view_globalops_issuers1.prefix,&#xA;	view_globalops_issuers1.reporting_ica,&#xA;	view_globalops_issuers1.selected_non_selected,&#xA;	view_globalops_issuers1.source_code,&#xA;	view_globalops_issuers1.implementation_type &#xA;from cms.view_globalops_issuers view_globalops_issuers1" type="V_WString" />
+            <Field name="country_of_issue" size="255" source="File: aka:5f15b5140b05360e6c4ed393|||select view_globalops_issuers1.bid,&#xA;	view_globalops_issuers1.billing_inclusion_lounge_visits,&#xA;	view_globalops_issuers1.billing_inclusion_memberships,&#xA;	view_globalops_issuers1.bin,&#xA;	view_globalops_issuers1.card_segment,&#xA;	view_globalops_issuers1.card_type,&#xA;	view_globalops_issuers1.cg_region_of_issue,&#xA;	view_globalops_issuers1.clean_issuer_name,&#xA;	view_globalops_issuers1.client_name,&#xA;	view_globalops_issuers1.client_region_of_issue,&#xA;	view_globalops_issuers1.client_service_centre,&#xA;	view_globalops_issuers1.client_sub_region_of_issue,&#xA;	view_globalops_issuers1.consolidated_report,&#xA;	view_globalops_issuers1.contract_type,&#xA;	view_globalops_issuers1.country_of_issue,&#xA;	view_globalops_issuers1.country_of_issue_iso,&#xA;	view_globalops_issuers1.currency,&#xA;	view_globalops_issuers1.deal_cancellation_date,&#xA;	view_globalops_issuers1.deal_start_date,&#xA;	view_globalops_issuers1.deal_status,&#xA;	view_globalops_issuers1.deal_type,&#xA;	view_globalops_issuers1.decline,&#xA;	view_globalops_issuers1.enrolment_method,&#xA;	view_globalops_issuers1.group_code,&#xA;	view_globalops_issuers1.ica,&#xA;	view_globalops_issuers1.issuer_name,&#xA;	view_globalops_issuers1.lounge_programme,&#xA;	view_globalops_issuers1.lounge_set_selected,&#xA;	view_globalops_issuers1.lv_report_credit_card_type,&#xA;	view_globalops_issuers1.membership_fee,&#xA;	view_globalops_issuers1.membership_fee_currency,&#xA;	view_globalops_issuers1.model,&#xA;	view_globalops_issuers1.po_charge_type,&#xA;	view_globalops_issuers1.prefix,&#xA;	view_globalops_issuers1.reporting_ica,&#xA;	view_globalops_issuers1.selected_non_selected,&#xA;	view_globalops_issuers1.source_code,&#xA;	view_globalops_issuers1.implementation_type &#xA;from cms.view_globalops_issuers view_globalops_issuers1" type="V_WString" />
+            <Field name="country_of_issue_iso" size="45" source="File: aka:5f15b5140b05360e6c4ed393|||select view_globalops_issuers1.bid,&#xA;	view_globalops_issuers1.billing_inclusion_lounge_visits,&#xA;	view_globalops_issuers1.billing_inclusion_memberships,&#xA;	view_globalops_issuers1.bin,&#xA;	view_globalops_issuers1.card_segment,&#xA;	view_globalops_issuers1.card_type,&#xA;	view_globalops_issuers1.cg_region_of_issue,&#xA;	view_globalops_issuers1.clean_issuer_name,&#xA;	view_globalops_issuers1.client_name,&#xA;	view_globalops_issuers1.client_region_of_issue,&#xA;	view_globalops_issuers1.client_service_centre,&#xA;	view_globalops_issuers1.client_sub_region_of_issue,&#xA;	view_globalops_issuers1.consolidated_report,&#xA;	view_globalops_issuers1.contract_type,&#xA;	view_globalops_issuers1.country_of_issue,&#xA;	view_globalops_issuers1.country_of_issue_iso,&#xA;	view_globalops_issuers1.currency,&#xA;	view_globalops_issuers1.deal_cancellation_date,&#xA;	view_globalops_issuers1.deal_start_date,&#xA;	view_globalops_issuers1.deal_status,&#xA;	view_globalops_issuers1.deal_type,&#xA;	view_globalops_issuers1.decline,&#xA;	view_globalops_issuers1.enrolment_method,&#xA;	view_globalops_issuers1.group_code,&#xA;	view_globalops_issuers1.ica,&#xA;	view_globalops_issuers1.issuer_name,&#xA;	view_globalops_issuers1.lounge_programme,&#xA;	view_globalops_issuers1.lounge_set_selected,&#xA;	view_globalops_issuers1.lv_report_credit_card_type,&#xA;	view_globalops_issuers1.membership_fee,&#xA;	view_globalops_issuers1.membership_fee_currency,&#xA;	view_globalops_issuers1.model,&#xA;	view_globalops_issuers1.po_charge_type,&#xA;	view_globalops_issuers1.prefix,&#xA;	view_globalops_issuers1.reporting_ica,&#xA;	view_globalops_issuers1.selected_non_selected,&#xA;	view_globalops_issuers1.source_code,&#xA;	view_globalops_issuers1.implementation_type &#xA;from cms.view_globalops_issuers view_globalops_issuers1" type="V_WString" />
+            <Field name="currency" size="45" source="File: aka:5f15b5140b05360e6c4ed393|||select view_globalops_issuers1.bid,&#xA;	view_globalops_issuers1.billing_inclusion_lounge_visits,&#xA;	view_globalops_issuers1.billing_inclusion_memberships,&#xA;	view_globalops_issuers1.bin,&#xA;	view_globalops_issuers1.card_segment,&#xA;	view_globalops_issuers1.card_type,&#xA;	view_globalops_issuers1.cg_region_of_issue,&#xA;	view_globalops_issuers1.clean_issuer_name,&#xA;	view_globalops_issuers1.client_name,&#xA;	view_globalops_issuers1.client_region_of_issue,&#xA;	view_globalops_issuers1.client_service_centre,&#xA;	view_globalops_issuers1.client_sub_region_of_issue,&#xA;	view_globalops_issuers1.consolidated_report,&#xA;	view_globalops_issuers1.contract_type,&#xA;	view_globalops_issuers1.country_of_issue,&#xA;	view_globalops_issuers1.country_of_issue_iso,&#xA;	view_globalops_issuers1.currency,&#xA;	view_globalops_issuers1.deal_cancellation_date,&#xA;	view_globalops_issuers1.deal_start_date,&#xA;	view_globalops_issuers1.deal_status,&#xA;	view_globalops_issuers1.deal_type,&#xA;	view_globalops_issuers1.decline,&#xA;	view_globalops_issuers1.enrolment_method,&#xA;	view_globalops_issuers1.group_code,&#xA;	view_globalops_issuers1.ica,&#xA;	view_globalops_issuers1.issuer_name,&#xA;	view_globalops_issuers1.lounge_programme,&#xA;	view_globalops_issuers1.lounge_set_selected,&#xA;	view_globalops_issuers1.lv_report_credit_card_type,&#xA;	view_globalops_issuers1.membership_fee,&#xA;	view_globalops_issuers1.membership_fee_currency,&#xA;	view_globalops_issuers1.model,&#xA;	view_globalops_issuers1.po_charge_type,&#xA;	view_globalops_issuers1.prefix,&#xA;	view_globalops_issuers1.reporting_ica,&#xA;	view_globalops_issuers1.selected_non_selected,&#xA;	view_globalops_issuers1.source_code,&#xA;	view_globalops_issuers1.implementation_type &#xA;from cms.view_globalops_issuers view_globalops_issuers1" type="V_WString" />
+            <Field name="deal_cancellation_date" source="File: aka:5f15b5140b05360e6c4ed393|||select view_globalops_issuers1.bid,&#xA;	view_globalops_issuers1.billing_inclusion_lounge_visits,&#xA;	view_globalops_issuers1.billing_inclusion_memberships,&#xA;	view_globalops_issuers1.bin,&#xA;	view_globalops_issuers1.card_segment,&#xA;	view_globalops_issuers1.card_type,&#xA;	view_globalops_issuers1.cg_region_of_issue,&#xA;	view_globalops_issuers1.clean_issuer_name,&#xA;	view_globalops_issuers1.client_name,&#xA;	view_globalops_issuers1.client_region_of_issue,&#xA;	view_globalops_issuers1.client_service_centre,&#xA;	view_globalops_issuers1.client_sub_region_of_issue,&#xA;	view_globalops_issuers1.consolidated_report,&#xA;	view_globalops_issuers1.contract_type,&#xA;	view_globalops_issuers1.country_of_issue,&#xA;	view_globalops_issuers1.country_of_issue_iso,&#xA;	view_globalops_issuers1.currency,&#xA;	view_globalops_issuers1.deal_cancellation_date,&#xA;	view_globalops_issuers1.deal_start_date,&#xA;	view_globalops_issuers1.deal_status,&#xA;	view_globalops_issuers1.deal_type,&#xA;	view_globalops_issuers1.decline,&#xA;	view_globalops_issuers1.enrolment_method,&#xA;	view_globalops_issuers1.group_code,&#xA;	view_globalops_issuers1.ica,&#xA;	view_globalops_issuers1.issuer_name,&#xA;	view_globalops_issuers1.lounge_programme,&#xA;	view_globalops_issuers1.lounge_set_selected,&#xA;	view_globalops_issuers1.lv_report_credit_card_type,&#xA;	view_globalops_issuers1.membership_fee,&#xA;	view_globalops_issuers1.membership_fee_currency,&#xA;	view_globalops_issuers1.model,&#xA;	view_globalops_issuers1.po_charge_type,&#xA;	view_globalops_issuers1.prefix,&#xA;	view_globalops_issuers1.reporting_ica,&#xA;	view_globalops_issuers1.selected_non_selected,&#xA;	view_globalops_issuers1.source_code,&#xA;	view_globalops_issuers1.implementation_type &#xA;from cms.view_globalops_issuers view_globalops_issuers1" type="DateTime" />
+            <Field name="deal_start_date" source="File: aka:5f15b5140b05360e6c4ed393|||select view_globalops_issuers1.bid,&#xA;	view_globalops_issuers1.billing_inclusion_lounge_visits,&#xA;	view_globalops_issuers1.billing_inclusion_memberships,&#xA;	view_globalops_issuers1.bin,&#xA;	view_globalops_issuers1.card_segment,&#xA;	view_globalops_issuers1.card_type,&#xA;	view_globalops_issuers1.cg_region_of_issue,&#xA;	view_globalops_issuers1.clean_issuer_name,&#xA;	view_globalops_issuers1.client_name,&#xA;	view_globalops_issuers1.client_region_of_issue,&#xA;	view_globalops_issuers1.client_service_centre,&#xA;	view_globalops_issuers1.client_sub_region_of_issue,&#xA;	view_globalops_issuers1.consolidated_report,&#xA;	view_globalops_issuers1.contract_type,&#xA;	view_globalops_issuers1.country_of_issue,&#xA;	view_globalops_issuers1.country_of_issue_iso,&#xA;	view_globalops_issuers1.currency,&#xA;	view_globalops_issuers1.deal_cancellation_date,&#xA;	view_globalops_issuers1.deal_start_date,&#xA;	view_globalops_issuers1.deal_status,&#xA;	view_globalops_issuers1.deal_type,&#xA;	view_globalops_issuers1.decline,&#xA;	view_globalops_issuers1.enrolment_method,&#xA;	view_globalops_issuers1.group_code,&#xA;	view_globalops_issuers1.ica,&#xA;	view_globalops_issuers1.issuer_name,&#xA;	view_globalops_issuers1.lounge_programme,&#xA;	view_globalops_issuers1.lounge_set_selected,&#xA;	view_globalops_issuers1.lv_report_credit_card_type,&#xA;	view_globalops_issuers1.membership_fee,&#xA;	view_globalops_issuers1.membership_fee_currency,&#xA;	view_globalops_issuers1.model,&#xA;	view_globalops_issuers1.po_charge_type,&#xA;	view_globalops_issuers1.prefix,&#xA;	view_globalops_issuers1.reporting_ica,&#xA;	view_globalops_issuers1.selected_non_selected,&#xA;	view_globalops_issuers1.source_code,&#xA;	view_globalops_issuers1.implementation_type &#xA;from cms.view_globalops_issuers view_globalops_issuers1" type="DateTime" />
+            <Field name="deal_status" size="45" source="File: aka:5f15b5140b05360e6c4ed393|||select view_globalops_issuers1.bid,&#xA;	view_globalops_issuers1.billing_inclusion_lounge_visits,&#xA;	view_globalops_issuers1.billing_inclusion_memberships,&#xA;	view_globalops_issuers1.bin,&#xA;	view_globalops_issuers1.card_segment,&#xA;	view_globalops_issuers1.card_type,&#xA;	view_globalops_issuers1.cg_region_of_issue,&#xA;	view_globalops_issuers1.clean_issuer_name,&#xA;	view_globalops_issuers1.client_name,&#xA;	view_globalops_issuers1.client_region_of_issue,&#xA;	view_globalops_issuers1.client_service_centre,&#xA;	view_globalops_issuers1.client_sub_region_of_issue,&#xA;	view_globalops_issuers1.consolidated_report,&#xA;	view_globalops_issuers1.contract_type,&#xA;	view_globalops_issuers1.country_of_issue,&#xA;	view_globalops_issuers1.country_of_issue_iso,&#xA;	view_globalops_issuers1.currency,&#xA;	view_globalops_issuers1.deal_cancellation_date,&#xA;	view_globalops_issuers1.deal_start_date,&#xA;	view_globalops_issuers1.deal_status,&#xA;	view_globalops_issuers1.deal_type,&#xA;	view_globalops_issuers1.decline,&#xA;	view_globalops_issuers1.enrolment_method,&#xA;	view_globalops_issuers1.group_code,&#xA;	view_globalops_issuers1.ica,&#xA;	view_globalops_issuers1.issuer_name,&#xA;	view_globalops_issuers1.lounge_programme,&#xA;	view_globalops_issuers1.lounge_set_selected,&#xA;	view_globalops_issuers1.lv_report_credit_card_type,&#xA;	view_globalops_issuers1.membership_fee,&#xA;	view_globalops_issuers1.membership_fee_currency,&#xA;	view_globalops_issuers1.model,&#xA;	view_globalops_issuers1.po_charge_type,&#xA;	view_globalops_issuers1.prefix,&#xA;	view_globalops_issuers1.reporting_ica,&#xA;	view_globalops_issuers1.selected_non_selected,&#xA;	view_globalops_issuers1.source_code,&#xA;	view_globalops_issuers1.implementation_type &#xA;from cms.view_globalops_issuers view_globalops_issuers1" type="V_WString" />
+            <Field name="deal_type" size="45" source="File: aka:5f15b5140b05360e6c4ed393|||select view_globalops_issuers1.bid,&#xA;	view_globalops_issuers1.billing_inclusion_lounge_visits,&#xA;	view_globalops_issuers1.billing_inclusion_memberships,&#xA;	view_globalops_issuers1.bin,&#xA;	view_globalops_issuers1.card_segment,&#xA;	view_globalops_issuers1.card_type,&#xA;	view_globalops_issuers1.cg_region_of_issue,&#xA;	view_globalops_issuers1.clean_issuer_name,&#xA;	view_globalops_issuers1.client_name,&#xA;	view_globalops_issuers1.client_region_of_issue,&#xA;	view_globalops_issuers1.client_service_centre,&#xA;	view_globalops_issuers1.client_sub_region_of_issue,&#xA;	view_globalops_issuers1.consolidated_report,&#xA;	view_globalops_issuers1.contract_type,&#xA;	view_globalops_issuers1.country_of_issue,&#xA;	view_globalops_issuers1.country_of_issue_iso,&#xA;	view_globalops_issuers1.currency,&#xA;	view_globalops_issuers1.deal_cancellation_date,&#xA;	view_globalops_issuers1.deal_start_date,&#xA;	view_globalops_issuers1.deal_status,&#xA;	view_globalops_issuers1.deal_type,&#xA;	view_globalops_issuers1.decline,&#xA;	view_globalops_issuers1.enrolment_method,&#xA;	view_globalops_issuers1.group_code,&#xA;	view_globalops_issuers1.ica,&#xA;	view_globalops_issuers1.issuer_name,&#xA;	view_globalops_issuers1.lounge_programme,&#xA;	view_globalops_issuers1.lounge_set_selected,&#xA;	view_globalops_issuers1.lv_report_credit_card_type,&#xA;	view_globalops_issuers1.membership_fee,&#xA;	view_globalops_issuers1.membership_fee_currency,&#xA;	view_globalops_issuers1.model,&#xA;	view_globalops_issuers1.po_charge_type,&#xA;	view_globalops_issuers1.prefix,&#xA;	view_globalops_issuers1.reporting_ica,&#xA;	view_globalops_issuers1.selected_non_selected,&#xA;	view_globalops_issuers1.source_code,&#xA;	view_globalops_issuers1.implementation_type &#xA;from cms.view_globalops_issuers view_globalops_issuers1" type="V_WString" />
+            <Field name="decline" source="File: aka:5f15b5140b05360e6c4ed393|||select view_globalops_issuers1.bid,&#xA;	view_globalops_issuers1.billing_inclusion_lounge_visits,&#xA;	view_globalops_issuers1.billing_inclusion_memberships,&#xA;	view_globalops_issuers1.bin,&#xA;	view_globalops_issuers1.card_segment,&#xA;	view_globalops_issuers1.card_type,&#xA;	view_globalops_issuers1.cg_region_of_issue,&#xA;	view_globalops_issuers1.clean_issuer_name,&#xA;	view_globalops_issuers1.client_name,&#xA;	view_globalops_issuers1.client_region_of_issue,&#xA;	view_globalops_issuers1.client_service_centre,&#xA;	view_globalops_issuers1.client_sub_region_of_issue,&#xA;	view_globalops_issuers1.consolidated_report,&#xA;	view_globalops_issuers1.contract_type,&#xA;	view_globalops_issuers1.country_of_issue,&#xA;	view_globalops_issuers1.country_of_issue_iso,&#xA;	view_globalops_issuers1.currency,&#xA;	view_globalops_issuers1.deal_cancellation_date,&#xA;	view_globalops_issuers1.deal_start_date,&#xA;	view_globalops_issuers1.deal_status,&#xA;	view_globalops_issuers1.deal_type,&#xA;	view_globalops_issuers1.decline,&#xA;	view_globalops_issuers1.enrolment_method,&#xA;	view_globalops_issuers1.group_code,&#xA;	view_globalops_issuers1.ica,&#xA;	view_globalops_issuers1.issuer_name,&#xA;	view_globalops_issuers1.lounge_programme,&#xA;	view_globalops_issuers1.lounge_set_selected,&#xA;	view_globalops_issuers1.lv_report_credit_card_type,&#xA;	view_globalops_issuers1.membership_fee,&#xA;	view_globalops_issuers1.membership_fee_currency,&#xA;	view_globalops_issuers1.model,&#xA;	view_globalops_issuers1.po_charge_type,&#xA;	view_globalops_issuers1.prefix,&#xA;	view_globalops_issuers1.reporting_ica,&#xA;	view_globalops_issuers1.selected_non_selected,&#xA;	view_globalops_issuers1.source_code,&#xA;	view_globalops_issuers1.implementation_type &#xA;from cms.view_globalops_issuers view_globalops_issuers1" type="Int16" />
+            <Field name="enrolment_method" size="45" source="File: aka:5f15b5140b05360e6c4ed393|||select view_globalops_issuers1.bid,&#xA;	view_globalops_issuers1.billing_inclusion_lounge_visits,&#xA;	view_globalops_issuers1.billing_inclusion_memberships,&#xA;	view_globalops_issuers1.bin,&#xA;	view_globalops_issuers1.card_segment,&#xA;	view_globalops_issuers1.card_type,&#xA;	view_globalops_issuers1.cg_region_of_issue,&#xA;	view_globalops_issuers1.clean_issuer_name,&#xA;	view_globalops_issuers1.client_name,&#xA;	view_globalops_issuers1.client_region_of_issue,&#xA;	view_globalops_issuers1.client_service_centre,&#xA;	view_globalops_issuers1.client_sub_region_of_issue,&#xA;	view_globalops_issuers1.consolidated_report,&#xA;	view_globalops_issuers1.contract_type,&#xA;	view_globalops_issuers1.country_of_issue,&#xA;	view_globalops_issuers1.country_of_issue_iso,&#xA;	view_globalops_issuers1.currency,&#xA;	view_globalops_issuers1.deal_cancellation_date,&#xA;	view_globalops_issuers1.deal_start_date,&#xA;	view_globalops_issuers1.deal_status,&#xA;	view_globalops_issuers1.deal_type,&#xA;	view_globalops_issuers1.decline,&#xA;	view_globalops_issuers1.enrolment_method,&#xA;	view_globalops_issuers1.group_code,&#xA;	view_globalops_issuers1.ica,&#xA;	view_globalops_issuers1.issuer_name,&#xA;	view_globalops_issuers1.lounge_programme,&#xA;	view_globalops_issuers1.lounge_set_selected,&#xA;	view_globalops_issuers1.lv_report_credit_card_type,&#xA;	view_globalops_issuers1.membership_fee,&#xA;	view_globalops_issuers1.membership_fee_currency,&#xA;	view_globalops_issuers1.model,&#xA;	view_globalops_issuers1.po_charge_type,&#xA;	view_globalops_issuers1.prefix,&#xA;	view_globalops_issuers1.reporting_ica,&#xA;	view_globalops_issuers1.selected_non_selected,&#xA;	view_globalops_issuers1.source_code,&#xA;	view_globalops_issuers1.implementation_type &#xA;from cms.view_globalops_issuers view_globalops_issuers1" type="V_WString" />
+            <Field name="group_code" size="255" source="File: aka:5f15b5140b05360e6c4ed393|||select view_globalops_issuers1.bid,&#xA;	view_globalops_issuers1.billing_inclusion_lounge_visits,&#xA;	view_globalops_issuers1.billing_inclusion_memberships,&#xA;	view_globalops_issuers1.bin,&#xA;	view_globalops_issuers1.card_segment,&#xA;	view_globalops_issuers1.card_type,&#xA;	view_globalops_issuers1.cg_region_of_issue,&#xA;	view_globalops_issuers1.clean_issuer_name,&#xA;	view_globalops_issuers1.client_name,&#xA;	view_globalops_issuers1.client_region_of_issue,&#xA;	view_globalops_issuers1.client_service_centre,&#xA;	view_globalops_issuers1.client_sub_region_of_issue,&#xA;	view_globalops_issuers1.consolidated_report,&#xA;	view_globalops_issuers1.contract_type,&#xA;	view_globalops_issuers1.country_of_issue,&#xA;	view_globalops_issuers1.country_of_issue_iso,&#xA;	view_globalops_issuers1.currency,&#xA;	view_globalops_issuers1.deal_cancellation_date,&#xA;	view_globalops_issuers1.deal_start_date,&#xA;	view_globalops_issuers1.deal_status,&#xA;	view_globalops_issuers1.deal_type,&#xA;	view_globalops_issuers1.decline,&#xA;	view_globalops_issuers1.enrolment_method,&#xA;	view_globalops_issuers1.group_code,&#xA;	view_globalops_issuers1.ica,&#xA;	view_globalops_issuers1.issuer_name,&#xA;	view_globalops_issuers1.lounge_programme,&#xA;	view_globalops_issuers1.lounge_set_selected,&#xA;	view_globalops_issuers1.lv_report_credit_card_type,&#xA;	view_globalops_issuers1.membership_fee,&#xA;	view_globalops_issuers1.membership_fee_currency,&#xA;	view_globalops_issuers1.model,&#xA;	view_globalops_issuers1.po_charge_type,&#xA;	view_globalops_issuers1.prefix,&#xA;	view_globalops_issuers1.reporting_ica,&#xA;	view_globalops_issuers1.selected_non_selected,&#xA;	view_globalops_issuers1.source_code,&#xA;	view_globalops_issuers1.implementation_type &#xA;from cms.view_globalops_issuers view_globalops_issuers1" type="V_WString" />
+            <Field name="ica" size="12" source="File: aka:5f15b5140b05360e6c4ed393|||select view_globalops_issuers1.bid,&#xA;	view_globalops_issuers1.billing_inclusion_lounge_visits,&#xA;	view_globalops_issuers1.billing_inclusion_memberships,&#xA;	view_globalops_issuers1.bin,&#xA;	view_globalops_issuers1.card_segment,&#xA;	view_globalops_issuers1.card_type,&#xA;	view_globalops_issuers1.cg_region_of_issue,&#xA;	view_globalops_issuers1.clean_issuer_name,&#xA;	view_globalops_issuers1.client_name,&#xA;	view_globalops_issuers1.client_region_of_issue,&#xA;	view_globalops_issuers1.client_service_centre,&#xA;	view_globalops_issuers1.client_sub_region_of_issue,&#xA;	view_globalops_issuers1.consolidated_report,&#xA;	view_globalops_issuers1.contract_type,&#xA;	view_globalops_issuers1.country_of_issue,&#xA;	view_globalops_issuers1.country_of_issue_iso,&#xA;	view_globalops_issuers1.currency,&#xA;	view_globalops_issuers1.deal_cancellation_date,&#xA;	view_globalops_issuers1.deal_start_date,&#xA;	view_globalops_issuers1.deal_status,&#xA;	view_globalops_issuers1.deal_type,&#xA;	view_globalops_issuers1.decline,&#xA;	view_globalops_issuers1.enrolment_method,&#xA;	view_globalops_issuers1.group_code,&#xA;	view_globalops_issuers1.ica,&#xA;	view_globalops_issuers1.issuer_name,&#xA;	view_globalops_issuers1.lounge_programme,&#xA;	view_globalops_issuers1.lounge_set_selected,&#xA;	view_globalops_issuers1.lv_report_credit_card_type,&#xA;	view_globalops_issuers1.membership_fee,&#xA;	view_globalops_issuers1.membership_fee_currency,&#xA;	view_globalops_issuers1.model,&#xA;	view_globalops_issuers1.po_charge_type,&#xA;	view_globalops_issuers1.prefix,&#xA;	view_globalops_issuers1.reporting_ica,&#xA;	view_globalops_issuers1.selected_non_selected,&#xA;	view_globalops_issuers1.source_code,&#xA;	view_globalops_issuers1.implementation_type &#xA;from cms.view_globalops_issuers view_globalops_issuers1" type="V_WString" />
+            <Field name="issuer_name" size="255" source="File: aka:5f15b5140b05360e6c4ed393|||select view_globalops_issuers1.bid,&#xA;	view_globalops_issuers1.billing_inclusion_lounge_visits,&#xA;	view_globalops_issuers1.billing_inclusion_memberships,&#xA;	view_globalops_issuers1.bin,&#xA;	view_globalops_issuers1.card_segment,&#xA;	view_globalops_issuers1.card_type,&#xA;	view_globalops_issuers1.cg_region_of_issue,&#xA;	view_globalops_issuers1.clean_issuer_name,&#xA;	view_globalops_issuers1.client_name,&#xA;	view_globalops_issuers1.client_region_of_issue,&#xA;	view_globalops_issuers1.client_service_centre,&#xA;	view_globalops_issuers1.client_sub_region_of_issue,&#xA;	view_globalops_issuers1.consolidated_report,&#xA;	view_globalops_issuers1.contract_type,&#xA;	view_globalops_issuers1.country_of_issue,&#xA;	view_globalops_issuers1.country_of_issue_iso,&#xA;	view_globalops_issuers1.currency,&#xA;	view_globalops_issuers1.deal_cancellation_date,&#xA;	view_globalops_issuers1.deal_start_date,&#xA;	view_globalops_issuers1.deal_status,&#xA;	view_globalops_issuers1.deal_type,&#xA;	view_globalops_issuers1.decline,&#xA;	view_globalops_issuers1.enrolment_method,&#xA;	view_globalops_issuers1.group_code,&#xA;	view_globalops_issuers1.ica,&#xA;	view_globalops_issuers1.issuer_name,&#xA;	view_globalops_issuers1.lounge_programme,&#xA;	view_globalops_issuers1.lounge_set_selected,&#xA;	view_globalops_issuers1.lv_report_credit_card_type,&#xA;	view_globalops_issuers1.membership_fee,&#xA;	view_globalops_issuers1.membership_fee_currency,&#xA;	view_globalops_issuers1.model,&#xA;	view_globalops_issuers1.po_charge_type,&#xA;	view_globalops_issuers1.prefix,&#xA;	view_globalops_issuers1.reporting_ica,&#xA;	view_globalops_issuers1.selected_non_selected,&#xA;	view_globalops_issuers1.source_code,&#xA;	view_globalops_issuers1.implementation_type &#xA;from cms.view_globalops_issuers view_globalops_issuers1" type="V_WString" />
+            <Field name="lounge_programme" size="45" source="File: aka:5f15b5140b05360e6c4ed393|||select view_globalops_issuers1.bid,&#xA;	view_globalops_issuers1.billing_inclusion_lounge_visits,&#xA;	view_globalops_issuers1.billing_inclusion_memberships,&#xA;	view_globalops_issuers1.bin,&#xA;	view_globalops_issuers1.card_segment,&#xA;	view_globalops_issuers1.card_type,&#xA;	view_globalops_issuers1.cg_region_of_issue,&#xA;	view_globalops_issuers1.clean_issuer_name,&#xA;	view_globalops_issuers1.client_name,&#xA;	view_globalops_issuers1.client_region_of_issue,&#xA;	view_globalops_issuers1.client_service_centre,&#xA;	view_globalops_issuers1.client_sub_region_of_issue,&#xA;	view_globalops_issuers1.consolidated_report,&#xA;	view_globalops_issuers1.contract_type,&#xA;	view_globalops_issuers1.country_of_issue,&#xA;	view_globalops_issuers1.country_of_issue_iso,&#xA;	view_globalops_issuers1.currency,&#xA;	view_globalops_issuers1.deal_cancellation_date,&#xA;	view_globalops_issuers1.deal_start_date,&#xA;	view_globalops_issuers1.deal_status,&#xA;	view_globalops_issuers1.deal_type,&#xA;	view_globalops_issuers1.decline,&#xA;	view_globalops_issuers1.enrolment_method,&#xA;	view_globalops_issuers1.group_code,&#xA;	view_globalops_issuers1.ica,&#xA;	view_globalops_issuers1.issuer_name,&#xA;	view_globalops_issuers1.lounge_programme,&#xA;	view_globalops_issuers1.lounge_set_selected,&#xA;	view_globalops_issuers1.lv_report_credit_card_type,&#xA;	view_globalops_issuers1.membership_fee,&#xA;	view_globalops_issuers1.membership_fee_currency,&#xA;	view_globalops_issuers1.model,&#xA;	view_globalops_issuers1.po_charge_type,&#xA;	view_globalops_issuers1.prefix,&#xA;	view_globalops_issuers1.reporting_ica,&#xA;	view_globalops_issuers1.selected_non_selected,&#xA;	view_globalops_issuers1.source_code,&#xA;	view_globalops_issuers1.implementation_type &#xA;from cms.view_globalops_issuers view_globalops_issuers1" type="V_WString" />
+            <Field name="lounge_set_selected" size="45" source="File: aka:5f15b5140b05360e6c4ed393|||select view_globalops_issuers1.bid,&#xA;	view_globalops_issuers1.billing_inclusion_lounge_visits,&#xA;	view_globalops_issuers1.billing_inclusion_memberships,&#xA;	view_globalops_issuers1.bin,&#xA;	view_globalops_issuers1.card_segment,&#xA;	view_globalops_issuers1.card_type,&#xA;	view_globalops_issuers1.cg_region_of_issue,&#xA;	view_globalops_issuers1.clean_issuer_name,&#xA;	view_globalops_issuers1.client_name,&#xA;	view_globalops_issuers1.client_region_of_issue,&#xA;	view_globalops_issuers1.client_service_centre,&#xA;	view_globalops_issuers1.client_sub_region_of_issue,&#xA;	view_globalops_issuers1.consolidated_report,&#xA;	view_globalops_issuers1.contract_type,&#xA;	view_globalops_issuers1.country_of_issue,&#xA;	view_globalops_issuers1.country_of_issue_iso,&#xA;	view_globalops_issuers1.currency,&#xA;	view_globalops_issuers1.deal_cancellation_date,&#xA;	view_globalops_issuers1.deal_start_date,&#xA;	view_globalops_issuers1.deal_status,&#xA;	view_globalops_issuers1.deal_type,&#xA;	view_globalops_issuers1.decline,&#xA;	view_globalops_issuers1.enrolment_method,&#xA;	view_globalops_issuers1.group_code,&#xA;	view_globalops_issuers1.ica,&#xA;	view_globalops_issuers1.issuer_name,&#xA;	view_globalops_issuers1.lounge_programme,&#xA;	view_globalops_issuers1.lounge_set_selected,&#xA;	view_globalops_issuers1.lv_report_credit_card_type,&#xA;	view_globalops_issuers1.membership_fee,&#xA;	view_globalops_issuers1.membership_fee_currency,&#xA;	view_globalops_issuers1.model,&#xA;	view_globalops_issuers1.po_charge_type,&#xA;	view_globalops_issuers1.prefix,&#xA;	view_globalops_issuers1.reporting_ica,&#xA;	view_globalops_issuers1.selected_non_selected,&#xA;	view_globalops_issuers1.source_code,&#xA;	view_globalops_issuers1.implementation_type &#xA;from cms.view_globalops_issuers view_globalops_issuers1" type="V_WString" />
+            <Field name="lv_report_credit_card_type" size="45" source="File: aka:5f15b5140b05360e6c4ed393|||select view_globalops_issuers1.bid,&#xA;	view_globalops_issuers1.billing_inclusion_lounge_visits,&#xA;	view_globalops_issuers1.billing_inclusion_memberships,&#xA;	view_globalops_issuers1.bin,&#xA;	view_globalops_issuers1.card_segment,&#xA;	view_globalops_issuers1.card_type,&#xA;	view_globalops_issuers1.cg_region_of_issue,&#xA;	view_globalops_issuers1.clean_issuer_name,&#xA;	view_globalops_issuers1.client_name,&#xA;	view_globalops_issuers1.client_region_of_issue,&#xA;	view_globalops_issuers1.client_service_centre,&#xA;	view_globalops_issuers1.client_sub_region_of_issue,&#xA;	view_globalops_issuers1.consolidated_report,&#xA;	view_globalops_issuers1.contract_type,&#xA;	view_globalops_issuers1.country_of_issue,&#xA;	view_globalops_issuers1.country_of_issue_iso,&#xA;	view_globalops_issuers1.currency,&#xA;	view_globalops_issuers1.deal_cancellation_date,&#xA;	view_globalops_issuers1.deal_start_date,&#xA;	view_globalops_issuers1.deal_status,&#xA;	view_globalops_issuers1.deal_type,&#xA;	view_globalops_issuers1.decline,&#xA;	view_globalops_issuers1.enrolment_method,&#xA;	view_globalops_issuers1.group_code,&#xA;	view_globalops_issuers1.ica,&#xA;	view_globalops_issuers1.issuer_name,&#xA;	view_globalops_issuers1.lounge_programme,&#xA;	view_globalops_issuers1.lounge_set_selected,&#xA;	view_globalops_issuers1.lv_report_credit_card_type,&#xA;	view_globalops_issuers1.membership_fee,&#xA;	view_globalops_issuers1.membership_fee_currency,&#xA;	view_globalops_issuers1.model,&#xA;	view_globalops_issuers1.po_charge_type,&#xA;	view_globalops_issuers1.prefix,&#xA;	view_globalops_issuers1.reporting_ica,&#xA;	view_globalops_issuers1.selected_non_selected,&#xA;	view_globalops_issuers1.source_code,&#xA;	view_globalops_issuers1.implementation_type &#xA;from cms.view_globalops_issuers view_globalops_issuers1" type="V_WString" />
+            <Field name="membership_fee" scale="2" size="12" source="File: aka:5f15b5140b05360e6c4ed393|||select view_globalops_issuers1.bid,&#xA;	view_globalops_issuers1.billing_inclusion_lounge_visits,&#xA;	view_globalops_issuers1.billing_inclusion_memberships,&#xA;	view_globalops_issuers1.bin,&#xA;	view_globalops_issuers1.card_segment,&#xA;	view_globalops_issuers1.card_type,&#xA;	view_globalops_issuers1.cg_region_of_issue,&#xA;	view_globalops_issuers1.clean_issuer_name,&#xA;	view_globalops_issuers1.client_name,&#xA;	view_globalops_issuers1.client_region_of_issue,&#xA;	view_globalops_issuers1.client_service_centre,&#xA;	view_globalops_issuers1.client_sub_region_of_issue,&#xA;	view_globalops_issuers1.consolidated_report,&#xA;	view_globalops_issuers1.contract_type,&#xA;	view_globalops_issuers1.country_of_issue,&#xA;	view_globalops_issuers1.country_of_issue_iso,&#xA;	view_globalops_issuers1.currency,&#xA;	view_globalops_issuers1.deal_cancellation_date,&#xA;	view_globalops_issuers1.deal_start_date,&#xA;	view_globalops_issuers1.deal_status,&#xA;	view_globalops_issuers1.deal_type,&#xA;	view_globalops_issuers1.decline,&#xA;	view_globalops_issuers1.enrolment_method,&#xA;	view_globalops_issuers1.group_code,&#xA;	view_globalops_issuers1.ica,&#xA;	view_globalops_issuers1.issuer_name,&#xA;	view_globalops_issuers1.lounge_programme,&#xA;	view_globalops_issuers1.lounge_set_selected,&#xA;	view_globalops_issuers1.lv_report_credit_card_type,&#xA;	view_globalops_issuers1.membership_fee,&#xA;	view_globalops_issuers1.membership_fee_currency,&#xA;	view_globalops_issuers1.model,&#xA;	view_globalops_issuers1.po_charge_type,&#xA;	view_globalops_issuers1.prefix,&#xA;	view_globalops_issuers1.reporting_ica,&#xA;	view_globalops_issuers1.selected_non_selected,&#xA;	view_globalops_issuers1.source_code,&#xA;	view_globalops_issuers1.implementation_type &#xA;from cms.view_globalops_issuers view_globalops_issuers1" type="FixedDecimal" />
+            <Field name="membership_fee_currency" size="45" source="File: aka:5f15b5140b05360e6c4ed393|||select view_globalops_issuers1.bid,&#xA;	view_globalops_issuers1.billing_inclusion_lounge_visits,&#xA;	view_globalops_issuers1.billing_inclusion_memberships,&#xA;	view_globalops_issuers1.bin,&#xA;	view_globalops_issuers1.card_segment,&#xA;	view_globalops_issuers1.card_type,&#xA;	view_globalops_issuers1.cg_region_of_issue,&#xA;	view_globalops_issuers1.clean_issuer_name,&#xA;	view_globalops_issuers1.client_name,&#xA;	view_globalops_issuers1.client_region_of_issue,&#xA;	view_globalops_issuers1.client_service_centre,&#xA;	view_globalops_issuers1.client_sub_region_of_issue,&#xA;	view_globalops_issuers1.consolidated_report,&#xA;	view_globalops_issuers1.contract_type,&#xA;	view_globalops_issuers1.country_of_issue,&#xA;	view_globalops_issuers1.country_of_issue_iso,&#xA;	view_globalops_issuers1.currency,&#xA;	view_globalops_issuers1.deal_cancellation_date,&#xA;	view_globalops_issuers1.deal_start_date,&#xA;	view_globalops_issuers1.deal_status,&#xA;	view_globalops_issuers1.deal_type,&#xA;	view_globalops_issuers1.decline,&#xA;	view_globalops_issuers1.enrolment_method,&#xA;	view_globalops_issuers1.group_code,&#xA;	view_globalops_issuers1.ica,&#xA;	view_globalops_issuers1.issuer_name,&#xA;	view_globalops_issuers1.lounge_programme,&#xA;	view_globalops_issuers1.lounge_set_selected,&#xA;	view_globalops_issuers1.lv_report_credit_card_type,&#xA;	view_globalops_issuers1.membership_fee,&#xA;	view_globalops_issuers1.membership_fee_currency,&#xA;	view_globalops_issuers1.model,&#xA;	view_globalops_issuers1.po_charge_type,&#xA;	view_globalops_issuers1.prefix,&#xA;	view_globalops_issuers1.reporting_ica,&#xA;	view_globalops_issuers1.selected_non_selected,&#xA;	view_globalops_issuers1.source_code,&#xA;	view_globalops_issuers1.implementation_type &#xA;from cms.view_globalops_issuers view_globalops_issuers1" type="V_WString" />
+            <Field name="model" size="45" source="File: aka:5f15b5140b05360e6c4ed393|||select view_globalops_issuers1.bid,&#xA;	view_globalops_issuers1.billing_inclusion_lounge_visits,&#xA;	view_globalops_issuers1.billing_inclusion_memberships,&#xA;	view_globalops_issuers1.bin,&#xA;	view_globalops_issuers1.card_segment,&#xA;	view_globalops_issuers1.card_type,&#xA;	view_globalops_issuers1.cg_region_of_issue,&#xA;	view_globalops_issuers1.clean_issuer_name,&#xA;	view_globalops_issuers1.client_name,&#xA;	view_globalops_issuers1.client_region_of_issue,&#xA;	view_globalops_issuers1.client_service_centre,&#xA;	view_globalops_issuers1.client_sub_region_of_issue,&#xA;	view_globalops_issuers1.consolidated_report,&#xA;	view_globalops_issuers1.contract_type,&#xA;	view_globalops_issuers1.country_of_issue,&#xA;	view_globalops_issuers1.country_of_issue_iso,&#xA;	view_globalops_issuers1.currency,&#xA;	view_globalops_issuers1.deal_cancellation_date,&#xA;	view_globalops_issuers1.deal_start_date,&#xA;	view_globalops_issuers1.deal_status,&#xA;	view_globalops_issuers1.deal_type,&#xA;	view_globalops_issuers1.decline,&#xA;	view_globalops_issuers1.enrolment_method,&#xA;	view_globalops_issuers1.group_code,&#xA;	view_globalops_issuers1.ica,&#xA;	view_globalops_issuers1.issuer_name,&#xA;	view_globalops_issuers1.lounge_programme,&#xA;	view_globalops_issuers1.lounge_set_selected,&#xA;	view_globalops_issuers1.lv_report_credit_card_type,&#xA;	view_globalops_issuers1.membership_fee,&#xA;	view_globalops_issuers1.membership_fee_currency,&#xA;	view_globalops_issuers1.model,&#xA;	view_globalops_issuers1.po_charge_type,&#xA;	view_globalops_issuers1.prefix,&#xA;	view_globalops_issuers1.reporting_ica,&#xA;	view_globalops_issuers1.selected_non_selected,&#xA;	view_globalops_issuers1.source_code,&#xA;	view_globalops_issuers1.implementation_type &#xA;from cms.view_globalops_issuers view_globalops_issuers1" type="V_WString" />
+            <Field name="po_charge_type" size="45" source="File: aka:5f15b5140b05360e6c4ed393|||select view_globalops_issuers1.bid,&#xA;	view_globalops_issuers1.billing_inclusion_lounge_visits,&#xA;	view_globalops_issuers1.billing_inclusion_memberships,&#xA;	view_globalops_issuers1.bin,&#xA;	view_globalops_issuers1.card_segment,&#xA;	view_globalops_issuers1.card_type,&#xA;	view_globalops_issuers1.cg_region_of_issue,&#xA;	view_globalops_issuers1.clean_issuer_name,&#xA;	view_globalops_issuers1.client_name,&#xA;	view_globalops_issuers1.client_region_of_issue,&#xA;	view_globalops_issuers1.client_service_centre,&#xA;	view_globalops_issuers1.client_sub_region_of_issue,&#xA;	view_globalops_issuers1.consolidated_report,&#xA;	view_globalops_issuers1.contract_type,&#xA;	view_globalops_issuers1.country_of_issue,&#xA;	view_globalops_issuers1.country_of_issue_iso,&#xA;	view_globalops_issuers1.currency,&#xA;	view_globalops_issuers1.deal_cancellation_date,&#xA;	view_globalops_issuers1.deal_start_date,&#xA;	view_globalops_issuers1.deal_status,&#xA;	view_globalops_issuers1.deal_type,&#xA;	view_globalops_issuers1.decline,&#xA;	view_globalops_issuers1.enrolment_method,&#xA;	view_globalops_issuers1.group_code,&#xA;	view_globalops_issuers1.ica,&#xA;	view_globalops_issuers1.issuer_name,&#xA;	view_globalops_issuers1.lounge_programme,&#xA;	view_globalops_issuers1.lounge_set_selected,&#xA;	view_globalops_issuers1.lv_report_credit_card_type,&#xA;	view_globalops_issuers1.membership_fee,&#xA;	view_globalops_issuers1.membership_fee_currency,&#xA;	view_globalops_issuers1.model,&#xA;	view_globalops_issuers1.po_charge_type,&#xA;	view_globalops_issuers1.prefix,&#xA;	view_globalops_issuers1.reporting_ica,&#xA;	view_globalops_issuers1.selected_non_selected,&#xA;	view_globalops_issuers1.source_code,&#xA;	view_globalops_issuers1.implementation_type &#xA;from cms.view_globalops_issuers view_globalops_issuers1" type="V_WString" />
+            <Field name="prefix" size="25" source="File: aka:5f15b5140b05360e6c4ed393|||select view_globalops_issuers1.bid,&#xA;	view_globalops_issuers1.billing_inclusion_lounge_visits,&#xA;	view_globalops_issuers1.billing_inclusion_memberships,&#xA;	view_globalops_issuers1.bin,&#xA;	view_globalops_issuers1.card_segment,&#xA;	view_globalops_issuers1.card_type,&#xA;	view_globalops_issuers1.cg_region_of_issue,&#xA;	view_globalops_issuers1.clean_issuer_name,&#xA;	view_globalops_issuers1.client_name,&#xA;	view_globalops_issuers1.client_region_of_issue,&#xA;	view_globalops_issuers1.client_service_centre,&#xA;	view_globalops_issuers1.client_sub_region_of_issue,&#xA;	view_globalops_issuers1.consolidated_report,&#xA;	view_globalops_issuers1.contract_type,&#xA;	view_globalops_issuers1.country_of_issue,&#xA;	view_globalops_issuers1.country_of_issue_iso,&#xA;	view_globalops_issuers1.currency,&#xA;	view_globalops_issuers1.deal_cancellation_date,&#xA;	view_globalops_issuers1.deal_start_date,&#xA;	view_globalops_issuers1.deal_status,&#xA;	view_globalops_issuers1.deal_type,&#xA;	view_globalops_issuers1.decline,&#xA;	view_globalops_issuers1.enrolment_method,&#xA;	view_globalops_issuers1.group_code,&#xA;	view_globalops_issuers1.ica,&#xA;	view_globalops_issuers1.issuer_name,&#xA;	view_globalops_issuers1.lounge_programme,&#xA;	view_globalops_issuers1.lounge_set_selected,&#xA;	view_globalops_issuers1.lv_report_credit_card_type,&#xA;	view_globalops_issuers1.membership_fee,&#xA;	view_globalops_issuers1.membership_fee_currency,&#xA;	view_globalops_issuers1.model,&#xA;	view_globalops_issuers1.po_charge_type,&#xA;	view_globalops_issuers1.prefix,&#xA;	view_globalops_issuers1.reporting_ica,&#xA;	view_globalops_issuers1.selected_non_selected,&#xA;	view_globalops_issuers1.source_code,&#xA;	view_globalops_issuers1.implementation_type &#xA;from cms.view_globalops_issuers view_globalops_issuers1" type="V_WString" />
+            <Field name="reporting_ica" size="45" source="File: aka:5f15b5140b05360e6c4ed393|||select view_globalops_issuers1.bid,&#xA;	view_globalops_issuers1.billing_inclusion_lounge_visits,&#xA;	view_globalops_issuers1.billing_inclusion_memberships,&#xA;	view_globalops_issuers1.bin,&#xA;	view_globalops_issuers1.card_segment,&#xA;	view_globalops_issuers1.card_type,&#xA;	view_globalops_issuers1.cg_region_of_issue,&#xA;	view_globalops_issuers1.clean_issuer_name,&#xA;	view_globalops_issuers1.client_name,&#xA;	view_globalops_issuers1.client_region_of_issue,&#xA;	view_globalops_issuers1.client_service_centre,&#xA;	view_globalops_issuers1.client_sub_region_of_issue,&#xA;	view_globalops_issuers1.consolidated_report,&#xA;	view_globalops_issuers1.contract_type,&#xA;	view_globalops_issuers1.country_of_issue,&#xA;	view_globalops_issuers1.country_of_issue_iso,&#xA;	view_globalops_issuers1.currency,&#xA;	view_globalops_issuers1.deal_cancellation_date,&#xA;	view_globalops_issuers1.deal_start_date,&#xA;	view_globalops_issuers1.deal_status,&#xA;	view_globalops_issuers1.deal_type,&#xA;	view_globalops_issuers1.decline,&#xA;	view_globalops_issuers1.enrolment_method,&#xA;	view_globalops_issuers1.group_code,&#xA;	view_globalops_issuers1.ica,&#xA;	view_globalops_issuers1.issuer_name,&#xA;	view_globalops_issuers1.lounge_programme,&#xA;	view_globalops_issuers1.lounge_set_selected,&#xA;	view_globalops_issuers1.lv_report_credit_card_type,&#xA;	view_globalops_issuers1.membership_fee,&#xA;	view_globalops_issuers1.membership_fee_currency,&#xA;	view_globalops_issuers1.model,&#xA;	view_globalops_issuers1.po_charge_type,&#xA;	view_globalops_issuers1.prefix,&#xA;	view_globalops_issuers1.reporting_ica,&#xA;	view_globalops_issuers1.selected_non_selected,&#xA;	view_globalops_issuers1.source_code,&#xA;	view_globalops_issuers1.implementation_type &#xA;from cms.view_globalops_issuers view_globalops_issuers1" type="V_WString" />
+            <Field name="selected_non_selected" source="File: aka:5f15b5140b05360e6c4ed393|||select view_globalops_issuers1.bid,&#xA;	view_globalops_issuers1.billing_inclusion_lounge_visits,&#xA;	view_globalops_issuers1.billing_inclusion_memberships,&#xA;	view_globalops_issuers1.bin,&#xA;	view_globalops_issuers1.card_segment,&#xA;	view_globalops_issuers1.card_type,&#xA;	view_globalops_issuers1.cg_region_of_issue,&#xA;	view_globalops_issuers1.clean_issuer_name,&#xA;	view_globalops_issuers1.client_name,&#xA;	view_globalops_issuers1.client_region_of_issue,&#xA;	view_globalops_issuers1.client_service_centre,&#xA;	view_globalops_issuers1.client_sub_region_of_issue,&#xA;	view_globalops_issuers1.consolidated_report,&#xA;	view_globalops_issuers1.contract_type,&#xA;	view_globalops_issuers1.country_of_issue,&#xA;	view_globalops_issuers1.country_of_issue_iso,&#xA;	view_globalops_issuers1.currency,&#xA;	view_globalops_issuers1.deal_cancellation_date,&#xA;	view_globalops_issuers1.deal_start_date,&#xA;	view_globalops_issuers1.deal_status,&#xA;	view_globalops_issuers1.deal_type,&#xA;	view_globalops_issuers1.decline,&#xA;	view_globalops_issuers1.enrolment_method,&#xA;	view_globalops_issuers1.group_code,&#xA;	view_globalops_issuers1.ica,&#xA;	view_globalops_issuers1.issuer_name,&#xA;	view_globalops_issuers1.lounge_programme,&#xA;	view_globalops_issuers1.lounge_set_selected,&#xA;	view_globalops_issuers1.lv_report_credit_card_type,&#xA;	view_globalops_issuers1.membership_fee,&#xA;	view_globalops_issuers1.membership_fee_currency,&#xA;	view_globalops_issuers1.model,&#xA;	view_globalops_issuers1.po_charge_type,&#xA;	view_globalops_issuers1.prefix,&#xA;	view_globalops_issuers1.reporting_ica,&#xA;	view_globalops_issuers1.selected_non_selected,&#xA;	view_globalops_issuers1.source_code,&#xA;	view_globalops_issuers1.implementation_type &#xA;from cms.view_globalops_issuers view_globalops_issuers1" type="Int16" />
+            <Field name="source_code" size="255" source="File: aka:5f15b5140b05360e6c4ed393|||select view_globalops_issuers1.bid,&#xA;	view_globalops_issuers1.billing_inclusion_lounge_visits,&#xA;	view_globalops_issuers1.billing_inclusion_memberships,&#xA;	view_globalops_issuers1.bin,&#xA;	view_globalops_issuers1.card_segment,&#xA;	view_globalops_issuers1.card_type,&#xA;	view_globalops_issuers1.cg_region_of_issue,&#xA;	view_globalops_issuers1.clean_issuer_name,&#xA;	view_globalops_issuers1.client_name,&#xA;	view_globalops_issuers1.client_region_of_issue,&#xA;	view_globalops_issuers1.client_service_centre,&#xA;	view_globalops_issuers1.client_sub_region_of_issue,&#xA;	view_globalops_issuers1.consolidated_report,&#xA;	view_globalops_issuers1.contract_type,&#xA;	view_globalops_issuers1.country_of_issue,&#xA;	view_globalops_issuers1.country_of_issue_iso,&#xA;	view_globalops_issuers1.currency,&#xA;	view_globalops_issuers1.deal_cancellation_date,&#xA;	view_globalops_issuers1.deal_start_date,&#xA;	view_globalops_issuers1.deal_status,&#xA;	view_globalops_issuers1.deal_type,&#xA;	view_globalops_issuers1.decline,&#xA;	view_globalops_issuers1.enrolment_method,&#xA;	view_globalops_issuers1.group_code,&#xA;	view_globalops_issuers1.ica,&#xA;	view_globalops_issuers1.issuer_name,&#xA;	view_globalops_issuers1.lounge_programme,&#xA;	view_globalops_issuers1.lounge_set_selected,&#xA;	view_globalops_issuers1.lv_report_credit_card_type,&#xA;	view_globalops_issuers1.membership_fee,&#xA;	view_globalops_issuers1.membership_fee_currency,&#xA;	view_globalops_issuers1.model,&#xA;	view_globalops_issuers1.po_charge_type,&#xA;	view_globalops_issuers1.prefix,&#xA;	view_globalops_issuers1.reporting_ica,&#xA;	view_globalops_issuers1.selected_non_selected,&#xA;	view_globalops_issuers1.source_code,&#xA;	view_globalops_issuers1.implementation_type &#xA;from cms.view_globalops_issuers view_globalops_issuers1" type="V_WString" />
+            <Field name="implementation_type" size="45" source="File: aka:5f15b5140b05360e6c4ed393|||select view_globalops_issuers1.bid,&#xA;	view_globalops_issuers1.billing_inclusion_lounge_visits,&#xA;	view_globalops_issuers1.billing_inclusion_memberships,&#xA;	view_globalops_issuers1.bin,&#xA;	view_globalops_issuers1.card_segment,&#xA;	view_globalops_issuers1.card_type,&#xA;	view_globalops_issuers1.cg_region_of_issue,&#xA;	view_globalops_issuers1.clean_issuer_name,&#xA;	view_globalops_issuers1.client_name,&#xA;	view_globalops_issuers1.client_region_of_issue,&#xA;	view_globalops_issuers1.client_service_centre,&#xA;	view_globalops_issuers1.client_sub_region_of_issue,&#xA;	view_globalops_issuers1.consolidated_report,&#xA;	view_globalops_issuers1.contract_type,&#xA;	view_globalops_issuers1.country_of_issue,&#xA;	view_globalops_issuers1.country_of_issue_iso,&#xA;	view_globalops_issuers1.currency,&#xA;	view_globalops_issuers1.deal_cancellation_date,&#xA;	view_globalops_issuers1.deal_start_date,&#xA;	view_globalops_issuers1.deal_status,&#xA;	view_globalops_issuers1.deal_type,&#xA;	view_globalops_issuers1.decline,&#xA;	view_globalops_issuers1.enrolment_method,&#xA;	view_globalops_issuers1.group_code,&#xA;	view_globalops_issuers1.ica,&#xA;	view_globalops_issuers1.issuer_name,&#xA;	view_globalops_issuers1.lounge_programme,&#xA;	view_globalops_issuers1.lounge_set_selected,&#xA;	view_globalops_issuers1.lv_report_credit_card_type,&#xA;	view_globalops_issuers1.membership_fee,&#xA;	view_globalops_issuers1.membership_fee_currency,&#xA;	view_globalops_issuers1.model,&#xA;	view_globalops_issuers1.po_charge_type,&#xA;	view_globalops_issuers1.prefix,&#xA;	view_globalops_issuers1.reporting_ica,&#xA;	view_globalops_issuers1.selected_non_selected,&#xA;	view_globalops_issuers1.source_code,&#xA;	view_globalops_issuers1.implementation_type &#xA;from cms.view_globalops_issuers view_globalops_issuers1" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection name="#1">
+      <Origin ToolID="10" Connection="Left" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="10" Connection="Join" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="12" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="12" Connection="Right" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="12" Connection="Left" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="12" Connection="Join" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Output" />
+      <Destination ToolID="17" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="Unique" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="18" Connection="Output" />
+      <Destination ToolID="19" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="Output" />
+      <Destination ToolID="24" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="21" Connection="Left" />
+      <Destination ToolID="23" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="21" Connection="Join" />
+      <Destination ToolID="23" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="23" Connection="Output" />
+      <Destination ToolID="10" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="10" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="24" Connection="Output" />
+      <Destination ToolID="25" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="25" Connection="Output" />
+      <Destination ToolID="31" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="26" Connection="True" />
+      <Destination ToolID="28" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="26" Connection="False" />
+      <Destination ToolID="29" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="28" Connection="Output" />
+      <Destination ToolID="16" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="29" Connection="Output" />
+      <Destination ToolID="27" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="31" Connection="Output" />
+      <Destination ToolID="26" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output26" />
+      <Destination ToolID="21" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="22" Connection="Output" />
+      <Destination ToolID="21" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="20" Connection="Output" />
+      <Destination ToolID="22" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="True" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="True" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>PP Wholesale Data Extract</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="a7f8bf58-a639-4b82-9f91-b890bfaac8d2" />
+      <Telemetry>
+        <PreviousWorkflowId value="" />
+        <OriginWorkflowId value="a7f8bf58-a639-4b82-9f91-b890bfaac8d2" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

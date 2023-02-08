@@ -1,0 +1,854 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2021.1">
+  <Nodes>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="595" y="395" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">Z:\8. OPERATIONS\1. Global Team\Ylli\LK Comms\D&amp;I.xlsx|||`Sheet1$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>D&amp;I.xlsx
+Query=`Sheet1$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Client Region" size="255" source="File: Z:\8. OPERATIONS\1. Global Team\Ylli\LK Comms\D&amp;I.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="Source Code" size="255" source="File: Z:\8. OPERATIONS\1. Global Team\Ylli\LK Comms\D&amp;I.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="Client ID" size="255" source="File: Z:\8. OPERATIONS\1. Global Team\Ylli\LK Comms\D&amp;I.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="Authenticated Source Code" size="255" source="File: Z:\8. OPERATIONS\1. Global Team\Ylli\LK Comms\D&amp;I.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="Lounge Programme" size="255" source="File: Z:\8. OPERATIONS\1. Global Team\Ylli\LK Comms\D&amp;I.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="Deal Type" size="255" source="File: Z:\8. OPERATIONS\1. Global Team\Ylli\LK Comms\D&amp;I.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="Country Of Issue" size="255" source="File: Z:\8. OPERATIONS\1. Global Team\Ylli\LK Comms\D&amp;I.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="EEA Country Y/N" size="255" source="File: Z:\8. OPERATIONS\1. Global Team\Ylli\LK Comms\D&amp;I.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="Client" size="255" source="File: Z:\8. OPERATIONS\1. Global Team\Ylli\LK Comms\D&amp;I.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="Issuer Name" size="255" source="File: Z:\8. OPERATIONS\1. Global Team\Ylli\LK Comms\D&amp;I.xlsx|||`Sheet1$`" type="V_WString" />
+            <Field name="Enrolment Method" size="255" source="File: Z:\8. OPERATIONS\1. Global Team\Ylli\LK Comms\D&amp;I.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="CIF" source="File: Z:\8. OPERATIONS\1. Global Team\Ylli\LK Comms\D&amp;I.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Active Members" source="File: Z:\8. OPERATIONS\1. Global Team\Ylli\LK Comms\D&amp;I.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Visit Volume" source="File: Z:\8. OPERATIONS\1. Global Team\Ylli\LK Comms\D&amp;I.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Visit_card_transaction_type_code" size="255" source="File: Z:\8. OPERATIONS\1. Global Team\Ylli\LK Comms\D&amp;I.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="Visit_card_validation_type_desc" size="255" source="File: Z:\8. OPERATIONS\1. Global Team\Ylli\LK Comms\D&amp;I.xlsx|||`Sheet1$`" type="V_WString" />
+            <Field name="SignUp_card_validation_type_desc" size="255" source="File: Z:\8. OPERATIONS\1. Global Team\Ylli\LK Comms\D&amp;I.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="SignUp_card_transaction_type_code" size="255" source="File: Z:\8. OPERATIONS\1. Global Team\Ylli\LK Comms\D&amp;I.xlsx|||`Sheet1$`" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="32">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="703" y="395" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Client ID" selected="False" />
+            <SelectField field="Authenticated Source Code" selected="False" />
+            <SelectField field="Lounge Programme" selected="False" />
+            <SelectField field="Deal Type" selected="False" />
+            <SelectField field="Country Of Issue" selected="False" />
+            <SelectField field="Client" selected="False" />
+            <SelectField field="Issuer Name" selected="False" />
+            <SelectField field="Enrolment Method" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="36">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="799" y="395" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Source Code" action="GroupBy" rename="Source Code" />
+            <SummarizeField field="CIF" action="Sum" rename="Sum_CIF" />
+            <SummarizeField field="Active Members" action="Sum" rename="Sum_Active Members" />
+            <SummarizeField field="Visit Volume" action="Sum" rename="Sum_Visit Volume" />
+            <SummarizeField field="Client Region" action="GroupBy" rename="Client Region" />
+            <SummarizeField field="EEA Country Y/N" action="GroupBy" rename="EEA Country Y/N" />
+            <SummarizeField field="Visit_card_transaction_type_code" action="GroupBy" rename="Visit_card_transaction_type_code" />
+            <SummarizeField field="Visit_card_validation_type_desc" action="GroupBy" rename="Visit_card_validation_type_desc" />
+            <SummarizeField field="SignUp_card_validation_type_desc" action="GroupBy" rename="SignUp_card_validation_type_desc" />
+            <SummarizeField field="SignUp_card_transaction_type_code" action="GroupBy" rename="SignUp_card_transaction_type_code" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="37">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+        <Position x="917" y="401" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SortInfo locale="0">
+            <Field field="Sum_CIF" order="Ascending" />
+          </SortInfo>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Sum_CIF - Ascending</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="186" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">Z:\8. OPERATIONS\1. Global Team\Ylli\LK Comms\Entitlement Method.xlsx|||`Sheet1$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Entitlement Method.xlsx
+Query=`Sheet1$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="source_code" size="255" source="File: Z:\8. OPERATIONS\1. Global Team\Ylli\LK Comms\Entitlement Method.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="owner_product" size="255" source="File: Z:\8. OPERATIONS\1. Global Team\Ylli\LK Comms\Entitlement Method.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="consumer_model_name" size="255" source="File: Z:\8. OPERATIONS\1. Global Team\Ylli\LK Comms\Entitlement Method.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="First Year Entitlement Method Standard" size="255" source="File: Z:\8. OPERATIONS\1. Global Team\Ylli\LK Comms\Entitlement Method.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="Entitlement Method Standard" size="387" source="File: Z:\8. OPERATIONS\1. Global Team\Ylli\LK Comms\Entitlement Method.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="Entitlement Method Standard Plus" size="255" source="File: Z:\8. OPERATIONS\1. Global Team\Ylli\LK Comms\Entitlement Method.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="Entitlement Method Prestige" size="255" source="File: Z:\8. OPERATIONS\1. Global Team\Ylli\LK Comms\Entitlement Method.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="Entitlement Method Prestige Plus" source="File: Z:\8. OPERATIONS\1. Global Team\Ylli\LK Comms\Entitlement Method.xlsx|||`Sheet1$`" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="546" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="Source Code" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="source_code" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_source_code" selected="False" rename="Right_source_code" input="Right_" />
+                <SelectField field="Right_owner_product" selected="True" rename="Right_owner_product" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="678" y="90" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="354" y="378" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">Z:\8. OPERATIONS\1. Global Team\Ylli\LK Comms\Transaction Type.xlsx|||`Sheet1$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Transaction Type.xlsx
+Query=`Sheet1$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="source_code" size="255" source="File: Z:\8. OPERATIONS\1. Global Team\Ylli\LK Comms\Transaction Type.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="owner_product" size="255" source="File: Z:\8. OPERATIONS\1. Global Team\Ylli\LK Comms\Transaction Type.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="consumer_model_name" size="255" source="File: Z:\8. OPERATIONS\1. Global Team\Ylli\LK Comms\Transaction Type.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="TransactionType" size="255" source="File: Z:\8. OPERATIONS\1. Global Team\Ylli\LK Comms\Transaction Type.xlsx|||`Sheet1$`" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="66" y="281" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">Z:\8. OPERATIONS\1. Global Team\Ylli\LK Comms\Pre Auth Extract.xlsx|||`Sheet1$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Pre Auth Extract.xlsx
+Query=`Sheet1$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Source Code" size="255" source="File: Z:\8. OPERATIONS\1. Global Team\Ylli\LK Comms\Pre Auth Extract.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="Owner Product" size="255" source="File: Z:\8. OPERATIONS\1. Global Team\Ylli\LK Comms\Pre Auth Extract.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="Consumer Model Name" size="255" source="File: Z:\8. OPERATIONS\1. Global Team\Ylli\LK Comms\Pre Auth Extract.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="Blacklist Visit Description" size="255" source="File: Z:\8. OPERATIONS\1. Global Team\Ylli\LK Comms\Pre Auth Extract.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="Visit Description" size="255" source="File: Z:\8. OPERATIONS\1. Global Team\Ylli\LK Comms\Pre Auth Extract.xlsx|||`Sheet1$`" type="V_WString" />
+            <Field name="SignUp Description" size="255" source="File: Z:\8. OPERATIONS\1. Global Team\Ylli\LK Comms\Pre Auth Extract.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="Update Description" size="255" source="File: Z:\8. OPERATIONS\1. Global Team\Ylli\LK Comms\Pre Auth Extract.xlsx|||`Sheet1$`" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="30" y="30" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">Z:\8. OPERATIONS\1. Global Team\Ylli\LK Comms\CMS 1808.xlsx|||`data$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>CMS 1808.xlsx
+Query=`data$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="bid" size="255" source="File: Z:\8. OPERATIONS\1. Global Team\Ylli\LK Comms\CMS 1808.xlsx|||`data$`" type="V_String" />
+            <Field name="billing_inclusion_lounge_visits" source="File: Z:\8. OPERATIONS\1. Global Team\Ylli\LK Comms\CMS 1808.xlsx|||`data$`" type="Double" />
+            <Field name="billing_inclusion_memberships" source="File: Z:\8. OPERATIONS\1. Global Team\Ylli\LK Comms\CMS 1808.xlsx|||`data$`" type="Double" />
+            <Field name="bin" size="255" source="File: Z:\8. OPERATIONS\1. Global Team\Ylli\LK Comms\CMS 1808.xlsx|||`data$`" type="V_String" />
+            <Field name="card_segment" size="255" source="File: Z:\8. OPERATIONS\1. Global Team\Ylli\LK Comms\CMS 1808.xlsx|||`data$`" type="V_String" />
+            <Field name="card_type" size="255" source="File: Z:\8. OPERATIONS\1. Global Team\Ylli\LK Comms\CMS 1808.xlsx|||`data$`" type="V_String" />
+            <Field name="cg_region_of_issue" size="255" source="File: Z:\8. OPERATIONS\1. Global Team\Ylli\LK Comms\CMS 1808.xlsx|||`data$`" type="V_String" />
+            <Field name="clean_issuer_name" size="255" source="File: Z:\8. OPERATIONS\1. Global Team\Ylli\LK Comms\CMS 1808.xlsx|||`data$`" type="V_WString" />
+            <Field name="client_name" size="255" source="File: Z:\8. OPERATIONS\1. Global Team\Ylli\LK Comms\CMS 1808.xlsx|||`data$`" type="V_String" />
+            <Field name="client_region_of_issue" size="255" source="File: Z:\8. OPERATIONS\1. Global Team\Ylli\LK Comms\CMS 1808.xlsx|||`data$`" type="V_String" />
+            <Field name="client_service_centre" size="255" source="File: Z:\8. OPERATIONS\1. Global Team\Ylli\LK Comms\CMS 1808.xlsx|||`data$`" type="V_String" />
+            <Field name="client_sub_region_of_issue" size="255" source="File: Z:\8. OPERATIONS\1. Global Team\Ylli\LK Comms\CMS 1808.xlsx|||`data$`" type="V_String" />
+            <Field name="consolidated_report" source="File: Z:\8. OPERATIONS\1. Global Team\Ylli\LK Comms\CMS 1808.xlsx|||`data$`" type="Double" />
+            <Field name="contract_type" size="255" source="File: Z:\8. OPERATIONS\1. Global Team\Ylli\LK Comms\CMS 1808.xlsx|||`data$`" type="V_String" />
+            <Field name="country_of_issue" size="255" source="File: Z:\8. OPERATIONS\1. Global Team\Ylli\LK Comms\CMS 1808.xlsx|||`data$`" type="V_String" />
+            <Field name="country_of_issue_iso" size="255" source="File: Z:\8. OPERATIONS\1. Global Team\Ylli\LK Comms\CMS 1808.xlsx|||`data$`" type="V_String" />
+            <Field name="currency" size="255" source="File: Z:\8. OPERATIONS\1. Global Team\Ylli\LK Comms\CMS 1808.xlsx|||`data$`" type="V_String" />
+            <Field name="deal_cancellation_date" source="File: Z:\8. OPERATIONS\1. Global Team\Ylli\LK Comms\CMS 1808.xlsx|||`data$`" type="DateTime" />
+            <Field name="deal_start_date" source="File: Z:\8. OPERATIONS\1. Global Team\Ylli\LK Comms\CMS 1808.xlsx|||`data$`" type="Date" />
+            <Field name="deal_status" size="255" source="File: Z:\8. OPERATIONS\1. Global Team\Ylli\LK Comms\CMS 1808.xlsx|||`data$`" type="V_String" />
+            <Field name="deal_type" size="255" source="File: Z:\8. OPERATIONS\1. Global Team\Ylli\LK Comms\CMS 1808.xlsx|||`data$`" type="V_String" />
+            <Field name="decline" source="File: Z:\8. OPERATIONS\1. Global Team\Ylli\LK Comms\CMS 1808.xlsx|||`data$`" type="Double" />
+            <Field name="enrolment_method" size="255" source="File: Z:\8. OPERATIONS\1. Global Team\Ylli\LK Comms\CMS 1808.xlsx|||`data$`" type="V_String" />
+            <Field name="group_code" size="255" source="File: Z:\8. OPERATIONS\1. Global Team\Ylli\LK Comms\CMS 1808.xlsx|||`data$`" type="V_String" />
+            <Field name="ica" size="255" source="File: Z:\8. OPERATIONS\1. Global Team\Ylli\LK Comms\CMS 1808.xlsx|||`data$`" type="V_String" />
+            <Field name="issuer_name" size="255" source="File: Z:\8. OPERATIONS\1. Global Team\Ylli\LK Comms\CMS 1808.xlsx|||`data$`" type="V_WString" />
+            <Field name="lounge_programme" size="255" source="File: Z:\8. OPERATIONS\1. Global Team\Ylli\LK Comms\CMS 1808.xlsx|||`data$`" type="V_String" />
+            <Field name="lounge_set_selected" size="255" source="File: Z:\8. OPERATIONS\1. Global Team\Ylli\LK Comms\CMS 1808.xlsx|||`data$`" type="V_String" />
+            <Field name="lv_report_credit_card_type" size="255" source="File: Z:\8. OPERATIONS\1. Global Team\Ylli\LK Comms\CMS 1808.xlsx|||`data$`" type="V_String" />
+            <Field name="membership_fee" source="File: Z:\8. OPERATIONS\1. Global Team\Ylli\LK Comms\CMS 1808.xlsx|||`data$`" type="Double" />
+            <Field name="membership_fee_currency" size="255" source="File: Z:\8. OPERATIONS\1. Global Team\Ylli\LK Comms\CMS 1808.xlsx|||`data$`" type="V_String" />
+            <Field name="model" size="255" source="File: Z:\8. OPERATIONS\1. Global Team\Ylli\LK Comms\CMS 1808.xlsx|||`data$`" type="V_String" />
+            <Field name="po_charge_type" size="255" source="File: Z:\8. OPERATIONS\1. Global Team\Ylli\LK Comms\CMS 1808.xlsx|||`data$`" type="V_String" />
+            <Field name="prefix" size="255" source="File: Z:\8. OPERATIONS\1. Global Team\Ylli\LK Comms\CMS 1808.xlsx|||`data$`" type="V_String" />
+            <Field name="reporting_ica" size="255" source="File: Z:\8. OPERATIONS\1. Global Team\Ylli\LK Comms\CMS 1808.xlsx|||`data$`" type="V_String" />
+            <Field name="selected_non_selected" source="File: Z:\8. OPERATIONS\1. Global Team\Ylli\LK Comms\CMS 1808.xlsx|||`data$`" type="Double" />
+            <Field name="source_code" size="255" source="File: Z:\8. OPERATIONS\1. Global Team\Ylli\LK Comms\CMS 1808.xlsx|||`data$`" type="V_String" />
+            <Field name="implementation_type" size="255" source="File: Z:\8. OPERATIONS\1. Global Team\Ylli\LK Comms\CMS 1808.xlsx|||`data$`" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="20">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="138" y="30" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[lounge_programme] IN ("LoungeKey", "Mastercard Airport Experiences")</Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[lounge_programme] IN ("LoungeKey", "Mastercard Airport Experiences")</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="233" y="17" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="True" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="bin" selected="True" rename="Source Code" />
+            <SelectField field="cg_region_of_issue" selected="True" />
+            <SelectField field="clean_issuer_name" selected="True" />
+            <SelectField field="client_name" selected="True" />
+            <SelectField field="client_region_of_issue" selected="True" />
+            <SelectField field="client_service_centre" selected="True" />
+            <SelectField field="country_of_issue" selected="True" />
+            <SelectField field="deal_status" selected="True" />
+            <SelectField field="enrolment_method" selected="True" />
+            <SelectField field="prefix" selected="True" />
+            <SelectField field="bid" selected="False" />
+            <SelectField field="billing_inclusion_lounge_visits" selected="False" />
+            <SelectField field="billing_inclusion_memberships" selected="False" />
+            <SelectField field="card_segment" selected="False" />
+            <SelectField field="card_type" selected="False" />
+            <SelectField field="client_sub_region_of_issue" selected="False" />
+            <SelectField field="consolidated_report" selected="False" />
+            <SelectField field="contract_type" selected="False" />
+            <SelectField field="country_of_issue_iso" selected="False" />
+            <SelectField field="currency" selected="False" />
+            <SelectField field="deal_start_date" selected="False" />
+            <SelectField field="deal_cancellation_date" selected="False" />
+            <SelectField field="deal_type" selected="False" />
+            <SelectField field="decline" selected="False" />
+            <SelectField field="group_code" selected="False" />
+            <SelectField field="ica" selected="False" />
+            <SelectField field="issuer_name" selected="False" />
+            <SelectField field="lounge_programme" selected="False" />
+            <SelectField field="lounge_set_selected" selected="False" />
+            <SelectField field="lv_report_credit_card_type" selected="False" />
+            <SelectField field="membership_fee" selected="False" />
+            <SelectField field="membership_fee_currency" selected="False" />
+            <SelectField field="model" selected="False" />
+            <SelectField field="po_charge_type" selected="False" />
+            <SelectField field="reporting_ica" selected="False" />
+            <SelectField field="selected_non_selected" selected="False" />
+            <SelectField field="source_code" selected="False" />
+            <SelectField field="implementation_type" selected="False" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="19">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+        <Position x="341" y="17" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SortInfo locale="0">
+            <Field field="deal_status" order="Ascending" />
+            <Field field="Source Code" order="Ascending" />
+          </SortInfo>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>deal_status - Ascending
+Source Code - Ascending</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="617" y="281" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="Source Code" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="source_code" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_Source Code" selected="True" input="Left_" />
+                <SelectField field="Left_cg_region_of_issue" selected="True" input="Left_" />
+                <SelectField field="Left_clean_issuer_name" selected="True" input="Left_" />
+                <SelectField field="Left_client_name" selected="True" input="Left_" />
+                <SelectField field="Left_client_region_of_issue" selected="True" input="Left_" />
+                <SelectField field="Left_client_service_centre" selected="True" input="Left_" />
+                <SelectField field="Left_country_of_issue" selected="True" input="Left_" />
+                <SelectField field="Left_deal_status" selected="True" input="Left_" />
+                <SelectField field="Left_enrolment_method" selected="True" input="Left_" />
+                <SelectField field="Left_prefix" selected="True" input="Left_" />
+                <SelectField field="Left_consumer_model_name" selected="True" input="Left_" />
+                <SelectField field="Left_First Year Entitlement Method Standard" selected="True" input="Left_" />
+                <SelectField field="Left_Entitlement Method Standard" selected="True" input="Left_" />
+                <SelectField field="Left_Entitlement Method Standard Plus" selected="True" input="Left_" />
+                <SelectField field="Left_Entitlement Method Prestige" selected="True" input="Left_" />
+                <SelectField field="Left_Entitlement Method Prestige Plus" selected="True" input="Left_" />
+                <SelectField field="Left_Blacklist Visit Description" selected="True" input="Left_" />
+                <SelectField field="Left_Visit Description" selected="True" input="Left_" />
+                <SelectField field="Left_SignUp Description" selected="True" input="Left_" />
+                <SelectField field="Left_Update Description" selected="True" input="Left_" />
+                <SelectField field="Right_source_code" selected="False" rename="Right_source_code" input="Right_" />
+                <SelectField field="Right_TransactionType" selected="True" input="Right_" />
+                <SelectField field="Left_TransactionType" selected="False" rename="Left_TransactionType" input="Left_" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="22">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="761" y="281" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="473" y="269" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="331" y="270" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="Source Code" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="Source Code" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_Source Code" selected="False" input="Right_" />
+                <SelectField field="Right_Owner Product" selected="False" input="Right_" />
+                <SelectField field="Right_Consumer Model Name" selected="False" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="38">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="893" y="293" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="Source Code" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="Source Code" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_Source Code" selected="True" rename="Right_Source Code" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="39">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="989" y="293" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1110" y="294" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="True" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="client_region_of_issue" selected="True" rename="Client Region of Issue" />
+            <SelectField field="source_code" selected="False" rename="Source Code" />
+            <SelectField field="Source Code" selected="True" />
+            <SelectField field="prefix" selected="True" />
+            <SelectField field="deal_status" selected="True" rename="Deal Status" />
+            <SelectField field="owner_product" selected="False" rename="Lounge Programme" />
+            <SelectField field="consumer_model_name" selected="False" rename="Consumer Model" />
+            <SelectField field="country_of_issue" selected="True" rename="Country of Issue" />
+            <SelectField field="EEA Country Y/N" selected="True" />
+            <SelectField field="client_name" selected="True" rename="Client" />
+            <SelectField field="clean_issuer_name" selected="True" rename="Issuer Name" />
+            <SelectField field="enrolment_method" selected="True" rename="Enrolment Method" />
+            <SelectField field="Sum_CIF" selected="True" rename="CIF" />
+            <SelectField field="Sum_Active Members" selected="True" rename="Active Members" />
+            <SelectField field="Sum_Visit Volume" selected="True" rename="Visit Volume" />
+            <SelectField field="TransactionType" selected="True" rename="Transaction Type" />
+            <SelectField field="Blacklist Visit Description" selected="True" rename="Reject List Validator" />
+            <SelectField field="SignUp Description" selected="True" rename="SignUp Validator" />
+            <SelectField field="Update Description" selected="True" rename="Update Validator" />
+            <SelectField field="Visit Description" selected="True" rename="Visit Validator" />
+            <SelectField field="client_service_centre" selected="True" rename="Client Service Centre" />
+            <SelectField field="First Year Entitlement Method Standard" selected="True" />
+            <SelectField field="Entitlement Method Standard" selected="True" />
+            <SelectField field="Entitlement Method Standard Plus" selected="True" />
+            <SelectField field="Entitlement Method Prestige" selected="True" />
+            <SelectField field="Entitlement Method Prestige Plus" selected="True" />
+            <SelectField field="cg_region_of_issue" selected="False" />
+            <SelectField field="Right_Source Code" selected="False" />
+            <SelectField field="Client Region" selected="False" />
+            <SelectField field="Visit_card_transaction_type_code" selected="False" />
+            <SelectField field="Visit_card_validation_type_desc" selected="False" />
+            <SelectField field="SignUp_card_validation_type_desc" selected="False" />
+            <SelectField field="SignUp_card_transaction_type_code" selected="False" />
+            <SelectField field="Right_owner_product" selected="False" />
+            <SelectField field="*Unknown" selected="False" />
+            <SelectField field="Consumer Model Name" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="1422" y="294" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="25">Z:\8. OPERATIONS\1. Global Team\Ylli\LK Comms\LoungeKey Data Extract.xlsx|||Sheet1</File>
+          <Passwords />
+          <FormatSpecificOptions>
+            <PreserveFormat>False</PreserveFormat>
+            <SkipFieldNames>False</SkipFieldNames>
+            <OutputOption>Overwrite</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>LoungeKey Data Extract.xlsx
+Query=Sheet1</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="40">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="1266" y="294" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>IsNotNull</Operator>
+            <Field>Deal Status</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2021-08-20 14:12:12</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>
+              </Operand>
+              <StartDate>2021-08-20 14:12:12</StartDate>
+              <EndDate>2021-08-20 14:12:12</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>!IsNull([Deal Status])</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="32" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="32" Connection="Output" />
+      <Destination ToolID="36" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="36" Connection="Output" />
+      <Destination ToolID="37" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="37" Connection="Output" />
+      <Destination ToolID="38" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="22" Connection="Output" />
+      <Destination ToolID="38" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="5" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="Output" />
+      <Destination ToolID="5" Connection="Left" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="5" Connection="Left" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="5" Connection="Join" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="7" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="7" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="17" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="17" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="Output" />
+      <Destination ToolID="20" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="20" Connection="True" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="18" Connection="Output" />
+      <Destination ToolID="19" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="17" Connection="Left" />
+      <Destination ToolID="22" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="17" Connection="Join" />
+      <Destination ToolID="22" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="7" Connection="Left" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="7" Connection="Join" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="38" Connection="Left" />
+      <Destination ToolID="39" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="38" Connection="Join" />
+      <Destination ToolID="39" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="39" Connection="Output" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="40" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="40" Connection="True" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>LoungeKey Data Extract v2</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
