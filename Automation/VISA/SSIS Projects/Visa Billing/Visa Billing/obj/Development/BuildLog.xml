@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<BuildLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ProjectInfo>
+    <Name>Visa Billing</Name>
+    <LastWriteTime>2023-02-14T12:11:00.560552Z</LastWriteTime>
+    <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+  </ProjectInfo>
+  <LastBuildInfos>
+    <ProjectBuildItemInfo>
+      <Name>Visa Platform MENA SSS CISSEE Weekly Monthly Deals.dtsx</Name>
+      <LastWriteTime>2023-02-14T10:55:05.1740149Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>Visa LK CISSEE.dtsx</Name>
+      <LastWriteTime>2023-02-14T10:56:11.5753672Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>Visa Visit By Source PP WSL.dtsx</Name>
+      <LastWriteTime>2023-02-14T11:24:00.4651106Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>Visa VCES src2dst_Visits.dtsx</Name>
+      <LastWriteTime>2023-02-14T12:11:00.5185465Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>Visa VCES src2ods_Declines_Chargeback.dtsx</Name>
+      <LastWriteTime>2023-02-14T12:11:00.4845451Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>Visa VCES src2ods_membership.dtsx</Name>
+      <LastWriteTime>2023-02-14T12:11:00.4635438Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>Visa VCES ppbo_duel_cc_members.dtsx</Name>
+      <LastWriteTime>2023-02-14T12:08:17.5066347Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+  </LastBuildInfos>
+</BuildLog>
