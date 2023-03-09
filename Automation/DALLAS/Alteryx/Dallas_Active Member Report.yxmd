@@ -1,0 +1,459 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2022.1">
+  <Nodes>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DynamicInput.DynamicInput">
+        <Position x="188" y="402" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <InputConfiguration>
+            <Configuration>
+              <Passwords />
+              <CachedCosmeticName>CDE OPS (PPASS)</CachedCosmeticName>
+              <File RecordLimit="" FileFormat="23">aka:630f3be88a20878940976291|||select p.consumer_no,
+	c.external_identifier as [Member No],
+	p.paid_to_date as expiry_date,
+	p.purchase_no,
+	p.purchase_status,
+	p.trans_ccard_number as card_no,
+	Replace(Right(Convert(varchar, p.trans_ccard_expiry, 106), 8), ' ', '-') as [card expiry],
+	c.title,
+	c.forename,
+	c.surname,
+	a.company,
+	a.addline1,
+	a.addline2,
+	a.addline3,
+	a.city,
+	a.province,
+	a.postcode,
+	a.us_state,
+	c1.code_desc as country,
+	a.phone1,
+	a.phone2,
+	a.email,
+	sdc.source_code,
+	siv.user_invitation_code,
+	s.market_code 
+from PPass.dbo.consumer c With(NoLock) 
+	inner join PPass.dbo.purchase p With(NoLock) on c.consumer_no = p.consumer_no 
+	inner join PPass.dbo.purchase_subscription_link psl With(NoLock) on p.purchase_no = psl.purchase_no 
+	inner join PPass.dbo.source_subscription ss With(NoLock) on psl.source_subscription_id = ss.source_subscription_id 
+	inner join PPass.dbo.subscription_level sl With(NoLock) on sl.subscription_level_id = ss.subscription_level_id 
+	inner join PPass.dbo.source_deal_config sdc With(NoLock) on ss.source_deal_config_id = sdc.source_deal_config_id 
+	inner join PPass.dbo.source s With(NoLock) on s.source_code = sdc.source_code 
+	inner join PPass.dbo.address a With(NoLock) on p.consumer_no = a.consumer_no and p.delivery_address_seq = a.address_sequence 
+	left join PPass.dbo.code c1 With(NoLock) on a.country_code = c1.code and c1.codetype = 'CTRY' 
+	left join PPass.dbo.source_invitation_validation siv With(NoLock) on siv.consumer_no = c.consumer_no 
+	left join PPass.dbo.consumer_bank_detail cdb With(NoLock) on cdb.consumer_no = c.consumer_no 
+	left join PPass.dbo.partner_consumer_ext_detail_lk pcdlk With(NoLock) on pcdlk.consumer_no = c.consumer_no 
+	left join PPass.dbo.partner_consumer_ext_detail pcd With(NoLock) on pcd.partner_consumer_ext_detail_id = pcdlk.partner_consumer_ext_detail_id 
+where p.purchase_status not Like 'W%' 
+	and p.purchase_status &lt;&gt; 'Z' 
+	and s.market_code in ('Test') 
+	and Cast(p.paid_to_date as DATE) &gt;= Cast(GetDate() as DATE) 
+	and Cast(p.effective_date as DATE) &lt;= Cast(GetDate() as DATE) 
+	and p.isdeleted = 0</File>
+              <FormatSpecificOptions>
+                <PreSQLOnConfig>True</PreSQLOnConfig>
+                <ReadCentroids>False</ReadCentroids>
+                <NoProgress>True</NoProgress>
+                <SessionReadOnly>True</SessionReadOnly>
+                <ReadUncommitted>False</ReadUncommitted>
+                <TableStyle>Quoted</TableStyle>
+                <PreSQL />
+                <PostSQL />
+                <SingleRowFetch>False</SingleRowFetch>
+              </FormatSpecificOptions>
+            </Configuration>
+          </InputConfiguration>
+          <Mode>ModifySQL</Mode>
+          <Modifications>
+            <Modify Action="ReplaceStringEx" Annotation=" s.market_code in ('Test')">
+              <ReplaceIn><![CDATA[ s.market_code in ('Test')]]></ReplaceIn>
+              <ReplaceValueType>String</ReplaceValueType>
+              <ReplaceText>'Test'</ReplaceText>
+              <GroupForIn value="True" />
+              <GroupForIn_Limit value="1000" />
+              <Field>MarketCode</Field>
+            </Modify>
+          </Modifications>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDynamicInput" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="104" y="402" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="1" />
+          <Fields>
+            <Field name="MarketCode" />
+          </Fields>
+          <Data>
+            <r>
+              <c>AMEXARG</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="284" y="402" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\HARSHA~1.DES\AppData\Local\Temp\Engine_9372_785ee185c537844fb46486082d2de669_\Engine_9372_eaab7a72296b444d81471fec4e12f70e~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="54" y="54" width="559" height="311" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>DALLAS Active Member Report</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="True" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="2">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="225" y="175" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="3">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="501" y="175" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File MaxRecords="" FileFormat="25">%temp%\temp.xlsx|||Sheet1</File>
+              <Passwords />
+              <FormatSpecificOptions>
+                <PreserveFormat>False</PreserveFormat>
+                <SkipFieldNames>False</SkipFieldNames>
+                <OutputOption>RemoveFile</OutputOption>
+              </FormatSpecificOptions>
+              <MultiFile value="True" />
+              <MultiFileType>Path</MultiFileType>
+              <MultiFileField>FileLocation</MultiFileField>
+              <KeepField value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>temp.xlsx
+Query=Sheet1</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+        <Node ToolID="4">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="309" y="174" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="&quot;\\clbnas01\OpsDataTeam\8. Team\Harshad\Ops Automation\Dallas\Active Member Report\&quot;+DateTimeFormat(DateTimeNow(),&quot;%Y&quot;)+&quot;\&quot;+DateTimeFormat(DateTimeNow(),&quot;%B&quot;)+&quot;\&quot; +[market_code] +&quot;  Active Members Report_&quot;+DateTimeFormat(DateTimeNow(),&quot;%b%Y&quot;)+&quot;.xlsx|||Sheet1&quot;" field="FileLocation" size="1073741823" type="V_WString" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>FileLocation = "\\clbnas01\OpsDataTeam\8. Team\Harshad\Ops Automation\Dallas\Act...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="5">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BlockUntilDone.BlockUntilDone">
+            <Position x="405" y="175" />
+          </GuiSettings>
+          <Properties>
+            <Configuration />
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBlockUntilDone" />
+        </Node>
+        <Node ToolID="6">
+          <GuiSettings>
+            <Position x="501" y="103" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="Input.Folder Path"><![CDATA[folderpath=FileLocation
+]]></Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings Macro="\\clbnas01\OpsDataTeam\20. Alteryx\3. Development\Billing Automation\Dev\VCES v2\alteryx\4.Macros\folder exists\folderexist.yxmc" />
+        </Node>
+        <Node ToolID="11">
+          <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+            <Position x="79" y="125" width="152" height="195" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Caption>Container 11</Caption>
+              <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+              <Disabled value="True" />
+              <Folded value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <ChildNodes>
+            <Node ToolID="1">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+                <Position x="104" y="174" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Passwords />
+                  <CachedCosmeticName>CDE (PPASS)</CachedCosmeticName>
+                  <File FileFormat="23" RecordLimit="">aka:5f15b45f0b05360e6c4ed2fc|||select p.consumer_no,
+	c.external_identifier as [Member No],
+	p.paid_to_date as expiry_date,
+	p.purchase_no,
+	p.purchase_status,
+	p.trans_ccard_number as card_no,
+	Replace(Right(Convert(varchar, p.trans_ccard_expiry, 106), 8), ' ', '-') as [card expiry],
+	c.title,
+	c.forename,
+	c.surname,
+	a.company,
+	a.addline1,
+	a.addline2,
+	a.addline3,
+	a.city,
+	a.province,
+	a.postcode,
+	a.us_state,
+	c1.code_desc as country,
+	a.phone1,
+	a.phone2,
+	a.email,
+	sdc.source_code,
+	siv.user_invitation_code,
+	s.market_code 
+from PPass.dbo.consumer c With(NoLock) 
+	inner join PPass.dbo.purchase p With(NoLock) on c.consumer_no = p.consumer_no 
+	inner join PPass.dbo.purchase_subscription_link psl With(NoLock) on p.purchase_no = psl.purchase_no 
+	inner join PPass.dbo.source_subscription ss With(NoLock) on psl.source_subscription_id = ss.source_subscription_id 
+	inner join PPass.dbo.subscription_level sl With(NoLock) on sl.subscription_level_id = ss.subscription_level_id 
+	inner join PPass.dbo.source_deal_config sdc With(NoLock) on ss.source_deal_config_id = sdc.source_deal_config_id 
+	inner join PPass.dbo.source s With(NoLock) on s.source_code = sdc.source_code 
+	inner join PPass.dbo.address a With(NoLock) on p.consumer_no = a.consumer_no and p.delivery_address_seq = a.address_sequence 
+	left join PPass.dbo.code c1 With(NoLock) on a.country_code = c1.code and c1.codetype = 'CTRY' 
+	left join PPass.dbo.source_invitation_validation siv With(NoLock) on siv.consumer_no = c.consumer_no 
+	left join PPass.dbo.consumer_bank_detail cdb With(NoLock) on cdb.consumer_no = c.consumer_no 
+	left join PPass.dbo.partner_consumer_ext_detail_lk pcdlk With(NoLock) on pcdlk.consumer_no = c.consumer_no 
+	left join PPass.dbo.partner_consumer_ext_detail pcd With(NoLock) on pcd.partner_consumer_ext_detail_id = pcdlk.partner_consumer_ext_detail_id 
+where p.purchase_status not Like 'W%' 
+	and p.purchase_status &lt;&gt; 'Z' 
+	and s.market_code in ('Test') 
+	and Cast(p.paid_to_date as DATE) &gt;= Cast(GetDate() as DATE) 
+	and Cast(p.effective_date as DATE) &lt;= Cast(GetDate() as DATE) 
+	and p.isdeleted = 0</File>
+                  <FormatSpecificOptions>
+                    <SingleRowFetch>False</SingleRowFetch>
+                    <ReadCentroids>False</ReadCentroids>
+                    <TableStyle>Quoted</TableStyle>
+                    <CacheData>False</CacheData>
+                    <SessionReadOnly>True</SessionReadOnly>
+                    <ReadUncommitted>False</ReadUncommitted>
+                    <NoProgress>True</NoProgress>
+                    <PostSQL />
+                    <PreSQLOnConfig>True</PreSQLOnConfig>
+                    <PreSQL />
+                  </FormatSpecificOptions>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText>aka:CDE (PPASS)
+Query=select p.consumer_no,
+	c.ext...</DefaultAnnotationText>
+                  <Left value="False" />
+                </Annotation>
+                <MetaInfo connection="Output">
+                  <RecordInfo>
+                    <Field name="consumer_no" source="File: CDE (PPASS)" type="Int32" />
+                    <Field name="Member No" source="File: CDE (PPASS)" type="Int64" />
+                    <Field name="expiry_date" source="File: CDE (PPASS)" type="DateTime" />
+                    <Field name="purchase_no" source="File: CDE (PPASS)" type="Int32" />
+                    <Field name="purchase_status" size="2" source="File: CDE (PPASS)" type="V_String" />
+                    <Field name="card_no" size="18" source="File: CDE (PPASS)" type="V_String" />
+                    <Field name="card expiry" size="8000" source="File: CDE (PPASS)" type="V_String" />
+                    <Field name="title" size="15" source="File: CDE (PPASS)" type="V_String" />
+                    <Field name="forename" size="15" source="File: CDE (PPASS)" type="V_String" />
+                    <Field name="surname" size="30" source="File: CDE (PPASS)" type="V_String" />
+                    <Field name="company" size="30" source="File: CDE (PPASS)" type="V_String" />
+                    <Field name="addline1" size="30" source="File: CDE (PPASS)" type="V_String" />
+                    <Field name="addline2" size="30" source="File: CDE (PPASS)" type="V_String" />
+                    <Field name="addline3" size="30" source="File: CDE (PPASS)" type="V_String" />
+                    <Field name="city" size="30" source="File: CDE (PPASS)" type="V_String" />
+                    <Field name="province" size="30" source="File: CDE (PPASS)" type="V_String" />
+                    <Field name="postcode" size="20" source="File: CDE (PPASS)" type="V_String" />
+                    <Field name="us_state" size="2" source="File: CDE (PPASS)" type="V_String" />
+                    <Field name="country" size="40" source="File: CDE (PPASS)" type="V_String" />
+                    <Field name="phone1" size="25" source="File: CDE (PPASS)" type="V_String" />
+                    <Field name="phone2" size="25" source="File: CDE (PPASS)" type="V_String" />
+                    <Field name="email" size="50" source="File: CDE (PPASS)" type="V_String" />
+                    <Field name="source_code" size="15" source="File: CDE (PPASS)" type="V_String" />
+                    <Field name="user_invitation_code" size="15" source="File: CDE (PPASS)" type="V_String" />
+                    <Field name="market_code" size="10" source="File: CDE (PPASS)" type="V_String" />
+                  </RecordInfo>
+                </MetaInfo>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+            </Node>
+          </ChildNodes>
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output2" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="6" Connection="Folder Path" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Dallas_Active Member Report</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="6da081ba-aae9-4a6a-adf4-069da4cad4eb" />
+      <Telemetry>
+        <PreviousWorkflowId value="7447cf0c-9fd2-43e7-be19-9830d4bab449" />
+        <OriginWorkflowId value="7447cf0c-9fd2-43e7-be19-9830d4bab449" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

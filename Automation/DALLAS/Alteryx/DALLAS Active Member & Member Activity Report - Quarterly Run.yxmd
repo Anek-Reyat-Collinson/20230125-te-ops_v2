@@ -1,0 +1,1422 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2022.1">
+  <Nodes>
+    <Node ToolID="36">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="55" y="54" width="1661" height="337" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Member Activity</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="1">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+            <Position x="1412" y="164" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <UniqueFields>
+                <Field field="Member No" />
+                <Field field="Title" />
+                <Field field="Firstname" />
+                <Field field="Lastname" />
+                <Field field="Company" />
+                <Field field="Address 1" />
+                <Field field="Address 2" />
+                <Field field="Address 3" />
+                <Field field="City" />
+                <Field field="Province" />
+                <Field field="Postcode" />
+                <Field field="Country" />
+                <Field field="Tel 1" />
+                <Field field="Tel 2" />
+                <Field field="New/Renew" />
+                <Field field="Source Code" />
+                <Field field="Amount" />
+                <Field field="Cost Centre" />
+                <Field field="Group Code" />
+                <Field field="Vendor Code" />
+                <Field field="User Invitation Code" />
+                <Field field="Path" />
+              </UniqueFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+        </Node>
+        <Node ToolID="3">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+            <Position x="283" y="247" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <UniqueFields>
+                <Field field="Member No" />
+                <Field field="Title" />
+                <Field field="Firstname" />
+                <Field field="Lastname" />
+                <Field field="Company" />
+                <Field field="Address 1" />
+                <Field field="Address 2" />
+                <Field field="Address 3" />
+                <Field field="City" />
+                <Field field="Province / State" />
+                <Field field="Postcode" />
+                <Field field="Country" />
+                <Field field="Tel 1" />
+                <Field field="Tel 2" />
+                <Field field="Activity" />
+                <Field field="Source Code" />
+                <Field field="Amount" />
+                <Field field="Cost Centre" />
+                <Field field="Group Code" />
+                <Field field="Vendor Code" />
+                <Field field="user_invitation_code" />
+                <Field field="trans_ccard_number" />
+                <Field field="Plan" />
+                <Field field="Membership Level" />
+                <Field field="market_code" />
+              </UniqueFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+        </Node>
+        <Node ToolID="4">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="1232" y="176" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="IF  StartsWith([New/Renew], &quot;NEW&quot;) THEN &quot;NEW&quot; ELSEIF  StartsWith([New/Renew], &quot;RENEW&quot;) THEN &quot;RENEW&quot; ELSE [New/Renew] ENDIF" field="New/Renew" size="15" type="V_String" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>New/Renew = IF  StartsWith([New/Renew], "NEW") THEN "NEW" ELSEIF  StartsWith([Ne...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="5">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="1316" y="176" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="True" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Member No" selected="True" type="Double" size="8" />
+                <SelectField field="Title" selected="True" />
+                <SelectField field="FirstName" selected="True" />
+                <SelectField field="LastName" selected="True" />
+                <SelectField field="trans_ccard_number" selected="True" rename="CCard No" />
+                <SelectField field="Company" selected="True" />
+                <SelectField field="Address 1" selected="True" />
+                <SelectField field="Address 2" selected="True" />
+                <SelectField field="Address 3" selected="True" />
+                <SelectField field="City" selected="True" />
+                <SelectField field="Province" selected="True" />
+                <SelectField field="Postcode" selected="True" />
+                <SelectField field="Country" selected="True" />
+                <SelectField field="Tel 1" selected="True" />
+                <SelectField field="Tel 2" selected="True" />
+                <SelectField field="New/Renew" selected="True" />
+                <SelectField field="Source Code" selected="True" />
+                <SelectField field="Amount" selected="True" />
+                <SelectField field="Cost Centre" selected="True" />
+                <SelectField field="Group Code" selected="True" />
+                <SelectField field="Vendor Code" selected="True" />
+                <SelectField field="User Invitation Code" selected="True" />
+                <SelectField field="OutputFileName" selected="False" />
+                <SelectField field="OutputFolder" selected="False" />
+                <SelectField field="Path" selected="True" />
+                <SelectField field="Plan" selected="False" />
+                <SelectField field="Membership Level" selected="False" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="6">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="1604" y="140" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File MaxRecords="" FileFormat="25">\\10.160.0.47\PriorityPass\8A. OPS VISA WHOLESALE LITE\Monthly Reports\2019\04. Apr 2019\Issuer Active Member Report.xlsx|||Sheet1</File>
+              <Passwords />
+              <FormatSpecificOptions>
+                <PreserveFormat>False</PreserveFormat>
+                <SkipFieldNames>False</SkipFieldNames>
+                <OutputOption>Create</OutputOption>
+              </FormatSpecificOptions>
+              <MultiFile value="True" />
+              <MultiFileType>Path</MultiFileType>
+              <MultiFileField>Path</MultiFileField>
+              <KeepField value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Issuer Active Member Report.xlsx
+Query=Sheet1</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+        <Node ToolID="16">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="1136" y="176" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="[OutputFolder] +&quot;\&quot;+ [market_code]+ &quot; - New &amp; Renew - &quot; + DatetimeFormat(DateTimeAdd(DateTimeNow(),-1,&quot;months&quot;),&quot;%B %Y&quot;) + &quot;.xlsx|||Sheet1&quot;" field="Path" size="1073741823" type="V_WString" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Path = [OutputFolder] +"\"+ [market_code]+ " - New &amp; Renew - " + DatetimeFormat(...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="17">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="944" y="188" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Mode>Simple</Mode>
+              <Simple>
+                <Operator>IsNotNull</Operator>
+                <Field>Source Code</Field>
+                <Operands>
+                  <IgnoreTimeInDateTime>False</IgnoreTimeInDateTime>
+                  <DateType>fixed</DateType>
+                  <PeriodDate>2022-02-24 12:54:15</PeriodDate>
+                  <PeriodType>
+                  </PeriodType>
+                  <PeriodCount>0</PeriodCount>
+                  <Operand>
+                  </Operand>
+                  <StartDate>2022-02-24 12:54:15</StartDate>
+                  <EndDate>2022-02-24 12:54:15</EndDate>
+                </Operands>
+              </Simple>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>!IsNull([Source Code])</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="18">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+            <Position x="1040" y="188" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SortInfo locale="0">
+                <Field field="Source Code" order="Ascending" />
+              </SortInfo>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Source Code - Ascending</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+        </Node>
+        <Node ToolID="20">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="572" y="199" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="&quot;\\10.160.0.47\PriorityPass\Harshad\Member Activity Report\DALLAS\&quot;+DateTimeFormat(DateTimeNow(),&quot;%d-%b-%Y&quot;)" field="OutputFolder" size="1073741823" type="V_WString" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>OutputFolder = "\\10.160.0.47\PriorityPass\Harshad\Member Activity Report\DALLAS...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="21">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="860" y="188" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="True" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Member No" selected="True" />
+                <SelectField field="Title" selected="True" />
+                <SelectField field="FirstName" selected="True" />
+                <SelectField field="LastName" selected="True" />
+                <SelectField field="Company" selected="True" />
+                <SelectField field="Address 1" selected="True" />
+                <SelectField field="Address 2" selected="True" />
+                <SelectField field="Address 3" selected="True" />
+                <SelectField field="City" selected="True" />
+                <SelectField field="Province" selected="True" />
+                <SelectField field="Postcode" selected="True" />
+                <SelectField field="Country" selected="True" />
+                <SelectField field="Tel 1" selected="True" />
+                <SelectField field="Tel 2" selected="True" />
+                <SelectField field="Activity" selected="True" rename="New/Renew" />
+                <SelectField field="Source Code" selected="True" />
+                <SelectField field="Amount" selected="True" />
+                <SelectField field="Cost Centre" selected="True" />
+                <SelectField field="Group Code" selected="True" />
+                <SelectField field="DateMonth" selected="False" />
+                <SelectField field="Vendor Code" selected="True" />
+                <SelectField field="user_invitation_code" selected="True" rename="User Invitation Code" />
+                <SelectField field="OutputFileName" selected="True" />
+                <SelectField field="OutputFolder" selected="True" />
+                <SelectField field="trans_ccard_number" selected="True" />
+                <SelectField field="Plan" selected="True" />
+                <SelectField field="Membership Level" selected="True" />
+                <SelectField field="source_code" selected="True" />
+                <SelectField field="country_of_issue" selected="True" />
+                <SelectField field="membership_fee" selected="True" />
+                <SelectField field="currency" selected="True" />
+                <SelectField field="Level of Membership1" selected="False" />
+                <SelectField field="issuer_name" selected="True" />
+                <SelectField field="Level of Membership" selected="True" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="22">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="764" y="176" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="[OutputFolder]+&quot;\Member Activity Report &quot;+ Replace(Replace(DateTimeParse(DateTimeNow(),&quot;%Y-%m-%d&quot;) , &quot;-&quot;, &quot;&quot;), &quot;:&quot;, &quot;&quot;) +&quot;.csv&quot;" field="OutputFileName" size="1073741823" type="V_WString" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>OutputFileName = [OutputFolder]+"\Member Activity Report "+ Replace(Replace(Date...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="23">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="476" y="200" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="DateTimeFormat(DateTimeToday(),'%m%y')=DateTimeFormat(DateTimeAdd(DateTimeToday(),-1,'month'),'%m%y')" field="DateMonth" size="1073741823" type="V_WString" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>DateMonth = DateTimeFormat(DateTimeToday(),'%m%y')=DateTimeFormat(DateTimeAdd(Da...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="25">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="800" y="140" width="144" height="24" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>Write Data into Output file</Text>
+              <Font name="Arial" size="8.25" style="0" />
+              <TextColor name="Black" />
+              <FillColor name="White" />
+              <Shape shape="0" />
+              <Justification Justification="4" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="28">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BlockUntilDone.BlockUntilDone">
+            <Position x="668" y="212" />
+          </GuiSettings>
+          <Properties>
+            <Configuration />
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBlockUntilDone" />
+        </Node>
+        <Node ToolID="30">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="380" y="199" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Firstname" selected="True" rename="FirstName" />
+                <SelectField field="Lastname" selected="True" rename="LastName" />
+                <SelectField field="Province / State" selected="True" rename="Province" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="31">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DynamicInput.DynamicInput">
+            <Position x="188" y="247" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <InputConfiguration>
+                <Configuration>
+                  <Passwords />
+                  <CachedCosmeticName>CDE OPS (PPASS)</CachedCosmeticName>
+                  <File RecordLimit="" FileFormat="23">aka:630f3be88a20878940976291|||select c.membership_no as [Member No],
+	c.title as Title,
+	c.forename as Firstname,
+	c.surname as Lastname,
+	a.company as Company,
+	a.addline1 as [Address 1],
+	a.addline2 as [Address 2],
+	a.addline3 as [Address 3],
+	a.city as City,
+	case 
+			when IsNull(a.us_state, '') = '' then a.province 
+			else a.us_state 
+		end as [Province / State],
+	a.postcode as Postcode,
+	c1.code_desc as Country,
+	a.phone1 as [Tel 1],
+	a.phone2 as [Tel 2],
+	al.activity_code as Activity,
+	sdc.source_code as [Source Code],
+	al.amount as Amount,
+	p.old_system_ref as [Cost Centre],
+	p.group_code as [Group Code],
+	siv.vendor_tracking_code as [Vendor Code],
+	T.user_invitation_code,
+	p.trans_ccard_number,
+	p.product_version as [Plan],
+	sl.subscription_level_desc as [Membership Level],
+	s.market_code 
+from PPass.dbo.consumer c 
+	inner join PPass.dbo.purchase p on c.consumer_no = p.consumer_no 
+	inner join PPass.dbo.account_line al on p.purchase_no = al.purchase_no 
+	inner join PPass.dbo.purchase_subscription_link psl on p.purchase_no = psl.purchase_no 
+	inner join PPass.dbo.source_subscription ss on psl.source_subscription_id = ss.source_subscription_id 
+	inner join PPASS.dbo.subscription_level sl With(NoLock) on sl.subscription_level_id = ss.subscription_level_id 
+	inner join PPass.dbo.source_deal_config sdc on ss.source_deal_config_id = sdc.source_deal_config_id 
+	inner join PPass.dbo.source s on sdc.source_code = s.source_code 
+	left join PPass.dbo.address a on p.consumer_no = a.consumer_no and a.address_sequence = p.delivery_address_seq 
+	left join PPass.dbo.code c1 on a.country_code = c1.code and c1.codetype = 'CTRY' 
+	left outer join PPass.dbo.source_invitation_validation siv on siv.consumer_no = c.consumer_no 
+	left outer join 
+	(
+	select siv.consumer_no,
+		siv.user_invitation_code,
+		Row_Number() 
+	over 
+		(
+		partition by siv.consumer_no 
+		order by siv.user_invitation_code
+		) as row# 
+	from PPASS.dbo.source_invitation_validation siv With(NoLock)
+	) as T on T.consumer_no = c.consumer_no and T.row# = 1 
+where al.activity_code not Like '%VISIT%' 
+	and s.market_code in ('Test') 
+	and Cast(al.amendment_date as DATE) &gt;= Cast(DateAdd(day, 1, EOMonth(DateAdd(month, -3, GetDate()))) as DATE)  
+	and Cast(al.amendment_date as DATE) &lt; Cast(DateAdd(dd, 1, EOMonth(DateAdd(MONTH, 0, GetDate()))) as DATE)  
+	and al.account_line_type = 'P' 
+	and al.track_seq = 0 
+	and p.isdeleted = 0 
+	and p.purchase_status not Like 'W%' 
+order by s.market_code, c.source_code</File>
+                  <FormatSpecificOptions>
+                    <PreSQLOnConfig>True</PreSQLOnConfig>
+                    <ReadCentroids>False</ReadCentroids>
+                    <NoProgress>True</NoProgress>
+                    <SessionReadOnly>True</SessionReadOnly>
+                    <ReadUncommitted>False</ReadUncommitted>
+                    <TableStyle>Quoted</TableStyle>
+                    <PreSQL />
+                    <PostSQL />
+                    <SingleRowFetch>False</SingleRowFetch>
+                  </FormatSpecificOptions>
+                </Configuration>
+              </InputConfiguration>
+              <Mode>ModifySQL</Mode>
+              <Modifications>
+                <Modify Action="ReplaceStringEx" Annotation=" s.market_code in ('Test')">
+                  <ReplaceIn><![CDATA[ s.market_code in ('Test')]]></ReplaceIn>
+                  <ReplaceValueType>String</ReplaceValueType>
+                  <ReplaceText>'Test'</ReplaceText>
+                  <GroupForIn value="True" />
+                  <GroupForIn_Limit value="1000" />
+                  <Field>Market Code</Field>
+                </Modify>
+              </Modifications>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDynamicInput" />
+        </Node>
+        <Node ToolID="32">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+            <Position x="1508" y="152" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SortInfo locale="1033">
+                <Field field="New/Renew" order="Ascending" />
+              </SortInfo>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>New/Renew - Ascending</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+        </Node>
+        <Node ToolID="34">
+          <GuiSettings>
+            <Position x="764" y="103" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="Input.Folder Path"><![CDATA[folderpath=OutputFolder
+]]></Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings Macro=".\DALLAS+Active+Member+&amp;+Member+Activity+Report\_externals\1\folderexist.yxmc" />
+        </Node>
+        <Node ToolID="37">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+            <Position x="80" y="247" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <NumRows value="10" />
+              <Fields>
+                <Field name="Market Code" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>AMEXARG</c>
+                </r>
+                <r>
+                  <c>AMEXARC</c>
+                </r>
+                <r>
+                  <c>AMEXECU</c>
+                </r>
+                <r>
+                  <c>AMEXMEC</c>
+                </r>
+                <r>
+                  <c>AMEXLA</c>
+                </r>
+                <r>
+                  <c>AMEXLAP</c>
+                </r>
+                <r>
+                  <c>AMEXLAC</c>
+                </r>
+                <r>
+                  <c>AMEXCOL</c>
+                </r>
+                <r>
+                  <c>AMEXPRC</c>
+                </r>
+                <r>
+                  <c>AMEXCA</c>
+                </r>
+              </Data>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="69">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="54" y="415" width="1578" height="336" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Active Member</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="38">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DynamicInput.DynamicInput">
+            <Position x="188" y="608" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <InputConfiguration>
+                <Configuration>
+                  <Passwords />
+                  <CachedCosmeticName>CDE OPS (PPASS)</CachedCosmeticName>
+                  <File RecordLimit="" FileFormat="23">aka:630f3be88a20878940976291|||select c.membership_no as [Member No],
+	p.subs_type as [Member Type],
+	p.subs_status as [Member Status],
+	p.product_version as [Plan],
+	sl.subscription_level_desc as [Membership Level],
+	p.paid_to_date as [Expiry Date],
+	p.purchase_status as [Purchase Status],
+	c.title as Title,
+	c.forename as FirstName,
+	c.surname as LastName,
+	a.company as Company,
+	a.addline1 as [Address 1],
+	a.addline2 as [Address 2],
+	a.addline3 as [Address 3],
+	a.city as City,
+	a.province as Province,
+	a.postcode as Postcode,
+	c1.code_desc as Country,
+	p.old_system_ref as [Cost Centre],
+	a.phone1 as [Tel 1],
+	a.phone2 as [Tel 2],
+	a.email as Email,
+	sdc.source_code as [Source Code],
+	siv.vendor_tracking_code as [Vendor Code],
+	T.user_invitation_code,
+	p.trans_ccard_number,
+s.market_code 
+from PPASS.dbo.consumer c 
+	inner join PPASS.dbo.purchase p With(NoLock) on c.consumer_no = p.consumer_no 
+	inner join PPASS.dbo.purchase_subscription_link psl With(NoLock) on p.purchase_no = psl.purchase_no 
+	inner join PPASS.dbo.source_subscription ss With(NoLock) on psl.source_subscription_id = ss.source_subscription_id 
+	inner join PPASS.dbo.subscription_level sl With(NoLock) on sl.subscription_level_id = ss.subscription_level_id 
+	inner join PPASS.dbo.source_deal_config sdc With(NoLock) on ss.source_deal_config_id = sdc.source_deal_config_id 
+	inner join PPASS.dbo.source s With(NoLock) on s.source_code = sdc.source_code 
+	inner join PPASS.dbo.address a With(NoLock) on p.consumer_no = a.consumer_no and p.delivery_address_seq = a.address_sequence 
+	left outer join PPASS.dbo.code c1 With(NoLock) on a.country_code = c1.code and c1.codetype = 'CTRY' 
+	left outer join PPASS.dbo.source_invitation_validation siv With(NoLock) on siv.consumer_no = c.consumer_no 
+	left outer join 
+	(
+	select siv.consumer_no,
+		siv.user_invitation_code,
+		Row_Number() 
+	over 
+		(
+		partition by siv.consumer_no 
+		order by siv.user_invitation_code
+		) as row# 
+	from PPASS.dbo.source_invitation_validation siv With(NoLock)
+	) as T on T.consumer_no = c.consumer_no and T.row# = 1 
+	left outer join PPASS.dbo.consumer_bank_detail cdb With(NoLock) on cdb.consumer_no = c.consumer_no 
+	left outer join PPASS.dbo.partner_consumer_ext_detail_lk pcdlk With(NoLock) on pcdlk.consumer_no = c.consumer_no 
+	left outer join PPASS.dbo.partner_consumer_ext_detail pcd With(NoLock) on pcd.partner_consumer_ext_detail_id = pcdlk.partner_consumer_ext_detail_id 
+	left outer join PPASS.dbo.profile pr With(NoLock) on sdc.source_code = pr.source_code and p.consumer_no = pr.consumer_no and pr.question_code = 'Q7053' 
+where p.paid_to_date &gt;= Cast(GetDate() as date) 
+	and p.purchase_status not Like 'W%' 
+	and s.market_code in ('Test') 
+	and p.effective_date &lt;= Cast(GetDate() as date) 
+	and p.isdeleted = 0 
+order by pr.source_code, pr.consumer_no, LastName</File>
+                  <FormatSpecificOptions>
+                    <PreSQLOnConfig>True</PreSQLOnConfig>
+                    <ReadCentroids>False</ReadCentroids>
+                    <NoProgress>True</NoProgress>
+                    <SessionReadOnly>True</SessionReadOnly>
+                    <ReadUncommitted>False</ReadUncommitted>
+                    <TableStyle>Quoted</TableStyle>
+                    <PreSQL />
+                    <PostSQL />
+                    <SingleRowFetch>False</SingleRowFetch>
+                  </FormatSpecificOptions>
+                </Configuration>
+              </InputConfiguration>
+              <Mode>ModifySQL</Mode>
+              <Modifications>
+                <Modify Action="ReplaceStringEx" Annotation=" s.market_code in ('Test')">
+                  <ReplaceIn><![CDATA[ s.market_code in ('Test')]]></ReplaceIn>
+                  <ReplaceValueType>String</ReplaceValueType>
+                  <ReplaceText>'Test'</ReplaceText>
+                  <GroupForIn value="True" />
+                  <GroupForIn_Limit value="1000" />
+                  <Field>Market Code</Field>
+                </Modify>
+              </Modifications>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDynamicInput" />
+        </Node>
+        <Node ToolID="39">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="379" y="560" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="41">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BlockUntilDone.BlockUntilDone">
+            <Position x="668" y="560" />
+          </GuiSettings>
+          <Properties>
+            <Configuration />
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBlockUntilDone" />
+        </Node>
+        <Node ToolID="44">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="728" y="500" width="144" height="24" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>Write Data into Output file</Text>
+              <Font name="Arial" size="8.25" style="0" />
+              <TextColor name="Black" />
+              <FillColor name="White" />
+              <Shape shape="0" />
+              <Justification Justification="4" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="46">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="476" y="560" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="DateTimeFormat(DateTimeToday(),'%m%y')=DateTimeFormat(DateTimeAdd(DateTimeToday(),-1,'month'),'%m%y')" field="DateMonth" size="1073741823" type="V_WString" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>DateMonth = DateTimeFormat(DateTimeToday(),'%m%y')=DateTimeFormat(DateTimeAdd(Da...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="47">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="764" y="536" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="[OutputFolder]+&quot;\Active Member Report &quot;+ Replace(Replace(DateTimeParse(DateTimeNow(),&quot;%Y-%m-%d&quot;) , &quot;-&quot;, &quot;&quot;), &quot;:&quot;, &quot;&quot;) +&quot;.csv&quot;" field="OutputFileName" size="1073741823" type="V_WString" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>OutputFileName = [OutputFolder]+"\Active Member Report "+ Replace(Replace(DateTi...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="48">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="860" y="536" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="True" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Member No" selected="True" />
+                <SelectField field="Member Type" selected="True" />
+                <SelectField field="Member Status" selected="True" />
+                <SelectField field="Plan" selected="True" />
+                <SelectField field="Membership Level" selected="True" />
+                <SelectField field="Expiry Date" selected="True" />
+                <SelectField field="Purchase Status" selected="True" />
+                <SelectField field="Title" selected="True" />
+                <SelectField field="FirstName" selected="True" />
+                <SelectField field="LastName" selected="True" />
+                <SelectField field="Company" selected="True" />
+                <SelectField field="Address 1" selected="True" />
+                <SelectField field="Address 2" selected="True" />
+                <SelectField field="Address 3" selected="True" />
+                <SelectField field="City" selected="True" />
+                <SelectField field="Province" selected="True" />
+                <SelectField field="Postcode" selected="True" />
+                <SelectField field="Country" selected="True" />
+                <SelectField field="Cost Centre" selected="True" />
+                <SelectField field="Tel 1" selected="True" />
+                <SelectField field="Tel 2" selected="True" />
+                <SelectField field="Email" selected="True" />
+                <SelectField field="Source Code" selected="True" />
+                <SelectField field="DateMonth" selected="False" />
+                <SelectField field="Vendor Code" selected="True" />
+                <SelectField field="user_invitation_code" selected="True" />
+                <SelectField field="OutputFileName" selected="True" />
+                <SelectField field="OutputFolder" selected="True" />
+                <SelectField field="trans_ccard_number" selected="True" />
+                <SelectField field="source_code" selected="True" />
+                <SelectField field="country_of_issue" selected="True" />
+                <SelectField field="membership_fee" selected="True" />
+                <SelectField field="currency" selected="True" />
+                <SelectField field="Level of Membership" selected="True" />
+                <SelectField field="issuer_name" selected="True" />
+                <SelectField field="Level of Membership1" selected="False" />
+                <SelectField field="market_code" selected="True" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="49">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="572" y="560" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="&quot;\\10.160.0.47\PriorityPass\Harshad\Active Member Report\DALLAS\&quot;+DateTimeFormat(DateTimeNow(),&quot;%d-%b-%Y&quot;)" field="OutputFolder" size="1073741823" type="V_WString" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>OutputFolder = "\\10.160.0.47\PriorityPass\Harshad\Active Member Report\DALLAS\"...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="51">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+            <Position x="1052" y="536" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SortInfo locale="0">
+                <Field field="Source Code" order="Ascending" />
+                <Field field="Expiry Date" order="Ascending" />
+              </SortInfo>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Source Code - Ascending
+Expiry Date - Ascending</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+        </Node>
+        <Node ToolID="52">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="956" y="536" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Mode>Simple</Mode>
+              <Simple>
+                <Operator>IsNotNull</Operator>
+                <Field>Source Code</Field>
+                <Operands>
+                  <IgnoreTimeInDateTime>False</IgnoreTimeInDateTime>
+                  <DateType>fixed</DateType>
+                  <PeriodDate>2022-02-24 12:54:15</PeriodDate>
+                  <PeriodType>
+                  </PeriodType>
+                  <PeriodCount>0</PeriodCount>
+                  <Operand>
+                  </Operand>
+                  <StartDate>2022-02-24 12:54:15</StartDate>
+                  <EndDate>2022-02-24 12:54:15</EndDate>
+                </Operands>
+              </Simple>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>!IsNull([Source Code])</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="53">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="1148" y="524" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="[OutputFolder] +&quot;\&quot;+ [market_code]+ &quot; - Active Members - &quot; + DatetimeFormat(DateTimeAdd(DateTimeNow(),0,&quot;months&quot;),&quot;%d %B %Y&quot;) + &quot;.xlsx|||Sheet1&quot;" field="Path" size="1073741823" type="V_WString" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Path = [OutputFolder] +"\"+ [market_code]+ " - Active Members - " + DatetimeForm...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="54">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="1520" y="500" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File MaxRecords="" FileFormat="25">%temp%\Issuer Active Member Report.xlsx|||Sheet1</File>
+              <Passwords />
+              <FormatSpecificOptions>
+                <PreserveFormat>False</PreserveFormat>
+                <SkipFieldNames>False</SkipFieldNames>
+                <OutputOption>Create</OutputOption>
+              </FormatSpecificOptions>
+              <MultiFile value="True" />
+              <MultiFileType>Path</MultiFileType>
+              <MultiFileField>Path</MultiFileField>
+              <KeepField value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Issuer Active Member Report.xlsx
+Query=Sheet1</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit>
+                <Dependency Path="%temp%\Issuer Active Member Report.xlsx" Package="False" IsMacro="False" IsOutput="True" IsAlias="False" />
+              </Implicit>
+            </Dependencies>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+        <Node ToolID="55">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="1328" y="524" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="True" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Member No" selected="True" type="Double" size="8" />
+                <SelectField field="Member Type" selected="True" />
+                <SelectField field="Member Status" selected="True" />
+                <SelectField field="Plan" selected="True" />
+                <SelectField field="Membership Level" selected="True" />
+                <SelectField field="Expiry" selected="True" />
+                <SelectField field="Expiry Date" selected="False" />
+                <SelectField field="Purchase Status" selected="True" />
+                <SelectField field="Title" selected="True" />
+                <SelectField field="FirstName" selected="True" />
+                <SelectField field="LastName" selected="True" />
+                <SelectField field="Company" selected="True" />
+                <SelectField field="Address 1" selected="True" />
+                <SelectField field="Address 2" selected="True" />
+                <SelectField field="Address 3" selected="True" />
+                <SelectField field="City" selected="True" />
+                <SelectField field="Province" selected="True" />
+                <SelectField field="Postcode" selected="True" />
+                <SelectField field="Country" selected="True" />
+                <SelectField field="Cost Centre" selected="True" />
+                <SelectField field="Tel 1" selected="True" />
+                <SelectField field="Tel 2" selected="True" />
+                <SelectField field="Email" selected="True" />
+                <SelectField field="Source Code" selected="True" />
+                <SelectField field="Vendor Code" selected="True" />
+                <SelectField field="user_invitation_code" selected="True" rename="User Invitation Code" />
+                <SelectField field="OutputFileName" selected="False" />
+                <SelectField field="OutputFolder" selected="False" />
+                <SelectField field="Path" selected="True" />
+                <SelectField field="source_code" selected="False" />
+                <SelectField field="country_of_issue" selected="False" />
+                <SelectField field="membership_fee" selected="False" />
+                <SelectField field="currency" selected="False" />
+                <SelectField field="Level of Membership" selected="False" />
+                <SelectField field="trans_ccard_number" selected="False" />
+                <SelectField field="issuer_name" selected="False" />
+                <SelectField field="Issuer" selected="False" />
+                <SelectField field="Client ID/SourceCode" selected="False" />
+                <SelectField field="Right_Membership Level" selected="False" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="56">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="1244" y="536" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="[Expiry Date]" field="Expiry" size="1073741823" type="V_WString" />
+                <FormulaField expression="DateTimeFormat([Expiry],&quot;%d-%b-%y&quot;)" field="Expiry" size="1073741823" type="V_WString" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText><![CDATA[Expiry = [Expiry Date]
+Expiry = DateTimeFormat([Expiry],"%d-%b-%y")
+]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="65">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+            <Position x="284" y="608" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <UniqueFields>
+                <Field field="Member No" />
+                <Field field="Member Type" />
+                <Field field="Member Status" />
+                <Field field="Plan" />
+                <Field field="Membership Level" />
+                <Field field="Expiry Date" />
+                <Field field="Purchase Status" />
+                <Field field="Title" />
+                <Field field="FirstName" />
+                <Field field="LastName" />
+                <Field field="Company" />
+                <Field field="Address 1" />
+                <Field field="Address 2" />
+                <Field field="Address 3" />
+                <Field field="City" />
+                <Field field="Province" />
+                <Field field="Postcode" />
+                <Field field="Country" />
+                <Field field="Cost Centre" />
+                <Field field="Tel 1" />
+                <Field field="Tel 2" />
+                <Field field="Email" />
+                <Field field="Source Code" />
+                <Field field="Vendor Code" />
+                <Field field="user_invitation_code" />
+                <Field field="trans_ccard_number" />
+              </UniqueFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+        </Node>
+        <Node ToolID="66">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+            <Position x="1424" y="524" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <UniqueFields>
+                <Field field="Member No" />
+                <Field field="Member Type" />
+                <Field field="Member Status" />
+                <Field field="Plan" />
+                <Field field="Membership Level" />
+                <Field field="Expiry" />
+                <Field field="Purchase Status" />
+                <Field field="Title" />
+                <Field field="FirstName" />
+                <Field field="LastName" />
+                <Field field="Company" />
+                <Field field="Address 1" />
+                <Field field="Address 2" />
+                <Field field="Address 3" />
+                <Field field="City" />
+                <Field field="Province" />
+                <Field field="Postcode" />
+                <Field field="Country" />
+                <Field field="Cost Centre" />
+                <Field field="Tel 1" />
+                <Field field="Tel 2" />
+                <Field field="Email" />
+                <Field field="Source Code" />
+                <Field field="Vendor Code" />
+                <Field field="User Invitation Code" />
+                <Field field="Path" />
+              </UniqueFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+        </Node>
+        <Node ToolID="68">
+          <GuiSettings>
+            <Position x="764" y="464" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="Input.Folder Path"><![CDATA[folderpath=OutputFolder
+]]></Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings Macro=".\DALLAS+Active+Member+&amp;+Member+Activity+Report\_externals\1\folderexist.yxmc" />
+        </Node>
+        <Node ToolID="70">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+            <Position x="79" y="607" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <NumRows value="10" />
+              <Fields>
+                <Field name="Market Code" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>AMEXARG</c>
+                </r>
+                <r>
+                  <c>AMEXARC</c>
+                </r>
+                <r>
+                  <c>AMEXECU</c>
+                </r>
+                <r>
+                  <c>AMEXMEC</c>
+                </r>
+                <r>
+                  <c>AMEXLA</c>
+                </r>
+                <r>
+                  <c>AMEXLAP</c>
+                </r>
+                <r>
+                  <c>AMEXLAC</c>
+                </r>
+                <r>
+                  <c>AMEXCOL</c>
+                </r>
+                <r>
+                  <c>AMEXPRC</c>
+                </r>
+                <r>
+                  <c>AMEXCA</c>
+                </r>
+              </Data>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Unique" />
+      <Destination ToolID="32" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Unique" />
+      <Destination ToolID="30" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="1" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="True" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="18" Connection="Output" />
+      <Destination ToolID="16" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="20" Connection="Output" />
+      <Destination ToolID="28" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="21" Connection="Output" />
+      <Destination ToolID="17" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="22" Connection="Output" />
+      <Destination ToolID="21" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="23" Connection="Output" />
+      <Destination ToolID="20" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="28" Connection="Output2" />
+      <Destination ToolID="22" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="28" Connection="Output" />
+      <Destination ToolID="34" Connection="Folder Path" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="30" Connection="Output" />
+      <Destination ToolID="23" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="31" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="32" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="37" Connection="Output" />
+      <Destination ToolID="31" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="38" Connection="Output" />
+      <Destination ToolID="65" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="39" Connection="Output" />
+      <Destination ToolID="46" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="41" Connection="Output2" />
+      <Destination ToolID="47" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="41" Connection="Output" />
+      <Destination ToolID="68" Connection="Folder Path" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="46" Connection="Output" />
+      <Destination ToolID="49" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="47" Connection="Output" />
+      <Destination ToolID="48" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="48" Connection="Output" />
+      <Destination ToolID="52" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="49" Connection="Output" />
+      <Destination ToolID="41" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="51" Connection="Output" />
+      <Destination ToolID="53" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="52" Connection="True" />
+      <Destination ToolID="51" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="53" Connection="Output" />
+      <Destination ToolID="56" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="55" Connection="Output" />
+      <Destination ToolID="66" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="56" Connection="Output" />
+      <Destination ToolID="55" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="65" Connection="Unique" />
+      <Destination ToolID="39" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="66" Connection="Unique" />
+      <Destination ToolID="54" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="70" Connection="Output" />
+      <Destination ToolID="38" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>DALLAS Active Member &amp; Member Activity Report - Quarterly Run</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="234d8582-4117-46de-9677-747854d3530e" />
+      <Telemetry>
+        <PreviousWorkflowId value="e7d455c5-ff61-4157-bd81-f56612265619" />
+        <OriginWorkflowId value="bea59eea-280a-4187-b431-e8a195e40826" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

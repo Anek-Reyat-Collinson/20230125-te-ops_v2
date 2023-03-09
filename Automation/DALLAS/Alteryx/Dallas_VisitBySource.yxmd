@@ -1,0 +1,870 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2022.1">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <CachedCosmeticName>DI_Billing</CachedCosmeticName>
+          <File FileFormat="23" RecordLimit="">aka:5f15b4860b05360e6c4ed32e|||SELECT * FROM OpsBilling.dbo.Dallas_SourceCodeList</File>
+          <FormatSpecificOptions>
+            <SingleRowFetch>False</SingleRowFetch>
+            <ReadCentroids>False</ReadCentroids>
+            <TableStyle>Quoted</TableStyle>
+            <CacheData>False</CacheData>
+            <SessionReadOnly>True</SessionReadOnly>
+            <ReadUncommitted>False</ReadUncommitted>
+            <NoProgress>True</NoProgress>
+            <PostSQL />
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <PreSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:DI_Billing
+Query=SELECT * FROM OpsBilling.dbo...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Category" size="50" source="File: aka:5f15b4860b05360e6c4ed32e|||SELECT * FROM OpsBilling.dbo.Dallas_SourceCodeList" type="V_String" />
+            <Field name="SourceCode" size="50" source="File: aka:5f15b4860b05360e6c4ed32e|||SELECT * FROM OpsBilling.dbo.Dallas_SourceCodeList" type="V_String" />
+            <Field name="BinLength" size="10" source="File: aka:5f15b4860b05360e6c4ed32e|||SELECT * FROM OpsBilling.dbo.Dallas_SourceCodeList" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="246" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="Source Code" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="SourceCode" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="342" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="438" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="if [Category]=&quot;Visa LK 1&quot; then Substring([CCard No],0,6)&#xA;elseif [Category]=&quot;Visa LK 2&quot; then Substring([CCard No],0,6)&#xA;elseif [Category]=&quot;Visa LK 3&quot; then Substring([CCard No],0,8)&#xA;elseif [Category]=&quot;Visa LK 5&quot; then Substring([CCard No],0,7)&#xA;elseif [Category]=&quot;Visa LK 6&quot; then Substring([CCard No],0,9)&#xA;else Substring([CCard No],0,16)&#xA;endif " field="CCard No" size="100" type="V_String" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>CCard No = if [Category]="Visa LK 1" then Substring([CCard No],0,6)
+elseif [Cate...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="630" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Report_Month" selected="False" />
+            <SelectField field="Category" selected="False" />
+            <SelectField field="SourceCode" selected="False" />
+            <SelectField field="BinLength" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="534" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[Category] = "Visa LK 1"</Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Category] = "Visa LK 1"</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="726" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="&quot;\\clbnas01\OpsDataTeam\8. Team\Harshad\Ops Automation\Dallas\17- Visits Visa LK 1 - 6#BIN Others &quot;+DateTimeFormat(DateTimeAdd(DateTimeNow(),-1,&quot;months&quot;) ,&quot;%m-%Y&quot;)+&quot;.xlsx|||Sheet1&quot;" field="Visa LK1" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Visa LK1 = "\\clbnas01\OpsDataTeam\8. Team\Harshad\Ops Automation\Dallas\17- Vis...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="834" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="25">%temp%temp.xlsx</File>
+          <Passwords />
+          <FormatSpecificOptions>
+            <PreserveFormat>False</PreserveFormat>
+            <SkipFieldNames>False</SkipFieldNames>
+            <OutputOption>Create</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="True" />
+          <MultiFileType>Path</MultiFileType>
+          <MultiFileField>Visa LK1</MultiFileField>
+          <KeepField value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>%temp%temp.xlsx</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="618" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Report_Month" selected="False" />
+            <SelectField field="Category" selected="False" />
+            <SelectField field="SourceCode" selected="False" />
+            <SelectField field="BinLength" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="522" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[Category] = "Visa LK 2"</Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Category] = "Visa LK 2"</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="714" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="&quot;\\clbnas01\OpsDataTeam\8. Team\Harshad\Ops Automation\Dallas\18- Visits Visa LK 2 - 6#BIN Others &quot;+DateTimeFormat(DateTimeAdd(DateTimeNow(),-1,&quot;months&quot;) ,&quot;%m-%Y&quot;)+&quot;.xlsx|||Sheet1&quot;" field="Visa LK2" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Visa LK2 = "\\clbnas01\OpsDataTeam\8. Team\Harshad\Ops Automation\Dallas\18- Vis...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="846" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="25">%temp%temp.xlsx</File>
+          <Passwords />
+          <FormatSpecificOptions>
+            <PreserveFormat>False</PreserveFormat>
+            <SkipFieldNames>False</SkipFieldNames>
+            <OutputOption>Create</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="True" />
+          <MultiFileType>Path</MultiFileType>
+          <MultiFileField>Visa LK2</MultiFileField>
+          <KeepField value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>%temp%temp.xlsx</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <CachedCosmeticName>DI_Billing</CachedCosmeticName>
+          <File FileFormat="23" RecordLimit="">aka:5f15b4860b05360e6c4ed32e|||SELECT * FROM OpsBilling.rprt.Dallas_VisitBySource</File>
+          <FormatSpecificOptions>
+            <SingleRowFetch>False</SingleRowFetch>
+            <ReadCentroids>False</ReadCentroids>
+            <TableStyle>Quoted</TableStyle>
+            <CacheData>False</CacheData>
+            <SessionReadOnly>True</SessionReadOnly>
+            <ReadUncommitted>False</ReadUncommitted>
+            <NoProgress>True</NoProgress>
+            <PostSQL />
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <PreSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:DI_Billing
+Query=SELECT * FROM OpsBilling.rpr...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Report_Month" size="10" source="File: aka:5f15b4860b05360e6c4ed32e|||SELECT * FROM OpsBilling.rprt.Dallas_VisitBySource" type="V_String" />
+            <Field name="Source Code" size="20" source="File: aka:5f15b4860b05360e6c4ed32e|||SELECT * FROM OpsBilling.rprt.Dallas_VisitBySource" type="V_String" />
+            <Field name="Member No" source="File: aka:5f15b4860b05360e6c4ed32e|||SELECT * FROM OpsBilling.rprt.Dallas_VisitBySource" type="Int64" />
+            <Field name="CCard No" size="100" source="File: aka:5f15b4860b05360e6c4ed32e|||SELECT * FROM OpsBilling.rprt.Dallas_VisitBySource" type="V_String" />
+            <Field name="Title" size="20" source="File: aka:5f15b4860b05360e6c4ed32e|||SELECT * FROM OpsBilling.rprt.Dallas_VisitBySource" type="V_String" />
+            <Field name="First Name" size="50" source="File: aka:5f15b4860b05360e6c4ed32e|||SELECT * FROM OpsBilling.rprt.Dallas_VisitBySource" type="V_String" />
+            <Field name="Last Name" size="50" source="File: aka:5f15b4860b05360e6c4ed32e|||SELECT * FROM OpsBilling.rprt.Dallas_VisitBySource" type="V_String" />
+            <Field name="Membership Plan" size="20" source="File: aka:5f15b4860b05360e6c4ed32e|||SELECT * FROM OpsBilling.rprt.Dallas_VisitBySource" type="V_String" />
+            <Field name="Member Status" size="5" source="File: aka:5f15b4860b05360e6c4ed32e|||SELECT * FROM OpsBilling.rprt.Dallas_VisitBySource" type="V_String" />
+            <Field name="Paid To Date" size="10" source="File: aka:5f15b4860b05360e6c4ed32e|||SELECT * FROM OpsBilling.rprt.Dallas_VisitBySource" type="V_String" />
+            <Field name="Experience Transaction Date" size="10" source="File: aka:5f15b4860b05360e6c4ed32e|||SELECT * FROM OpsBilling.rprt.Dallas_VisitBySource" type="V_String" />
+            <Field name="Date Processed" size="10" source="File: aka:5f15b4860b05360e6c4ed32e|||SELECT * FROM OpsBilling.rprt.Dallas_VisitBySource" type="V_String" />
+            <Field name="Guest Visits" source="File: aka:5f15b4860b05360e6c4ed32e|||SELECT * FROM OpsBilling.rprt.Dallas_VisitBySource" type="Int32" />
+            <Field name="Batch No" source="File: aka:5f15b4860b05360e6c4ed32e|||SELECT * FROM OpsBilling.rprt.Dallas_VisitBySource" type="Int32" />
+            <Field name="Reference" size="100" source="File: aka:5f15b4860b05360e6c4ed32e|||SELECT * FROM OpsBilling.rprt.Dallas_VisitBySource" type="V_String" />
+            <Field name="Lounge Code" size="20" source="File: aka:5f15b4860b05360e6c4ed32e|||SELECT * FROM OpsBilling.rprt.Dallas_VisitBySource" type="V_String" />
+            <Field name="Lounge" size="100" source="File: aka:5f15b4860b05360e6c4ed32e|||SELECT * FROM OpsBilling.rprt.Dallas_VisitBySource" type="V_String" />
+            <Field name="Airport" size="100" source="File: aka:5f15b4860b05360e6c4ed32e|||SELECT * FROM OpsBilling.rprt.Dallas_VisitBySource" type="V_String" />
+            <Field name="City" size="100" source="File: aka:5f15b4860b05360e6c4ed32e|||SELECT * FROM OpsBilling.rprt.Dallas_VisitBySource" type="V_String" />
+            <Field name="Country" size="100" source="File: aka:5f15b4860b05360e6c4ed32e|||SELECT * FROM OpsBilling.rprt.Dallas_VisitBySource" type="V_String" />
+            <Field name="Client Pays Member Visit" source="File: aka:5f15b4860b05360e6c4ed32e|||SELECT * FROM OpsBilling.rprt.Dallas_VisitBySource" type="Int32" />
+            <Field name="Inclusive PP Member Visit" source="File: aka:5f15b4860b05360e6c4ed32e|||SELECT * FROM OpsBilling.rprt.Dallas_VisitBySource" type="Int32" />
+            <Field name="Complimentary Member Visit" source="File: aka:5f15b4860b05360e6c4ed32e|||SELECT * FROM OpsBilling.rprt.Dallas_VisitBySource" type="Int32" />
+            <Field name="Cardholder Pays Member Visit" source="File: aka:5f15b4860b05360e6c4ed32e|||SELECT * FROM OpsBilling.rprt.Dallas_VisitBySource" type="Int32" />
+            <Field name="Client Pays Guest Visit" source="File: aka:5f15b4860b05360e6c4ed32e|||SELECT * FROM OpsBilling.rprt.Dallas_VisitBySource" type="Int32" />
+            <Field name="Inclusive PP Guest Visit" source="File: aka:5f15b4860b05360e6c4ed32e|||SELECT * FROM OpsBilling.rprt.Dallas_VisitBySource" type="Int32" />
+            <Field name="Complimentary Guest Visit" source="File: aka:5f15b4860b05360e6c4ed32e|||SELECT * FROM OpsBilling.rprt.Dallas_VisitBySource" type="Int32" />
+            <Field name="Cardholder Pays Guest Visit" source="File: aka:5f15b4860b05360e6c4ed32e|||SELECT * FROM OpsBilling.rprt.Dallas_VisitBySource" type="Int32" />
+            <Field name="Lounge Visit Offer" source="File: aka:5f15b4860b05360e6c4ed32e|||SELECT * FROM OpsBilling.rprt.Dallas_VisitBySource" type="Int32" />
+            <Field name="Client Member" source="File: aka:5f15b4860b05360e6c4ed32e|||SELECT * FROM OpsBilling.rprt.Dallas_VisitBySource" type="Int32" />
+            <Field name="Inclusive PP Member" source="File: aka:5f15b4860b05360e6c4ed32e|||SELECT * FROM OpsBilling.rprt.Dallas_VisitBySource" type="Int32" />
+            <Field name="Client Guest" source="File: aka:5f15b4860b05360e6c4ed32e|||SELECT * FROM OpsBilling.rprt.Dallas_VisitBySource" type="Int32" />
+            <Field name="Inclusive PP Guest" source="File: aka:5f15b4860b05360e6c4ed32e|||SELECT * FROM OpsBilling.rprt.Dallas_VisitBySource" type="Int32" />
+            <Field name="Client Member/Guest" source="File: aka:5f15b4860b05360e6c4ed32e|||SELECT * FROM OpsBilling.rprt.Dallas_VisitBySource" type="Int32" />
+            <Field name="Inclusive PP Member/Guest" source="File: aka:5f15b4860b05360e6c4ed32e|||SELECT * FROM OpsBilling.rprt.Dallas_VisitBySource" type="Int32" />
+            <Field name="Complimentary Member/Guest" source="File: aka:5f15b4860b05360e6c4ed32e|||SELECT * FROM OpsBilling.rprt.Dallas_VisitBySource" type="Int32" />
+            <Field name="Client Visit Currency Member" size="50" source="File: aka:5f15b4860b05360e6c4ed32e|||SELECT * FROM OpsBilling.rprt.Dallas_VisitBySource" type="V_String" />
+            <Field name="Client Visit Amount Member" source="File: aka:5f15b4860b05360e6c4ed32e|||SELECT * FROM OpsBilling.rprt.Dallas_VisitBySource" type="Double" />
+            <Field name="Client Visit Currency Guest" size="50" source="File: aka:5f15b4860b05360e6c4ed32e|||SELECT * FROM OpsBilling.rprt.Dallas_VisitBySource" type="V_String" />
+            <Field name="Client Visit Amount Guest" source="File: aka:5f15b4860b05360e6c4ed32e|||SELECT * FROM OpsBilling.rprt.Dallas_VisitBySource" type="Double" />
+            <Field name="Total Client Amount Currency" size="50" source="File: aka:5f15b4860b05360e6c4ed32e|||SELECT * FROM OpsBilling.rprt.Dallas_VisitBySource" type="V_String" />
+            <Field name="Total Client Amount" source="File: aka:5f15b4860b05360e6c4ed32e|||SELECT * FROM OpsBilling.rprt.Dallas_VisitBySource" type="Double" />
+            <Field name="Cardholder Visit Currency Member" size="50" source="File: aka:5f15b4860b05360e6c4ed32e|||SELECT * FROM OpsBilling.rprt.Dallas_VisitBySource" type="V_String" />
+            <Field name="Cardholder Visit Amount Member" source="File: aka:5f15b4860b05360e6c4ed32e|||SELECT * FROM OpsBilling.rprt.Dallas_VisitBySource" type="Double" />
+            <Field name="Cardholder Visit Currency Guest" size="50" source="File: aka:5f15b4860b05360e6c4ed32e|||SELECT * FROM OpsBilling.rprt.Dallas_VisitBySource" type="V_String" />
+            <Field name="Cardholder Visit Amount Guest" source="File: aka:5f15b4860b05360e6c4ed32e|||SELECT * FROM OpsBilling.rprt.Dallas_VisitBySource" type="Double" />
+            <Field name="Total Cardholder Amount Currency" size="50" source="File: aka:5f15b4860b05360e6c4ed32e|||SELECT * FROM OpsBilling.rprt.Dallas_VisitBySource" type="V_String" />
+            <Field name="Total Cardholder Amount" source="File: aka:5f15b4860b05360e6c4ed32e|||SELECT * FROM OpsBilling.rprt.Dallas_VisitBySource" type="Double" />
+            <Field name="Cost Centre" size="300" source="File: aka:5f15b4860b05360e6c4ed32e|||SELECT * FROM OpsBilling.rprt.Dallas_VisitBySource" type="V_String" />
+            <Field name="Campaign Code" size="300" source="File: aka:5f15b4860b05360e6c4ed32e|||SELECT * FROM OpsBilling.rprt.Dallas_VisitBySource" type="V_String" />
+            <Field name="Vendor Code" size="300" source="File: aka:5f15b4860b05360e6c4ed32e|||SELECT * FROM OpsBilling.rprt.Dallas_VisitBySource" type="V_String" />
+            <Field name="User Invitation Code" size="300" source="File: aka:5f15b4860b05360e6c4ed32e|||SELECT * FROM OpsBilling.rprt.Dallas_VisitBySource" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="618" y="354" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Report_Month" selected="False" />
+            <SelectField field="Category" selected="False" />
+            <SelectField field="SourceCode" selected="False" />
+            <SelectField field="BinLength" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="522" y="354" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[Category] = "Visa LK 3"</Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Category] = "Visa LK 3"</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="714" y="354" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="&quot;\\clbnas01\OpsDataTeam\8. Team\Harshad\Ops Automation\Dallas\19- Visits Visa LK 3 - 8#BIN Others &quot;+DateTimeFormat(DateTimeAdd(DateTimeNow(),-1,&quot;months&quot;) ,&quot;%m-%Y&quot;)+&quot;.xlsx|||Sheet1&quot;" field="Visa LK3" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Visa LK3 = "\\clbnas01\OpsDataTeam\8. Team\Harshad\Ops Automation\Dallas\19- Vis...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="846" y="354" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="25">%temp%temp.xlsx</File>
+          <Passwords />
+          <FormatSpecificOptions>
+            <PreserveFormat>False</PreserveFormat>
+            <SkipFieldNames>False</SkipFieldNames>
+            <OutputOption>Create</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="True" />
+          <MultiFileType>Path</MultiFileType>
+          <MultiFileField>Visa LK3</MultiFileField>
+          <KeepField value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>%temp%temp.xlsx</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="19">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="618" y="474" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Report_Month" selected="False" />
+            <SelectField field="Category" selected="False" />
+            <SelectField field="SourceCode" selected="False" />
+            <SelectField field="BinLength" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="20">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="522" y="474" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[Category] = "Visa LK 4"</Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Category] = "Visa LK 4"</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="21">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="714" y="474" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="&quot;\\clbnas01\OpsDataTeam\8. Team\Harshad\Ops Automation\Dallas\20- Visits Visa LK 4 - 6#BIN Others &quot;+DateTimeFormat(DateTimeAdd(DateTimeNow(),-1,&quot;months&quot;) ,&quot;%m-%Y&quot;)+&quot;.xlsx|||Sheet1&quot;" field="Visa LK4" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Visa LK4 = "\\clbnas01\OpsDataTeam\8. Team\Harshad\Ops Automation\Dallas\20- Vis...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="22">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="846" y="474" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="25">%temp%temp.xlsx</File>
+          <Passwords />
+          <FormatSpecificOptions>
+            <PreserveFormat>False</PreserveFormat>
+            <SkipFieldNames>False</SkipFieldNames>
+            <OutputOption>Create</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="True" />
+          <MultiFileType>Path</MultiFileType>
+          <MultiFileField>Visa LK4</MultiFileField>
+          <KeepField value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>%temp%temp.xlsx</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="23">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="618" y="582" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Report_Month" selected="False" />
+            <SelectField field="Category" selected="False" />
+            <SelectField field="SourceCode" selected="False" />
+            <SelectField field="BinLength" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="24">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="522" y="582" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[Category] = "Visa LK 5"</Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Category] = "Visa LK 5"</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="25">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="714" y="582" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="&quot;\\clbnas01\OpsDataTeam\8. Team\Harshad\Ops Automation\Dallas\22- Visits Visa LK 5 - 7#BIN Others &quot;+DateTimeFormat(DateTimeAdd(DateTimeNow(),-1,&quot;months&quot;) ,&quot;%m-%Y&quot;)+&quot;.xlsx|||Sheet1&quot;" field="Visa LK4" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Visa LK4 = "\\clbnas01\OpsDataTeam\8. Team\Harshad\Ops Automation\Dallas\22- Vis...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="26">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="846" y="582" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="25">%temp%temp.xlsx</File>
+          <Passwords />
+          <FormatSpecificOptions>
+            <PreserveFormat>False</PreserveFormat>
+            <SkipFieldNames>False</SkipFieldNames>
+            <OutputOption>Create</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="True" />
+          <MultiFileType>Path</MultiFileType>
+          <MultiFileField>Visa LK4</MultiFileField>
+          <KeepField value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>%temp%temp.xlsx</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="27">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="618" y="690" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Report_Month" selected="False" />
+            <SelectField field="Category" selected="False" />
+            <SelectField field="SourceCode" selected="False" />
+            <SelectField field="BinLength" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="28">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="522" y="690" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[Category] = "Visa LK 6"</Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Category] = "Visa LK 6"</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="29">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="714" y="690" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="&quot;\\clbnas01\OpsDataTeam\8. Team\Harshad\Ops Automation\Dallas\25- Visits Visa LK 6 - 9#BIN Others &quot;+DateTimeFormat(DateTimeAdd(DateTimeNow(),-1,&quot;months&quot;) ,&quot;%m-%Y&quot;)+&quot;.xlsx|||Sheet1&quot;" field="Visa LK4" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Visa LK4 = "\\clbnas01\OpsDataTeam\8. Team\Harshad\Ops Automation\Dallas\25- Vis...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="30">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="846" y="690" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="25">%temp%temp.xlsx</File>
+          <Passwords />
+          <FormatSpecificOptions>
+            <PreserveFormat>False</PreserveFormat>
+            <SkipFieldNames>False</SkipFieldNames>
+            <OutputOption>Create</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="True" />
+          <MultiFileType>Path</MultiFileType>
+          <MultiFileField>Visa LK4</MultiFileField>
+          <KeepField value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>%temp%temp.xlsx</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="3" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="3" Connection="Left" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="3" Connection="Join" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="3" Connection="Left" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="16" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="20" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="24" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="28" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="True" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="True" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Output" />
+      <Destination ToolID="17" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="True" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="Output" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="Output" />
+      <Destination ToolID="21" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="20" Connection="True" />
+      <Destination ToolID="19" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="21" Connection="Output" />
+      <Destination ToolID="22" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="23" Connection="Output" />
+      <Destination ToolID="25" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="24" Connection="True" />
+      <Destination ToolID="23" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="25" Connection="Output" />
+      <Destination ToolID="26" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="27" Connection="Output" />
+      <Destination ToolID="29" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="28" Connection="True" />
+      <Destination ToolID="27" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="29" Connection="Output" />
+      <Destination ToolID="30" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Dallas_VisitBySource</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="881ac8a5-d2a9-4d79-a373-5bab0274257e" />
+      <Telemetry>
+        <PreviousWorkflowId value="" />
+        <OriginWorkflowId value="881ac8a5-d2a9-4d79-a373-5bab0274257e" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
