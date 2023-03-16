@@ -22,6 +22,8 @@
 --HD ran for Oct on Nov 1
 --HD ran for Oct on Dec 1
 --HD ran for Oct on Jan 2
+--HD ran for Oct on Feb 2
+--HD ran for Oct on Mar 1
 
 USE PPass;
 GO
@@ -262,7 +264,7 @@ INTO   #temp
 --	'AMEXCAC',
 --	'AMEXCAI'
 --	)
-	and cast(creation_date as date) between '2022-12-01' and '2022-12-31'  -- For Oct 2018, Change for the time period needed.
+	and cast(creation_date as date) between '2023-02-01' and '2023-02-28'  -- For Oct 2018, Change for the time period needed.
 
 -- Final Output 
 SELECT 

@@ -48,7 +48,9 @@
 --HD-run for Sep 2022 on Oct 03 2022
 --HD-run for Oct 2022 on Nov 01 2022
 --HD-run for Nov 2022 on Dec 01 2022
---HD-run for Dec 2022 on Jan 02 2022
+--HD-run for Dec 2022 on Jan 02 2023
+--HD-run for Dec 2022 on Feb 01 2023
+--HD-run for Dec 2022 on Mar 01 2023
 */
 USE [PPass]
 GO
@@ -86,7 +88,7 @@ WHERE
 --	c.consumer_no ASC
 
 DECLARE @FromDate DATETIME = '2019-01-01'
-DECLARE @ToDate DATETIME = '2023-01-01'
+DECLARE @ToDate DATETIME = '2023-03-01'
 DECLARE @LoopDate DATETIME
 
 SET @LoopDate = @FromDate
@@ -122,4 +124,4 @@ June 2019
 August 2019 AA
 'September 2019'
 */
-  SELECT * FROM #temp WHERE [Report Month] = 'December 2022'
+  SELECT * FROM #temp WHERE [Report Month] = 'February 2023'
