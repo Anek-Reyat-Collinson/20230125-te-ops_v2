@@ -1,0 +1,519 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2022.1">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="54" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="3" />
+          <Fields>
+            <Field name="table_name" />
+            <Field name="output_name" />
+          </Fields>
+          <Data>
+            <r>
+              <c>VisitBySourcePlatformCISSEEDeals</c>
+              <c>VisaLVCISSEEPlatformDeals</c>
+            </r>
+            <r>
+              <c>VisitBySourcePlatformMENADeals</c>
+              <c>VisaLVMENAPlatformDeals</c>
+            </r>
+            <r>
+              <c>VisitBySourcePlatformSSADeals</c>
+              <c>VisaLVSSAPlatformDeals</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="210" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <CachedCosmeticName>DI_Billing</CachedCosmeticName>
+          <File FileFormat="23" RecordLimit="">aka:5f15b4860b05360e6c4ed32e|||select b.[Bin(9)],
+	b.Bin_Lower_Range,
+	b.Bin_Upper_Range,
+	b.Issuer_Name,
+	b.Country_Of_Issue,
+	b.Deal_Type,
+	b.Funding_Source,
+	b.Sub_Type
+from Billing_Automation.staging.tbl_bin_List b 
+where b.report_month = Convert(date, DateAdd(d, -(Day(DateAdd(m, -1, GetDate() - 2))), DateAdd(m, -1, GetDate() - 1)), 103)</File>
+          <FormatSpecificOptions>
+            <SingleRowFetch>False</SingleRowFetch>
+            <ReadCentroids>False</ReadCentroids>
+            <TableStyle>Quoted</TableStyle>
+            <CacheData>False</CacheData>
+            <SessionReadOnly>True</SessionReadOnly>
+            <ReadUncommitted>False</ReadUncommitted>
+            <NoProgress>True</NoProgress>
+            <PostSQL />
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <PreSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:DI_Billing
+Query=select b.[Bin(9)],
+	b.Bin_Lo...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Bin(9)" source="File: aka:5f15b4860b05360e6c4ed32e|||select b.[Bin(9)],&#xA;	b.Bin_Lower_Range,&#xA;	b.Bin_Upper_Range,&#xA;	b.Issuer_Name,&#xA;	b.Country_Of_Issue,&#xA;	b.Deal_Type,&#xA;	b.Funding_Source,&#xA;	b.Sub_Type&#xA;from Billing_Automation.staging.tbl_bin_List b &#xA;where b.report_month = Convert(date, DateAdd(d, -(Day(DateAdd(m, -1, GetDate() - 2))), DateAdd(m, -1, GetDate() - 1)), 103)" type="Int32" />
+            <Field name="Bin_Lower_Range" source="File: aka:5f15b4860b05360e6c4ed32e|||select b.[Bin(9)],&#xA;	b.Bin_Lower_Range,&#xA;	b.Bin_Upper_Range,&#xA;	b.Issuer_Name,&#xA;	b.Country_Of_Issue,&#xA;	b.Deal_Type,&#xA;	b.Funding_Source,&#xA;	b.Sub_Type&#xA;from Billing_Automation.staging.tbl_bin_List b &#xA;where b.report_month = Convert(date, DateAdd(d, -(Day(DateAdd(m, -1, GetDate() - 2))), DateAdd(m, -1, GetDate() - 1)), 103)" type="Int32" />
+            <Field name="Bin_Upper_Range" source="File: aka:5f15b4860b05360e6c4ed32e|||select b.[Bin(9)],&#xA;	b.Bin_Lower_Range,&#xA;	b.Bin_Upper_Range,&#xA;	b.Issuer_Name,&#xA;	b.Country_Of_Issue,&#xA;	b.Deal_Type,&#xA;	b.Funding_Source,&#xA;	b.Sub_Type&#xA;from Billing_Automation.staging.tbl_bin_List b &#xA;where b.report_month = Convert(date, DateAdd(d, -(Day(DateAdd(m, -1, GetDate() - 2))), DateAdd(m, -1, GetDate() - 1)), 103)" type="Int32" />
+            <Field name="Issuer_Name" size="255" source="File: aka:5f15b4860b05360e6c4ed32e|||select b.[Bin(9)],&#xA;	b.Bin_Lower_Range,&#xA;	b.Bin_Upper_Range,&#xA;	b.Issuer_Name,&#xA;	b.Country_Of_Issue,&#xA;	b.Deal_Type,&#xA;	b.Funding_Source,&#xA;	b.Sub_Type&#xA;from Billing_Automation.staging.tbl_bin_List b &#xA;where b.report_month = Convert(date, DateAdd(d, -(Day(DateAdd(m, -1, GetDate() - 2))), DateAdd(m, -1, GetDate() - 1)), 103)" type="V_String" />
+            <Field name="Country_Of_Issue" size="255" source="File: aka:5f15b4860b05360e6c4ed32e|||select b.[Bin(9)],&#xA;	b.Bin_Lower_Range,&#xA;	b.Bin_Upper_Range,&#xA;	b.Issuer_Name,&#xA;	b.Country_Of_Issue,&#xA;	b.Deal_Type,&#xA;	b.Funding_Source,&#xA;	b.Sub_Type&#xA;from Billing_Automation.staging.tbl_bin_List b &#xA;where b.report_month = Convert(date, DateAdd(d, -(Day(DateAdd(m, -1, GetDate() - 2))), DateAdd(m, -1, GetDate() - 1)), 103)" type="V_String" />
+            <Field name="Deal_Type" size="50" source="File: aka:5f15b4860b05360e6c4ed32e|||select b.[Bin(9)],&#xA;	b.Bin_Lower_Range,&#xA;	b.Bin_Upper_Range,&#xA;	b.Issuer_Name,&#xA;	b.Country_Of_Issue,&#xA;	b.Deal_Type,&#xA;	b.Funding_Source,&#xA;	b.Sub_Type&#xA;from Billing_Automation.staging.tbl_bin_List b &#xA;where b.report_month = Convert(date, DateAdd(d, -(Day(DateAdd(m, -1, GetDate() - 2))), DateAdd(m, -1, GetDate() - 1)), 103)" type="V_String" />
+            <Field name="Funding_Source" size="255" source="File: aka:5f15b4860b05360e6c4ed32e|||select b.[Bin(9)],&#xA;	b.Bin_Lower_Range,&#xA;	b.Bin_Upper_Range,&#xA;	b.Issuer_Name,&#xA;	b.Country_Of_Issue,&#xA;	b.Deal_Type,&#xA;	b.Funding_Source,&#xA;	b.Sub_Type&#xA;from Billing_Automation.staging.tbl_bin_List b &#xA;where b.report_month = Convert(date, DateAdd(d, -(Day(DateAdd(m, -1, GetDate() - 2))), DateAdd(m, -1, GetDate() - 1)), 103)" type="V_String" />
+            <Field name="Sub_Type" size="255" source="File: aka:5f15b4860b05360e6c4ed32e|||select b.[Bin(9)],&#xA;	b.Bin_Lower_Range,&#xA;	b.Bin_Upper_Range,&#xA;	b.Issuer_Name,&#xA;	b.Country_Of_Issue,&#xA;	b.Deal_Type,&#xA;	b.Funding_Source,&#xA;	b.Sub_Type&#xA;from Billing_Automation.staging.tbl_bin_List b &#xA;where b.report_month = Convert(date, DateAdd(d, -(Day(DateAdd(m, -1, GetDate() - 2))), DateAdd(m, -1, GetDate() - 1)), 103)" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DynamicInput.DynamicInput">
+        <Position x="210" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <InputConfiguration>
+            <Configuration>
+              <Passwords />
+              <CachedCosmeticName>DI_Billing</CachedCosmeticName>
+              <File RecordLimit="" FileFormat="23">aka:5f15b4860b05360e6c4ed32e|||select  
+a.[Source Code],
+	a.[Member No],
+	a.[Membership Plan],
+	a.[Member Status],
+	a.[Paid To Date],
+	a.[Experience Transaction Date],
+	a.[Date Processed],
+	a.[Guest Visits],
+	a.[Batch No],
+	a.Reference,
+	a.[Lounge Code],
+	a.Lounge,
+	a.Airport,
+	a.City,
+	a.Country,
+	a.[Client 1 Pays Member Visit],
+	a.[Client 2 Pays Member Visit],
+	a.[Inclusive PP Member Visit],
+	a.[Complimentary Member Visit],
+	a.[Cardholder Pays Member Visit],
+	a.[Client 1 Pays Guest Activity],
+	a.[Client 2 Pays Guest Activity],
+	a.[Inclusive PP Guest Visit],
+	a.[Complimentary Guest Visit],
+	a.[Cardholder Pays Guest Visit],
+	a.[Lounge Visit Offer],
+	a.[Client 1 Member],
+	a.[Client 2 Member],
+	a.[Inclusive PP Member],
+	a.[Client 1 Guest],
+	a.[Client 2 Guest],
+	a.[Inclusive PP Guest],
+	a.[Client 1 Member/Guest],
+	a.[Client 2 Member/Guest],
+	a.[Inclusive PP Member/Guest],
+	a.[Complimentary Member/Guest],
+	a.[Client 1 Visit Currency Member],
+	a.[Client 1 Visit Amount Member],
+	a.[Client 1 Visit Currency Guest],
+	a.[Client 1 Visit Amount Guest],
+	a.[Total Client 1 Amount Currency],
+	a.[Total Client 1 Amount],
+	a.[Client 2 Visit Currency Member],
+	a.[Client 2 Visit Amount Member],
+	a.[Client 2 Visit Currency Guest],
+	a.[Client 2 Visit Amount Guest],
+	a.[Total Client 2 Amount Currency],
+	a.[Total Client 2 Amount],
+	a.[Cardholder Visit Currency Member],
+	a.[Cardholder Visit Amount Member],
+	a.[Cardholder Visit Currency Guest],
+	a.[Cardholder Visit Amount Guest],
+	a.[Total Cardholder Amount Currency],
+	a.[Total Cardholder Amount],
+	a.[Cost Centre],
+	a.[Campaign Code],
+	a.[Vendor Code],
+	a.[User Invitation Code],
+	a.[CCard No] 
+from OpsBilling.rprt.{{TABLENAME}} a With(NoLock)</File>
+              <FormatSpecificOptions>
+                <PreSQLOnConfig>True</PreSQLOnConfig>
+                <ReadCentroids>False</ReadCentroids>
+                <NoProgress>True</NoProgress>
+                <SessionReadOnly>True</SessionReadOnly>
+                <ReadUncommitted>False</ReadUncommitted>
+                <TableStyle>Quoted</TableStyle>
+                <PreSQL />
+                <PostSQL />
+                <SingleRowFetch>False</SingleRowFetch>
+              </FormatSpecificOptions>
+            </Configuration>
+          </InputConfiguration>
+          <Mode>ModifySQL</Mode>
+          <Modifications>
+            <Modify Action="ReplaceString" Annotation="{{TABLENAME}}">
+              <Field>table_name</Field>
+              <ReplaceText>{{TABLENAME}}</ReplaceText>
+            </Modify>
+            <Modify Action="PassField" Annotation="output_name">
+              <Field>output_name</Field>
+            </Modify>
+          </Modifications>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDynamicInput" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="486" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="CCard No" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="Bin(9)" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="True" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_Source Code" selected="True" input="Left_" />
+                <SelectField field="Left_Member No" selected="True" input="Left_" />
+                <SelectField field="Right_Bin(9)" selected="True" input="Right_" />
+                <SelectField field="Right_Bin_Lower_Range" selected="True" input="Right_" />
+                <SelectField field="Right_Bin_Upper_Range" selected="True" input="Right_" />
+                <SelectField field="Right_Issuer_Name" selected="True" input="Right_" />
+                <SelectField field="Right_Country_Of_Issue" selected="True" input="Right_" />
+                <SelectField field="Right_Deal_Type" selected="True" input="Right_" />
+                <SelectField field="Right_Funding_Source" selected="True" input="Right_" />
+                <SelectField field="Right_Sub_Type" selected="True" input="Right_" />
+                <SelectField field="Left_Membership Plan" selected="True" input="Left_" />
+                <SelectField field="Left_Member Status" selected="True" input="Left_" />
+                <SelectField field="Left_Paid To Date" selected="True" input="Left_" />
+                <SelectField field="Left_Experience Transaction Date" selected="True" input="Left_" />
+                <SelectField field="Left_Date Processed" selected="True" input="Left_" />
+                <SelectField field="Left_Guest Visits" selected="True" input="Left_" />
+                <SelectField field="Left_Batch No" selected="True" input="Left_" />
+                <SelectField field="Left_Reference" selected="True" input="Left_" />
+                <SelectField field="Left_Lounge Code" selected="True" input="Left_" />
+                <SelectField field="Left_Lounge" selected="True" input="Left_" />
+                <SelectField field="Left_Airport" selected="True" input="Left_" />
+                <SelectField field="Left_City" selected="True" input="Left_" />
+                <SelectField field="Left_Country" selected="True" input="Left_" />
+                <SelectField field="Left_Client 1 Pays Member Visit" selected="True" input="Left_" />
+                <SelectField field="Left_Client 2 Pays Member Visit" selected="True" input="Left_" />
+                <SelectField field="Left_Inclusive PP Member Visit" selected="True" input="Left_" />
+                <SelectField field="Left_Complimentary Member Visit" selected="True" input="Left_" />
+                <SelectField field="Left_Cardholder Pays Member Visit" selected="True" input="Left_" />
+                <SelectField field="Left_Client 1 Pays Guest Activity" selected="True" input="Left_" />
+                <SelectField field="Left_Client 2 Pays Guest Activity" selected="True" input="Left_" />
+                <SelectField field="Left_Inclusive PP Guest Visit" selected="True" input="Left_" />
+                <SelectField field="Left_Complimentary Guest Visit" selected="True" input="Left_" />
+                <SelectField field="Left_Cardholder Pays Guest Visit" selected="True" input="Left_" />
+                <SelectField field="Left_Lounge Visit Offer" selected="True" input="Left_" />
+                <SelectField field="Left_Client 1 Member" selected="True" input="Left_" />
+                <SelectField field="Left_Client 2 Member" selected="True" input="Left_" />
+                <SelectField field="Left_Inclusive PP Member" selected="True" input="Left_" />
+                <SelectField field="Left_Client 1 Guest" selected="True" input="Left_" />
+                <SelectField field="Left_Client 2 Guest" selected="True" input="Left_" />
+                <SelectField field="Left_Inclusive PP Guest" selected="True" input="Left_" />
+                <SelectField field="Left_Client 1 Member/Guest" selected="True" input="Left_" />
+                <SelectField field="Left_Client 2 Member/Guest" selected="True" input="Left_" />
+                <SelectField field="Left_Inclusive PP Member/Guest" selected="True" input="Left_" />
+                <SelectField field="Left_Complimentary Member/Guest" selected="True" input="Left_" />
+                <SelectField field="Left_Client 1 Visit Currency Member" selected="True" input="Left_" />
+                <SelectField field="Left_Client 1 Visit Amount Member" selected="True" input="Left_" />
+                <SelectField field="Left_Client 1 Visit Currency Guest" selected="True" input="Left_" />
+                <SelectField field="Left_Client 1 Visit Amount Guest" selected="True" input="Left_" />
+                <SelectField field="Left_Total Client 1 Amount Currency" selected="True" input="Left_" />
+                <SelectField field="Left_Total Client 1 Amount" selected="True" input="Left_" />
+                <SelectField field="Left_Client 2 Visit Currency Member" selected="True" input="Left_" />
+                <SelectField field="Left_Client 2 Visit Amount Member" selected="True" input="Left_" />
+                <SelectField field="Left_Client 2 Visit Currency Guest" selected="True" input="Left_" />
+                <SelectField field="Left_Client 2 Visit Amount Guest" selected="True" input="Left_" />
+                <SelectField field="Left_Total Client 2 Amount Currency" selected="True" input="Left_" />
+                <SelectField field="Left_Total Client 2 Amount" selected="True" input="Left_" />
+                <SelectField field="Left_Cardholder Visit Currency Member" selected="True" input="Left_" />
+                <SelectField field="Left_Cardholder Visit Amount Member" selected="True" input="Left_" />
+                <SelectField field="Left_Cardholder Visit Currency Guest" selected="True" input="Left_" />
+                <SelectField field="Left_Cardholder Visit Amount Guest" selected="True" input="Left_" />
+                <SelectField field="Left_Total Cardholder Amount Currency" selected="True" input="Left_" />
+                <SelectField field="Left_Total Cardholder Amount" selected="True" input="Left_" />
+                <SelectField field="Left_Cost Centre" selected="True" input="Left_" />
+                <SelectField field="Left_Campaign Code" selected="True" input="Left_" />
+                <SelectField field="Left_Vendor Code" selected="True" input="Left_" />
+                <SelectField field="Left_User Invitation Code" selected="True" input="Left_" />
+                <SelectField field="Left_CCard No" selected="False" input="Left_" />
+                <SelectField field="Left_output_name" selected="True" input="Left_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="294" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="left([CCard No],9)" field="CCard No" size="100" type="V_String" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[CCard No = left([CCard No],9)
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="390" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="output_name" selected="True" size="255" />
+            <SelectField field="CCard No" selected="True" type="Int32" size="4" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="558" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="Datetimeformat(DateTimeAdd(DateTimeNow(),-1,&quot;months&quot;),&quot;%b %Y&quot;)" field="LastMonth" size="1073741823" type="V_WString" />
+            <FormulaField expression="&quot;\\clbnas01\OpsDataTeam\8. Team\Harshad\Ops Automation\Dev\Visa Automation\Visa MENA SSA CISSEE Deals\&quot; + [output_name] +&quot; &quot;+[LastMonth]+&quot;.xlsx|||Data&quot;" field="output_name" size="255" type="V_String" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>LastMonth = Datetimeformat(DateTimeAdd(DateTimeNow(),-1,"months"),"%b %Y")
+outpu...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="846" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="25">%temp%Temp.xlsx|||Data</File>
+          <Passwords />
+          <FormatSpecificOptions>
+            <PreserveFormat>False</PreserveFormat>
+            <SkipFieldNames>False</SkipFieldNames>
+            <OutputOption>Overwrite</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="True" />
+          <MultiFileType>Path</MultiFileType>
+          <MultiFileField>output_name</MultiFileField>
+          <KeepField value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>%temp%Temp.xlsx
+Query=Data</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit>
+            <Dependency Path="%temp%Temp.xlsx" Package="False" IsMacro="False" IsOutput="True" IsAlias="False" />
+          </Implicit>
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="654" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Today" selected="False" />
+            <SelectField field="StartOfWeek" selected="False" />
+            <SelectField field="EndOfWeek" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="750" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="LastMonth" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="4" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="4" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Join" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>CISSEE MENA SSA Monthly Run</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="316cf8df-b696-4890-befb-f9394a40b96c" />
+      <Telemetry>
+        <PreviousWorkflowId value="" />
+        <OriginWorkflowId value="316cf8df-b696-4890-befb-f9394a40b96c" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
