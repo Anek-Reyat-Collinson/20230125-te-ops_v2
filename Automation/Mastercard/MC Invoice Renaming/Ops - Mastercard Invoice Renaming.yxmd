@@ -1,0 +1,432 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2022.1">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">\\clbnas01\PriorityPass\5. MasterCard\MC Billing &amp; Invoicing\MC Membership &amp; LV Billing from 2017\LoungeKey\Lounge Visits\invoices\MC LK Renaming File.xlsx|||`Sheet1$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>MC LK Renaming File.xlsx
+Query=`Sheet1$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="ORDER" source="File: \\clbnas01\PriorityPass\5. MasterCard\MC Billing &amp; Invoicing\MC Membership &amp; LV Billing from 2017\LoungeKey\Lounge Visits\invoices\MC LK Renaming File.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Inv No." source="File: \\clbnas01\PriorityPass\5. MasterCard\MC Billing &amp; Invoicing\MC Membership &amp; LV Billing from 2017\LoungeKey\Lounge Visits\invoices\MC LK Renaming File.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="DATE" source="File: \\clbnas01\PriorityPass\5. MasterCard\MC Billing &amp; Invoicing\MC Membership &amp; LV Billing from 2017\LoungeKey\Lounge Visits\invoices\MC LK Renaming File.xlsx|||`Sheet1$`" type="Date" />
+            <Field name="CURRENCY" size="255" source="File: \\clbnas01\PriorityPass\5. MasterCard\MC Billing &amp; Invoicing\MC Membership &amp; LV Billing from 2017\LoungeKey\Lounge Visits\invoices\MC LK Renaming File.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="ACCOUNT" size="255" source="File: \\clbnas01\PriorityPass\5. MasterCard\MC Billing &amp; Invoicing\MC Membership &amp; LV Billing from 2017\LoungeKey\Lounge Visits\invoices\MC LK Renaming File.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="REFERENCE" size="255" source="File: \\clbnas01\PriorityPass\5. MasterCard\MC Billing &amp; Invoicing\MC Membership &amp; LV Billing from 2017\LoungeKey\Lounge Visits\invoices\MC LK Renaming File.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="DESCRIPTION" size="255" source="File: \\clbnas01\PriorityPass\5. MasterCard\MC Billing &amp; Invoicing\MC Membership &amp; LV Billing from 2017\LoungeKey\Lounge Visits\invoices\MC LK Renaming File.xlsx|||`Sheet1$`" type="V_WString" />
+            <Field name="Total" source="File: \\clbnas01\PriorityPass\5. MasterCard\MC Billing &amp; Invoicing\MC Membership &amp; LV Billing from 2017\LoungeKey\Lounge Visits\invoices\MC LK Renaming File.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="F9" source="File: \\clbnas01\PriorityPass\5. MasterCard\MC Billing &amp; Invoicing\MC Membership &amp; LV Billing from 2017\LoungeKey\Lounge Visits\invoices\MC LK Renaming File.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="PO Cleaned" size="255" source="File: \\clbnas01\PriorityPass\5. MasterCard\MC Billing &amp; Invoicing\MC Membership &amp; LV Billing from 2017\LoungeKey\Lounge Visits\invoices\MC LK Renaming File.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="Region" size="255" source="File: \\clbnas01\PriorityPass\5. MasterCard\MC Billing &amp; Invoicing\MC Membership &amp; LV Billing from 2017\LoungeKey\Lounge Visits\invoices\MC LK Renaming File.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="Currency2" size="255" source="File: \\clbnas01\PriorityPass\5. MasterCard\MC Billing &amp; Invoicing\MC Membership &amp; LV Billing from 2017\LoungeKey\Lounge Visits\invoices\MC LK Renaming File.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="Core / Optional" size="255" source="File: \\clbnas01\PriorityPass\5. MasterCard\MC Billing &amp; Invoicing\MC Membership &amp; LV Billing from 2017\LoungeKey\Lounge Visits\invoices\MC LK Renaming File.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="Invoice Type" size="255" source="File: \\clbnas01\PriorityPass\5. MasterCard\MC Billing &amp; Invoicing\MC Membership &amp; LV Billing from 2017\LoungeKey\Lounge Visits\invoices\MC LK Renaming File.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="Deal" size="255" source="File: \\clbnas01\PriorityPass\5. MasterCard\MC Billing &amp; Invoicing\MC Membership &amp; LV Billing from 2017\LoungeKey\Lounge Visits\invoices\MC LK Renaming File.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="LK Details" size="255" source="File: \\clbnas01\PriorityPass\5. MasterCard\MC Billing &amp; Invoicing\MC Membership &amp; LV Billing from 2017\LoungeKey\Lounge Visits\invoices\MC LK Renaming File.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="MCAE Details" size="255" source="File: \\clbnas01\PriorityPass\5. MasterCard\MC Billing &amp; Invoicing\MC Membership &amp; LV Billing from 2017\LoungeKey\Lounge Visits\invoices\MC LK Renaming File.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="Month" size="255" source="File: \\clbnas01\PriorityPass\5. MasterCard\MC Billing &amp; Invoicing\MC Membership &amp; LV Billing from 2017\LoungeKey\Lounge Visits\invoices\MC LK Renaming File.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="Vat/Other" size="255" source="File: \\clbnas01\PriorityPass\5. MasterCard\MC Billing &amp; Invoicing\MC Membership &amp; LV Billing from 2017\LoungeKey\Lounge Visits\invoices\MC LK Renaming File.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="Invoice Name" size="255" source="File: \\clbnas01\PriorityPass\5. MasterCard\MC Billing &amp; Invoicing\MC Membership &amp; LV Billing from 2017\LoungeKey\Lounge Visits\invoices\MC LK Renaming File.xlsx|||`Sheet1$`" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="186" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\HARSHA~1.DES\AppData\Local\Temp\Engine_509192_7d3854b35b2bb14e897abc432bf43b00_\Engine_509192_8e48ecaed70d0c4fb4d5687cdfffd89e~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextToColumns.TextToColumns">
+        <Position x="186" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Field>FileName</Field>
+          <ErrorHandling>Last</ErrorHandling>
+          <RootName>
+          </RootName>
+          <Delimeters value=",-" />
+          <NumFields value="4" />
+          <Flags value="0" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextToColumns" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Directory.Directory">
+        <Position x="66" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Directory>\\clbnas01\PriorityPass\5. MasterCard\MC Billing &amp; Invoicing\MC Membership &amp; LV Billing from 2017\LoungeKey\Lounge Visits\invoices</Directory>
+          <FileSpec>*.pdf*</FileSpec>
+          <IncludeSubDirs value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>dir \\clbnas01\PriorityPass\5. MasterCard\MC Billing &amp; Invoicing\MC Membership &amp; LV Billing from 2017\LoungeKey\Lounge Visits\invoices\*.pdf*</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDirectory" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="378" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\HARSHA~1.DES\AppData\Local\Temp\Engine_509192_7d3854b35b2bb14e897abc432bf43b00_\Engine_509192_04d42cfb9afa4e4cb65dcc0d1e91f20a~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="282" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="Replace([4], &quot;.pdf&quot;, &quot;&quot;)" field="4.1" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[4.1 = Replace([4], ".pdf", "")
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="474" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="Inv No." />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="4.1" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="570" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="282" y="90" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Inv No." selected="True" type="V_WString" size="19" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="378" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="666" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="'rename &quot;' + [Directory]+[FileName] + '&quot; &quot;' + [Invoice Name] +'.pdf&quot;'" field="InvoiceName" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>InvoiceName = 'rename "' + [Directory]+[FileName] + '" "' + [Invoice Name] +'.pd...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="762" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="InvoiceName" action="GroupBy" rename="InvoiceName" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RunCommand.RunCommand">
+        <Position x="858" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OutputConfiguration>
+            <Configuration>
+              <File MaxRecords="" FileFormat="0">%temp%\CopyTemplate.bat</File>
+              <Passwords />
+              <FormatSpecificOptions>
+                <LineEndStyle>CRLF</LineEndStyle>
+                <Delimeter>\0</Delimeter>
+                <ForceQuotes>Never</ForceQuotes>
+                <HeaderRow>False</HeaderRow>
+                <CodePage>28591</CodePage>
+                <WriteBOM>True</WriteBOM>
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+          </OutputConfiguration>
+          <InputConfiguration>
+            <Configuration />
+          </InputConfiguration>
+          <ProgramName>%temp%\CopyTemplate.bat</ProgramName>
+          <Arguments />
+          <WorkingDir />
+          <RunMinimized value="False" />
+          <RunSilent value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Run CopyTemplate.bat</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit>
+            <Dependency Path="%temp%\CopyTemplate.bat" Package="False" IsMacro="False" IsOutput="True" IsAlias="False" />
+            <Dependency Path="%temp%\CopyTemplate.bat" Package="False" IsMacro="False" IsOutput="False" IsAlias="False" />
+          </Implicit>
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRunCommand" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Join" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="7" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="7" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Output" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Ops - Mastercard Invoice Renaming</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="000130ad-038c-40c1-b3c7-1310128f7945" />
+      <Telemetry>
+        <PreviousWorkflowId value="eee62994-3552-4e12-97e9-6d61d38e1a4d" />
+        <OriginWorkflowId value="69cec07d-da3b-4720-99c2-a6167096092b" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
