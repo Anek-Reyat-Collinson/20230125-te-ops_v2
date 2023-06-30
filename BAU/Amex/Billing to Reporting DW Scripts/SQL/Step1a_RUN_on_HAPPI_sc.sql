@@ -1,4 +1,5 @@
 
+
 -- HD AWS Run on ran this succesfully on 12/06/2020 - (897 rows affected)
 -- AA AWS Run on ran this succesfully on 19/06/2020 - (897 rows affected)
 -- HD AWS Run on ran this succesfully on 24/06/2020 - (897 rows affected)
